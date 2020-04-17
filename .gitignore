@@ -1,0 +1,5 @@
+# remove executables
+*.exe
+
+# remove configuration
+.config
