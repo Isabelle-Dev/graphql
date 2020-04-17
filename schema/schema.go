@@ -31,7 +31,7 @@ func init() {
 		Description: "Root query",
 		Fields: graphql.Fields{
 			"search": &graphql.Field{
-				Description: "Search-related data",
+				Description: "Search-related queries",
 				Type:        search.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
