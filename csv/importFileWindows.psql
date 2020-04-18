@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS south_bug (
+CREATE TABLE IF NOT EXISTS north_bug (
 	Num INT,
 	Name character varying(255),
 	Image character varying(255),
@@ -28,4 +28,4 @@ CREATE TABLE IF NOT EXISTS south_bug (
 	InternalID INT
 );
 
-\COPY south_bug FROM 'C:\Users\yipin\go\src\github.com\Isabelle-Dev\isabelle-graphql\csv\bug_south.csv' DELIMITER ',' CSV HEADER;
+\COPY north_bug FROM 'C:\Users\yipin\go\src\github.com\Isabelle-Dev\isabelle-graphql\csv\bug_north.csv' DELIMITER ',' CSV HEADER;

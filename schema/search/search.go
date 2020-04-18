@@ -22,7 +22,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		Fields: graphql.Fields{
 			"search_bug_north": &graphql.Field{
 				Name: "Search a bug from northern hemisphere",
-				Type: graphql.NewNonNull(searchBugOrFishResObj),
+				Type: graphql.NewNonNull(searchBugResObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -41,7 +41,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 			},
 			"search_fish_north": &graphql.Field{
 				Name: "Search a fish from northern hemisphere",
-				Type: graphql.NewNonNull(searchBugOrFishResObj),
+				Type: graphql.NewNonNull(searchBugResObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -60,7 +60,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 			},
 			"search_bug_south": &graphql.Field{
 				Name: "Search a bug from southern hemisphere",
-				Type: graphql.NewNonNull(searchBugOrFishResObj),
+				Type: graphql.NewNonNull(searchBugResObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -70,7 +70,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 					item := p.Args["item"].(string)
 
-					entry := findByName(item, "bug_south", db)
+					entry := findByName(item, "south_bug", db)
 					if entry == nil {
 						return nil, fmt.Errorf("search(): %v not found", item)
 					}
@@ -79,7 +79,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 			},
 			"search_fish_south": &graphql.Field{
 				Name: "Search a fish from southern hemisphere",
-				Type: graphql.NewNonNull(searchBugOrFishResObj),
+				Type: graphql.NewNonNull(searchBugResObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
 						Type: graphql.String,

@@ -1,14 +1,17 @@
 package search
 
-import "github.com/graphql-go/graphql"
+import (
+	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
+	"github.com/graphql-go/graphql"
+)
 
-var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
-	Name: "SearchBugOrFishResult",
+var searchBugResObj = graphql.NewObject(graphql.ObjectConfig{
+	Name: "SearchBugResult",
 	Fields: graphql.Fields{
 		"Num": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.Int),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Num, nil
 				}
 				return nil, nil
@@ -17,7 +20,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Name": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Name, nil
 				}
 				return nil, nil
@@ -26,7 +29,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Image": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Image, nil
 				}
 				return nil, nil
@@ -35,7 +38,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"House": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.House, nil
 				}
 				return nil, nil
@@ -44,7 +47,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Sell": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.Int),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Sell, nil
 				}
 				return nil, nil
@@ -53,7 +56,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Where": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Where, nil
 				}
 				return nil, nil
@@ -62,7 +65,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Weather": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Weather, nil
 				}
 				return nil, nil
@@ -71,7 +74,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Rarity": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Rarity, nil
 				}
 				return nil, nil
@@ -80,7 +83,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"StartTime": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.StartTime, nil
 				}
 				return nil, nil
@@ -89,7 +92,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"EndTime": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.EndTime, nil
 				}
 				return nil, nil
@@ -98,7 +101,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Jan": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Jan, nil
 				}
 				return nil, nil
@@ -107,7 +110,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Feb": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Feb, nil
 				}
 				return nil, nil
@@ -116,7 +119,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Mar": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Mar, nil
 				}
 				return nil, nil
@@ -125,7 +128,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Apr": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Apr, nil
 				}
 				return nil, nil
@@ -134,7 +137,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"May": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.May, nil
 				}
 				return nil, nil
@@ -143,7 +146,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Jun": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Jun, nil
 				}
 				return nil, nil
@@ -152,7 +155,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Jul": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Jul, nil
 				}
 				return nil, nil
@@ -161,7 +164,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Aug": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Aug, nil
 				}
 				return nil, nil
@@ -170,7 +173,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Sep": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Sep, nil
 				}
 				return nil, nil
@@ -179,7 +182,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Oct": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Oct, nil
 				}
 				return nil, nil
@@ -188,7 +191,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Nov": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Nov, nil
 				}
 				return nil, nil
@@ -197,7 +200,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Dec": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Dec, nil
 				}
 				return nil, nil
@@ -206,7 +209,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Color1": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Color1, nil
 				}
 				return nil, nil
@@ -215,7 +218,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"Color2": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.Color2, nil
 				}
 				return nil, nil
@@ -224,7 +227,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"ItemFilename": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.ItemFilename, nil
 				}
 				return nil, nil
@@ -233,7 +236,7 @@ var searchBugOrFishResObj = graphql.NewObject(graphql.ObjectConfig{
 		"InternalID": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.Int),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if entry, ok := p.Source.(*Entry); ok {
+				if entry, ok := p.Source.(*newhorizons.BugEntry); ok {
 					return entry.InternalID, nil
 				}
 				return nil, nil
