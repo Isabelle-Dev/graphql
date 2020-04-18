@@ -31,8 +31,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 
 					item := p.Args["item"].(string)
-
-					entry := findByName(item, "north_bug", db)
+					entry := findBugByName(item, "north_bug", db)
 					if entry == nil {
 						return nil, fmt.Errorf("search(): %v not found", item)
 					}
@@ -41,7 +40,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 			},
 			"search_fish_north": &graphql.Field{
 				Name: "Search a fish from northern hemisphere",
-				Type: graphql.NewNonNull(searchBugResObj),
+				Type: graphql.NewNonNull(searchFishResObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -51,7 +50,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 					item := p.Args["item"].(string)
 
-					entry := findByName(item, "fish_north", db)
+					entry := findFishByName(item, "north_fish", db)
 					if entry == nil {
 						return nil, fmt.Errorf("search(): %v not found", item)
 					}
@@ -70,7 +69,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 					item := p.Args["item"].(string)
 
-					entry := findByName(item, "south_bug", db)
+					entry := findBugByName(item, "south_bug", db)
 					if entry == nil {
 						return nil, fmt.Errorf("search(): %v not found", item)
 					}
@@ -79,7 +78,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 			},
 			"search_fish_south": &graphql.Field{
 				Name: "Search a fish from southern hemisphere",
-				Type: graphql.NewNonNull(searchBugResObj),
+				Type: graphql.NewNonNull(searchFishResObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -89,7 +88,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 					item := p.Args["item"].(string)
 
-					entry := findByName(item, "fish_south", db)
+					entry := findFishByName(item, "south_fish", db)
 					if entry == nil {
 						return nil, fmt.Errorf("search(): %v not found", item)
 					}

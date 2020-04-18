@@ -1,4 +1,4 @@
-Num,Name,Image,House,Sell,Location,Shadow,Rarity,Rain/Snow Catch Up,StartTime,EndTime,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,Color1,Color2,Size,LightingType,CritterpediaFilename,ItemFilename,InternalID
+Num,Name,Image,House,Sell,Location,Shadow,Rarity,RainSnowUp,StartTime,EndTime,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,Color1,Color2,Size,LightingType,CritterpediaFilename,ItemFilename,InternalID
 56,anchovy,https://i.imgur.com/zEICzZj.png,https://storage.googleapis.com/acdb/fish/FtrFishAntyobi.png,200,Sea,Small,Common,No,4:00 AM,9:00 PM,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Blue,Red,1x1,No lighting,,FtrFishAntyobi,4201
 36,angelfish,https://i.imgur.com/dQh34A6.png,https://storage.googleapis.com/acdb/fish/FtrFishAngelfish.png,3000,River,Small,Uncommon,No,4:00 PM,9:00 AM,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yellow,Black,1x1,Fluorescent,,FtrFishAngelfish,2247
 44,arapaima,https://i.imgur.com/lPlNtUw.png,https://storage.googleapis.com/acdb/fish/FtrFishPiraruku.png,10000,River,XX-Large,Rare,Yes,4:00 PM,9:00 AM,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Black,Blue,3x2,No lighting,,FtrFishPiraruku,2253
