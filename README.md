@@ -87,3 +87,7 @@ All **csv data files** and **import code to Postgres** will be located in `csv`.
   }
 }
 ```
+
+**cURL Example (bash):**
+
+`curl -i -H "Content-Type: application/json" -X POST -d '{"query": "query {search{search_bug_north(item: \"cricket\") {Sell,Where}}}"}' http://localhost:4000/`
