@@ -14,6 +14,12 @@ Server is set to run on `localhost:4000`.
 
 All **csv data files** and **import code to Postgres** will be located in `csv`.
 
+## Sample JSON Responses
+
+**Sample JSON** responses can be found in `newhorizons/sample`.
+
+I cut out portions of JSON data returned in `search_all_by_hemisphere` because the file was too long. The API for the search, nevertheless, works.
+
 ## Search
 
 ### Search By Item (Bug or Fish)
@@ -33,51 +39,41 @@ All **csv data files** and **import code to Postgres** will be located in `csv`.
 }
 ```
 
-```json
-{
-  "data": {
-    "search": null
-  },
-  "errors": [
-    {
-      "message": "search(): sunset moth not found",
-      "locations": [
-        {
-          "line": 3,
-          "column": 5
-        }
-      ],
-      "path": [
-        "search",
-        "search_bug_north"
-      ]
-    }
-  ]
-}
-```
-
 **Success Query:**
 
 ```graphql
 {
   bug_and_fish {
-    search_bug_north(item:"ladybug"){
+    search_fish_north(item: "oarfish") {
       Name
       Sell
+      Where
+      StartTime
+      EndTime
+      Shadow
     }
   }
 }
 ```
 
-**Response:**
+### Search ALL By Hemisphere
 
-```json
+```graphql
 {
-  "data": {
-    "bug_and_fish": {
-      "search_bug_north": {
-        "Name": "ladybug",
-        "Sell": 200
+  bug_and_fish {
+    search_all_by_hemisphere(hemi: "north") {
+      bugs {
+        bug {
+          Name
+          InternalID
+        }
+      }
+      fishes {
+        fish {
+          Name
+          Sell
+          Shadow
+        }
       }
     }
   }

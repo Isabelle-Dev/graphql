@@ -1,0 +1,494 @@
+{
+  "data": {
+    "bug_and_fish": {
+      "search_all_by_hemisphere": {
+        "bugs": [
+          {
+            "bug": {
+              "InternalID": 620,
+              "Name": "agrias butterfly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 588,
+              "Name": "ant"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 652,
+              "Name": "Atlas moth"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 622,
+              "Name": "bagworm"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 635,
+              "Name": "banded dragonfly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 642,
+              "Name": "bell cricket"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 3485,
+              "Name": "blue weevil beetle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 582,
+              "Name": "brown cicada"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 628,
+              "Name": "centipede"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 641,
+              "Name": "cicada shell"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 609,
+              "Name": "citrus long-horned beetle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 3477,
+              "Name": "common bluebottle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 626,
+              "Name": "common butterfly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 617,
+              "Name": "cricket"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 602,
+              "Name": "cyclommatus stag"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 5339,
+              "Name": "damselfly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 595,
+              "Name": "darner dragonfly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 594,
+              "Name": "diving beetle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 3480,
+              "Name": "drone beetle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 604,
+              "Name": "dung beetle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 614,
+              "Name": "earth-boring dung beetle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 627,
+              "Name": "emperor butterfly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 601,
+              "Name": "evening cicada"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 603,
+              "Name": "firefly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 633,
+              "Name": "flea"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 597,
+              "Name": "fly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 618,
+              "Name": "giant cicada"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 637,
+              "Name": "giant stag"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 5157,
+              "Name": "giant water bug"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 3482,
+              "Name": "giraffe stag"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 638,
+              "Name": "golden stag"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 596,
+              "Name": "goliath beetle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 613,
+              "Name": "grasshopper"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 3479,
+              "Name": "great purple emperor"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 651,
+              "Name": "hermit crab"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 623,
+              "Name": "honeybee"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 615,
+              "Name": "horned atlas"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 612,
+              "Name": "horned dynastid"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 653,
+              "Name": "horned elephant"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 600,
+              "Name": "horned hercules"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 645,
+              "Name": "jewel beetle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 647,
+              "Name": "ladybug"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 644,
+              "Name": "long locust"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 3484,
+              "Name": "Madagascan sunset moth"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 3483,
+              "Name": "man-faced stink bug"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 607,
+              "Name": "mantis"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 648,
+              "Name": "migratory locust"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 624,
+              "Name": "miyama stag"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 634,
+              "Name": "mole cricket"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 636,
+              "Name": "monarch butterfly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 606,
+              "Name": "mosquito"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 592,
+              "Name": "moth"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 598,
+              "Name": "orchid mantis"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 3478,
+              "Name": "paper kite butterfly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 610,
+              "Name": "peacock butterfly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 590,
+              "Name": "pill bug"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 587,
+              "Name": "pondskater"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 586,
+              "Name": "Queen Alexandra's birdwing"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 631,
+              "Name": "rainbow stag"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 584,
+              "Name": "Rajah Brooke's birdwing"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 585,
+              "Name": "red dragonfly"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 605,
+              "Name": "rice grasshopper"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 621,
+              "Name": "robust cicada"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 3487,
+              "Name": "rosalia batesi beetle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 632,
+              "Name": "saw stag"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 639,
+              "Name": "scarab beetle"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 640,
+              "Name": "scorpion"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 611,
+              "Name": "snail"
+            }
+          },
+          {
+            "bug": {
+              "InternalID": 619,
+              "Name": "spider"
+            }
+		  },
+		            {
+            "fish": {
+              "Name": "sturgeon",
+              "Sell": 10000,
+              "Shadow": "XX-Large"
+            }
+          },
+          {
+            "fish": {
+              "Name": "suckerfish",
+              "Sell": 1500,
+              "Shadow": "Medium w/Fin"
+            }
+          },
+          {
+            "fish": {
+              "Name": "surgeonfish",
+              "Sell": 1000,
+              "Shadow": "Small"
+            }
+          },
+          {
+            "fish": {
+              "Name": "sweetfish",
+              "Sell": 900,
+              "Shadow": "Medium"
+            }
+          },
+          {
+            "fish": {
+              "Name": "tadpole",
+              "Sell": 100,
+              "Shadow": "X-Small"
+            }
+          },
+          {
+            "fish": {
+              "Name": "tilapia",
+              "Sell": 800,
+              "Shadow": "Medium"
+            }
+          },
+          {
+            "fish": {
+              "Name": "tuna",
+              "Sell": 7000,
+              "Shadow": "XX-Large"
+            }
+          },
+          {
+            "fish": {
+              "Name": "whale shark",
+              "Sell": 13000,
+              "Shadow": "Large w/Fin"
+            }
+          },
+          {
+            "fish": {
+              "Name": "yellow perch",
+              "Sell": 300,
+              "Shadow": "Medium"
+            }
+          },
+          {
+            "fish": {
+              "Name": "zebra turkeyfish",
+              "Sell": 500,
+              "Shadow": "Medium"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

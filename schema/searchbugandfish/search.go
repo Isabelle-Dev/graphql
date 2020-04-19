@@ -96,21 +96,28 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				},
 			},
 
-			// "search_all_by_north_hemisphere": &graphql.Field{
-			// 	Name: "Search all bug and fish in the north",
-			// 	Type: graphql.NewNonNull(searchCombinedObj),
-			// 	Args: graphql.FieldConfigArgument{
-			// 		"hemi": &graphql.ArgumentConfig{
-			// 			Type: graphql.String,
-			// 		},
-			// 	},
-			// 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+			"search_all_by_hemisphere": &graphql.Field{
+				Name: "Search all bug and fish in the north",
+				Type: graphql.NewNonNull(searchCombinedObj),
+				Args: graphql.FieldConfigArgument{
+					"hemi": &graphql.ArgumentConfig{
+						Type: graphql.String,
+					},
+				},
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 
-			// 		hemi := p.Args["hemi"].(string)
-			// 		fmt.Println(hemi)
-
-			// 	},
-			// },
+					hemi := p.Args["hemi"].(string)
+					if hemi == "north" {
+						entries := findAllByHemisphere("north_bug", "north_fish", db)
+						return entries, nil
+					} else if hemi == "south" {
+						entries := findAllByHemisphere("south_bug", "south_fish", db)
+						return entries, nil
+					} else {
+						return nil, fmt.Errorf("search(%v): invalid hemisphere search", hemi)
+					}
+				},
+			},
 		},
 	})
 	return bugAndFishSearchObject
