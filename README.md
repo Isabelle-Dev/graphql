@@ -83,3 +83,7 @@ I cut out portions of JSON data returned in `search_all_by_hemisphere` because t
 **cURL Example (bash):**
 
 `curl -i -H "Content-Type: application/json" -X POST -d '{"query": "query {search{search_bug_north(item: \"cricket\") {Sell,Where}}}"}' http://localhost:4000/`
+
+## Contributions
+
+**All data** used in this server was taken from open source New Horizons data, [here](https://docs.google.com/spreadsheets/d/1Hxrdp7oxtK-J5x9u1-rzChUpLtkv3t0_kNGdS6dtyWI/htmlview).
