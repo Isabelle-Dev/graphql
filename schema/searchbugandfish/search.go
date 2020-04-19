@@ -1,4 +1,4 @@
-package search
+package searchbugandfish
 
 import (
 	"fmt"
@@ -7,18 +7,18 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var searchObject *graphql.Object
+var bugAndFishSearchObject *graphql.Object
 
 // RootObject that contains search related queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if searchObject != nil {
-		return searchObject
+	if bugAndFishSearchObject != nil {
+		return bugAndFishSearchObject
 	}
 
 	// Search
-	searchObject = graphql.NewObject(graphql.ObjectConfig{
-		Name:        "Search",
-		Description: "Search-related Sources",
+	bugAndFishSearchObject = graphql.NewObject(graphql.ObjectConfig{
+		Name:        "bug_and_fish",
+		Description: "Bug and Fish-related Sources",
 		Fields: graphql.Fields{
 			"search_bug_north": &graphql.Field{
 				Name: "Search a bug from northern hemisphere",
@@ -95,7 +95,23 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					return entry, nil
 				},
 			},
+
+			// "search_all_by_north_hemisphere": &graphql.Field{
+			// 	Name: "Search all bug and fish in the north",
+			// 	Type: graphql.NewNonNull(searchCombinedObj),
+			// 	Args: graphql.FieldConfigArgument{
+			// 		"hemi": &graphql.ArgumentConfig{
+			// 			Type: graphql.String,
+			// 		},
+			// 	},
+			// 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+
+			// 		hemi := p.Args["hemi"].(string)
+			// 		fmt.Println(hemi)
+
+			// 	},
+			// },
 		},
 	})
-	return searchObject
+	return bugAndFishSearchObject
 }

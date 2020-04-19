@@ -60,12 +60,10 @@ All **csv data files** and **import code to Postgres** will be located in `csv`.
 
 ```graphql
 {
-  search {
-    search_bug_north(item: "common butterfly") {
+  bug_and_fish {
+    search_bug_north(item:"ladybug"){
       Name
       Sell
-      Image
-      StartTime
     }
   }
 }
@@ -76,12 +74,10 @@ All **csv data files** and **import code to Postgres** will be located in `csv`.
 ```json
 {
   "data": {
-    "search": {
+    "bug_and_fish": {
       "search_bug_north": {
-        "Image": "https://i.imgur.com/UJiH4E9.png",
-        "Name": "common butterfly",
-        "Sell": 160,
-        "StartTime": "4:00 AM"
+        "Name": "ladybug",
+        "Sell": 200
       }
     }
   }

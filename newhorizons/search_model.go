@@ -65,3 +65,9 @@ type FishEntry struct {
 	ItemFilename         string `gorm:"not null;column:itemfilename"`
 	InternalID           int    `gorm:"not null;column:internalid"`
 }
+
+// Combined represents the combination of both bug and fish entries in the database
+type Combined struct {
+	Bugs   []BugEntry
+	Fishes []FishEntry
+}

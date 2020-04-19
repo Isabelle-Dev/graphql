@@ -1,4 +1,4 @@
-package search
+package searchbugandfish
 
 import (
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"

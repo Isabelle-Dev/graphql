@@ -1,4 +1,4 @@
-package search
+package searchbugandfish
 
 import (
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
@@ -31,4 +31,19 @@ func findFishByName(item, tablename string, db *gorm.DB) *newhorizons.FishEntry 
 		return nil
 	}
 	return &entry
+}
+
+// findAllByHemisphere returns an object which contains all bug and fish
+// entries depending on hemisphere
+func findAllByHemisphere(bugTable, fishTable string, db *gorm.DB) *newhorizons.Combined {
+	db.RWMutex.RLock()
+	defer db.RWMutex.RUnlock()
+	var b []newhorizons.BugEntry
+	var f []newhorizons.FishEntry
+	db.Raw("SELECT * FROM " + bugTable).Find(&b)
+	db.Raw("SELECT * FROM " + fishTable).Find(&f)
+	return &newhorizons.Combined{
+		Bugs:   b,
+		Fishes: f,
+	}
 }
