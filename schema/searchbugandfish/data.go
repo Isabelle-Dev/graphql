@@ -1,13 +1,25 @@
 package searchbugandfish
 
 import (
+	"strconv"
+
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 	"github.com/jinzhu/gorm"
 )
 
+// findByPrice returns the names of all bug and fish listings that match a given price
+func findByPrice(price int, tableOne, tableTwo string, db *gorm.DB) *[]newhorizons.Listing {
+	db.RWMutex.RLock()
+	defer db.RWMutex.RUnlock()
+	var entries []newhorizons.Listing
+	db.Raw("SELECT name FROM " + tableOne + " WHERE (sell = " + strconv.Itoa(price) +
+		") UNION SELECT name FROM " + tableTwo + " WHERE (sell = " + strconv.Itoa(price) + ")").Find(&entries)
+	return &entries
+}
+
 // findByName retrieves a bug database entry by a given item name
 //
-// If none is found, it will return a nil
+// If none is found, it will return nil
 func findBugByName(item, tablename string, db *gorm.DB) *newhorizons.BugEntry {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()

@@ -118,6 +118,29 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					}
 				},
 			},
+
+			"search_by_price": &graphql.Field{
+				Name: "Search bug or fish names by sell price",
+				Type: graphql.NewNonNull(graphql.NewList(listingsObj)),
+				Args: graphql.FieldConfigArgument{
+					"price": &graphql.ArgumentConfig{
+						Type: graphql.Int,
+					},
+				},
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+
+					price := p.Args["price"].(int)
+					entries := findByPrice(price, "north_bug", "north_fish", db)
+					if len(*entries) == 0 {
+						return nil, fmt.Errorf("search(): no records matching price")
+					}
+					var ret []string
+					for _, i := range *entries {
+						ret = append(ret, i.Name)
+					}
+					return ret, nil
+				},
+			},
 		},
 	})
 	return bugAndFishSearchObject

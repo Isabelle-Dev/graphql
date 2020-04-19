@@ -71,3 +71,10 @@ type Combined struct {
 	Bugs   []BugEntry
 	Fishes []FishEntry
 }
+
+// Listing represents either a bug or fish entry by name
+//
+// Mainly used for parameter search
+type Listing struct {
+	Name string `gorm:"not null"`
+}
