@@ -109,9 +109,15 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					hemi := p.Args["hemi"].(string)
 					if hemi == "north" {
 						entries := findAllByHemisphere("north_bug", "north_fish", db)
+						if entries == nil {
+							return nil, fmt.Errorf("search() by hemi: Error in database connection")
+						}
 						return entries, nil
 					} else if hemi == "south" {
 						entries := findAllByHemisphere("south_bug", "south_fish", db)
+						if entries == nil {
+							return nil, fmt.Errorf("search() by hemi: Error in database connection")
+						}
 						return entries, nil
 					} else {
 						return nil, fmt.Errorf("search(%v): invalid hemisphere search", hemi)
@@ -121,7 +127,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 			"search_by_price": &graphql.Field{
 				Name: "Search bug or fish names by sell price",
-				Type: graphql.NewNonNull(graphql.NewList(listingsObj)),
+				Type: graphql.NewNonNull(searchCombinedObj),
 				Args: graphql.FieldConfigArgument{
 					"price": &graphql.ArgumentConfig{
 						Type: graphql.Int,
@@ -131,14 +137,10 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 					price := p.Args["price"].(int)
 					entries := findByPrice(price, "north_bug", "north_fish", db)
-					if len(*entries) == 0 {
-						return nil, fmt.Errorf("search(): no records matching price")
+					if entries == nil {
+						return nil, fmt.Errorf("search() by price: Error in database connection")
 					}
-					var ret []string
-					for _, i := range *entries {
-						ret = append(ret, i.Name)
-					}
-					return ret, nil
+					return entries, nil
 				},
 			},
 		},

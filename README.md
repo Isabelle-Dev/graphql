@@ -86,4 +86,4 @@ I cut out portions of JSON data returned in `search_all_by_hemisphere` because t
 
 ## Contributions
 
-**All data** used in this server was taken from open source New Horizons data, [here](https://docs.google.com/spreadsheets/d/1Hxrdp7oxtK-J5x9u1-rzChUpLtkv3t0_kNGdS6dtyWI/htmlview).
+**All data** used in this server was taken from open source New Horizons data found [here](https://docs.google.com/spreadsheets/d/1Hxrdp7oxtK-J5x9u1-rzChUpLtkv3t0_kNGdS6dtyWI/htmlview).

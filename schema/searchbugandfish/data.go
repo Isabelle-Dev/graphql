@@ -1,20 +1,28 @@
 package searchbugandfish
 
 import (
-	"strconv"
-
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 	"github.com/jinzhu/gorm"
 )
 
 // findByPrice returns the names of all bug and fish listings that match a given price
-func findByPrice(price int, tableOne, tableTwo string, db *gorm.DB) *[]newhorizons.Listing {
+func findByPrice(price int, bugTable, fishTable string, db *gorm.DB) *newhorizons.Combined {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
-	var entries []newhorizons.Listing
-	db.Raw("SELECT name FROM " + tableOne + " WHERE (sell = " + strconv.Itoa(price) +
-		") UNION SELECT name FROM " + tableTwo + " WHERE (sell = " + strconv.Itoa(price) + ")").Find(&entries)
-	return &entries
+	var b []newhorizons.BugEntry
+	var f []newhorizons.FishEntry
+	err := db.Table(bugTable).Where("sell = ?", price).Find(&b).Error
+	if err != nil {
+		return nil
+	}
+	err = db.Table(fishTable).Where("sell = ?", price).Find(&f).Error
+	if err != nil {
+		return nil
+	}
+	return &newhorizons.Combined{
+		Bugs:   b,
+		Fishes: f,
+	}
 }
 
 // findByName retrieves a bug database entry by a given item name
@@ -52,8 +60,14 @@ func findAllByHemisphere(bugTable, fishTable string, db *gorm.DB) *newhorizons.C
 	defer db.RWMutex.RUnlock()
 	var b []newhorizons.BugEntry
 	var f []newhorizons.FishEntry
-	db.Raw("SELECT * FROM " + bugTable).Find(&b)
-	db.Raw("SELECT * FROM " + fishTable).Find(&f)
+	err := db.Raw("SELECT * FROM " + bugTable).Find(&b).Error
+	if err != nil {
+		return nil
+	}
+	err = db.Raw("SELECT * FROM " + fishTable).Find(&f).Error
+	if err != nil {
+		return nil
+	}
 	return &newhorizons.Combined{
 		Bugs:   b,
 		Fishes: f,

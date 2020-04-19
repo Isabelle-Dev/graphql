@@ -1,29 +1,117 @@
 {
   "data": {
     "bug_and_fish": {
-      "search_by_price": [
-        {
-          "Name": "horned elephant"
-        },
-        {
-          "Name": "horned atlas"
-        },
-        {
-          "Name": "hammerhead shark"
-        },
-        {
-          "Name": "scorpion"
-        },
-        {
-          "Name": "cyclommatus stag"
-        },
-        {
-          "Name": "tarantula"
-        },
-        {
-          "Name": "goliath beetle"
-        }
-      ]
+      "search_by_price": {
+        "bugs": [
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "Name": "cyclommatus stag",
+              "Sell": 8000,
+              "StartTime": "5:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "Name": "goliath beetle",
+              "Sell": 8000,
+              "StartTime": "5:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "Name": "horned atlas",
+              "Sell": 8000,
+              "StartTime": "5:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "Name": "horned elephant",
+              "Sell": 8000,
+              "StartTime": "5:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "4:00 AM",
+              "Name": "scorpion",
+              "Sell": 8000,
+              "StartTime": "7:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "4:00 AM",
+              "Name": "tarantula",
+              "Sell": 8000,
+              "StartTime": "7:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "Name": "cyclommatus stag",
+              "Sell": 8000,
+              "StartTime": "5:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "Name": "goliath beetle",
+              "Sell": 8000,
+              "StartTime": "5:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "Name": "horned atlas",
+              "Sell": 8000,
+              "StartTime": "5:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "Name": "horned elephant",
+              "Sell": 8000,
+              "StartTime": "5:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "4:00 AM",
+              "Name": "scorpion",
+              "Sell": 8000,
+              "StartTime": "7:00 PM"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "4:00 AM",
+              "Name": "tarantula",
+              "Sell": 8000,
+              "StartTime": "7:00 PM"
+            }
+          }
+        ],
+        "fishes": [
+          {
+            "fish": {
+              "Image": "https://i.imgur.com/QrrFojq.png",
+              "Name": "hammerhead shark",
+              "Sell": 8000,
+              "Shadow": "Large w/Fin",
+              "Where": "Sea"
+            }
+          }
+        ]
+      }
     }
   }
 }
