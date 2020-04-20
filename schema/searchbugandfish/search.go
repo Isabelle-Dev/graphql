@@ -143,6 +143,59 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					return entries, nil
 				},
 			},
+
+			"search_by_month": &graphql.Field{
+				Name: "Search bug and fishes by month",
+				Type: graphql.NewNonNull(searchCombinedObj),
+				Args: graphql.FieldConfigArgument{
+					"month": &graphql.ArgumentConfig{
+						Type: graphql.String,
+					},
+					"hemi": &graphql.ArgumentConfig{
+						Type: graphql.String,
+					},
+				},
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+
+					month := p.Args["month"].(string)
+					hemi := p.Args["hemi"].(string)
+					if hemi == "north" {
+						entries := findByMonth(month, "north_bug", "north_fish", db)
+						if entries == nil {
+							return nil, fmt.Errorf("search(): couldn't create month entries")
+						}
+						return entries, nil
+					} else if hemi == "south" {
+						entries := findByMonth(month, "south_bug", "south_fish", db)
+						if entries == nil {
+							return nil, fmt.Errorf("search(): couldn't create month entries")
+						}
+						return entries, nil
+					} else {
+						return nil, fmt.Errorf("search(): invalid hemi in search by month")
+					}
+				},
+			},
+
+			// "search_by_rarity": &graphql.Field{
+			// 	Name: "Search bugs and fishes by rarity",
+			// 	Type: graphql.NewNonNull(searchAgnosticCombinedObj),
+			// 	Args: graphql.FieldConfigArgument{
+			// 		"rarity": &graphql.ArgumentConfig{
+			// 			Type: graphql.String,
+			// 		},
+			// 	},
+			// 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+
+			// 		rarity := p.Args["rarity"].(string)
+			// 		entries := findByRarity(rarity, "north_bug", "north_fish", db)
+			// 		fmt.Println(entries.Bugs)
+			// 		if entries == nil {
+			// 			return nil, fmt.Errorf("search(): rarity search failed")
+			// 		}
+			// 		return entries, nil
+			// 	},
+			// },
 		},
 	})
 	return bugAndFishSearchObject

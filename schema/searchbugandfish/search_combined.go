@@ -11,28 +11,27 @@ var searchCombinedObj = graphql.NewObject(graphql.ObjectConfig{
 	Name: "AllSearchResultsByHemi",
 	Fields: graphql.Fields{
 		"bugs": &graphql.Field{
-			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(CombinedBugsObject))),
+			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(combinedBugsObject))),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Combined); ok {
 					return val.Bugs, nil
 				}
-				return nil, fmt.Errorf("search(): Not a recognized combine struct")
+				return nil, fmt.Errorf("search(): Not a recognized Combined object")
 			},
 		},
 		"fishes": &graphql.Field{
-			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(CombinedFishesObject))),
+			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(combinedFishesObject))),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Combined); ok {
 					return val.Fishes, nil
 				}
-				return nil, fmt.Errorf("search(): Not a recognized combine struct")
+				return nil, fmt.Errorf("search(): Not a recognized Combined object")
 			},
 		},
 	},
 })
 
-// CombinedBugsObject takes a bug entry query, resolves it, and returns the value
-var CombinedBugsObject = graphql.NewObject(graphql.ObjectConfig{
+var combinedBugsObject = graphql.NewObject(graphql.ObjectConfig{
 	Name:        "AllBugsInHemi",
 	Description: "All bugs available currently in hemisphere",
 	Fields: graphql.Fields{
@@ -48,8 +47,7 @@ var CombinedBugsObject = graphql.NewObject(graphql.ObjectConfig{
 	},
 })
 
-// CombinedFishesObject takes a fish entry query, resolves it, and returns the value
-var CombinedFishesObject = graphql.NewObject(graphql.ObjectConfig{
+var combinedFishesObject = graphql.NewObject(graphql.ObjectConfig{
 	Name:        "AllFishesInHemi",
 	Description: "All fishes available currently in hemisphere",
 	Fields: graphql.Fields{

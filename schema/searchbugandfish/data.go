@@ -1,11 +1,54 @@
 package searchbugandfish
 
 import (
+	"fmt"
+
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 	"github.com/jinzhu/gorm"
 )
 
-// findByPrice returns the names of all bug and fish listings that match a given price
+// findByRarity returns all bugs and fishes for a given rarity
+func findByRarity(rarity, bugTable, fishTable string, db *gorm.DB) *newhorizons.CombinedAgnostic {
+	db.RWMutex.RLock()
+	defer db.RWMutex.RUnlock()
+	var b []newhorizons.BugTimeAgnostic
+	var f []newhorizons.FishTimeAgnostic
+	err := db.Table(bugTable).Where("rarity = ?", rarity).Find(&b).Error
+	if err != nil {
+		return nil
+	}
+	err = db.Table(fishTable).Where("rarity = ?", rarity).Find(&f).Error
+	if err != nil {
+		return nil
+	}
+	return &newhorizons.CombinedAgnostic{
+		Bugs:   b,
+		Fishes: f,
+	}
+}
+
+// findByMonth will return an object with all bugs and fishes available in a given month
+func findByMonth(month, bugTable, fishTable string, db *gorm.DB) *newhorizons.Combined {
+	db.RWMutex.RLock()
+	defer db.RWMutex.RUnlock()
+	var b []newhorizons.BugEntry
+	var f []newhorizons.FishEntry
+	err := db.Table(bugTable).Where(month+" = ?", "Yes").Find(&b).Error
+	if err != nil {
+		return nil
+
+	}
+	err = db.Table(fishTable).Where(month+" = ?", "Yes").Find(&f).Error
+	if err != nil {
+		return nil
+	}
+	return &newhorizons.Combined{
+		Bugs:   b,
+		Fishes: f,
+	}
+}
+
+// findByPrice returns the object of all bug and fish listings that match a given price
 func findByPrice(price int, bugTable, fishTable string, db *gorm.DB) *newhorizons.Combined {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
@@ -19,6 +62,7 @@ func findByPrice(price int, bugTable, fishTable string, db *gorm.DB) *newhorizon
 	if err != nil {
 		return nil
 	}
+	fmt.Println(b)
 	return &newhorizons.Combined{
 		Bugs:   b,
 		Fishes: f,
