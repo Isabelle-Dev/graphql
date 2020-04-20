@@ -115,6 +115,8 @@ type Combined struct {
 	Fishes []FishEntry
 }
 
+// CombinedAgnostic represents the combination of both bug and fish entries that aren't
+// dependent on time via hemisphere
 type CombinedAgnostic struct {
 	Bugs   []BugTimeAgnostic
 	Fishes []FishTimeAgnostic

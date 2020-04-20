@@ -1,0 +1,208 @@
+{
+  "data": {
+    "bug_and_fish": {
+      "search_by_rarity": {
+        "bugs": [
+          {
+            "bug": {
+              "Name": "banded dragonfly",
+              "Rarity": "Rare",
+              "Sell": 4500
+            }
+          },
+          {
+            "bug": {
+              "Name": "cicada shell",
+              "Rarity": "Rare",
+              "Sell": 10
+            }
+          },
+          {
+            "bug": {
+              "Name": "giant stag",
+              "Rarity": "Rare",
+              "Sell": 10000
+            }
+          },
+          {
+            "bug": {
+              "Name": "giant water bug",
+              "Rarity": "Rare",
+              "Sell": 2000
+            }
+          },
+          {
+            "bug": {
+              "Name": "great purple emperor",
+              "Rarity": "Rare",
+              "Sell": 3000
+            }
+          },
+          {
+            "bug": {
+              "Name": "Queen Alexandra's birdwing",
+              "Rarity": "Rare",
+              "Sell": 4000
+            }
+          },
+          {
+            "bug": {
+              "Name": "rainbow stag",
+              "Rarity": "Rare",
+              "Sell": 6000
+            }
+          },
+          {
+            "bug": {
+              "Name": "scarab beetle",
+              "Rarity": "Rare",
+              "Sell": 10000
+            }
+          },
+          {
+            "bug": {
+              "Name": "banded dragonfly",
+              "Rarity": "Rare",
+              "Sell": 4500
+            }
+          },
+          {
+            "bug": {
+              "Name": "cicada shell",
+              "Rarity": "Rare",
+              "Sell": 10
+            }
+          },
+          {
+            "bug": {
+              "Name": "giant stag",
+              "Rarity": "Rare",
+              "Sell": 10000
+            }
+          },
+          {
+            "bug": {
+              "Name": "giant water bug",
+              "Rarity": "Rare",
+              "Sell": 2000
+            }
+          },
+          {
+            "bug": {
+              "Name": "great purple emperor",
+              "Rarity": "Rare",
+              "Sell": 3000
+            }
+          },
+          {
+            "bug": {
+              "Name": "queen alexandra's birdwing",
+              "Rarity": "Rare",
+              "Sell": 4000
+            }
+          },
+          {
+            "bug": {
+              "Name": "rainbow stag",
+              "Rarity": "Rare",
+              "Sell": 6000
+            }
+          },
+          {
+            "bug": {
+              "Name": "scarab beetle",
+              "Rarity": "Rare",
+              "Sell": 10000
+            }
+          }
+        ],
+        "fishes": [
+          {
+            "fish": {
+              "Name": "arapaima",
+              "Rarity": "Rare",
+              "Sell": 10000
+            }
+          },
+          {
+            "fish": {
+              "Name": "arowana",
+              "Rarity": "Rare",
+              "Sell": 10000
+            }
+          },
+          {
+            "fish": {
+              "Name": "blue marlin",
+              "Rarity": "Rare",
+              "Sell": 10000
+            }
+          },
+          {
+            "fish": {
+              "Name": "gar",
+              "Rarity": "Rare",
+              "Sell": 6000
+            }
+          },
+          {
+            "fish": {
+              "Name": "giant snakehead",
+              "Rarity": "Rare",
+              "Sell": 5500
+            }
+          },
+          {
+            "fish": {
+              "Name": "great white shark",
+              "Rarity": "Rare",
+              "Sell": 15000
+            }
+          },
+          {
+            "fish": {
+              "Name": "mahi-mahi",
+              "Rarity": "Rare",
+              "Sell": 6000
+            }
+          },
+          {
+            "fish": {
+              "Name": "napoleonfish",
+              "Rarity": "Rare",
+              "Sell": 10000
+            }
+          },
+          {
+            "fish": {
+              "Name": "oarfish",
+              "Rarity": "Rare",
+              "Sell": 9000
+            }
+          },
+          {
+            "fish": {
+              "Name": "saw shark",
+              "Rarity": "Rare",
+              "Sell": 12000
+            }
+          },
+          {
+            "fish": {
+              "Name": "tuna",
+              "Rarity": "Rare",
+              "Sell": 7000
+            }
+          },
+          {
+            "fish": {
+              "Name": "whale shark",
+              "Rarity": "Rare",
+              "Sell": 13000
+            }
+          }
+        ]
+      }
+    }
+  }
+}

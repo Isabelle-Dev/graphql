@@ -21,7 +21,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		Description: "Bug and Fish-related Sources",
 		Fields: graphql.Fields{
 			"search_bug_north": &graphql.Field{
-				Name: "Search a bug from northern hemisphere",
+				Name: "SearchABugFromNorthernHemisphere",
 				Type: graphql.NewNonNull(searchBugResObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
@@ -39,7 +39,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				},
 			},
 			"search_fish_north": &graphql.Field{
-				Name: "Search a fish from northern hemisphere",
+				Name: "SearchAFishFromNorthernHemisphere",
 				Type: graphql.NewNonNull(searchFishResObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
@@ -58,7 +58,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				},
 			},
 			"search_bug_south": &graphql.Field{
-				Name: "Search a bug from southern hemisphere",
+				Name: "SearchABugFromSouthernHemisphere",
 				Type: graphql.NewNonNull(searchBugResObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
@@ -77,7 +77,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				},
 			},
 			"search_fish_south": &graphql.Field{
-				Name: "Search a fish from southern hemisphere",
+				Name: "SearchAFishFromSouthernHemisphere",
 				Type: graphql.NewNonNull(searchFishResObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
@@ -97,7 +97,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 			},
 
 			"search_all_by_hemisphere": &graphql.Field{
-				Name: "Search all bug and fish in the north",
+				Name: "SearchAllBugAndFishInTheNorth",
 				Type: graphql.NewNonNull(searchCombinedObj),
 				Args: graphql.FieldConfigArgument{
 					"hemi": &graphql.ArgumentConfig{
@@ -126,8 +126,8 @@ func RootObject(db *gorm.DB) *graphql.Object {
 			},
 
 			"search_by_price": &graphql.Field{
-				Name: "Search bug or fish names by sell price",
-				Type: graphql.NewNonNull(searchCombinedObj),
+				Name: "SearchBugOrFishNamesBySellPrice",
+				Type: graphql.NewNonNull(searchAgnosticObj),
 				Args: graphql.FieldConfigArgument{
 					"price": &graphql.ArgumentConfig{
 						Type: graphql.Int,
@@ -145,7 +145,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 			},
 
 			"search_by_month": &graphql.Field{
-				Name: "Search bug and fishes by month",
+				Name: "SearchBugAndFishesByMonth",
 				Type: graphql.NewNonNull(searchCombinedObj),
 				Args: graphql.FieldConfigArgument{
 					"month": &graphql.ArgumentConfig{
@@ -177,25 +177,24 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				},
 			},
 
-			// "search_by_rarity": &graphql.Field{
-			// 	Name: "Search bugs and fishes by rarity",
-			// 	Type: graphql.NewNonNull(searchAgnosticCombinedObj),
-			// 	Args: graphql.FieldConfigArgument{
-			// 		"rarity": &graphql.ArgumentConfig{
-			// 			Type: graphql.String,
-			// 		},
-			// 	},
-			// 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+			"search_by_rarity": &graphql.Field{
+				Name: "SearchBugsAndFishesByRarity",
+				Type: graphql.NewNonNull(searchAgnosticObj),
+				Args: graphql.FieldConfigArgument{
+					"rarity": &graphql.ArgumentConfig{
+						Type: graphql.String,
+					},
+				},
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 
-			// 		rarity := p.Args["rarity"].(string)
-			// 		entries := findByRarity(rarity, "north_bug", "north_fish", db)
-			// 		fmt.Println(entries.Bugs)
-			// 		if entries == nil {
-			// 			return nil, fmt.Errorf("search(): rarity search failed")
-			// 		}
-			// 		return entries, nil
-			// 	},
-			// },
+					rarity := p.Args["rarity"].(string)
+					entries := findByRarity(rarity, "north_bug", "north_fish", db)
+					if entries == nil {
+						return nil, fmt.Errorf("search(): rarity search failed")
+					}
+					return entries, nil
+				},
+			},
 		},
 	})
 	return bugAndFishSearchObject

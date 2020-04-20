@@ -1,8 +1,6 @@
 package searchbugandfish
 
 import (
-	"fmt"
-
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 	"github.com/jinzhu/gorm"
 )
@@ -49,11 +47,11 @@ func findByMonth(month, bugTable, fishTable string, db *gorm.DB) *newhorizons.Co
 }
 
 // findByPrice returns the object of all bug and fish listings that match a given price
-func findByPrice(price int, bugTable, fishTable string, db *gorm.DB) *newhorizons.Combined {
+func findByPrice(price int, bugTable, fishTable string, db *gorm.DB) *newhorizons.CombinedAgnostic {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
-	var b []newhorizons.BugEntry
-	var f []newhorizons.FishEntry
+	var b []newhorizons.BugTimeAgnostic
+	var f []newhorizons.FishTimeAgnostic
 	err := db.Table(bugTable).Where("sell = ?", price).Find(&b).Error
 	if err != nil {
 		return nil
@@ -62,8 +60,7 @@ func findByPrice(price int, bugTable, fishTable string, db *gorm.DB) *newhorizon
 	if err != nil {
 		return nil
 	}
-	fmt.Println(b)
-	return &newhorizons.Combined{
+	return &newhorizons.CombinedAgnostic{
 		Bugs:   b,
 		Fishes: f,
 	}
