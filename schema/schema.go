@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/searchbugandfish"
+	"github.com/Isabelle-Dev/isabelle-graphql/schema/searchitem"
 	"github.com/graphql-go/graphql"
 	"github.com/jinzhu/gorm"
 
@@ -33,6 +34,13 @@ func init() {
 			"bug_and_fish": &graphql.Field{
 				Description: "Bug and fish search-related queries",
 				Type:        searchbugandfish.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"item": &graphql.Field{
+				Description: "Item-related queries",
+				Type:        searchitem.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},

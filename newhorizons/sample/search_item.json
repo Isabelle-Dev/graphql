@@ -1,0 +1,73 @@
+{
+  "data": {
+    "item": {
+      "search_item": {
+        "items": [
+          {
+            "item": {
+              "BodyTitle": "NA",
+              "Color1": "",
+              "Color2": "",
+              "DIY": "No",
+              "HHAConcept1": "living room",
+              "HHASeries": "antique",
+              "HHASet": "None",
+              "Image": "https://storage.googleapis.com/acdb/housewares/FtrAntiqueTableL_Remake_0_0.png",
+              "Interact": "No",
+              "InternalID": 3952,
+              "Name": "antique table",
+              "PatternTitle": "NA",
+              "Sell": 6250,
+              "Source": "Nook's Cranny",
+              "VariantID": "0_0",
+              "Variation": "Brown",
+              "Version": "1.0.0"
+            }
+          },
+          {
+            "item": {
+              "BodyTitle": "NA",
+              "Color1": "",
+              "Color2": "",
+              "DIY": "No",
+              "HHAConcept1": "living room",
+              "HHASeries": "antique",
+              "HHASet": "None",
+              "Image": "https://storage.googleapis.com/acdb/housewares/FtrAntiqueTableL_Remake_1_0.png",
+              "Interact": "No",
+              "InternalID": 3952,
+              "Name": "antique table",
+              "PatternTitle": "NA",
+              "Sell": 6250,
+              "Source": "Nook's Cranny",
+              "VariantID": "1_0",
+              "Variation": "Natural",
+              "Version": "1.0.0"
+            }
+          },
+          {
+            "item": {
+              "BodyTitle": "NA",
+              "Color1": "",
+              "Color2": "",
+              "DIY": "No",
+              "HHAConcept1": "living room",
+              "HHASeries": "antique",
+              "HHASet": "None",
+              "Image": "https://storage.googleapis.com/acdb/housewares/FtrAntiqueTableL_Remake_2_0.png",
+              "Interact": "No",
+              "InternalID": 3952,
+              "Name": "antique table",
+              "PatternTitle": "NA",
+              "Sell": 6250,
+              "Source": "Nook's Cranny",
+              "VariantID": "2_0",
+              "Variation": "Black",
+              "Version": "1.0.0"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
