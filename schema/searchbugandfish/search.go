@@ -195,6 +195,25 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					return entries, nil
 				},
 			},
+
+			"search_by_shadow": &graphql.Field{
+				Name: "SearchAFishByShadowSize",
+				Type: graphql.NewNonNull(graphql.NewList(agCombinedFishObj)),
+				Args: graphql.FieldConfigArgument{
+					"shadow": &graphql.ArgumentConfig{
+						Type: graphql.String,
+					},
+				},
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+
+					shadow := p.Args["shadow"].(string)
+					entries := findByShadow(shadow, "north_fish", db)
+					if entries == nil {
+						return nil, fmt.Errorf("search(): shadow search failed")
+					}
+					return entries, nil
+				},
+			},
 		},
 	})
 	return bugAndFishSearchObject

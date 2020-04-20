@@ -5,6 +5,17 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+func findByShadow(shadow, fishTable string, db *gorm.DB) []newhorizons.FishTimeAgnostic {
+	db.RWMutex.RLock()
+	defer db.RWMutex.RUnlock()
+	var f []newhorizons.FishTimeAgnostic
+	err := db.Table(fishTable).Where("shadow = ?", shadow).Find(&f).Error
+	if err != nil {
+		return nil
+	}
+	return f
+}
+
 // findByRarity returns all bugs and fishes for a given rarity
 func findByRarity(rarity, bugTable, fishTable string, db *gorm.DB) *newhorizons.CombinedAgnostic {
 	db.RWMutex.RLock()

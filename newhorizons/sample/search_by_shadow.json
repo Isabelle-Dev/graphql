@@ -1,0 +1,57 @@
+{
+  "data": {
+    "bug_and_fish": {
+      "search_by_shadow": [
+        {
+          "fish": {
+            "Name": "arapaima",
+            "Sell": 10000,
+            "Shadow": "XX-Large"
+          }
+        },
+        {
+          "fish": {
+            "Name": "blue marlin",
+            "Sell": 10000,
+            "Shadow": "XX-Large"
+          }
+        },
+        {
+          "fish": {
+            "Name": "coelacanth",
+            "Sell": 15000,
+            "Shadow": "XX-Large"
+          }
+        },
+        {
+          "fish": {
+            "Name": "napoleonfish",
+            "Sell": 10000,
+            "Shadow": "XX-Large"
+          }
+        },
+        {
+          "fish": {
+            "Name": "oarfish",
+            "Sell": 9000,
+            "Shadow": "XX-Large"
+          }
+        },
+        {
+          "fish": {
+            "Name": "sturgeon",
+            "Sell": 10000,
+            "Shadow": "XX-Large"
+          }
+        },
+        {
+          "fish": {
+            "Name": "tuna",
+            "Sell": 7000,
+            "Shadow": "XX-Large"
+          }
+        }
+      ]
+    }
+  }
+}
