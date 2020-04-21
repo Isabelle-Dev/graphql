@@ -21,7 +21,7 @@ type Item struct {
 	SourceNotes      string `gorm:"column:sourcenotes"`
 	Version          string
 	HHAConcept1      string `gorm:"column:hhaconcept1"`
-	HHAConcept2      string `gorm:"column:hhaconcpet2"`
+	HHAConcept2      string `gorm:"column:hhaconcept2"`
 	HHASeries        string `gorm:"column:hhaseries"`
 	HHASet           string `gorm:"column:hhaset"`
 	Interact         string

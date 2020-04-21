@@ -38,6 +38,25 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					return entries, nil
 				},
 			},
+
+			"search_by_color_variant": &graphql.Field{
+				Name: "search_by_color_variant",
+				Type: graphql.NewNonNull(searchItemObj),
+				Args: graphql.FieldConfigArgument{
+					"color": &graphql.ArgumentConfig{
+						Type: graphql.String,
+					},
+				},
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+
+					color := p.Args["color"].(string)
+					entries := findByColor(color, "housewares", db)
+					if entries == nil {
+						return nil, fmt.Errorf("search_color(): error retrieving entries")
+					}
+					return entries, nil
+				},
+			},
 		},
 	})
 

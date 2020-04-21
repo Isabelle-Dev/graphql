@@ -1,0 +1,24 @@
+{
+  "data": {
+    "item": {
+      "search_by_color_variant": {
+        "items": [
+          {
+            "item": {
+              "Name": "acoustic guitar",
+              "Pattern": "NA",
+              "Variation": "Cherry"
+            }
+          },
+          {
+            "item": {
+              "Name": "grand piano",
+              "Pattern": "NA",
+              "Variation": "Cherry"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
