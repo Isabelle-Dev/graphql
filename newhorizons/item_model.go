@@ -33,3 +33,34 @@ type Item struct {
 	VariantID        string `gorm:"column:variantid"`
 	InternalID       int    `gorm:"column:internalid"`
 }
+
+type ModifiedItem struct {
+	Name             string
+	Image            []string
+	Variation        []string
+	BodyTitle        string
+	Pattern          []string
+	PatternTitle     string
+	DIY              string
+	BodyCustomize    string
+	PatternCustomize string
+	KitCost          string
+	Buy              string
+	Sell             int
+	Color1           string
+	Color2           string
+	Size             string
+	Source           string
+	SourceNotes      string
+	Version          string
+	HHAConcept1      string
+	HHAConcept2      string
+	HHASeries        string
+	HHASet           string
+	Interact         string
+	Tag              string
+	SpeakerType      string
+	LightingType     string
+	Catalog          string
+	InternalID       int
+}

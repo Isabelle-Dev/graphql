@@ -2,71 +2,46 @@
   "data": {
     "item": {
       "search_item": {
-        "items": [
-          {
-            "item": {
-              "BodyTitle": "NA",
-              "Color1": "",
-              "Color2": "",
-              "DIY": "No",
-              "HHAConcept1": "living room",
-              "HHASeries": "antique",
-              "HHASet": "None",
-              "Image": "https://storage.googleapis.com/acdb/housewares/FtrAntiqueTableL_Remake_0_0.png",
-              "Interact": "No",
-              "InternalID": 3952,
-              "Name": "antique table",
-              "PatternTitle": "NA",
-              "Sell": 6250,
-              "Source": "Nook's Cranny",
-              "VariantID": "0_0",
-              "Variation": "Brown",
-              "Version": "1.0.0"
-            }
-          },
-          {
-            "item": {
-              "BodyTitle": "NA",
-              "Color1": "",
-              "Color2": "",
-              "DIY": "No",
-              "HHAConcept1": "living room",
-              "HHASeries": "antique",
-              "HHASet": "None",
-              "Image": "https://storage.googleapis.com/acdb/housewares/FtrAntiqueTableL_Remake_1_0.png",
-              "Interact": "No",
-              "InternalID": 3952,
-              "Name": "antique table",
-              "PatternTitle": "NA",
-              "Sell": 6250,
-              "Source": "Nook's Cranny",
-              "VariantID": "1_0",
-              "Variation": "Natural",
-              "Version": "1.0.0"
-            }
-          },
-          {
-            "item": {
-              "BodyTitle": "NA",
-              "Color1": "",
-              "Color2": "",
-              "DIY": "No",
-              "HHAConcept1": "living room",
-              "HHASeries": "antique",
-              "HHASet": "None",
-              "Image": "https://storage.googleapis.com/acdb/housewares/FtrAntiqueTableL_Remake_2_0.png",
-              "Interact": "No",
-              "InternalID": 3952,
-              "Name": "antique table",
-              "PatternTitle": "NA",
-              "Sell": 6250,
-              "Source": "Nook's Cranny",
-              "VariantID": "2_0",
-              "Variation": "Black",
-              "Version": "1.0.0"
-            }
-          }
-        ]
+        "item": {
+          "BodyCustomize": "Yes",
+          "BodyTitle": "Body",
+          "Buy": "NFS",
+          "Catalog": "Not for sale",
+          "Color1": "",
+          "Color2": "",
+          "DIY": "Yes",
+          "HHAConcept1": "music",
+          "HHAConcept2": "None",
+          "HHASeries": "None",
+          "HHASet": "None",
+          "Image": [
+            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_0_0.png",
+            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_1_0.png",
+            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_2_0.png",
+            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_3_0.png",
+            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_4_0.png",
+            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_5_0.png",
+            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_6_0.png"
+          ],
+          "Interact": "Yes",
+          "InternalID": 383,
+          "LightingType": "No lighting",
+          "Name": "acoustic guitar",
+          "Pattern": [],
+          "Sell": 3210,
+          "Source": "Crafting",
+          "Tag": "Musical Instrument",
+          "Variation": [
+            "Natural",
+            "Cherry",
+            "Brown",
+            "Blue",
+            "White",
+            "Black",
+            "Pink"
+          ],
+          "Version": "1.0.0"
+        }
       }
     }
   }

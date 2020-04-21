@@ -22,7 +22,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		Fields: graphql.Fields{
 			"search_item": &graphql.Field{
 				Name: "search_by_item_name",
-				Type: graphql.NewNonNull(searchItemObj),
+				Type: graphql.NewNonNull(itemModifiedObj),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
 						Type: graphql.String,

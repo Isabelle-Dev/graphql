@@ -36,3 +36,18 @@ var itemObj = graphql.NewObject(graphql.ObjectConfig{
 		},
 	},
 })
+
+var itemModifiedObj = graphql.NewObject(graphql.ObjectConfig{
+	Name: "IndividualModifiedItem",
+	Fields: graphql.Fields{
+		"item": &graphql.Field{
+			Type: graphql.NewNonNull(itemModified),
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.(*newhorizons.ModifiedItem); ok {
+					return *val, nil
+				}
+				return nil, nil
+			},
+		},
+	},
+})
