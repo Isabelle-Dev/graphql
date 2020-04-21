@@ -7,7 +7,7 @@ Server is set to run on `localhost:4000`.
 * Setup PostgreSQL
 * Create and configure `.config` file using `example.config` as template
 * Import data using `csv` files
-* `go build`
+* `go build -o isabelle-graphql.exe`
 * `./isabelle-graphql.exe`
 
 ## CSV Data
@@ -20,24 +20,7 @@ All **csv data files** and **import code to Postgres** will be located in `csv`.
 
 I cut out portions of JSON data returned in `search_all_by_hemisphere` because the file was too long. The API for the search, nevertheless, works.
 
-## Search
-
-### Search By Item (Bug or Fish)
-
-**Failed Query:**
-
-```graphql
-{
-  search {
-    search_bug_north(item: "sunset moth") {
-      Name
-      Sell
-      Image
-      StartTime
-    }
-  }
-}
-```
+## Search Example Queries
 
 **Success Query:**
 
@@ -80,9 +63,11 @@ I cut out portions of JSON data returned in `search_all_by_hemisphere` because t
 }
 ```
 
-**cURL Example (bash):**
+**cURL Examples (bash):**
 
-`curl -i -H "Content-Type: application/json" -X POST -d '{"query": "query {search{search_bug_north(item: \"cricket\") {Sell,Where}}}"}' http://localhost:4000/`
+`curl -i -H "Content-Type: application/json" -X POST -d '{"query": "query {bug_and_fish{search_fish_north(item: \"oarfish\") {Name, Sell, Where, Shadow}}}"}' http://localhost:4000/`
+
+`curl -i -H "Content-Type: application/json" -X POST -d '{"query": "query {item{search_item(item: \"acoustic guitar\") {items{item{Name, Sell, PatternTitle, Variation}}}}}"}' http://localhost:4000/`
 
 ## Contributions
 
