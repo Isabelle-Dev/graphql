@@ -20,7 +20,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		Name:        "bug_and_fish",
 		Description: "Bug and Fish-related Sources",
 		Fields: graphql.Fields{
-			"search_bug_north": &graphql.Field{
+			"search_bug": &graphql.Field{
 				Name: "SearchABugFromNorthernHemisphere",
 				Type: graphql.NewNonNull(searchBugResObj),
 				Args: graphql.FieldConfigArgument{
@@ -31,14 +31,14 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 
 					item := p.Args["item"].(string)
-					entry := findBugByName(item, "north_bug", db)
+					entry := findBugByName(item, "north_bug", "south_bug", db)
 					if entry == nil {
 						return nil, fmt.Errorf("search(): %v not found", item)
 					}
 					return entry, nil
 				},
 			},
-			"search_fish_north": &graphql.Field{
+			"search_fish": &graphql.Field{
 				Name: "SearchAFishFromNorthernHemisphere",
 				Type: graphql.NewNonNull(searchFishResObj),
 				Args: graphql.FieldConfigArgument{
@@ -50,45 +50,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 					item := p.Args["item"].(string)
 
-					entry := findFishByName(item, "north_fish", db)
-					if entry == nil {
-						return nil, fmt.Errorf("search(): %v not found", item)
-					}
-					return entry, nil
-				},
-			},
-			"search_bug_south": &graphql.Field{
-				Name: "SearchABugFromSouthernHemisphere",
-				Type: graphql.NewNonNull(searchBugResObj),
-				Args: graphql.FieldConfigArgument{
-					"item": &graphql.ArgumentConfig{
-						Type: graphql.String,
-					},
-				},
-				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-
-					item := p.Args["item"].(string)
-
-					entry := findBugByName(item, "south_bug", db)
-					if entry == nil {
-						return nil, fmt.Errorf("search(): %v not found", item)
-					}
-					return entry, nil
-				},
-			},
-			"search_fish_south": &graphql.Field{
-				Name: "SearchAFishFromSouthernHemisphere",
-				Type: graphql.NewNonNull(searchFishResObj),
-				Args: graphql.FieldConfigArgument{
-					"item": &graphql.ArgumentConfig{
-						Type: graphql.String,
-					},
-				},
-				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-
-					item := p.Args["item"].(string)
-
-					entry := findFishByName(item, "south_fish", db)
+					entry := findFishByName(item, "north_fish", "south_fish", db)
 					if entry == nil {
 						return nil, fmt.Errorf("search(): %v not found", item)
 					}

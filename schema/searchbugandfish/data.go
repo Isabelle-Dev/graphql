@@ -80,29 +80,41 @@ func findByPrice(price int, bugTable, fishTable string, db *gorm.DB) *newhorizon
 // findByName retrieves a bug database entry by a given item name
 //
 // If none is found, it will return nil
-func findBugByName(item, tablename string, db *gorm.DB) *newhorizons.BugEntry {
+func findBugByName(item, northTable, southTable string, db *gorm.DB) interface{} {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
 	var entry newhorizons.BugEntry
-	err := db.Table(tablename).Where("name = ?", item).First(&entry).Error
+	err := db.Table(northTable).Where("name = ?", item).First(&entry).Error
 	if err == gorm.ErrRecordNotFound {
 		return nil
 	}
-	return &entry
+	northMonths := extractMonths(entry)
+	err = db.Table(southTable).Where("name = ?", item).First(&entry).Error
+	if err == gorm.ErrRecordNotFound {
+		return nil
+	}
+	southMonths := extractMonths(entry)
+	return entry.ToGraphQL(northMonths, southMonths)
 }
 
 // findByName retrieves a fish database entry by a given item name
 //
 // If none is found, it will return nil
-func findFishByName(item, tablename string, db *gorm.DB) *newhorizons.FishEntry {
+func findFishByName(item, northTable, southTable string, db *gorm.DB) interface{} {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
 	var entry newhorizons.FishEntry
-	err := db.Table(tablename).Where("name = ?", item).First(&entry).Error
+	err := db.Table(northTable).Where("name = ?", item).First(&entry).Error
 	if err == gorm.ErrRecordNotFound {
 		return nil
 	}
-	return &entry
+	northMonths := extractMonths(entry)
+	err = db.Table(southTable).Where("name = ?", item).First(&entry).Error
+	if err == gorm.ErrRecordNotFound {
+		return nil
+	}
+	southMonths := extractMonths(entry)
+	return entry.ToGraphQL(northMonths, southMonths)
 }
 
 // findAllByHemisphere returns an object which contains all bug and fish

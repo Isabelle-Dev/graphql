@@ -1,5 +1,86 @@
 package newhorizons
 
+// ToGraphQL (FishEntry) formats the entry into an object that graphql will be
+// able to parse
+func (f FishEntry) ToGraphQL(north, south []string) interface{} {
+	return &Fish{
+		Name:       f.Name,
+		Image:      f.Image,
+		House:      f.House,
+		Sell:       f.Sell,
+		Where:      f.Where,
+		Shadow:     f.Shadow,
+		Rarity:     f.Rarity,
+		RainSnowUp: f.RainSnowUp,
+		StartTime:  f.StartTime,
+		EndTime:    f.EndTime,
+		NorthernHemi: Hemi{
+			Months: north,
+		},
+		SouthernHemi: Hemi{
+			Months: south,
+		},
+	}
+}
+
+// Fish represents a Fish entry that will be displayed via graphql
+type Fish struct {
+	Name         string
+	Image        string
+	House        string
+	Sell         int
+	Where        string
+	Shadow       string
+	Rarity       string
+	RainSnowUp   string
+	StartTime    string
+	EndTime      string
+	NorthernHemi Hemi
+	SouthernHemi Hemi
+}
+
+// ToGraphQL (BugEntry) formats the entry into an object that graphql will be
+// able to parse
+func (b BugEntry) ToGraphQL(northMonths, southMonths []string) interface{} {
+	return &Bug{
+		Name:      b.Name,
+		Image:     b.Image,
+		House:     b.House,
+		Sell:      b.Sell,
+		Where:     b.Where,
+		Weather:   b.Weather,
+		Rarity:    b.Rarity,
+		StartTime: b.StartTime,
+		EndTime:   b.EndTime,
+		NorthernHemi: Hemi{
+			Months: northMonths,
+		},
+		SouthernHemi: Hemi{
+			Months: southMonths,
+		},
+	}
+}
+
+// Bug represents a Bug entry that will be displayed via graphql
+type Bug struct {
+	Name         string
+	Image        string
+	House        string
+	Sell         int
+	Where        string
+	Weather      string
+	Rarity       string
+	StartTime    string
+	EndTime      string
+	NorthernHemi Hemi
+	SouthernHemi Hemi
+}
+
+// Hemi represents hemishere data by months
+type Hemi struct {
+	Months []string
+}
+
 // BugEntry represents a database entry of a bug
 // in the postgres database
 type BugEntry struct {

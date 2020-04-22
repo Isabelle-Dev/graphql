@@ -34,6 +34,9 @@ type Item struct {
 	InternalID       int    `gorm:"column:internalid"`
 }
 
+// ModifiedItem represents an item from houseware with nested multiple values.
+//
+// This definition removes item variant data such as filename and variantID
 type ModifiedItem struct {
 	Name             string
 	Image            []string

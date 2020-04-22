@@ -27,7 +27,7 @@ I cut out portions of JSON data returned in `search_all_by_hemisphere` because t
 ```graphql
 {
   bug_and_fish {
-    search_fish_north(item: "oarfish") {
+    search_fish(item: "oarfish") {
       Name
       Sell
       Where
@@ -65,7 +65,7 @@ I cut out portions of JSON data returned in `search_all_by_hemisphere` because t
 
 **cURL Examples (bash):**
 
-`curl -i -H "Content-Type: application/json" -X POST -d '{"query": "query {bug_and_fish{search_fish_north(item: \"oarfish\") {Name, Sell, Where, Shadow}}}"}' http://localhost:4000/`
+`curl -i -H "Content-Type: application/json" -X POST -d '{"query": "query {bug_and_fish{search_fish(item: \"oarfish\") {Name, Sell, Where, Shadow}}}"}' http://localhost:4000/`
 
 `curl -i -H "Content-Type: application/json" -X POST -d '{"query": "query {item{search_item(item: \"acoustic guitar\") {items{item{Name, Sell, PatternTitle, Variation}}}}}"}' http://localhost:4000/`
 
