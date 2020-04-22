@@ -34,7 +34,7 @@ func extractMonths(entry interface{}) []string {
 	return ret
 }
 
-// help func to check if a month name exists in confirmed month list
+// helper func to check if a month name exists in confirmed month list
 func contains(name string, months []string) bool {
 	for _, m := range months {
 		if name == m {

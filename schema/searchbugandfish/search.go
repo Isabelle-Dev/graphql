@@ -89,7 +89,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 			"search_by_price": &graphql.Field{
 				Name: "SearchBugOrFishNamesBySellPrice",
-				Type: graphql.NewNonNull(searchAgnosticObj),
+				Type: graphql.NewNonNull(searchCombinedObj),
 				Args: graphql.FieldConfigArgument{
 					"price": &graphql.ArgumentConfig{
 						Type: graphql.Int,
@@ -141,7 +141,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 			"search_by_rarity": &graphql.Field{
 				Name: "SearchBugsAndFishesByRarity",
-				Type: graphql.NewNonNull(searchAgnosticObj),
+				Type: graphql.NewNonNull(searchCombinedObj),
 				Args: graphql.FieldConfigArgument{
 					"rarity": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -160,7 +160,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 			"search_by_shadow": &graphql.Field{
 				Name: "SearchAFishByShadowSize",
-				Type: graphql.NewNonNull(graphql.NewList(agCombinedFishObj)),
+				Type: graphql.NewNonNull(graphql.NewList(searchFishResObj)),
 				Args: graphql.FieldConfigArgument{
 					"shadow": &graphql.ArgumentConfig{
 						Type: graphql.String,

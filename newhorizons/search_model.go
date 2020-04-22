@@ -68,27 +68,7 @@ type BugEntry struct {
 	InternalID           int    `gorm:"not null;column:internalid"`
 }
 
-// BugTimeAgnostic represents a bug entry that is not linked to
-// a month period
-type BugTimeAgnostic struct {
-	Num                  int    `gorm:"not null;column:num"`
-	Name                 string `gorm:"not null;column:name"`
-	Image                string `gorm:"not null;column:image"`
-	House                string `gorm:"not null;column:house"`
-	Sell                 int    `gorm:"not null;column:sell"`
-	Where                string `gorm:"not null;column:location"`
-	Weather              string `gorm:"not null;column:weather"`
-	Rarity               string `gorm:"not null;column:rarity"`
-	StartTime            string `gorm:"not null;column:starttime"`
-	EndTime              string `gorm:"not null;column:endtime"`
-	Color1               string `gorm:"not null;column:color1"`
-	Color2               string `gorm:"not null;column:color2"`
-	CritterpediaFilename string `gorm:"-"`
-	ItemFilename         string `gorm:"not null;column:itemfilename"`
-	InternalID           int    `gorm:"not null;column:internalid"`
-}
-
-// FishEntry represents all the fields which represent a fish entry
+// FishEntry represents all the fields which represent a fish entry in postgres
 type FishEntry struct {
 	Num                  int    `gorm:"not null;column:num"`
 	Name                 string `gorm:"not null;column:name"`
@@ -122,40 +102,10 @@ type FishEntry struct {
 	InternalID           int    `gorm:"not null;column:internalid"`
 }
 
-// FishTimeAgnostic represents a fish entry that is not linked to a
-// month period
-type FishTimeAgnostic struct {
-	Num                  int    `gorm:"not null;column:num"`
-	Name                 string `gorm:"not null;column:name"`
-	Image                string `gorm:"not null;column:image"`
-	House                string `gorm:"not null;column:house"`
-	Sell                 int    `gorm:"not null;column:sell"`
-	Where                string `gorm:"not null;column:location"`
-	Shadow               string `gorm:"not null;column:shadow"`
-	Rarity               string `gorm:"not null;column:rarity"`
-	RainSnowUp           string `gorm:"not null;column:rainsnowup"`
-	StartTime            string `gorm:"not null;column:starttime"`
-	EndTime              string `gorm:"not null;column:endtime"`
-	Color1               string `gorm:"not null;column:color1"`
-	Color2               string `gorm:"not null;column:color2"`
-	Size                 string `gorm:"not null;column:size"`
-	LightingType         string `gorm:"not null;column:lightingtype"`
-	CritterpediaFilename string `gorm:"-"`
-	ItemFilename         string `gorm:"not null;column:itemfilename"`
-	InternalID           int    `gorm:"not null;column:internalid"`
-}
-
 // Combined represents the combination of both bug and fish entries in the database
 type Combined struct {
 	Bugs   []interface{}
 	Fishes []interface{}
-}
-
-// CombinedAgnostic represents the combination of both bug and fish entries that aren't
-// dependent on time via hemisphere
-type CombinedAgnostic struct {
-	Bugs   []BugTimeAgnostic
-	Fishes []FishTimeAgnostic
 }
 
 // ToGraphQL (FishEntry) formats the entry into an object that graphql will be

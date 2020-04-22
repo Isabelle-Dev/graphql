@@ -5,23 +5,32 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-func findByShadow(shadow, fishTable string, db *gorm.DB) []newhorizons.FishTimeAgnostic {
+func findByShadow(shadow, fishTable string, db *gorm.DB) []interface{} {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
-	var f []newhorizons.FishTimeAgnostic
+	var f []newhorizons.FishEntry
 	err := db.Table(fishTable).Where("shadow = ?", shadow).Find(&f).Error
 	if err != nil {
 		return nil
 	}
-	return f
+	var ret []interface{}
+	for _, e := range f {
+		entry := findFishByName(e.Name, "north_fish", "south_fish", db)
+		if et, ok := entry.(*newhorizons.Fish); ok {
+			ret = append(ret, e.ToGraphQL(et.NorthernHemi.Months, et.SouthernHemi.Months))
+		}
+	}
+	return ret
 }
 
 // findByRarity returns all bugs and fishes for a given rarity
-func findByRarity(rarity, bugTable, fishTable string, db *gorm.DB) *newhorizons.CombinedAgnostic {
+func findByRarity(rarity, bugTable, fishTable string, db *gorm.DB) *newhorizons.Combined {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
-	var b []newhorizons.BugTimeAgnostic
-	var f []newhorizons.FishTimeAgnostic
+	var b []newhorizons.BugEntry
+	var f []newhorizons.FishEntry
+	var bug []interface{}
+	var fish []interface{}
 	err := db.Table(bugTable).Where("rarity = ?", rarity).Find(&b).Error
 	if err != nil {
 		return nil
@@ -30,9 +39,21 @@ func findByRarity(rarity, bugTable, fishTable string, db *gorm.DB) *newhorizons.
 	if err != nil {
 		return nil
 	}
-	return &newhorizons.CombinedAgnostic{
-		Bugs:   b,
-		Fishes: f,
+	for i := 0; i < len(b); i++ {
+		s := findBugByName(b[i].Name, "north_bug", "south_bug", db)
+		if e, ok := s.(*newhorizons.Bug); ok {
+			bug = append(bug, b[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
+		}
+	}
+	for i := 0; i < len(f); i++ {
+		s := findFishByName(f[i].Name, "north_fish", "south_fish", db)
+		if e, ok := s.(*newhorizons.Fish); ok {
+			fish = append(fish, f[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
+		}
+	}
+	return &newhorizons.Combined{
+		Bugs:   bug,
+		Fishes: fish,
 	}
 }
 
@@ -46,6 +67,10 @@ func findByMonth(month, bugTable, fishTable string, db *gorm.DB) *newhorizons.Co
 	if err != nil {
 		return nil
 	}
+	err = db.Table(fishTable).Where(month+" = ?", "Yes").Find(&f).Error
+	if err != nil {
+		return nil
+	}
 	var bug []interface{}
 	var fish []interface{}
 	for i := 0; i < len(b); i++ {
@@ -54,13 +79,9 @@ func findByMonth(month, bugTable, fishTable string, db *gorm.DB) *newhorizons.Co
 			bug = append(bug, b[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
 		}
 	}
-	err = db.Table(fishTable).Where(month+" = ?", "Yes").Find(&f).Error
-	if err != nil {
-		return nil
-	}
 	for i := 0; i < len(f); i++ {
-		fs := findFishByName(f[i].Name, "north_fish", "south_fish", db)
-		if e, ok := fs.(*newhorizons.Fish); ok {
+		s := findFishByName(f[i].Name, "north_fish", "south_fish", db)
+		if e, ok := s.(*newhorizons.Fish); ok {
 			fish = append(fish, f[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
 		}
 	}
@@ -71,11 +92,11 @@ func findByMonth(month, bugTable, fishTable string, db *gorm.DB) *newhorizons.Co
 }
 
 // findByPrice returns the object of all bug and fish listings that match a given price
-func findByPrice(price int, bugTable, fishTable string, db *gorm.DB) *newhorizons.CombinedAgnostic {
+func findByPrice(price int, bugTable, fishTable string, db *gorm.DB) *newhorizons.Combined {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
-	var b []newhorizons.BugTimeAgnostic
-	var f []newhorizons.FishTimeAgnostic
+	var b []newhorizons.BugEntry
+	var f []newhorizons.FishEntry
 	err := db.Table(bugTable).Where("sell = ?", price).Find(&b).Error
 	if err != nil {
 		return nil
@@ -84,9 +105,23 @@ func findByPrice(price int, bugTable, fishTable string, db *gorm.DB) *newhorizon
 	if err != nil {
 		return nil
 	}
-	return &newhorizons.CombinedAgnostic{
-		Bugs:   b,
-		Fishes: f,
+	var bug []interface{}
+	var fish []interface{}
+	for i := 0; i < len(b); i++ {
+		s := findBugByName(b[i].Name, "north_bug", "south_bug", db)
+		if e, ok := s.(*newhorizons.Bug); ok {
+			bug = append(bug, b[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
+		}
+	}
+	for i := 0; i < len(f); i++ {
+		s := findFishByName(f[i].Name, "north_fish", "south_fish", db)
+		if e, ok := s.(*newhorizons.Fish); ok {
+			fish = append(fish, f[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
+		}
+	}
+	return &newhorizons.Combined{
+		Bugs:   bug,
+		Fishes: fish,
 	}
 }
 
@@ -141,6 +176,10 @@ func findAllByHemisphere(bugTable, fishTable string, db *gorm.DB) *newhorizons.C
 	if err != nil {
 		return nil
 	}
+	err = db.Raw("SELECT * FROM " + fishTable).Find(&f).Error
+	if err != nil {
+		return nil
+	}
 	var bug []interface{}
 	var fish []interface{}
 	for i := 0; i < len(b); i++ {
@@ -149,12 +188,8 @@ func findAllByHemisphere(bugTable, fishTable string, db *gorm.DB) *newhorizons.C
 			bug = append(bug, b[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
 		}
 	}
-	err = db.Raw("SELECT * FROM " + fishTable).Find(&f).Error
-	if err != nil {
-		return nil
-	}
 	for i := 0; i < len(f); i++ {
-		s := findFishByName(b[i].Name, "north_fish", "south_fish", db)
+		s := findFishByName(f[i].Name, "north_fish", "south_fish", db)
 		if e, ok := s.(*newhorizons.Fish); ok {
 			fish = append(fish, f[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
 		}

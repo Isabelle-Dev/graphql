@@ -7,107 +7,292 @@
             "bug": {
               "EndTime": "8:00 AM",
               "Name": "cyclommatus stag",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Rarity": "Ultra-rare",
               "Sell": 8000,
-              "StartTime": "5:00 PM"
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "5:00 PM",
+              "Weather": "Any weather",
+              "Where": "On palm trees"
             }
           },
           {
             "bug": {
               "EndTime": "8:00 AM",
               "Name": "goliath beetle",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "Rarity": "Ultra-rare",
               "Sell": 8000,
-              "StartTime": "5:00 PM"
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ],
+              "StartTime": "5:00 PM",
+              "Weather": "Any weather",
+              "Where": "On palm trees"
             }
           },
           {
             "bug": {
               "EndTime": "8:00 AM",
               "Name": "horned atlas",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Rarity": "Ultra-rare",
               "Sell": 8000,
-              "StartTime": "5:00 PM"
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "5:00 PM",
+              "Weather": "Any weather",
+              "Where": "On palm trees"
             }
           },
           {
             "bug": {
               "EndTime": "8:00 AM",
               "Name": "horned elephant",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Rarity": "Ultra-rare",
               "Sell": 8000,
-              "StartTime": "5:00 PM"
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "5:00 PM",
+              "Weather": "Any weather",
+              "Where": "On palm trees"
             }
           },
           {
             "bug": {
               "EndTime": "4:00 AM",
               "Name": "scorpion",
+              "NorthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct"
+              ],
+              "Rarity": "Common",
               "Sell": 8000,
-              "StartTime": "7:00 PM"
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Nov",
+                "Dec"
+              ],
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "On the ground"
             }
           },
           {
             "bug": {
               "EndTime": "4:00 AM",
               "Name": "tarantula",
+              "NorthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Nov",
+                "Dec"
+              ],
+              "Rarity": "Common",
               "Sell": 8000,
-              "StartTime": "7:00 PM"
+              "SouthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct"
+              ],
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "On the ground"
             }
           },
           {
             "bug": {
               "EndTime": "8:00 AM",
               "Name": "cyclommatus stag",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Rarity": "Ultra-rare",
               "Sell": 8000,
-              "StartTime": "5:00 PM"
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "5:00 PM",
+              "Weather": "Any weather",
+              "Where": "On palm trees"
             }
           },
           {
             "bug": {
               "EndTime": "8:00 AM",
               "Name": "goliath beetle",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "Rarity": "Ultra-rare",
               "Sell": 8000,
-              "StartTime": "5:00 PM"
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ],
+              "StartTime": "5:00 PM",
+              "Weather": "Any weather",
+              "Where": "On palm trees"
             }
           },
           {
             "bug": {
               "EndTime": "8:00 AM",
               "Name": "horned atlas",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Rarity": "Ultra-rare",
               "Sell": 8000,
-              "StartTime": "5:00 PM"
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "5:00 PM",
+              "Weather": "Any weather",
+              "Where": "On palm trees"
             }
           },
           {
             "bug": {
               "EndTime": "8:00 AM",
               "Name": "horned elephant",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Rarity": "Ultra-rare",
               "Sell": 8000,
-              "StartTime": "5:00 PM"
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "5:00 PM",
+              "Weather": "Any weather",
+              "Where": "On palm trees"
             }
           },
           {
             "bug": {
               "EndTime": "4:00 AM",
               "Name": "scorpion",
+              "NorthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct"
+              ],
+              "Rarity": "Common",
               "Sell": 8000,
-              "StartTime": "7:00 PM"
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Nov",
+                "Dec"
+              ],
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "On the ground"
             }
           },
           {
             "bug": {
               "EndTime": "4:00 AM",
               "Name": "tarantula",
+              "NorthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Nov",
+                "Dec"
+              ],
+              "Rarity": "Common",
               "Sell": 8000,
-              "StartTime": "7:00 PM"
+              "SouthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct"
+              ],
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "On the ground"
             }
           }
         ],
         "fishes": [
           {
             "fish": {
-              "Image": "https://i.imgur.com/QrrFojq.png",
+              "EndTime": "9:00 AM",
               "Name": "hammerhead shark",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "RainSnowUp": "Yes",
               "Sell": 8000,
               "Shadow": "Large w/Fin",
-              "Where": "Sea"
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ],
+              "StartTime": "4:00 PM"
             }
           }
         ]

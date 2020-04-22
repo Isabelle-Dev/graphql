@@ -5,200 +5,638 @@
         "bugs": [
           {
             "bug": {
-              "Name": "banded dragonfly",
-              "Rarity": "Rare",
-              "Sell": 4500
-            }
-          },
-          {
-            "bug": {
-              "Name": "cicada shell",
-              "Rarity": "Rare",
-              "Sell": 10
-            }
-          },
-          {
-            "bug": {
-              "Name": "giant stag",
-              "Rarity": "Rare",
-              "Sell": 10000
-            }
-          },
-          {
-            "bug": {
-              "Name": "giant water bug",
-              "Rarity": "Rare",
-              "Sell": 2000
-            }
-          },
-          {
-            "bug": {
-              "Name": "great purple emperor",
-              "Rarity": "Rare",
-              "Sell": 3000
-            }
-          },
-          {
-            "bug": {
-              "Name": "Queen Alexandra's birdwing",
-              "Rarity": "Rare",
-              "Sell": 4000
-            }
-          },
-          {
-            "bug": {
+              "EndTime": "8:00 AM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectNijiirokuwagata.png",
+              "Image": "https://i.imgur.com/Oy2jRhE.png",
               "Name": "rainbow stag",
-              "Rarity": "Rare",
-              "Sell": 6000
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "Sell": 6000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ],
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "On trees (any kind)"
             }
           },
           {
             "bug": {
+              "EndTime": "8:00 PM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectPurachinakogane.png",
+              "Image": "https://i.imgur.com/WRmOGCJ.png",
               "Name": "scarab beetle",
-              "Rarity": "Rare",
-              "Sell": 10000
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Sell": 10000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "11:00 PM",
+              "Weather": "Any weather",
+              "Where": "On trees (any kind)"
             }
           },
           {
             "bug": {
-              "Name": "banded dragonfly",
-              "Rarity": "Rare",
-              "Sell": 4500
-            }
-          },
-          {
-            "bug": {
-              "Name": "cicada shell",
-              "Rarity": "Rare",
-              "Sell": 10
-            }
-          },
-          {
-            "bug": {
+              "EndTime": "8:00 AM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectOhkuwagata.png",
+              "Image": "https://i.imgur.com/DLn2MOI.png",
               "Name": "giant stag",
-              "Rarity": "Rare",
-              "Sell": 10000
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Sell": 10000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "11:00 PM",
+              "Weather": "Any weather",
+              "Where": "On trees (any kind)"
             }
           },
           {
             "bug": {
-              "Name": "giant water bug",
-              "Rarity": "Rare",
-              "Sell": 2000
+              "EndTime": "8:00 AM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectNijiirokuwagata.png",
+              "Image": "https://i.imgur.com/Oy2jRhE.png",
+              "Name": "rainbow stag",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "Sell": 6000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ],
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "On trees (any kind)"
             }
           },
           {
             "bug": {
+              "EndTime": "All day",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectSeminonukegara.png",
+              "Image": "https://i.imgur.com/uGH1eff.png",
+              "Name": "cicada shell",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Sell": 10,
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "All day",
+              "Weather": "Any weather",
+              "Where": "Shaking trees (hardwood or cedar only)"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectOhkuwagata.png",
+              "Image": "https://i.imgur.com/DLn2MOI.png",
+              "Name": "giant stag",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Sell": 10000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "11:00 PM",
+              "Weather": "Any weather",
+              "Where": "On trees (any kind)"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "7:00 PM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectOhmurasaki.png",
+              "Image": "https://i.imgur.com/FE0hXTo.png)",
               "Name": "great purple emperor",
-              "Rarity": "Rare",
-              "Sell": 3000
+              "NorthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug"
+              ],
+              "Sell": 3000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Nov",
+                "Dec"
+              ],
+              "StartTime": "4:00 AM",
+              "Weather": "Any except rain",
+              "Where": "Flying near flowers"
             }
           },
           {
             "bug": {
+              "EndTime": "5:00 PM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectOniyanma.png",
+              "Image": "https://i.imgur.com/1Xtj7bB.png",
+              "Name": "banded dragonfly",
+              "NorthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct"
+              ],
+              "Sell": 4500,
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Nov",
+                "Dec"
+              ],
+              "StartTime": "8:00 AM",
+              "Weather": "Any except rain",
+              "Where": "Flying"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 PM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectPurachinakogane.png",
+              "Image": "https://i.imgur.com/WRmOGCJ.png",
+              "Name": "scarab beetle",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Sell": 10000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "11:00 PM",
+              "Weather": "Any weather",
+              "Where": "On trees (any kind)"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectTagame.png",
+              "Image": "https://i.imgur.com/nArNnTA.png",
+              "Name": "giant water bug",
+              "NorthernHemi": [
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "Sell": 2000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Oct",
+                "Nov",
+                "Dec"
+              ],
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "On rivers/ponds"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "5:00 PM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectOniyanma.png",
+              "Image": "https://i.imgur.com/1Xtj7bB.png",
+              "Name": "banded dragonfly",
+              "NorthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct"
+              ],
+              "Sell": 4500,
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Nov",
+                "Dec"
+              ],
+              "StartTime": "8:00 AM",
+              "Weather": "Any except rain",
+              "Where": "Flying"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "8:00 AM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectTagame.png",
+              "Image": "https://i.imgur.com/nArNnTA.png",
+              "Name": "giant water bug",
+              "NorthernHemi": [
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "Sell": 2000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Oct",
+                "Nov",
+                "Dec"
+              ],
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "On rivers/ponds"
+            }
+          },
+          {
+            "bug": {
+              "EndTime": "4:00 PM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectArekisandoratoribaneageha.png",
+              "Image": "https://i.imgur.com/O9sWl5a.png",
               "Name": "queen alexandra's birdwing",
-              "Rarity": "Rare",
-              "Sell": 4000
+              "NorthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "Sell": 4000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Nov",
+                "Dec"
+              ],
+              "StartTime": "8:00 AM",
+              "Weather": "Any except rain",
+              "Where": "Flying near flowers"
             }
           },
           {
             "bug": {
-              "Name": "rainbow stag",
-              "Rarity": "Rare",
-              "Sell": 6000
+              "EndTime": "7:00 PM",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectOhmurasaki.png",
+              "Image": "https://i.imgur.com/FE0hXTo.png)",
+              "Name": "great purple emperor",
+              "NorthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug"
+              ],
+              "Sell": 3000,
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Nov",
+                "Dec"
+              ],
+              "StartTime": "4:00 AM",
+              "Weather": "Any except rain",
+              "Where": "Flying near flowers"
             }
           },
           {
             "bug": {
-              "Name": "scarab beetle",
-              "Rarity": "Rare",
-              "Sell": 10000
+              "EndTime": "All day",
+              "House": "https://storage.googleapis.com/acdb/bugs/FtrInsectSeminonukegara.png",
+              "Image": "https://i.imgur.com/uGH1eff.png",
+              "Name": "cicada shell",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "Sell": 10,
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ],
+              "StartTime": "All day",
+              "Weather": "Any weather",
+              "Where": "Shaking trees (hardwood or cedar only)"
             }
           }
         ],
         "fishes": [
           {
             "fish": {
-              "Name": "arapaima",
-              "Rarity": "Rare",
-              "Sell": 10000
-            }
-          },
-          {
-            "fish": {
-              "Name": "arowana",
-              "Rarity": "Rare",
-              "Sell": 10000
-            }
-          },
-          {
-            "fish": {
-              "Name": "blue marlin",
-              "Rarity": "Rare",
-              "Sell": 10000
-            }
-          },
-          {
-            "fish": {
-              "Name": "gar",
-              "Rarity": "Rare",
-              "Sell": 6000
-            }
-          },
-          {
-            "fish": {
-              "Name": "giant snakehead",
-              "Rarity": "Rare",
-              "Sell": 5500
-            }
-          },
-          {
-            "fish": {
-              "Name": "great white shark",
-              "Rarity": "Rare",
-              "Sell": 15000
-            }
-          },
-          {
-            "fish": {
-              "Name": "mahi-mahi",
-              "Rarity": "Rare",
-              "Sell": 6000
-            }
-          },
-          {
-            "fish": {
-              "Name": "napoleonfish",
-              "Rarity": "Rare",
-              "Sell": 10000
-            }
-          },
-          {
-            "fish": {
-              "Name": "oarfish",
-              "Rarity": "Rare",
-              "Sell": 9000
-            }
-          },
-          {
-            "fish": {
-              "Name": "saw shark",
-              "Rarity": "Rare",
-              "Sell": 12000
-            }
-          },
-          {
-            "fish": {
-              "Name": "tuna",
-              "Rarity": "Rare",
-              "Sell": 7000
-            }
-          },
-          {
-            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishJinbee.png",
               "Name": "whale shark",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "RainSnowUp": "Yes",
               "Rarity": "Rare",
-              "Sell": 13000
+              "Sell": 13000,
+              "Shadow": "Large w/Fin",
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishNaporeonfish.png",
+              "Name": "napoleonfish",
+              "NorthernHemi": [
+                "Jul",
+                "Aug"
+              ],
+              "RainSnowUp": "Yes",
+              "Rarity": "Rare",
+              "Sell": 10000,
+              "Shadow": "XX-Large",
+              "SouthernHemi": [
+                "Jan",
+                "Feb"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishSame.png",
+              "Name": "great white shark",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "RainSnowUp": "Yes",
+              "Rarity": "Rare",
+              "Sell": 15000,
+              "Shadow": "Large w/Fin",
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishRaigyo.png",
+              "Name": "giant snakehead",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug"
+              ],
+              "RainSnowUp": "No",
+              "Rarity": "Rare",
+              "Sell": 5500,
+              "Shadow": "Large",
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Dec"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishShiira.png",
+              "Name": "mahi-mahi",
+              "NorthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct"
+              ],
+              "RainSnowUp": "Yes",
+              "Rarity": "Rare",
+              "Sell": 6000,
+              "Shadow": "X-Large",
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Nov",
+                "Dec"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishNokogiri.png",
+              "Name": "saw shark",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "RainSnowUp": "No",
+              "Rarity": "Rare",
+              "Sell": 12000,
+              "Shadow": "Large w/Fin",
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishMaguro.png",
+              "Name": "tuna",
+              "NorthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Nov",
+                "Dec"
+              ],
+              "RainSnowUp": "Yes",
+              "Rarity": "Rare",
+              "Sell": 7000,
+              "Shadow": "XX-Large",
+              "SouthernHemi": [
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishRyugu.png",
+              "Name": "oarfish",
+              "NorthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Dec"
+              ],
+              "RainSnowUp": "Yes",
+              "Rarity": "Rare",
+              "Sell": 9000,
+              "Shadow": "XX-Large",
+              "SouthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishKajiki.png",
+              "Name": "blue marlin",
+              "NorthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Nov",
+                "Dec"
+              ],
+              "RainSnowUp": "Yes",
+              "Rarity": "Rare",
+              "Sell": 10000,
+              "Shadow": "XX-Large",
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishArowana.png",
+              "Name": "arowana",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "RainSnowUp": "No",
+              "Rarity": "Rare",
+              "Sell": 10000,
+              "Shadow": "Large",
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishGa.png",
+              "Name": "gar",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "RainSnowUp": "No",
+              "Rarity": "Rare",
+              "Sell": 6000,
+              "Shadow": "X-Large",
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ]
+            }
+          },
+          {
+            "fish": {
+              "House": "https://storage.googleapis.com/acdb/fish/FtrFishPiraruku.png",
+              "Name": "arapaima",
+              "NorthernHemi": [
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep"
+              ],
+              "RainSnowUp": "Yes",
+              "Rarity": "Rare",
+              "Sell": 10000,
+              "Shadow": "XX-Large",
+              "SouthernHemi": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Dec"
+              ]
             }
           }
         ]
