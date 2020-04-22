@@ -38,8 +38,8 @@ var combinedBugsObject = graphql.NewObject(graphql.ObjectConfig{
 		"bug": &graphql.Field{
 			Type: graphql.NewNonNull(searchBugResObj),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.BugEntry); ok {
-					return &val, nil
+				if val, ok := p.Source.(*newhorizons.Bug); ok {
+					return val, nil
 				}
 				return nil, fmt.Errorf("search(): couldn't resolve bug entry")
 			},
@@ -54,8 +54,8 @@ var combinedFishesObject = graphql.NewObject(graphql.ObjectConfig{
 		"fish": &graphql.Field{
 			Type: graphql.NewNonNull(searchFishResObj),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.FishEntry); ok {
-					return &val, nil
+				if val, ok := p.Source.(*newhorizons.Fish); ok {
+					return val, nil
 				}
 				return nil, fmt.Errorf("search(): couldn't resolve fish entry")
 			},

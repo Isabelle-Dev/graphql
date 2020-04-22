@@ -5,500 +5,492 @@
         "bugs": [
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "ant"
+              "EndTime": "All day",
+              "Name": "ant",
+              "Sell": 80,
+              "StartTime": "All day",
+              "Weather": "Any weather",
+              "Where": "On rotten turnips"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "bagworm"
+              "EndTime": "All day",
+              "Name": "bagworm",
+              "Sell": 600,
+              "StartTime": "All day",
+              "Weather": "Any weather",
+              "Where": "Shaking trees (hardwood or cedar only)"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "centipede"
+              "EndTime": "11:00 PM",
+              "Name": "centipede",
+              "Sell": 300,
+              "StartTime": "4:00 PM",
+              "Weather": "Any weather",
+              "Where": "From hitting rocks"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "citrus long-horned beetle"
+              "EndTime": "All day",
+              "Name": "citrus long-horned beetle",
+              "Sell": 350,
+              "StartTime": "All day",
+              "Weather": "Any except rain",
+              "Where": "On tree stumps"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "common butterfly"
+              "EndTime": "7:00 PM",
+              "Name": "common butterfly",
+              "Sell": 160,
+              "StartTime": "4:00 AM",
+              "Weather": "Any except rain",
+              "Where": "Flying near flowers"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "damselfly"
+              "EndTime": "All day",
+              "Name": "damselfly",
+              "Sell": 500,
+              "StartTime": "All day",
+              "Weather": "Any except rain",
+              "Where": "Flying"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "dung beetle"
+              "EndTime": "All day",
+              "Name": "dung beetle",
+              "Sell": 3000,
+              "StartTime": "All day",
+              "Weather": "Any weather",
+              "Where": "Pushing snowballs"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "emperor butterfly"
+              "EndTime": "8:00 AM",
+              "Name": "emperor butterfly",
+              "Sell": 4000,
+              "StartTime": "5:00 PM",
+              "Weather": "Any except rain",
+              "Where": "Flying near flowers"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "fly"
+              "EndTime": "All day",
+              "Name": "fly",
+              "Sell": 60,
+              "StartTime": "All day",
+              "Weather": "Any weather",
+              "Where": "Flying near trash (boots, tires, cans)"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "hermit crab"
+              "EndTime": "8:00 AM",
+              "Name": "hermit crab",
+              "Sell": 1000,
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "Disguised on shoreline"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "mole cricket"
+              "EndTime": "All day",
+              "Name": "mole cricket",
+              "Sell": 500,
+              "StartTime": "All day",
+              "Weather": "Any weather",
+              "Where": "Underground (dig where noise is loudest)"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "moth"
+              "EndTime": "4:00 AM",
+              "Name": "moth",
+              "Sell": 130,
+              "StartTime": "7:00 PM",
+              "Weather": "Any except rain",
+              "Where": "Flying near light sources"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "paper kite butterfly"
+              "EndTime": "7:00 PM",
+              "Name": "paper kite butterfly",
+              "Sell": 1000,
+              "StartTime": "8:00 AM",
+              "Weather": "Any except rain",
+              "Where": "Flying near flowers"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "pill bug"
+              "EndTime": "4:00 PM",
+              "Name": "pill bug",
+              "Sell": 250,
+              "StartTime": "11:00 PM",
+              "Weather": "Any weather",
+              "Where": "From hitting rocks"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "Rajah Brooke's birdwing"
+              "EndTime": "5:00 PM",
+              "Name": "rajah brooke's birdwing",
+              "Sell": 2500,
+              "StartTime": "8:00 AM",
+              "Weather": "Any except rain",
+              "Where": "Flying near flowers"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "snail"
+              "EndTime": "All day",
+              "Name": "snail",
+              "Sell": 250,
+              "StartTime": "All day",
+              "Weather": "Rain only",
+              "Where": "On rocks"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "spider"
+              "EndTime": "8:00 AM",
+              "Name": "spider",
+              "Sell": 600,
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "Shaking trees (hardwood or cedar only)"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "tarantula"
+              "EndTime": "4:00 AM",
+              "Name": "tarantula",
+              "Sell": 8000,
+              "StartTime": "7:00 PM",
+              "Weather": "Any weather",
+              "Where": "On the ground"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "wasp"
+              "EndTime": "All day",
+              "Name": "wasp",
+              "Sell": 2500,
+              "StartTime": "All day",
+              "Weather": "Any weather",
+              "Where": "Shaking trees"
             }
           },
           {
             "bug": {
-              "Dec": "Yes",
-              "Name": "wharf roach"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "ant"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "bagworm"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "centipede"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "citrus long-horned beetle"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "common butterfly"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "damselfly"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "dung beetle"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "emperor butterfly"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "fly"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "hermit crab"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "mole cricket"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "moth"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "paper kite butterfly"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "pill bug"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "rajah brooke's birdwing"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "snail"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "spider"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "tarantula"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "wasp"
-            }
-          },
-          {
-            "bug": {
-              "Dec": "Yes",
-              "Name": "wharf roach"
+              "EndTime": "All day",
+              "Name": "wharf roach",
+              "Sell": 200,
+              "StartTime": "All day",
+              "Weather": "Any weather",
+              "Where": "On beach rocks"
             }
           }
         ],
         "fishes": [
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "9:00 PM",
               "Name": "anchovy",
+              "Sell": 200,
               "Shadow": "Small",
-              "Where": "Sea"
+              "StartTime": "4:00 AM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "4:00 AM",
               "Name": "barreleye",
+              "Sell": 15000,
               "Shadow": "Small",
-              "Where": "Sea"
+              "StartTime": "9:00 PM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "bitterling",
+              "Sell": 900,
               "Shadow": "X-Small",
-              "Where": "River"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "black bass",
+              "Sell": 400,
               "Shadow": "Large",
-              "Where": "River"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "5:00 AM",
               "Name": "blowfish",
+              "Sell": 5000,
               "Shadow": "Medium",
-              "Where": "Sea"
+              "StartTime": "9:00 PM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "blue marlin",
+              "Sell": 10000,
               "Shadow": "XX-Large",
-              "Where": "Pier"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "4:00 PM",
               "Name": "bluegill",
+              "Sell": 180,
               "Shadow": "Small",
-              "Where": "River"
+              "StartTime": "9:00 AM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "carp",
+              "Sell": 300,
               "Shadow": "Large",
-              "Where": "Pond"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "coelacanth",
+              "Sell": 15000,
               "Shadow": "XX-Large",
-              "Where": "Sea (raining)"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "crucian carp",
+              "Sell": 160,
               "Shadow": "Small",
-              "Where": "River"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "dab",
+              "Sell": 300,
               "Shadow": "Medium",
-              "Where": "Sea"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "9:00 AM",
               "Name": "dace",
+              "Sell": 240,
               "Shadow": "Medium",
-              "Where": "River"
+              "StartTime": "4:00 PM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "9:00 AM",
               "Name": "football fish",
+              "Sell": 2500,
               "Shadow": "Large",
-              "Where": "Sea"
+              "StartTime": "4:00 PM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "9:00 AM",
               "Name": "freshwater goby",
+              "Sell": 400,
               "Shadow": "Small",
-              "Where": "River"
+              "StartTime": "4:00 PM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "goldfish",
+              "Sell": 1300,
               "Shadow": "X-Small",
-              "Where": "Pond"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "horse mackerel",
+              "Sell": 150,
               "Shadow": "Small",
-              "Where": "Sea"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "9:00 AM",
               "Name": "koi",
+              "Sell": 4000,
               "Shadow": "Large",
-              "Where": "Pond"
+              "StartTime": "4:00 PM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "oarfish",
+              "Sell": 9000,
               "Shadow": "XX-Large",
-              "Where": "Sea"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "olive flounder",
+              "Sell": 800,
               "Shadow": "X-Large",
-              "Where": "Sea"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "4:00 PM",
               "Name": "pale chub",
+              "Sell": 200,
               "Shadow": "X-Small",
-              "Where": "River"
+              "StartTime": "9:00 AM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "pike",
+              "Sell": 1800,
               "Shadow": "X-Large",
-              "Where": "River"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "pond smelt",
+              "Sell": 400,
               "Shadow": "Small",
-              "Where": "River"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "4:00 PM",
               "Name": "pop-eyed goldfish",
+              "Sell": 1300,
               "Shadow": "X-Small",
-              "Where": "Pond"
+              "StartTime": "9:00 AM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "4:00 PM",
               "Name": "ranchu goldfish",
+              "Sell": 4500,
               "Shadow": "Small",
-              "Where": "Pond"
+              "StartTime": "9:00 AM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "red snapper",
+              "Sell": 3000,
               "Shadow": "Large",
-              "Where": "Sea"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "sea bass",
+              "Sell": 400,
               "Shadow": "X-Large",
-              "Where": "Sea"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "sea butterfly",
+              "Sell": 1000,
               "Shadow": "X-Small",
-              "Where": "Sea"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "squid",
+              "Sell": 500,
               "Shadow": "Medium",
-              "Where": "Sea"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "9:00 AM",
               "Name": "stringfish",
+              "Sell": 15000,
               "Shadow": "X-Large",
-              "Where": "River (clifftop)"
+              "StartTime": "4:00 PM"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "sturgeon",
+              "Sell": 10000,
               "Shadow": "XX-Large",
-              "Where": "River (mouth)"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "tuna",
+              "Sell": 7000,
               "Shadow": "XX-Large",
-              "Where": "Pier"
+              "StartTime": "All day"
             }
           },
           {
             "fish": {
-              "Dec": "Yes",
+              "EndTime": "All day",
               "Name": "yellow perch",
+              "Sell": 300,
               "Shadow": "Medium",
-              "Where": "River"
+              "StartTime": "All day"
             }
           }
         ]

@@ -45,15 +45,28 @@ func findByMonth(month, bugTable, fishTable string, db *gorm.DB) *newhorizons.Co
 	err := db.Table(bugTable).Where(month+" = ?", "Yes").Find(&b).Error
 	if err != nil {
 		return nil
-
+	}
+	var bug []interface{}
+	var fish []interface{}
+	for i := 0; i < len(b); i++ {
+		s := findBugByName(b[i].Name, "north_bug", "south_bug", db)
+		if e, ok := s.(*newhorizons.Bug); ok {
+			bug = append(bug, b[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
+		}
 	}
 	err = db.Table(fishTable).Where(month+" = ?", "Yes").Find(&f).Error
 	if err != nil {
 		return nil
 	}
+	for i := 0; i < len(f); i++ {
+		fs := findFishByName(f[i].Name, "north_fish", "south_fish", db)
+		if e, ok := fs.(*newhorizons.Fish); ok {
+			fish = append(fish, f[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
+		}
+	}
 	return &newhorizons.Combined{
-		Bugs:   b,
-		Fishes: f,
+		Bugs:   bug,
+		Fishes: fish,
 	}
 }
 
@@ -128,12 +141,26 @@ func findAllByHemisphere(bugTable, fishTable string, db *gorm.DB) *newhorizons.C
 	if err != nil {
 		return nil
 	}
+	var bug []interface{}
+	var fish []interface{}
+	for i := 0; i < len(b); i++ {
+		s := findBugByName(b[i].Name, "north_bug", "south_bug", db)
+		if e, ok := s.(*newhorizons.Bug); ok {
+			bug = append(bug, b[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
+		}
+	}
 	err = db.Raw("SELECT * FROM " + fishTable).Find(&f).Error
 	if err != nil {
 		return nil
 	}
+	for i := 0; i < len(f); i++ {
+		s := findFishByName(b[i].Name, "north_fish", "south_fish", db)
+		if e, ok := s.(*newhorizons.Fish); ok {
+			fish = append(fish, f[i].ToGraphQL(e.NorthernHemi.Months, e.SouthernHemi.Months))
+		}
+	}
 	return &newhorizons.Combined{
-		Bugs:   b,
-		Fishes: f,
+		Bugs:   bug,
+		Fishes: fish,
 	}
 }

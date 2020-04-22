@@ -1,28 +1,5 @@
 package newhorizons
 
-// ToGraphQL (FishEntry) formats the entry into an object that graphql will be
-// able to parse
-func (f FishEntry) ToGraphQL(north, south []string) interface{} {
-	return &Fish{
-		Name:       f.Name,
-		Image:      f.Image,
-		House:      f.House,
-		Sell:       f.Sell,
-		Where:      f.Where,
-		Shadow:     f.Shadow,
-		Rarity:     f.Rarity,
-		RainSnowUp: f.RainSnowUp,
-		StartTime:  f.StartTime,
-		EndTime:    f.EndTime,
-		NorthernHemi: Hemi{
-			Months: north,
-		},
-		SouthernHemi: Hemi{
-			Months: south,
-		},
-	}
-}
-
 // Fish represents a Fish entry that will be displayed via graphql
 type Fish struct {
 	Name         string
@@ -37,28 +14,6 @@ type Fish struct {
 	EndTime      string
 	NorthernHemi Hemi
 	SouthernHemi Hemi
-}
-
-// ToGraphQL (BugEntry) formats the entry into an object that graphql will be
-// able to parse
-func (b BugEntry) ToGraphQL(northMonths, southMonths []string) interface{} {
-	return &Bug{
-		Name:      b.Name,
-		Image:     b.Image,
-		House:     b.House,
-		Sell:      b.Sell,
-		Where:     b.Where,
-		Weather:   b.Weather,
-		Rarity:    b.Rarity,
-		StartTime: b.StartTime,
-		EndTime:   b.EndTime,
-		NorthernHemi: Hemi{
-			Months: northMonths,
-		},
-		SouthernHemi: Hemi{
-			Months: southMonths,
-		},
-	}
 }
 
 // Bug represents a Bug entry that will be displayed via graphql
@@ -192,8 +147,8 @@ type FishTimeAgnostic struct {
 
 // Combined represents the combination of both bug and fish entries in the database
 type Combined struct {
-	Bugs   []BugEntry
-	Fishes []FishEntry
+	Bugs   []interface{}
+	Fishes []interface{}
 }
 
 // CombinedAgnostic represents the combination of both bug and fish entries that aren't
@@ -201,4 +156,49 @@ type Combined struct {
 type CombinedAgnostic struct {
 	Bugs   []BugTimeAgnostic
 	Fishes []FishTimeAgnostic
+}
+
+// ToGraphQL (FishEntry) formats the entry into an object that graphql will be
+// able to parse
+func (f FishEntry) ToGraphQL(north, south []string) interface{} {
+	return &Fish{
+		Name:       f.Name,
+		Image:      f.Image,
+		House:      f.House,
+		Sell:       f.Sell,
+		Where:      f.Where,
+		Shadow:     f.Shadow,
+		Rarity:     f.Rarity,
+		RainSnowUp: f.RainSnowUp,
+		StartTime:  f.StartTime,
+		EndTime:    f.EndTime,
+		NorthernHemi: Hemi{
+			Months: north,
+		},
+		SouthernHemi: Hemi{
+			Months: south,
+		},
+	}
+}
+
+// ToGraphQL (BugEntry) formats the entry into an object that graphql will be
+// able to parse
+func (b BugEntry) ToGraphQL(northMonths, southMonths []string) interface{} {
+	return &Bug{
+		Name:      b.Name,
+		Image:     b.Image,
+		House:     b.House,
+		Sell:      b.Sell,
+		Where:     b.Where,
+		Weather:   b.Weather,
+		Rarity:    b.Rarity,
+		StartTime: b.StartTime,
+		EndTime:   b.EndTime,
+		NorthernHemi: Hemi{
+			Months: northMonths,
+		},
+		SouthernHemi: Hemi{
+			Months: southMonths,
+		},
+	}
 }
