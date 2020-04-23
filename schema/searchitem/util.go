@@ -1,6 +1,9 @@
 package searchitem
 
-import "github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
+import (
+	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
+	"github.com/jinzhu/gorm"
+)
 
 // helper func which extracts all variant, pattern, images, and HHA concept tags
 func extractVPIH(item []newhorizons.ItemEntry) ([]string, []string, []string, []string) {
@@ -26,6 +29,7 @@ func extractVPIH(item []newhorizons.ItemEntry) ([]string, []string, []string, []
 	return variants, patterns, images, hha
 }
 
+// utility func to check existence
 func exists(match string, container []string) bool {
 	for _, i := range container {
 		if match == i {
@@ -33,4 +37,14 @@ func exists(match string, container []string) bool {
 		}
 	}
 	return false
+}
+
+// utility func to turn all ItemEntry entries into Item
+func toItemSlice(items []newhorizons.ItemEntry, db *gorm.DB) []*newhorizons.Item {
+	var ret []*newhorizons.Item
+	for _, i := range items {
+		n := findByName(i.Name, "item", db)
+		ret = append(ret, i.ToGraphQL(n.Variation, n.Pattern, n.Image, n.HHAConcepts))
+	}
+	return ret
 }

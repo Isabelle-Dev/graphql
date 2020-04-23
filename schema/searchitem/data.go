@@ -14,12 +14,7 @@ func findAllDoorHanging(tablename string, db *gorm.DB) []*newhorizons.Item {
 	if len(items) == 0 {
 		return nil
 	}
-	var ret []*newhorizons.Item
-	for _, i := range items {
-		n := findByName(i.Name, "item", db)
-		ret = append(ret, i.ToGraphQL(n.Variation, n.Pattern, n.Image, n.HHAConcepts))
-	}
-	return ret
+	return toItemSlice(items, db)
 }
 
 // findByConcept retrieves an extry from the item table by a given concept filter
@@ -31,12 +26,7 @@ func findByConcept(concept, tablename string, db *gorm.DB) []*newhorizons.Item {
 	if len(items) == 0 {
 		return nil
 	}
-	var ret []*newhorizons.Item
-	for _, i := range items {
-		n := findByName(i.Name, "item", db)
-		ret = append(ret, i.ToGraphQL(n.Variation, n.Pattern, n.Image, n.HHAConcepts))
-	}
-	return ret
+	return toItemSlice(items, db)
 }
 
 // findByName retrieves an entry from the item table by
@@ -63,10 +53,5 @@ func findByColor(color, tablename string, db *gorm.DB) []*newhorizons.Item {
 	if len(items) == 0 {
 		return nil
 	}
-	var ret []*newhorizons.Item
-	for _, i := range items {
-		n := findByName(i.Name, "item", db)
-		ret = append(ret, i.ToGraphQL(n.Variation, n.Pattern, n.Image, n.HHAConcepts))
-	}
-	return ret
+	return toItemSlice(items, db)
 }
