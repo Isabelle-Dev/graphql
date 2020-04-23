@@ -15,10 +15,10 @@ func extractVPIH(item []newhorizons.ItemEntry) ([]string, []string, []string, []
 		if !exists(entry.HHAConcept2, hha) && entry.HHAConcept2 != "None" {
 			hha = append(hha, entry.HHAConcept2)
 		}
-		if entry.PatternTitle != "NA" {
+		if !exists(entry.PatternTitle, patterns) && entry.PatternTitle != "NA" {
 			patterns = append(patterns, entry.Pattern)
 		}
-		if entry.Variation != "NA" {
+		if !exists(entry.Variation, variants) && entry.Variation != "NA" {
 			variants = append(variants, entry.Variation)
 		}
 		images = append(images, entry.Image)

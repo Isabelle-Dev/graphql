@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS housewares (
+CREATE TABLE IF NOT EXISTS item (
 	Name character varying(255),
 	Image character varying(255),
 	Variation character varying(100),
@@ -23,8 +23,6 @@ CREATE TABLE IF NOT EXISTS housewares (
 	HHASet character varying(100),
 	Interact character varying(100),
 	Tag character varying(200),
-	SpeakerType character varying(200),
-	LightingType character varying(200),
 	Catalog character varying(200),
 	Filename character varying(200),
 	VariantID character varying(10),
@@ -32,4 +30,4 @@ CREATE TABLE IF NOT EXISTS housewares (
 	UniqueEntryID character varying(100)
 );
 
-\COPY housewares FROM 'C:\Users\yipin\go\src\github.com\Isabelle-Dev\isabelle-graphql\csv\housewares.csv' DELIMITER ',' CSV HEADER;
+\COPY item FROM 'C:\Users\yipin\go\src\github.com\Isabelle-Dev\isabelle-graphql\csv\mounted.csv' DELIMITER ',' CSV HEADER;

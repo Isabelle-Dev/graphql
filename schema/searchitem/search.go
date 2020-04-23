@@ -31,9 +31,9 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 
 					item := p.Args["item"].(string)
-					entry := findByName(item, "housewares", db)
+					entry := findByName(item, "item", db)
 					if entry == nil {
-						return nil, fmt.Errorf("search_item(): error retrieving entries")
+						return nil, fmt.Errorf("search_item(): item not found")
 					}
 					return entry, nil
 				},
@@ -50,9 +50,41 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 
 					color := p.Args["color"].(string)
-					entries := findByColor(color, "housewares", db)
+					entries := findByColor(color, "item", db)
 					if entries == nil {
-						return nil, fmt.Errorf("search_color(): error retrieving entries")
+						return nil, fmt.Errorf("search_color(): items not found")
+					}
+					return entries, nil
+				},
+			},
+
+			"search_by_concept": &graphql.Field{
+				Name: "search_by_concpet",
+				Type: graphql.NewNonNull(searchItemObj),
+				Args: graphql.FieldConfigArgument{
+					"concept": &graphql.ArgumentConfig{
+						Type: graphql.String,
+					},
+				},
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+
+					concept := p.Args["concept"].(string)
+					entries := findByConcept(concept, "item", db)
+					if entries == nil {
+						return nil, fmt.Errorf("search_concept(): items not found")
+					}
+					return entries, nil
+				},
+			},
+
+			"only_door_hanging": &graphql.Field{
+				Name: "door hanging objects",
+				Type: graphql.NewNonNull(searchItemObj),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+
+					entries := findAllDoorHanging("item", db)
+					if entries == nil {
+						return nil, fmt.Errorf("search_hanging(): items not found")
 					}
 					return entries, nil
 				},

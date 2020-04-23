@@ -48,8 +48,6 @@ type ItemEntry struct {
 	HHASet           string `gorm:"column:hhaset"`
 	Interact         string
 	Tag              string
-	SpeakerType      string `gorm:"column:speakertype"`
-	LightingType     string `gorm:"column:lightingtype"`
 	Catalog          string
 	Filename         string
 	VariantID        string `gorm:"column:variantid"`
