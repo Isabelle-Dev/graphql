@@ -1,7 +1,29 @@
 package newhorizons
 
-// Item represents an item from the housewares catalog
+// Item represents an item entry that will be displayed via graphql
 type Item struct {
+	Name             string
+	Image            []string
+	Variation        []string
+	BodyTitle        string
+	Pattern          []string
+	PatternTitle     string
+	BodyCustomize    string
+	KitCost          string
+	Sell             int
+	Interact         string
+	Source           string
+	Tag              string
+	HHAConcepts      []string
+	HHASeries        string
+	HHASet           string
+	DIY              string
+	PatternCustomize string
+	Buy              string
+}
+
+// ItemEntry represents an item from the housewares table in postgres
+type ItemEntry struct {
 	Name             string `gorm:"not null"`
 	Image            string `gorm:"not null"`
 	Variation        string `gorm:"not null"`
@@ -34,36 +56,27 @@ type Item struct {
 	InternalID       int    `gorm:"column:internalid"`
 }
 
-// ModifiedItem represents an item from houseware with nested multiple values.
-//
-// This definition removes item variant data such as filename and variantID
-type ModifiedItem struct {
-	Name             string
-	Image            []string
-	Variation        []string
-	BodyTitle        string
-	Pattern          []string
-	PatternTitle     string
-	DIY              string
-	BodyCustomize    string
-	PatternCustomize string
-	KitCost          string
-	Buy              string
-	Sell             int
-	Color1           string
-	Color2           string
-	Size             string
-	Source           string
-	SourceNotes      string
-	Version          string
-	HHAConcept1      string
-	HHAConcept2      string
-	HHASeries        string
-	HHASet           string
-	Interact         string
-	Tag              string
-	SpeakerType      string
-	LightingType     string
-	Catalog          string
-	InternalID       int
+// ToGraphQL (ItemEntry) formats the entry into an object that graphql will be
+// able to parse
+func (ie ItemEntry) ToGraphQL(v, p, i, h []string) *Item {
+	return &Item{
+		Name:             ie.Name,
+		Image:            i,
+		Variation:        v,
+		BodyTitle:        ie.BodyTitle,
+		Pattern:          p,
+		PatternTitle:     ie.PatternTitle,
+		BodyCustomize:    ie.BodyCustomize,
+		KitCost:          ie.KitCost,
+		Sell:             ie.Sell,
+		Interact:         ie.Interact,
+		Source:           ie.Source,
+		Tag:              ie.Tag,
+		HHAConcepts:      h,
+		HHASeries:        ie.HHASeries,
+		HHASet:           ie.HHASet,
+		DIY:              ie.DIY,
+		PatternCustomize: ie.PatternCustomize,
+		Buy:              ie.Buy,
+	}
 }

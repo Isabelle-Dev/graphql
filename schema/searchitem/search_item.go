@@ -11,42 +11,12 @@ var searchItemObj = graphql.NewObject(graphql.ObjectConfig{
 	Name: "search_by_item",
 	Fields: graphql.Fields{
 		"items": &graphql.Field{
-			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(itemObj))),
+			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(item))),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(*[]newhorizons.Item); ok {
-					return *val, nil
-				}
-				return nil, fmt.Errorf("search_by_item(): Error - not a recognized type")
-			},
-		},
-	},
-})
-
-var itemObj = graphql.NewObject(graphql.ObjectConfig{
-	Name: "IndividualItem",
-	Fields: graphql.Fields{
-		"item": &graphql.Field{
-			Type: graphql.NewNonNull(item),
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.([]*newhorizons.Item); ok {
 					return val, nil
 				}
-				return nil, fmt.Errorf("IndividualItem(): error")
-			},
-		},
-	},
-})
-
-var itemModifiedObj = graphql.NewObject(graphql.ObjectConfig{
-	Name: "IndividualModifiedItem",
-	Fields: graphql.Fields{
-		"item": &graphql.Field{
-			Type: graphql.NewNonNull(itemModified),
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(*newhorizons.ModifiedItem); ok {
-					return *val, nil
-				}
-				return nil, nil
+				return nil, fmt.Errorf("search_by_item(): Error - not a recognized type")
 			},
 		},
 	},

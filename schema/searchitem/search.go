@@ -22,7 +22,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		Fields: graphql.Fields{
 			"search_item": &graphql.Field{
 				Name: "search_by_item_name",
-				Type: graphql.NewNonNull(itemModifiedObj),
+				Type: graphql.NewNonNull(item),
 				Args: graphql.FieldConfigArgument{
 					"item": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -31,11 +31,11 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 
 					item := p.Args["item"].(string)
-					entries := findByName(item, "housewares", db)
-					if entries == nil {
+					entry := findByName(item, "housewares", db)
+					if entry == nil {
 						return nil, fmt.Errorf("search_item(): error retrieving entries")
 					}
-					return entries, nil
+					return entry, nil
 				},
 			},
 

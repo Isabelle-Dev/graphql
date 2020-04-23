@@ -2,46 +2,39 @@
   "data": {
     "item": {
       "search_item": {
-        "item": {
-          "BodyCustomize": "Yes",
-          "BodyTitle": "Body",
-          "Buy": "NFS",
-          "Catalog": "Not for sale",
-          "Color1": "",
-          "Color2": "",
-          "DIY": "Yes",
-          "HHAConcept1": "music",
-          "HHAConcept2": "None",
-          "HHASeries": "None",
-          "HHASet": "None",
-          "Image": [
-            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_0_0.png",
-            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_1_0.png",
-            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_2_0.png",
-            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_3_0.png",
-            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_4_0.png",
-            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_5_0.png",
-            "https://storage.googleapis.com/acdb/housewares/FtrAcorsticguitar_Remake_6_0.png"
-          ],
-          "Interact": "Yes",
-          "InternalID": 383,
-          "LightingType": "No lighting",
-          "Name": "acoustic guitar",
-          "Pattern": [],
-          "Sell": 3210,
-          "Source": "Crafting",
-          "Tag": "Musical Instrument",
-          "Variation": [
-            "Natural",
-            "Cherry",
-            "Brown",
-            "Blue",
-            "White",
-            "Black",
-            "Pink"
-          ],
-          "Version": "1.0.0"
-        }
+        "BodyCustomize": "No",
+        "BodyTitle": "NA",
+        "Buy": "1100",
+        "DIY": "No",
+        "HHAConcepts": [
+          "living room",
+          "office"
+        ],
+        "HHASeries": "None",
+        "HHASet": "None",
+        "Image": [
+          "https://acnhcdn.com/acdb/housewares/FtrCirculator_Remake_0_0.png",
+          "https://acnhcdn.com/acdb/housewares/FtrCirculator_Remake_1_0.png",
+          "https://acnhcdn.com/acdb/housewares/FtrCirculator_Remake_2_0.png",
+          "https://acnhcdn.com/acdb/housewares/FtrCirculator_Remake_3_0.png",
+          "https://acnhcdn.com/acdb/housewares/FtrCirculator_Remake_4_0.png"
+        ],
+        "Interact": "Yes",
+        "KitCost": "NA",
+        "Name": "air circulator",
+        "Pattern": [],
+        "PatternCustomize": "No",
+        "PatternTitle": "NA",
+        "Sell": 275,
+        "Source": "Nook's Cranny",
+        "Tag": "Fan",
+        "Variation": [
+          "White",
+          "Black",
+          "Pink",
+          "Green",
+          "Yellow"
+        ]
       }
     }
   }

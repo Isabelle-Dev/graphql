@@ -11,25 +11,25 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"Name": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Name, nil
 				}
 				return nil, nil
 			},
 		},
 		"Image": &graphql.Field{
-			Type: graphql.String,
+			Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Image, nil
 				}
 				return nil, nil
 			},
 		},
 		"Variation": &graphql.Field{
-			Type: graphql.String,
+			Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Variation, nil
 				}
 				return nil, nil
@@ -38,16 +38,16 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"BodyTitle": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.BodyTitle, nil
 				}
 				return nil, nil
 			},
 		},
 		"Pattern": &graphql.Field{
-			Type: graphql.String,
+			Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Pattern, nil
 				}
 				return nil, nil
@@ -56,7 +56,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"PatternTitle": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.PatternTitle, nil
 				}
 				return nil, nil
@@ -65,7 +65,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"DIY": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.DIY, nil
 				}
 				return nil, nil
@@ -74,7 +74,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"BodyCustomize": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.BodyCustomize, nil
 				}
 				return nil, nil
@@ -83,7 +83,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"PatternCustomize": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.PatternCustomize, nil
 				}
 				return nil, nil
@@ -92,7 +92,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"KitCost": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.KitCost, nil
 				}
 				return nil, nil
@@ -101,7 +101,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"Buy": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Buy, nil
 				}
 				return nil, nil
@@ -110,35 +110,8 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"Sell": &graphql.Field{
 			Type: graphql.Int,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Sell, nil
-				}
-				return nil, nil
-			},
-		},
-		"Color1": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.Color1, nil
-				}
-				return nil, nil
-			},
-		},
-		"Color2": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.Color2, nil
-				}
-				return nil, nil
-			},
-		},
-		"Size": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.Size, nil
 				}
 				return nil, nil
 			},
@@ -146,44 +119,17 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"Source": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Source, nil
 				}
 				return nil, nil
 			},
 		},
-		"SourceNotes": &graphql.Field{
-			Type: graphql.String,
+		"HHAConcepts": &graphql.Field{
+			Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.SourceNotes, nil
-				}
-				return nil, nil
-			},
-		},
-		"Version": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.Version, nil
-				}
-				return nil, nil
-			},
-		},
-		"HHAConcept1": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.HHAConcept1, nil
-				}
-				return nil, nil
-			},
-		},
-		"HHAConcept2": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.HHAConcept2, nil
+				if val, ok := p.Source.(*newhorizons.Item); ok {
+					return val.HHAConcepts, nil
 				}
 				return nil, nil
 			},
@@ -191,7 +137,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"HHASeries": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.HHASeries, nil
 				}
 				return nil, nil
@@ -200,7 +146,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"HHASet": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.HHASet, nil
 				}
 				return nil, nil
@@ -209,7 +155,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"Interact": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Interact, nil
 				}
 				return nil, nil
@@ -218,62 +164,8 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 		"Tag": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
+				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Tag, nil
-				}
-				return nil, nil
-			},
-		},
-		"SpeakerType": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.SpeakerType, nil
-				}
-				return nil, nil
-			},
-		},
-		"LightingType": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.LightingType, nil
-				}
-				return nil, nil
-			},
-		},
-		"Catalog": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.Catalog, nil
-				}
-				return nil, nil
-			},
-		},
-		"Filename": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.Filename, nil
-				}
-				return nil, nil
-			},
-		},
-		"VariantID": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.VariantID, nil
-				}
-				return nil, nil
-			},
-		},
-		"InternalID": &graphql.Field{
-			Type: graphql.Int,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Item); ok {
-					return val.InternalID, nil
 				}
 				return nil, nil
 			},
