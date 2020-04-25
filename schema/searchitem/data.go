@@ -18,18 +18,6 @@ func execute(dbStr string, db *gorm.DB) []*newhorizons.Item {
 	return toItemSlice(items, db)
 }
 
-// findAllDoorHanging retrieves all entries that are counted as a hanging item on doors
-func findAllDoorHanging(tablename string, db *gorm.DB) []*newhorizons.Item {
-	db.RWMutex.RLock()
-	defer db.RWMutex.RUnlock()
-	var items []newhorizons.ItemEntry
-	db.Table(tablename).Where("tag LIKE ?", "%Door Decor%").Find(&items)
-	if len(items) == 0 {
-		return nil
-	}
-	return toItemSlice(items, db)
-}
-
 // findByName retrieves an entry from the item table by
 // a given name
 func findByName(name, tablename string, db *gorm.DB) *newhorizons.Item {
@@ -40,6 +28,6 @@ func findByName(name, tablename string, db *gorm.DB) *newhorizons.Item {
 	if len(items) == 0 {
 		return nil
 	}
-	v, p, i, h := extractVPIH(items)
-	return items[0].ToGraphQL(v, p, i, h)
+	v, h := extractVPIH(items)
+	return items[0].ToGraphQL(v, h)
 }

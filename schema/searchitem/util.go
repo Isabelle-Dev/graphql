@@ -6,27 +6,32 @@ import (
 )
 
 // helper func which extracts all variant, pattern, images, and HHA concept tags
-func extractVPIH(item []newhorizons.ItemEntry) ([]string, []string, []string, []string) {
-	var variants []string
-	var patterns []string
-	var images []string
+func extractVPIH(item []newhorizons.ItemEntry) ([]newhorizons.Variant, []string) {
+	var variants []newhorizons.Variant
 	var hha []string
 	for _, entry := range item {
+		// Add variant details - remove duplicates
+		var color []string
+		if !exists(entry.Color1, color) {
+			color = append(color, entry.Color1)
+		}
+		if !exists(entry.Color2, color) {
+			color = append(color, entry.Color2)
+		}
+		variants = append(variants, newhorizons.Variant{
+			ImageURL: entry.Image,
+			Pattern:  entry.Pattern,
+			Colors:   color,
+		})
+
 		if !exists(entry.HHAConcept1, hha) && entry.HHAConcept1 != "None" {
 			hha = append(hha, entry.HHAConcept1)
 		}
 		if !exists(entry.HHAConcept2, hha) && entry.HHAConcept2 != "None" {
 			hha = append(hha, entry.HHAConcept2)
 		}
-		if !exists(entry.PatternTitle, patterns) && entry.PatternTitle != "NA" {
-			patterns = append(patterns, entry.Pattern)
-		}
-		if !exists(entry.Variation, variants) && entry.Variation != "NA" {
-			variants = append(variants, entry.Variation)
-		}
-		images = append(images, entry.Image)
 	}
-	return variants, patterns, images, hha
+	return variants, hha
 }
 
 // utility func to check existence
@@ -49,7 +54,7 @@ func toItemSlice(items []newhorizons.ItemEntry, db *gorm.DB) []*newhorizons.Item
 		}
 		n := findByName(i.Name, "item", db)
 		names = append(names, i.Name)
-		ret = append(ret, i.ToGraphQL(n.Variation, n.Pattern, n.Image, n.HHAConcepts))
+		ret = append(ret, i.ToGraphQL(n.Variants, n.HHAConcepts))
 	}
 	return ret
 }

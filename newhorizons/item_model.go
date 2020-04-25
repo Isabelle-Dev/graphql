@@ -3,10 +3,8 @@ package newhorizons
 // Item represents an item entry that will be displayed via graphql
 type Item struct {
 	Name             string
-	Image            []string
-	Variation        []string
+	Variants         []Variant
 	BodyTitle        string
-	Pattern          []string
 	PatternTitle     string
 	BodyCustomize    string
 	KitCost          string
@@ -20,6 +18,14 @@ type Item struct {
 	DIY              string
 	PatternCustomize string
 	Buy              string
+}
+
+// Variant represents variation differences according to each
+// item entry
+type Variant struct {
+	ImageURL string
+	Pattern  string
+	Colors   []string
 }
 
 // ItemEntry represents an item from the housewares table in postgres
@@ -56,13 +62,11 @@ type ItemEntry struct {
 
 // ToGraphQL (ItemEntry) formats the entry into an object that graphql will be
 // able to parse
-func (ie ItemEntry) ToGraphQL(v, p, i, h []string) *Item {
+func (ie ItemEntry) ToGraphQL(v []Variant, h []string) *Item {
 	return &Item{
 		Name:             ie.Name,
-		Image:            i,
-		Variation:        v,
+		Variants:         v,
 		BodyTitle:        ie.BodyTitle,
-		Pattern:          p,
 		PatternTitle:     ie.PatternTitle,
 		BodyCustomize:    ie.BodyCustomize,
 		KitCost:          ie.KitCost,

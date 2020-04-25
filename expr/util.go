@@ -15,6 +15,8 @@ func addName(str string, name Env) string {
 	switch string(name) {
 	case "concept":
 		return "(hhaconcept1 = " + str + " OR hhaconcept2 = " + str + ")"
+	case "color":
+		return "(color1 = " + str + " OR color2 = " + str + ")"
 	case "tag":
 		return string(name) + " LIKE '%" + strings.Trim(str, "'") + "%'"
 	default:

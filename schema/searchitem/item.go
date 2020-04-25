@@ -17,20 +17,11 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
-		"Image": &graphql.Field{
-			Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
+		"Variants": &graphql.Field{
+			Type: graphql.NewNonNull(graphql.NewList(variantObj)),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Item); ok {
-					return val.Image, nil
-				}
-				return nil, nil
-			},
-		},
-		"Variation": &graphql.Field{
-			Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(*newhorizons.Item); ok {
-					return val.Variation, nil
+					return val.Variants, nil
 				}
 				return nil, nil
 			},
@@ -40,15 +31,6 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.BodyTitle, nil
-				}
-				return nil, nil
-			},
-		},
-		"Pattern": &graphql.Field{
-			Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(*newhorizons.Item); ok {
-					return val.Pattern, nil
 				}
 				return nil, nil
 			},
@@ -166,6 +148,39 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Tag, nil
+				}
+				return nil, nil
+			},
+		},
+	},
+})
+
+var variantObj = graphql.NewObject(graphql.ObjectConfig{
+	Name: "Variant",
+	Fields: graphql.Fields{
+		"Img": &graphql.Field{
+			Type: graphql.String,
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.(newhorizons.Variant); ok {
+					return val.ImageURL, nil
+				}
+				return nil, nil
+			},
+		},
+		"Pattern": &graphql.Field{
+			Type: graphql.String,
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.(newhorizons.Variant); ok {
+					return val.Pattern, nil
+				}
+				return nil, nil
+			},
+		},
+		"Colors": &graphql.Field{
+			Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.(newhorizons.Variant); ok {
+					return val.Colors, nil
 				}
 				return nil, nil
 			},
