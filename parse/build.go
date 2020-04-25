@@ -1,4 +1,4 @@
-package searchitem
+package parse
 
 import (
 	"fmt"
@@ -6,11 +6,13 @@ import (
 	"github.com/Isabelle-Dev/isabelle-graphql/expr"
 )
 
+// BuildQuery builds a SQL query string from separated user query
+//
 // E.g. name:"Bob"
 //
 // Will return a map where the key is 'name'
 // and the value is "Bob"
-func buildQuery(vals map[string]string, tablename string) string {
+func BuildQuery(vals map[string]string, tablename string) string {
 	if len(vals) == 0 {
 		return "SELECT * FROM " + tablename
 	}

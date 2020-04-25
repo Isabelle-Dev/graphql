@@ -1,4 +1,4 @@
-package searchitem
+package parse
 
 import (
 	"testing"
@@ -29,7 +29,7 @@ func TestParseQuery(t *testing.T) {
 
 	for name, tc := range tests {
 		t.Run(name, func(t *testing.T) {
-			got := parseQuery(tc.input)
+			got := QueryParse(tc.input)
 			if _, ok := got[tc.wantType]; !ok {
 				t.Errorf("parseQuery(): error in wantType; want %s", tc.wantType)
 			}

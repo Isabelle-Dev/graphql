@@ -1,17 +1,17 @@
-package searchitem
+package parse
 
 import (
 	"regexp"
 	"strings"
 )
 
-// parseQuery returns a map of query parsed parameters
+// QueryParse returns a map of query parsed parameters
 //
 // E.g. name:"Bob"
 //
 // Will return a map where the key is 'name'
 // and the value is "Bob"
-func parseQuery(query string) map[string]string {
+func QueryParse(query string) map[string]string {
 	indexes := extractQuoteIndexes(query)
 	if len(indexes)%2 != 0 {
 		return nil

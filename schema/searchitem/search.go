@@ -3,6 +3,7 @@ package searchitem
 import (
 	"fmt"
 
+	"github.com/Isabelle-Dev/isabelle-graphql/parse"
 	"github.com/graphql-go/graphql"
 	"github.com/jinzhu/gorm"
 )
@@ -31,8 +32,8 @@ func RootObject(db *gorm.DB) *graphql.Object {
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 
 					query := p.Args["query"].(string)
-					options := parseQuery(query)
-					q := buildQuery(options, "item")
+					options := parse.QueryParse(query)
+					q := parse.BuildQuery(options, "item")
 					// Debugging purposes
 					// fmt.Println(q)
 					entries := execute(q, db)
