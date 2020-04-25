@@ -41,9 +41,14 @@ func exists(match string, container []string) bool {
 
 // utility func to turn all ItemEntry entries into Item
 func toItemSlice(items []newhorizons.ItemEntry, db *gorm.DB) []*newhorizons.Item {
+	var names []string
 	var ret []*newhorizons.Item
 	for _, i := range items {
+		if exists(i.Name, names) {
+			continue
+		}
 		n := findByName(i.Name, "item", db)
+		names = append(names, i.Name)
 		ret = append(ret, i.ToGraphQL(n.Variation, n.Pattern, n.Image, n.HHAConcepts))
 	}
 	return ret

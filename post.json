@@ -1,0 +1,3 @@
+{
+	"query": "query{item{query(query: \"name:'acoustic guitar OR grand piano' concept:'music' variation:'Brown'\"){items{Name, Variation, Sell}}}}"
+}
