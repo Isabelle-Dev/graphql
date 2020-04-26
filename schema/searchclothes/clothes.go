@@ -86,11 +86,11 @@ var clothes = graphql.NewObject(graphql.ObjectConfig{
 var clothesVariant = graphql.NewObject(graphql.ObjectConfig{
 	Name: "clothesvariants",
 	Fields: graphql.Fields{
-		"ClosetImage": &graphql.Field{
+		"Image": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(newhorizons.ClothesVariant); ok {
-					return val.ClosetImage, nil
+					return val.Image, nil
 				}
 				return nil, nil
 			},

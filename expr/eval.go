@@ -4,7 +4,9 @@
 // Adapted by Yiping (Allison) Su
 package expr
 
-import "strings"
+import (
+	"strings"
+)
 
 // Env represents the name of the query type
 type Env string
@@ -37,9 +39,14 @@ func (b Binary) Eval(env Env) string {
 func (u Unary) Eval(env Env) string {
 	switch u.Op {
 	case '<':
-		return strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", "<")
+		str := strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", "<")
+		if string(env) == "buy" {
+			str += " AND buy > 0"
+		}
+		return str
 	case '>':
-		return strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", ">")
+		str := strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", ">")
+		return str
 	default:
 		return ""
 	}

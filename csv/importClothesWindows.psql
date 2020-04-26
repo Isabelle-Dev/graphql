@@ -1,10 +1,9 @@
 CREATE TABLE IF NOT EXISTS clothes (
 	Name character varying(255),
-	ClosetImage character varying(255),
-	StorageImage character varying(255),
+	Image character varying(255),
 	Variation character varying(100),
 	DIY character varying(5),
-	Buy character varying(100),
+	Buy INT,
 	Sell INT,
 	Color1 character varying(100),
 	Color2 character varying(100),

@@ -5,7 +5,7 @@ type Clothes struct {
 	Name        string
 	Variants    []ClothesVariant
 	DIY         string
-	Buy         string
+	Buy         int
 	Sell        int
 	Source      string
 	SourceNotes string
@@ -15,26 +15,25 @@ type Clothes struct {
 
 // ClothesVariant represents variation data for clothes entries
 type ClothesVariant struct {
-	ClosetImage string
-	Variation   string
-	Color       []string
+	Image     string
+	Variation string
+	Color     []string
 }
 
 // ClothesEntry represents data we get from SQL database
 type ClothesEntry struct {
-	Name         string
-	ClosetImage  string `gorm:"column:closetimage"`
-	StorageImage string `gorm:"column:storageimage"`
-	Variation    string
-	DIY          string
-	Buy          string
-	Sell         int
-	Color1       string `gorm:"column:color1"`
-	Color2       string `gorm:"column:color2"`
-	Source       string
-	SourceNotes  string `gorm:"column:sourcenotes"`
-	Style        string
-	Themes       string `gorm:"column:labelthemes"`
+	Name        string
+	Image       string
+	Variation   string
+	DIY         string
+	Buy         int
+	Sell        int
+	Color1      string `gorm:"column:color1"`
+	Color2      string `gorm:"column:color2"`
+	Source      string
+	SourceNotes string `gorm:"column:sourcenotes"`
+	Style       string
+	Themes      string `gorm:"column:labelthemes"`
 }
 
 // ToGraphQL (ClothesEntry) turns a clothes entry from database to a Clothes object

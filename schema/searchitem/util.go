@@ -23,13 +23,13 @@ func extractVPIH(item []newhorizons.ItemEntry) ([]newhorizons.Variant, []string)
 			Pattern:  entry.Pattern,
 			Colors:   color,
 		})
-
-		if !exists(entry.HHAConcept1, hha) && entry.HHAConcept1 != "None" {
-			hha = append(hha, entry.HHAConcept1)
-		}
-		if !exists(entry.HHAConcept2, hha) && entry.HHAConcept2 != "None" {
-			hha = append(hha, entry.HHAConcept2)
-		}
+	}
+	// extract HHA concepts
+	if !exists(item[0].HHAConcept1, hha) && item[0].HHAConcept1 != "None" {
+		hha = append(hha, item[0].HHAConcept1)
+	}
+	if !exists(item[0].HHAConcept2, hha) && item[0].HHAConcept2 != "None" {
+		hha = append(hha, item[0].HHAConcept2)
 	}
 	return variants, hha
 }

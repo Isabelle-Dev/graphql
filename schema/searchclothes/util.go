@@ -33,9 +33,9 @@ func extractVT(c []newhorizons.ClothesEntry) ([]newhorizons.ClothesVariant, []st
 			color = append(color, entry.Color2)
 		}
 		v = append(v, newhorizons.ClothesVariant{
-			ClosetImage: entry.ClosetImage,
-			Variation:   entry.Variation,
-			Color:       color,
+			Image:     entry.Image,
+			Variation: entry.Variation,
+			Color:     color,
 		})
 	}
 	// extract themes
