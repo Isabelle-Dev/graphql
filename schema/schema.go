@@ -3,7 +3,7 @@ package schema
 import (
 	"fmt"
 
-	"github.com/Isabelle-Dev/isabelle-graphql/schema/searchbugandfish"
+	"github.com/Isabelle-Dev/isabelle-graphql/schema/searchclothes"
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/searchitem"
 	"github.com/graphql-go/graphql"
 	"github.com/jinzhu/gorm"
@@ -31,16 +31,23 @@ func init() {
 		Name:        "RootQuery",
 		Description: "Root query",
 		Fields: graphql.Fields{
-			"bug_and_fish": &graphql.Field{
-				Description: "Bug and fish search-related queries",
-				Type:        searchbugandfish.RootObject(db),
+			// "bug_and_fish": &graphql.Field{
+			// 	Description: "Bug and fish search-related queries",
+			// 	Type:        searchbugandfish.RootObject(db),
+			// 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+			// 		return map[string]interface{}{}, nil
+			// 	},
+			// },
+			"item": &graphql.Field{
+				Description: "Item-related queries",
+				Type:        searchitem.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
 			},
-			"item": &graphql.Field{
-				Description: "Item-related queries",
-				Type:        searchitem.RootObject(db),
+			"clothes": &graphql.Field{
+				Description: "Clothes-related queries",
+				Type:        searchclothes.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
