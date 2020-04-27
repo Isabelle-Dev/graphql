@@ -18,7 +18,7 @@ type Literal string
 // e.g. sell:"< 400"
 type Unary struct {
 	// Operator: < or >
-	Op rune
+	Op string
 
 	// Expression
 	//

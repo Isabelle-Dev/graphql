@@ -66,7 +66,7 @@ func Parse(input string) (_ Expr, err error) {
 	input = format(input)
 	lex := new(lexer)
 	lex.scan.IsIdentRune = func(ch rune, i int) bool {
-		return ch == '-' || unicode.IsLetter(ch) || unicode.IsDigit(ch) || ch == '_' || ch == '\''
+		return ch == '-' || unicode.IsLetter(ch) || unicode.IsDigit(ch) || ch == '_' || ch == '\'' || ch == '<' || ch == '>' || ch == '='
 	}
 	lex.scan.Init(strings.NewReader(input))
 
@@ -86,6 +86,10 @@ func format(in string) string {
 	ret := strings.ReplaceAll(in, " ", "_")
 	ret = strings.ReplaceAll(ret, "_AND_", " AND ")
 	ret = strings.ReplaceAll(ret, "_OR_", " OR ")
+	ret = strings.ReplaceAll(ret, "<_", "< ")
+	ret = strings.ReplaceAll(ret, "<=_", "<= ")
+	ret = strings.ReplaceAll(ret, ">_", "> ")
+	ret = strings.ReplaceAll(ret, ">=_", ">= ")
 	return ret
 }
 
@@ -110,8 +114,8 @@ func parseBinary(lex *lexer, prec1 int) Expr {
 // unary = primary
 //       | '>' expr
 func parseUnary(lex *lexer) Expr {
-	if lex.token == '<' || lex.token == '>' {
-		op := lex.token
+	if lex.text() == "<" || lex.text() == ">" || lex.text() == "<=" || lex.text() == ">=" {
+		op := lex.text()
 		lex.next()
 		return Unary{op, parseUnary(lex)}
 	}

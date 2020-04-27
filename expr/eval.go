@@ -42,14 +42,23 @@ func (b Binary) Eval(env Env) string {
 // e.g. sell < 3000
 func (u Unary) Eval(env Env) string {
 	switch u.Op {
-	case '<':
+	case "<":
 		str := strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", "<")
 		if string(env) == "buy" {
 			str += " AND buy > 0"
 		}
 		return str
-	case '>':
+	case ">":
 		str := strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", ">")
+		return str
+	case "<=":
+		str := strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", "<=")
+		if string(env) == "buy" {
+			str += " AND buy > 0"
+		}
+		return str
+	case ">=":
+		str := strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", ">=")
 		return str
 	default:
 		return ""
