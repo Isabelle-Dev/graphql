@@ -22,41 +22,21 @@ I cut out portions of JSON data returned in `search_all_by_hemisphere` because t
 
 ## Search Example Queries
 
-**Success Query:**
-
 ```graphql
-{
-  bug_and_fish {
-    search_fish(item: "oarfish") {
-      Name
-      Sell
-      Where
-      StartTime
-      EndTime
-      Shadow
-    }
-  }
-}
-```
-
-### Search ALL By Hemisphere
-
-```graphql
-{
-  bug_and_fish {
-    search_all_by_hemisphere(hemi: "north") {
-      bugs {
-        bug {
-          Name
-          InternalID
-        }
-      }
-      fishes {
-        fish {
-          Name
-          Sell
-          Shadow
-        }
+query FloorDemo {
+  floor {
+    query(query: "buy:\"<= 3000 AND > 2000\" color:\"Gray AND Beige\"") {
+      floors {
+        Color
+        Catalog
+        Concepts
+        Sell
+        SourceNotes
+        Tag
+        Image
+        VFX
+        Buy
+        Name
       }
     }
   }

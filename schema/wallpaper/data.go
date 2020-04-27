@@ -15,5 +15,5 @@ func execute(dbStr string, db *gorm.DB) []*newhorizons.Wallpaper {
 	if len(wallpaper) == 0 {
 		return nil
 	}
-	return toWallpaperSlice(wallpaper, db)
+	return toWallpaperSlice(wallpaper)
 }

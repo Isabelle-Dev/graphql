@@ -2,7 +2,6 @@ package wallpaper
 
 import (
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
-	"github.com/jinzhu/gorm"
 )
 
 // buildSchema retrieves nested data from a wallpaper entry and formats them into
@@ -34,7 +33,7 @@ func buildSchema(w newhorizons.WallpaperEntry) (newhorizons.VFXT, newhorizons.Wi
 }
 
 // turns WallpaperEntry into Wallpaper
-func toWallpaperSlice(w []newhorizons.WallpaperEntry, db *gorm.DB) []*newhorizons.Wallpaper {
+func toWallpaperSlice(w []newhorizons.WallpaperEntry) []*newhorizons.Wallpaper {
 	var ret []*newhorizons.Wallpaper
 	for _, i := range w {
 		v, w, cur, color, concepts := buildSchema(i)
