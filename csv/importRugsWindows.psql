@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS rugs (
+	Name character varying(255),
+	Image character varying(255),
+	DIY character varying(5),
+	Buy INT,
+	Sell INT,
+	Color1 character varying(100),
+	Color2 character varying(100),
+	Size character varying(50),
+	Source character varying(200),
+	SourceNotes character varying(400),
+	Version character varying(50),
+	HHAConcept1 character varying(100),
+	HHAConcept2 character varying(100),
+	HHASeries character varying(100),
+	Tag character varying(200),
+	Catalog character varying(50),
+	Filename character varying(200),
+	InternalID INT,
+	UniqueEntryID character varying(100)
+);
+
+\COPY rugs FROM 'C:\Users\yipin\go\src\github.com\Isabelle-Dev\isabelle-graphql\csv\rugs.csv' DELIMITER ',' CSV HEADER;

@@ -1,6 +1,7 @@
 package wallpaper
 
 import (
+	"github.com/Isabelle-Dev/isabelle-graphql/common"
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 )
 
@@ -21,12 +22,12 @@ func buildSchema(w newhorizons.WallpaperEntry) (newhorizons.VFXT, newhorizons.Wi
 	}
 	var color []string
 	color = append(color, w.Color1)
-	if !exists(w.Color2, color) {
+	if !common.Exists(w.Color2, color) {
 		color = append(color, w.Color2)
 	}
 	var concepts []string
 	concepts = append(concepts, w.HHAConcept1)
-	if !exists(w.Color2, concepts) {
+	if !common.Exists(w.HHAConcept2, concepts) && w.HHAConcept2 != "None" {
 		concepts = append(concepts, w.HHAConcept2)
 	}
 	return vfx, win, cur, color, concepts
@@ -40,13 +41,4 @@ func toWallpaperSlice(w []newhorizons.WallpaperEntry) []*newhorizons.Wallpaper {
 		ret = append(ret, i.ToGraphQL(v, w, cur, color, concepts))
 	}
 	return ret
-}
-
-func exists(c string, con []string) bool {
-	for _, i := range con {
-		if c == i {
-			return true
-		}
-	}
-	return false
 }

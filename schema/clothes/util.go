@@ -3,6 +3,7 @@ package clothes
 import (
 	"strings"
 
+	"github.com/Isabelle-Dev/isabelle-graphql/common"
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 	"github.com/jinzhu/gorm"
 )
@@ -11,7 +12,7 @@ func toClothesSlice(clothes []newhorizons.ClothesEntry, db *gorm.DB) []*newhoriz
 	var names []string
 	var ret []*newhorizons.Clothes
 	for _, c := range clothes {
-		if exists(c.Name, names) {
+		if common.Exists(c.Name, names) {
 			continue
 		}
 		n := findByName(c.Name, "clothes", db)
@@ -26,10 +27,10 @@ func extractVT(c []newhorizons.ClothesEntry) ([]newhorizons.ClothesVariant, []st
 	for _, entry := range c {
 		// extract unique variant data
 		var color []string
-		if !exists(entry.Color1, color) {
+		if !common.Exists(entry.Color1, color) {
 			color = append(color, entry.Color1)
 		}
-		if !exists(entry.Color2, color) {
+		if !common.Exists(entry.Color2, color) {
 			color = append(color, entry.Color2)
 		}
 		v = append(v, newhorizons.ClothesVariant{
@@ -44,19 +45,10 @@ func extractVT(c []newhorizons.ClothesEntry) ([]newhorizons.ClothesVariant, []st
 	ts := strings.Split(t, ";")
 	for _, w := range ts {
 		word := strings.TrimSpace(w)
-		if exists(word, themes) {
+		if common.Exists(word, themes) {
 			continue
 		}
 		themes = append(themes, word)
 	}
 	return v, themes
-}
-
-func exists(c string, i []string) bool {
-	for _, k := range i {
-		if k == c {
-			return true
-		}
-	}
-	return false
 }

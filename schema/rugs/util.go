@@ -1,20 +1,20 @@
-package floor
+package rug
 
 import (
 	"github.com/Isabelle-Dev/isabelle-graphql/common"
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 )
 
-func toFloorSlice(floors []newhorizons.FloorEntry) []*newhorizons.Floor {
-	var ret []*newhorizons.Floor
-	for _, i := range floors {
-		color, concept := buildSchema(i)
+func toRugSlice(rugs []newhorizons.RugEntry) []*newhorizons.Rug {
+	var ret []*newhorizons.Rug
+	for _, i := range rugs {
+		color, concept := extractCC(i)
 		ret = append(ret, i.ToGraphQL(color, concept))
 	}
 	return ret
 }
 
-func buildSchema(entry newhorizons.FloorEntry) ([]string, []string) {
+func extractCC(entry newhorizons.RugEntry) ([]string, []string) {
 	var color []string
 	var concept []string
 	color = append(color, entry.Color1)

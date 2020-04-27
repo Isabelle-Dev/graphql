@@ -1,6 +1,7 @@
 package item
 
 import (
+	"github.com/Isabelle-Dev/isabelle-graphql/common"
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 	"github.com/jinzhu/gorm"
 )
@@ -12,10 +13,8 @@ func extractVPIH(item []newhorizons.ItemEntry) ([]newhorizons.Variant, []string)
 	for _, entry := range item {
 		// Add variant details - remove duplicates
 		var color []string
-		if !exists(entry.Color1, color) {
-			color = append(color, entry.Color1)
-		}
-		if !exists(entry.Color2, color) {
+		color = append(color, entry.Color1)
+		if !common.Exists(entry.Color2, color) {
 			color = append(color, entry.Color2)
 		}
 		variants = append(variants, newhorizons.Variant{
@@ -25,23 +24,13 @@ func extractVPIH(item []newhorizons.ItemEntry) ([]newhorizons.Variant, []string)
 		})
 	}
 	// extract HHA concepts
-	if !exists(item[0].HHAConcept1, hha) && item[0].HHAConcept1 != "None" {
+	if item[0].HHAConcept1 != "None" {
 		hha = append(hha, item[0].HHAConcept1)
 	}
-	if !exists(item[0].HHAConcept2, hha) && item[0].HHAConcept2 != "None" {
+	if !common.Exists(item[0].HHAConcept2, hha) && item[0].HHAConcept2 != "None" {
 		hha = append(hha, item[0].HHAConcept2)
 	}
 	return variants, hha
-}
-
-// utility func to check existence
-func exists(match string, container []string) bool {
-	for _, i := range container {
-		if match == i {
-			return true
-		}
-	}
-	return false
 }
 
 // utility func to turn all ItemEntry entries into Item
@@ -49,7 +38,7 @@ func toItemSlice(items []newhorizons.ItemEntry, db *gorm.DB) []*newhorizons.Item
 	var names []string
 	var ret []*newhorizons.Item
 	for _, i := range items {
-		if exists(i.Name, names) {
+		if common.Exists(i.Name, names) {
 			continue
 		}
 		n := findByName(i.Name, "item", db)
