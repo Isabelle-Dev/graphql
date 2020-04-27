@@ -1,4 +1,4 @@
-package searchclothes
+package item
 
 import (
 	"fmt"
@@ -8,22 +8,22 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var clothesSearchObject *graphql.Object
+var itemSearchObject *graphql.Object
 
-// RootObject contains the main clothes-related queries
+// RootObject contains the main item-related queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if clothesSearchObject != nil {
-		return clothesSearchObject
+	if itemSearchObject != nil {
+		return itemSearchObject
 	}
 
-	// clothes
-	clothesSearchObject = graphql.NewObject(graphql.ObjectConfig{
-		Name:        "clothes",
-		Description: "clothes-related query sources",
+	// item
+	itemSearchObject = graphql.NewObject(graphql.ObjectConfig{
+		Name:        "item",
+		Description: "item-related query sources",
 		Fields: graphql.Fields{
 			"query": &graphql.Field{
 				Name: "query fields",
-				Type: graphql.NewNonNull(searchClothesObj),
+				Type: graphql.NewNonNull(searchItemObj),
 				Args: graphql.FieldConfigArgument{
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -33,7 +33,9 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 					query := p.Args["query"].(string)
 					options := parse.QueryParse(query)
-					q := parse.BuildQuery(options, "clothes")
+					q := parse.BuildQuery(options, "item")
+					// Debugging purposes
+					// fmt.Println(q)
 					entries := execute(q, db)
 					if entries == nil {
 						return nil, fmt.Errorf("query(): no entries found")
@@ -44,5 +46,5 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return clothesSearchObject
+	return itemSearchObject
 }

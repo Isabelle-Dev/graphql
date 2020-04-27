@@ -1,4 +1,4 @@
-package searchclothes
+package clothes
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-package searchitem
+package item
 
 import (
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"

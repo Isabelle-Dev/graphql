@@ -63,7 +63,7 @@ func extractNames(str []string) []string {
 
 // extractQuoteIndexes returns an int slice of where all quote indexes are in the string
 func extractQuoteIndexes(query string) []int {
-	i := strings.Index(query, "'")
+	i := strings.Index(query, "\"")
 	if i == -1 {
 		return nil
 	}
@@ -73,7 +73,7 @@ func extractQuoteIndexes(query string) []int {
 	prevIndex = i
 	i++
 	for i < len(query)-1 {
-		i = strings.Index(query[i:], "'")
+		i = strings.Index(query[i:], "\"")
 		if i == -1 {
 			return indexes
 		}

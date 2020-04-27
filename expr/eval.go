@@ -15,7 +15,11 @@ type Env string
 //
 // i.e. the string itself
 func (l Literal) Eval(env Env) string {
-	return addName(addQuote(string(l)), env)
+	ret := string(l)
+	if index := strings.Index(ret, "'"); index != -1 {
+		ret = strings.ReplaceAll(ret, "'", "''")
+	}
+	return addName(addQuote(ret), env)
 }
 
 // Eval (Binary) evaluates binary part queries

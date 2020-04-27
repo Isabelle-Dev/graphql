@@ -1,4 +1,4 @@
-package searchbugandfish
+package bugandfish
 
 import (
 	"fmt"

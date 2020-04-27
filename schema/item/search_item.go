@@ -1,4 +1,4 @@
-package searchitem
+package item
 
 import (
 	"fmt"
