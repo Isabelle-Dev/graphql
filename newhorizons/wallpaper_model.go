@@ -63,3 +63,26 @@ type WallpaperEntry struct {
 	HHASeries    string `gorm:"column:hhaseries"`
 	Tag          string
 }
+
+// ToGraphQL (WallpaperEntry) turns a clothes entry from database to a Clothes object
+// graphql is able to parse
+func (w WallpaperEntry) ToGraphQL(v VFXT, win Windows, c Curtains, colors, concepts []string) *Wallpaper {
+	return &Wallpaper{
+		Name:        w.Name,
+		Image:       w.Image,
+		VFXInfo:     v,
+		DIY:         w.DIY,
+		Sell:        w.Sell,
+		Buy:         w.Buy,
+		Source:      w.Source,
+		SourceNotes: w.SourceNotes,
+		Catalog:     w.Catalog,
+		WindowInfo:  win,
+		CurtainInfo: c,
+		CeilingType: w.CeilingType,
+		Color:       colors,
+		Concepts:    concepts,
+		HHASeries:   w.HHASeries,
+		Tag:         w.Tag,
+	}
+}

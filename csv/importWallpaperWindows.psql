@@ -1,0 +1,30 @@
+CREATE TABLE IF NOT EXISTS wallpaper (
+	Name character varying(255),
+	Image character varying(255),
+	VFX character varying(5),
+	VFXType character varying(100),
+	DIY character varying(5),
+	Buy INT,
+	Sell INT,
+	Source character varying(200),
+	SourceNotes character varying(400),
+	Catalog character varying(50),
+	WindowType character varying(100),
+	WindowColor character varying(100),
+	PaneType character varying(100),
+	CurtainType character varying(100),
+	CurtainColor character varying(100),
+	CeilingType character varying(100),
+	Color1 character varying(100),
+	Color2 character varying(100),
+	HHAConcept1 character varying(100),
+	HHAConcept2 character varying(100),
+	HHASeries character varying(100),
+	Tag character varying(200),
+	Version character varying(50),
+	Filename character varying(200),
+	InternalID INT,
+	UniqueEntryID character varying(100)
+);
+
+\COPY wallpaper FROM 'C:\Users\yipin\go\src\github.com\Isabelle-Dev\isabelle-graphql\csv\wallpaper.csv' DELIMITER ',' CSV HEADER;

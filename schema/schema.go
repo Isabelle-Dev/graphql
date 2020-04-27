@@ -5,6 +5,7 @@ import (
 
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/clothes"
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/item"
+	"github.com/Isabelle-Dev/isabelle-graphql/schema/wallpaper"
 	"github.com/graphql-go/graphql"
 	"github.com/jinzhu/gorm"
 
@@ -52,13 +53,13 @@ func init() {
 					return map[string]interface{}{}, nil
 				},
 			},
-			// "wallpaper": &graphql.Field{
-			// 	Description: "Wallpaper-related queries",
-			// 	Type:        wallpaper.RootObject(db),
-			// 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-			// 		return map[string]interface{}{}, nil
-			// 	},
-			// },
+			"wallpaper": &graphql.Field{
+				Description: "Wallpaper-related queries",
+				Type:        wallpaper.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
 		},
 	})
 
