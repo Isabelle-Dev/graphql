@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS villagers (
+	Name character varying(255),
+	Image character varying(255),
+	Species character varying(30),
+	Gender character varying(10),
+	Personality character varying(50),
+	Birthday character varying(6),
+	Catchphrase character varying(100),
+	Style1 character varying(15),
+	Style2 character varying(15),
+	Color1 character varying(100),
+	Color2 character varying(100),
+	Filename character varying(200),
+	UniqueEntryID character varying(100),
+	Month INT
+);
+
+\COPY villagers FROM 'C:\Users\yipin\go\src\github.com\Isabelle-Dev\isabelle-graphql\csv\villagers.csv' DELIMITER ',' CSV HEADER;

@@ -27,9 +27,7 @@ func extractVT(c []newhorizons.ClothesEntry) ([]newhorizons.ClothesVariant, []st
 	for _, entry := range c {
 		// extract unique variant data
 		var color []string
-		if !common.Exists(entry.Color1, color) {
-			color = append(color, entry.Color1)
-		}
+		color = append(color, entry.Color1)
 		if !common.Exists(entry.Color2, color) {
 			color = append(color, entry.Color2)
 		}

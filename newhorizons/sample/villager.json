@@ -1,0 +1,1054 @@
+{
+  "data": {
+    "villagers": {
+      "query": {
+        "villagers": [
+          {
+            "Birthday": "2/16",
+            "Catchphrase": "snorty",
+            "Color": [
+              "Green",
+              "Blue"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/ant03.png",
+            "Name": "Anabelle",
+            "Personality": "Peppy",
+            "Species": "Anteater",
+            "Style": [
+              "Cute",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "3/4",
+            "Catchphrase": "chuurp",
+            "Color": [
+              "Colorful",
+              "Orange"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/brd02.png",
+            "Name": "Anchovy",
+            "Personality": "Lazy",
+            "Species": "Bird",
+            "Style": [
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "2/24",
+            "Catchphrase": "cannoli",
+            "Color": [
+              "Red",
+              "Pink"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/mus10.png",
+            "Name": "Anicotti",
+            "Personality": "Peppy",
+            "Species": "Mouse",
+            "Style": [
+              "Simple",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "2/6",
+            "Catchphrase": "gumdrop",
+            "Color": [
+              "Red",
+              "Pink"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/ant08.png",
+            "Name": "Annalisa",
+            "Personality": "Normal",
+            "Species": "Anteater",
+            "Style": [
+              "Elegant",
+              "Gorgeous"
+            ]
+          },
+          {
+            "Birthday": "2/22",
+            "Catchphrase": "skree-haw",
+            "Color": [
+              "Orange",
+              "Brown"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/pbr05.png",
+            "Name": "Avery",
+            "Personality": "Cranky",
+            "Species": "Eagle",
+            "Style": [
+              "Simple",
+              "Gorgeous"
+            ]
+          },
+          {
+            "Birthday": "3/23",
+            "Catchphrase": "WHONK",
+            "Color": [
+              "Green",
+              "White"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/elp06.png",
+            "Name": "Axel",
+            "Personality": "Jock",
+            "Species": "Elephant",
+            "Style": [
+              "Active",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "3/28",
+            "Catchphrase": "daahling",
+            "Color": [
+              "Purple",
+              "Blue"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/shp01.png",
+            "Name": "Baabara",
+            "Personality": "Snooty",
+            "Species": "Sheep",
+            "Style": [
+              "Gorgeous",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "3/2",
+            "Catchphrase": "cubby",
+            "Color": [
+              "Yellow",
+              "Black"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/cbr16.png",
+            "Name": "Barold",
+            "Personality": "Lazy",
+            "Species": "Cub",
+            "Style": [
+              "Simple",
+              "Cool"
+            ]
+          },
+          {
+            "Birthday": "3/29",
+            "Catchphrase": "squirt",
+            "Color": [
+              "Black",
+              "Blue"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/hip04.png",
+            "Name": "Biff",
+            "Personality": "Jock",
+            "Species": "Hippo",
+            "Style": [
+              "Gorgeous",
+              "Active"
+            ]
+          },
+          {
+            "Birthday": "2/1",
+            "Catchphrase": "quacko",
+            "Color": [
+              "Blue",
+              "Purple"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/duk00.png",
+            "Name": "Bill",
+            "Personality": "Jock",
+            "Species": "Duck",
+            "Style": [
+              "Active"
+            ]
+          },
+          {
+            "Birthday": "3/25",
+            "Catchphrase": "dagnaabit",
+            "Color": [
+              "Blue",
+              "Purple"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/goa02.png",
+            "Name": "Billy",
+            "Personality": "Jock",
+            "Species": "Goat",
+            "Style": [
+              "Simple",
+              "Active"
+            ]
+          },
+          {
+            "Birthday": "3/3",
+            "Catchphrase": "deelish",
+            "Color": [
+              "Light blue",
+              "Yellow"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/rbt17.png",
+            "Name": "Bonbon",
+            "Personality": "Peppy",
+            "Species": "Rabbit",
+            "Style": [
+              "Cute",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "2/7",
+            "Catchphrase": "human",
+            "Color": [
+              "Brown",
+              "Beige"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/pgn10.png",
+            "Name": "Boomer",
+            "Personality": "Lazy",
+            "Species": "Penguin",
+            "Style": [
+              "Simple",
+              "Cool"
+            ]
+          },
+          {
+            "Birthday": "3/25",
+            "Catchphrase": "feathers",
+            "Color": [
+              "Pink",
+              "Green"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/pbr09.png",
+            "Name": "Celia",
+            "Personality": "Normal",
+            "Species": "Eagle",
+            "Style": [
+              "Elegant",
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "3/17",
+            "Catchphrase": "tralala",
+            "Color": [
+              "Yellow",
+              "Light blue"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/cbr10.png",
+            "Name": "Cheri",
+            "Personality": "Peppy",
+            "Species": "Cub",
+            "Style": [
+              "Simple",
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "3/6",
+            "Catchphrase": "la baa",
+            "Color": [
+              "Red",
+              "Pink"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/goa00.png",
+            "Name": "Chevre",
+            "Personality": "Normal",
+            "Species": "Goat",
+            "Style": [
+              "Cute",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "2/9",
+            "Catchphrase": "sugar",
+            "Color": [
+              "Light blue",
+              "White"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/hrs07.png",
+            "Name": "Cleo",
+            "Personality": "Snooty",
+            "Species": "Horse",
+            "Style": [
+              "Cute",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "3/1",
+            "Catchphrase": "doyoing",
+            "Color": [
+              "Beige",
+              "Green"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/rbt02.png",
+            "Name": "Coco",
+            "Personality": "Normal",
+            "Species": "Rabbit",
+            "Style": [
+              "Simple",
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "3/9",
+            "Catchphrase": "ah-CHOO",
+            "Color": [
+              "Yellow",
+              "Beige"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/ant00.png",
+            "Name": "Cyrano",
+            "Personality": "Cranky",
+            "Species": "Anteater",
+            "Style": [
+              "Cool",
+              "Active"
+            ]
+          },
+          {
+            "Birthday": "2/17",
+            "Catchphrase": "ohmmm",
+            "Color": [
+              "Brown",
+              "Beige"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/wol04.png",
+            "Name": "Dobie",
+            "Personality": "Cranky",
+            "Species": "Wolf",
+            "Style": [
+              "Simple",
+              "Cool"
+            ]
+          },
+          {
+            "Birthday": "3/16",
+            "Catchphrase": "old bunny",
+            "Color": [
+              "Gray",
+              "Beige"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/rbt10.png",
+            "Name": "Doc",
+            "Personality": "Lazy",
+            "Species": "Rabbit",
+            "Style": [
+              "Simple",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "3/18",
+            "Catchphrase": "indeedaroo",
+            "Color": [
+              "Red",
+              "Colorful"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/shp15.png",
+            "Name": "Dom",
+            "Personality": "Jock",
+            "Species": "Sheep",
+            "Style": [
+              "Active",
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "2/18",
+            "Catchphrase": "squeaky",
+            "Color": [
+              "Blue",
+              "Light blue"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/mus00.png",
+            "Name": "Dora",
+            "Personality": "Normal",
+            "Species": "Mouse",
+            "Style": [
+              "Simple",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "3/14",
+            "Catchphrase": "wee one",
+            "Color": [
+              "Blue",
+              "Black"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/rbt01.png",
+            "Name": "Dotty",
+            "Personality": "Peppy",
+            "Species": "Rabbit",
+            "Style": [
+              "Simple",
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "2/12",
+            "Catchphrase": "burrrn",
+            "Color": [
+              "Orange",
+              "Red"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/crd08.png",
+            "Name": "Drago",
+            "Personality": "Lazy",
+            "Species": "Alligator",
+            "Style": [
+              "Elegant",
+              "Gorgeous"
+            ]
+          },
+          {
+            "Birthday": "3/21",
+            "Catchphrase": "puh-lease",
+            "Color": [
+              "Purple",
+              "Red"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/mnk05.png",
+            "Name": "Elise",
+            "Personality": "Snooty",
+            "Species": "Monkey",
+            "Style": [
+              "Elegant",
+              "Gorgeous"
+            ]
+          },
+          {
+            "Birthday": "3/26",
+            "Catchphrase": "dearie",
+            "Color": [
+              "Beige",
+              "White"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/der00.png",
+            "Name": "Fauna",
+            "Personality": "Normal",
+            "Species": "Deer",
+            "Style": [
+              "Simple",
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "3/30",
+            "Catchphrase": "mimimi",
+            "Color": [
+              "Yellow",
+              "Orange"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/cat17.png",
+            "Name": "Felicity",
+            "Personality": "Peppy",
+            "Species": "Cat",
+            "Style": [
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "2/9",
+            "Catchphrase": "pinky",
+            "Color": [
+              "Colorful",
+              "Pink"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/ost09.png",
+            "Name": "Flora",
+            "Personality": "Peppy",
+            "Species": "Ostrich",
+            "Style": [
+              "Cute",
+              "Active"
+            ]
+          },
+          {
+            "Birthday": "2/19",
+            "Catchphrase": "ducky",
+            "Color": [
+              "Green",
+              "Colorful"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/duk07.png",
+            "Name": "Freckles",
+            "Personality": "Peppy",
+            "Species": "Duck",
+            "Style": [
+              "Simple",
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "2/8",
+            "Catchphrase": "fribbit",
+            "Color": [
+              "Blue",
+              "Colorful"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/flg02.png",
+            "Name": "Frobert",
+            "Personality": "Jock",
+            "Species": "Frog",
+            "Style": [
+              "Active",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "3/5",
+            "Catchphrase": "snortie",
+            "Color": [
+              "Pink",
+              "White"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/pig13.png",
+            "Name": "Gala",
+            "Personality": "Normal",
+            "Species": "Pig",
+            "Style": [
+              "Cute",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "2/25",
+            "Catchphrase": "snort",
+            "Color": [
+              "Gray",
+              "Beige"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/ham07.png",
+            "Name": "Hamphrey",
+            "Personality": "Cranky",
+            "Species": "Hamster",
+            "Style": [
+              "Cool",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "3/11",
+            "Catchphrase": "thumper",
+            "Color": [
+              "Blue",
+              "Yellow"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/rbt14.png",
+            "Name": "Hopkins",
+            "Personality": "Lazy",
+            "Species": "Rabbit",
+            "Style": [
+              "Simple",
+              "Active"
+            ]
+          },
+          {
+            "Birthday": "3/20",
+            "Catchphrase": "schnozzle",
+            "Color": [
+              "Green",
+              "Brown"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/rhn04.png",
+            "Name": "Hornsby",
+            "Personality": "Lazy",
+            "Species": "Rhino",
+            "Style": [
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "2/2",
+            "Catchphrase": "bzzert",
+            "Color": [
+              "Yellow",
+              "Orange"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/brd04.png",
+            "Name": "Jitters",
+            "Personality": "Jock",
+            "Species": "Bird",
+            "Style": [
+              "Active"
+            ]
+          },
+          {
+            "Birthday": "3/10",
+            "Catchphrase": "myohmy",
+            "Color": [
+              "Pink",
+              "White"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/cbr19.png",
+            "Name": "Judy",
+            "Personality": "Snooty",
+            "Species": "Cub",
+            "Style": [
+              "Cute",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "3/15",
+            "Catchphrase": "glitter",
+            "Color": [
+              "Purple",
+              "Blue"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/hrs13.png",
+            "Name": "Julian",
+            "Personality": "Smug",
+            "Species": "Horse",
+            "Style": [
+              "Gorgeous",
+              "Cool"
+            ]
+          },
+          {
+            "Birthday": "2/15",
+            "Catchphrase": "mrowrr",
+            "Color": [
+              "Green",
+              "Gray"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/cat14.png",
+            "Name": "Kitty",
+            "Personality": "Snooty",
+            "Species": "Cat",
+            "Style": [
+              "Elegant",
+              "Gorgeous"
+            ]
+          },
+          {
+            "Birthday": "3/31",
+            "Catchphrase": "strudel",
+            "Color": [
+              "Gray",
+              "White"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/bea14.png",
+            "Name": "Klaus",
+            "Personality": "Smug",
+            "Species": "Bear",
+            "Style": [
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "2/4",
+            "Catchphrase": "toady",
+            "Color": [
+              "White",
+              "Yellow"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/flg00.png",
+            "Name": "Lily",
+            "Personality": "Normal",
+            "Species": "Frog",
+            "Style": [
+              "Cute",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "3/27",
+            "Catchphrase": "bonbon",
+            "Color": [
+              "Gray",
+              "Pink"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/cat18.png",
+            "Name": "Lolly",
+            "Personality": "Normal",
+            "Species": "Cat",
+            "Style": [
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "3/26",
+            "Catchphrase": "hoo hoo ha",
+            "Color": [
+              "Gray",
+              "Red"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/gor04.png",
+            "Name": "Louie",
+            "Personality": "Jock",
+            "Species": "Gorilla",
+            "Style": [
+              "Active",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "3/13",
+            "Catchphrase": "sundae",
+            "Color": [
+              "Yellow",
+              "Light blue"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/bea15.png",
+            "Name": "Megan",
+            "Personality": "Normal",
+            "Species": "Bear",
+            "Style": [
+              "Cute",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "3/19",
+            "Catchphrase": "shortcake",
+            "Color": [
+              "White",
+              "Red"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/rhn07.png",
+            "Name": "Merengue",
+            "Personality": "Normal",
+            "Species": "Rhino",
+            "Style": [
+              "Cute",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "3/12",
+            "Catchphrase": "tweedledee",
+            "Color": [
+              "Pink"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/brd08.png",
+            "Name": "Midge",
+            "Personality": "Normal",
+            "Species": "Bird",
+            "Style": [
+              "Cute",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "3/7",
+            "Catchphrase": "quackidee",
+            "Color": [
+              "Yellow",
+              "Pink"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/duk16.png",
+            "Name": "Molly",
+            "Personality": "Normal",
+            "Species": "Duck",
+            "Style": [
+              "Cute",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "2/14",
+            "Catchphrase": "nightshade",
+            "Color": [
+              "Black",
+              "Purple"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/shp12.png",
+            "Name": "Muffy",
+            "Personality": "Big sister",
+            "Species": "Sheep",
+            "Style": [
+              "Gorgeous",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "2/28",
+            "Catchphrase": "moolah",
+            "Color": [
+              "Colorful",
+              "Purple"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/cow07.png",
+            "Name": "Naomi",
+            "Personality": "Snooty",
+            "Species": "Cow",
+            "Style": [
+              "Elegant",
+              "Gorgeous"
+            ]
+          },
+          {
+            "Birthday": "2/3",
+            "Catchphrase": "purrr",
+            "Color": [
+              "White",
+              "Black"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/cat03.png",
+            "Name": "Olivia",
+            "Personality": "Snooty",
+            "Species": "Cat",
+            "Style": [
+              "Cool",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "2/23",
+            "Catchphrase": "quackle",
+            "Color": [
+              "Yellow",
+              "White"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/duk02.png",
+            "Name": "Pate",
+            "Personality": "Peppy",
+            "Species": "Duck",
+            "Style": [
+              "Simple",
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "3/22",
+            "Catchphrase": "yodelay",
+            "Color": [
+              "Orange",
+              "Green"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/bea10.png",
+            "Name": "Paula",
+            "Personality": "Big sister",
+            "Species": "Bear",
+            "Style": [
+              "Cute",
+              "Active"
+            ]
+          },
+          {
+            "Birthday": "2/5",
+            "Catchphrase": "oh bow",
+            "Color": [
+              "Pink",
+              "Red"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/mus17.png",
+            "Name": "Penelope",
+            "Personality": "Peppy",
+            "Species": "Mouse",
+            "Style": [
+              "Cute",
+              "Gorgeous"
+            ]
+          },
+          {
+            "Birthday": "2/11",
+            "Catchphrase": "rah rah",
+            "Color": [
+              "Pink",
+              "Light blue"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/duk05.png",
+            "Name": "Pompom",
+            "Personality": "Peppy",
+            "Species": "Duck",
+            "Style": [
+              "Cute",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "2/21",
+            "Catchphrase": "brrrrrrrrr",
+            "Color": [
+              "Blue",
+              "Red"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/pgn06.png",
+            "Name": "Puck",
+            "Personality": "Lazy",
+            "Species": "Penguin",
+            "Style": [
+              "Active",
+              "Simple"
+            ]
+          },
+          {
+            "Birthday": "2/13",
+            "Catchphrase": "zzrrbbitt",
+            "Color": [
+              "Blue",
+              "Light blue"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/flg01.png",
+            "Name": "Ribbot",
+            "Personality": "Jock",
+            "Species": "Frog",
+            "Style": [
+              "Simple",
+              "Active"
+            ]
+          },
+          {
+            "Birthday": "2/27",
+            "Catchphrase": "silly",
+            "Color": [
+              "Pink",
+              "Red"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/cat02.png",
+            "Name": "Rosie",
+            "Personality": "Peppy",
+            "Species": "Cat",
+            "Style": [
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "2/26",
+            "Catchphrase": "cardio",
+            "Color": [
+              "Green",
+              "Yellow"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/squ16.png",
+            "Name": "Sheldon",
+            "Personality": "Jock",
+            "Species": "Squirrel",
+            "Style": [
+              "Active",
+              "Cool"
+            ]
+          },
+          {
+            "Birthday": "3/24",
+            "Catchphrase": "airmail",
+            "Color": [
+              "Blue",
+              "White"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/wol09.png",
+            "Name": "Skye",
+            "Personality": "Normal",
+            "Species": "Wolf",
+            "Style": [
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "2/20",
+            "Catchphrase": "frappe",
+            "Color": [
+              "Light blue",
+              "White"
+            ],
+            "Gender": "Female",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/pgn14.png",
+            "Name": "Sprinkle",
+            "Personality": "Peppy",
+            "Species": "Penguin",
+            "Style": [
+              "Cute",
+              "Elegant"
+            ]
+          },
+          {
+            "Birthday": "2/10",
+            "Catchphrase": "stuffin'",
+            "Color": [
+              "Colorful",
+              "White"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/cbr05.png",
+            "Name": "Stitches",
+            "Personality": "Lazy",
+            "Species": "Cub",
+            "Style": [
+              "Simple",
+              "Cute"
+            ]
+          },
+          {
+            "Birthday": "3/8",
+            "Catchphrase": "bloop",
+            "Color": [
+              "Blue",
+              "Yellow"
+            ],
+            "Gender": "Male",
+            "Image": "https://acnhcdn.com/latest/NpcIcon/ocp02.png",
+            "Name": "Zucker",
+            "Personality": "Lazy",
+            "Species": "Octopus",
+            "Style": [
+              "Simple",
+              "Cute"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
