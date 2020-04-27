@@ -6,6 +6,7 @@ import (
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/clothes"
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/floor"
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/item"
+	"github.com/Isabelle-Dev/isabelle-graphql/schema/photos"
 	rug "github.com/Isabelle-Dev/isabelle-graphql/schema/rugs"
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/wallpaper"
 	"github.com/graphql-go/graphql"
@@ -72,6 +73,13 @@ func init() {
 			"rugs": &graphql.Field{
 				Description: "Floor-related queries",
 				Type:        rug.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"photos": &graphql.Field{
+				Description: "Floor-related queries",
+				Type:        photos.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},

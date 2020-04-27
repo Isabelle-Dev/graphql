@@ -35,14 +35,14 @@ func extractVPIH(item []newhorizons.ItemEntry) ([]newhorizons.Variant, []string)
 
 // utility func to turn all ItemEntry entries into Item
 func toItemSlice(items []newhorizons.ItemEntry, db *gorm.DB) []*newhorizons.Item {
-	var names []string
+	dupe := make(map[string]bool, 0)
 	var ret []*newhorizons.Item
 	for _, i := range items {
-		if common.Exists(i.Name, names) {
+		if _, ok := dupe[i.Name]; ok {
 			continue
 		}
 		n := findByName(i.Name, "item", db)
-		names = append(names, i.Name)
+		dupe[i.Name] = true
 		ret = append(ret, i.ToGraphQL(n.Variants, n.HHAConcepts))
 	}
 	return ret

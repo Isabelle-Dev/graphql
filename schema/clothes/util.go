@@ -9,14 +9,14 @@ import (
 )
 
 func toClothesSlice(clothes []newhorizons.ClothesEntry, db *gorm.DB) []*newhorizons.Clothes {
-	var names []string
+	dupe := make(map[string]bool, 0)
 	var ret []*newhorizons.Clothes
 	for _, c := range clothes {
-		if common.Exists(c.Name, names) {
+		if _, ok := dupe[c.Name]; ok {
 			continue
 		}
 		n := findByName(c.Name, "clothes", db)
-		names = append(names, c.Name)
+		dupe[c.Name] = true
 		ret = append(ret, c.ToGraphQL(n.Variants, n.Themes))
 	}
 	return ret

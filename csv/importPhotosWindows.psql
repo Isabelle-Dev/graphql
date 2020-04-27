@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS photos (
+	Name character varying(255),
+	Image character varying(255),
+	Variation character varying(100),
+	BodyTitle character varying(100),
+	Pattern character varying(100),
+	PatternTitle character varying(100),
+	DIY character varying(5),
+	Customize character varying(5),
+	KitCost INT,
+	Buy INT,
+	Sell INT,
+	Color1 character varying(100),
+	Color2 character varying(100),
+	Size character varying(10),
+	Source character varying(200),
+	Version character varying(50),
+	Catalog character varying(100),
+	Filename character varying(200),
+	VariantID character varying(30),
+	InternalID INT,
+	UniqueEntryID character varying(100)
+);
+
+\COPY photos FROM 'C:\Users\yipin\go\src\github.com\Isabelle-Dev\isabelle-graphql\csv\photos.csv' DELIMITER ',' CSV HEADER;
