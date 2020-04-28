@@ -5,51 +5,51 @@
         "wallpapers": [
           {
             "Buy": "200",
+            "CeilingType": "Wood",
             "Color": [
               "Beige",
               "Brown"
             ],
             "Concepts": [
-              "horror",
-              "None"
+              "horror"
             ],
+            "CurtainInfo": {
+              "CurtainColor": "NA",
+              "CurtainType": "None"
+            },
+            "DIY": "No",
             "HHASeries": "None",
             "Image": "https://acnhcdn.com/latest/FtrIcon/RoomTexWallOldSoil00.png",
             "Name": "dirt-clod wall",
             "Sell": 50,
-            "Source": "Nook's Cranny",
             "Tag": "Stone Walls",
             "VFXInfo": {
               "VFX": "No",
               "VFXType": "NA"
-            },
-            "WindowInfo": {
-              "Color": "Natural Wood",
-              "Type": "Four Pane"
             }
           },
           {
             "Buy": "200",
+            "CeilingType": "Stone",
             "Color": [
               "Beige"
             ],
             "Concepts": [
-              "horror",
-              "None"
+              "horror"
             ],
+            "CurtainInfo": {
+              "CurtainColor": "NA",
+              "CurtainType": "None"
+            },
+            "DIY": "No",
             "HHASeries": "None",
             "Image": "https://acnhcdn.com/latest/FtrIcon/RoomTexWallOld00.png",
             "Name": "old wallpaper",
             "Sell": 50,
-            "Source": "Nook's Cranny",
             "Tag": "Cloth Walls",
             "VFXInfo": {
               "VFX": "No",
               "VFXType": "NA"
-            },
-            "WindowInfo": {
-              "Color": "White Wood",
-              "Type": "Four Pane"
             }
           }
         ]

@@ -31,7 +31,7 @@ func extractType(a []newhorizons.ArtEntry) ([]newhorizons.ArtType, []string) {
 	}
 	var concept []string
 	concept = append(concept, a[0].HHAConcept1)
-	if !common.Exists(a[0].HHAConcept2, concept) {
+	if !common.Exists(a[0].HHAConcept2, concept) && a[0].HHAConcept2 != "None" {
 		concept = append(concept, a[0].HHAConcept2)
 	}
 	return at, concept
