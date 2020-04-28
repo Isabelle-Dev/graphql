@@ -1,4 +1,4 @@
-package art
+package music
 
 import (
 	"fmt"
@@ -9,22 +9,22 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var searchArtObj *graphql.Object
+var searchMusicObj *graphql.Object
 
-// RootObject for art-related type queries
+// RootObject for music-related type queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if searchArtObj != nil {
-		return searchArtObj
+	if searchMusicObj != nil {
+		return searchMusicObj
 	}
 
-	// art
-	searchArtObj = graphql.NewObject(graphql.ObjectConfig{
-		Name:        "art",
-		Description: "art-related query sources",
+	// music
+	searchMusicObj = graphql.NewObject(graphql.ObjectConfig{
+		Name:        "music",
+		Description: "music-related query sources",
 		Fields: graphql.Fields{
 			"query": &graphql.Field{
 				Name: "query fields",
-				Type: graphql.NewNonNull(artSearchObj),
+				Type: graphql.NewNonNull(musicSearchObj),
 				Args: graphql.FieldConfigArgument{
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -34,7 +34,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 					query := p.Args["query"].(string)
 					options := parse.QueryParse(query)
-					dbStr := parse.BuildQuery(options, "art")
+					dbStr := parse.BuildQuery(options, "music")
 					entries := execute(dbStr, db)
 					if entries == nil {
 						return nil, fmt.Errorf("query(): no entries found")
@@ -45,19 +45,19 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return searchArtObj
+	return searchMusicObj
 }
 
-var artSearchObj = graphql.NewObject(graphql.ObjectConfig{
-	Name: "art_search",
+var musicSearchObj = graphql.NewObject(graphql.ObjectConfig{
+	Name: "music_search",
 	Fields: graphql.Fields{
-		"art": &graphql.Field{
-			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(art))),
+		"music": &graphql.Field{
+			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(music))),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.([]*newhorizons.Art); ok {
+				if val, ok := p.Source.([]*newhorizons.Music); ok {
 					return val, nil
 				}
-				return nil, fmt.Errorf("search_art(): error")
+				return nil, fmt.Errorf("search_rug(): error")
 			},
 		},
 	},

@@ -1,0 +1,21 @@
+{
+  "data": {
+    "music": {
+      "query": {
+        "music": [
+          {
+            "Buy": -1,
+            "Color": [
+              "Brown"
+            ],
+            "Image": "https://acnhcdn.com/latest/Audio/mjk_DoubutuNoMachi.png",
+            "Name": "Animal City",
+            "Sell": 800,
+            "Source": "K.K. concert",
+            "SourceNotes": "Hidden song - only by request"
+          }
+        ]
+      }
+    }
+  }
+}

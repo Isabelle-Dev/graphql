@@ -3,6 +3,7 @@ package item
 import (
 	"fmt"
 
+	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 	"github.com/Isabelle-Dev/isabelle-graphql/parse"
 	"github.com/graphql-go/graphql"
 	"github.com/jinzhu/gorm"
@@ -48,3 +49,18 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 	return itemSearchObject
 }
+
+var searchItemObj = graphql.NewObject(graphql.ObjectConfig{
+	Name: "search_by_item",
+	Fields: graphql.Fields{
+		"items": &graphql.Field{
+			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(item))),
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.([]*newhorizons.Item); ok {
+					return val, nil
+				}
+				return nil, fmt.Errorf("search_by_item(): Error - not a recognized type")
+			},
+		},
+	},
+})

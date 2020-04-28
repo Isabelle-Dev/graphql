@@ -3,6 +3,7 @@ package rug
 import (
 	"fmt"
 
+	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 	"github.com/Isabelle-Dev/isabelle-graphql/parse"
 	"github.com/graphql-go/graphql"
 	"github.com/jinzhu/gorm"
@@ -46,3 +47,18 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 	return rugSearchObj
 }
+
+var searchRugObj = graphql.NewObject(graphql.ObjectConfig{
+	Name: "rug_search",
+	Fields: graphql.Fields{
+		"rugs": &graphql.Field{
+			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(rug))),
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.([]*newhorizons.Rug); ok {
+					return val, nil
+				}
+				return nil, fmt.Errorf("search_rug(): error")
+			},
+		},
+	},
+})

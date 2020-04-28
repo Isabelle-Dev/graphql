@@ -66,7 +66,7 @@ func Parse(input string) (_ Expr, err error) {
 	input = format(input)
 	lex := new(lexer)
 	lex.scan.IsIdentRune = func(ch rune, i int) bool {
-		return ch == '-' || unicode.IsLetter(ch) || unicode.IsDigit(ch) || ch == '_' || ch == '\'' || ch == '<' || ch == '>' || ch == '='
+		return ch == '-' || unicode.IsLetter(ch) || unicode.IsDigit(ch) || ch == '_' || ch == '\'' || ch == '<' || ch == '>' || ch == '=' || ch == '.'
 	}
 	lex.scan.Init(strings.NewReader(input))
 
