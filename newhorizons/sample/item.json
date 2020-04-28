@@ -1,0 +1,775 @@
+{
+  "data": {
+    "item": {
+      "query": {
+        "items": [
+          {
+            "Buy": "NFS",
+            "HHAConcepts": [
+              "fancy"
+            ],
+            "HHASeries": "flowers",
+            "HHASet": "None",
+            "Interact": "Yes",
+            "KitCost": "3",
+            "Name": "windflower fan",
+            "PatternCustomize": "No",
+            "PatternTitle": "NA",
+            "Sell": 1740,
+            "Source": "Crafting",
+            "Variants": [
+              {
+                "Colors": [
+                  "Red",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/miscellaneous/FtrFlowerFan_Remake_0_0.png",
+                "Pattern": "NA"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/miscellaneous/FtrFlowerFan_Remake_1_0.png",
+                "Pattern": "NA"
+              },
+              {
+                "Colors": [
+                  "Purple",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/miscellaneous/FtrFlowerFan_Remake_2_0.png",
+                "Pattern": "NA"
+              }
+            ]
+          },
+          {
+            "Buy": "6800",
+            "HHAConcepts": [
+              "concert",
+              "facility"
+            ],
+            "HHASeries": "None",
+            "HHASet": "None",
+            "Interact": "No",
+            "KitCost": "3",
+            "Name": "effects rack",
+            "PatternCustomize": "Yes",
+            "PatternTitle": "Sticker area",
+            "Sell": 1700,
+            "Source": "Nook's Cranny",
+            "Variants": [
+              {
+                "Colors": [
+                  "Black"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_0_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_0_1.png",
+                "Pattern": "Familiar logo"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_0_2.png",
+                "Pattern": "Chic logo"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "Purple"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_0_3.png",
+                "Pattern": "Rock logo"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_0_4.png",
+                "Pattern": "Emblem logo"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_0_5.png",
+                "Pattern": "Handwritten logo"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "Red"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_0_6.png",
+                "Pattern": "Pop logo"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_0_7.png",
+                "Pattern": "Cute logo"
+              },
+              {
+                "Colors": [
+                  "White",
+                  "Black"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_1_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_1_1.png",
+                "Pattern": "Familiar logo"
+              },
+              {
+                "Colors": [
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_1_2.png",
+                "Pattern": "Chic logo"
+              },
+              {
+                "Colors": [
+                  "White",
+                  "Purple"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_1_3.png",
+                "Pattern": "Rock logo"
+              },
+              {
+                "Colors": [
+                  "White",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_1_4.png",
+                "Pattern": "Emblem logo"
+              },
+              {
+                "Colors": [
+                  "White",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_1_5.png",
+                "Pattern": "Handwritten logo"
+              },
+              {
+                "Colors": [
+                  "White",
+                  "Red"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_1_6.png",
+                "Pattern": "Pop logo"
+              },
+              {
+                "Colors": [
+                  "White",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_1_7.png",
+                "Pattern": "Cute logo"
+              },
+              {
+                "Colors": [
+                  "Yellow",
+                  "Black"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_2_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Yellow",
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_2_1.png",
+                "Pattern": "Familiar logo"
+              },
+              {
+                "Colors": [
+                  "Yellow",
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_2_2.png",
+                "Pattern": "Chic logo"
+              },
+              {
+                "Colors": [
+                  "Yellow",
+                  "Purple"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_2_3.png",
+                "Pattern": "Rock logo"
+              },
+              {
+                "Colors": [
+                  "Yellow",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_2_4.png",
+                "Pattern": "Emblem logo"
+              },
+              {
+                "Colors": [
+                  "Yellow",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_2_5.png",
+                "Pattern": "Handwritten logo"
+              },
+              {
+                "Colors": [
+                  "Yellow",
+                  "Red"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_2_6.png",
+                "Pattern": "Pop logo"
+              },
+              {
+                "Colors": [
+                  "Yellow",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_2_7.png",
+                "Pattern": "Cute logo"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "Black"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_3_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_3_1.png",
+                "Pattern": "Familiar logo"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_3_2.png",
+                "Pattern": "Chic logo"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "Purple"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_3_3.png",
+                "Pattern": "Rock logo"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_3_4.png",
+                "Pattern": "Emblem logo"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_3_5.png",
+                "Pattern": "Handwritten logo"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "Red"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_3_6.png",
+                "Pattern": "Pop logo"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_3_7.png",
+                "Pattern": "Cute logo"
+              },
+              {
+                "Colors": [
+                  "Red",
+                  "Black"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_4_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Red",
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_4_1.png",
+                "Pattern": "Familiar logo"
+              },
+              {
+                "Colors": [
+                  "Red",
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_4_2.png",
+                "Pattern": "Chic logo"
+              },
+              {
+                "Colors": [
+                  "Red",
+                  "Purple"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_4_3.png",
+                "Pattern": "Rock logo"
+              },
+              {
+                "Colors": [
+                  "Red",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_4_4.png",
+                "Pattern": "Emblem logo"
+              },
+              {
+                "Colors": [
+                  "Red",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_4_5.png",
+                "Pattern": "Handwritten logo"
+              },
+              {
+                "Colors": [
+                  "Red"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_4_6.png",
+                "Pattern": "Pop logo"
+              },
+              {
+                "Colors": [
+                  "Red",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_4_7.png",
+                "Pattern": "Cute logo"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "Black"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_5_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_5_1.png",
+                "Pattern": "Familiar logo"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_5_2.png",
+                "Pattern": "Chic logo"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "Purple"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_5_3.png",
+                "Pattern": "Rock logo"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_5_4.png",
+                "Pattern": "Emblem logo"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_5_5.png",
+                "Pattern": "Handwritten logo"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "Red"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_5_6.png",
+                "Pattern": "Pop logo"
+              },
+              {
+                "Colors": [
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrEffectorrack_Remake_5_7.png",
+                "Pattern": "Cute logo"
+              }
+            ]
+          },
+          {
+            "Buy": "NFS",
+            "HHAConcepts": [
+              "child's room",
+              "living room"
+            ],
+            "HHASeries": "wooden",
+            "HHASet": "None",
+            "Interact": "No",
+            "KitCost": "4",
+            "Name": "wooden table",
+            "PatternCustomize": "Yes",
+            "PatternTitle": "Tablecloth",
+            "Sell": 1800,
+            "Source": "Crafting",
+            "Variants": [
+              {
+                "Colors": [
+                  "Beige"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_0_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Beige",
+                  "Orange"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_0_1.png",
+                "Pattern": "Orange"
+              },
+              {
+                "Colors": [
+                  "Beige",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_0_2.png",
+                "Pattern": "Pink"
+              },
+              {
+                "Colors": [
+                  "Beige",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_0_3.png",
+                "Pattern": "Blue"
+              },
+              {
+                "Colors": [
+                  "Beige",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_0_4.png",
+                "Pattern": "Green"
+              },
+              {
+                "Colors": [
+                  "White"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_1_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "White",
+                  "Orange"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_1_1.png",
+                "Pattern": "Orange"
+              },
+              {
+                "Colors": [
+                  "White",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_1_2.png",
+                "Pattern": "Pink"
+              },
+              {
+                "Colors": [
+                  "White",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_1_3.png",
+                "Pattern": "Blue"
+              },
+              {
+                "Colors": [
+                  "White",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_1_4.png",
+                "Pattern": "Green"
+              },
+              {
+                "Colors": [
+                  "Orange"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_2_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Orange"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_2_1.png",
+                "Pattern": "Orange"
+              },
+              {
+                "Colors": [
+                  "Orange",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_2_2.png",
+                "Pattern": "Pink"
+              },
+              {
+                "Colors": [
+                  "Orange",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_2_3.png",
+                "Pattern": "Blue"
+              },
+              {
+                "Colors": [
+                  "Orange",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_2_4.png",
+                "Pattern": "Green"
+              },
+              {
+                "Colors": [
+                  "Brown"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_3_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Brown",
+                  "Orange"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_3_1.png",
+                "Pattern": "Orange"
+              },
+              {
+                "Colors": [
+                  "Brown",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_3_2.png",
+                "Pattern": "Pink"
+              },
+              {
+                "Colors": [
+                  "Brown",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_3_3.png",
+                "Pattern": "Blue"
+              },
+              {
+                "Colors": [
+                  "Brown",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_3_4.png",
+                "Pattern": "Green"
+              },
+              {
+                "Colors": [
+                  "Black"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_4_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "Orange"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_4_1.png",
+                "Pattern": "Orange"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_4_2.png",
+                "Pattern": "Pink"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_4_3.png",
+                "Pattern": "Blue"
+              },
+              {
+                "Colors": [
+                  "Black",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_4_4.png",
+                "Pattern": "Green"
+              },
+              {
+                "Colors": [
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_5_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Green",
+                  "Orange"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_5_1.png",
+                "Pattern": "Orange"
+              },
+              {
+                "Colors": [
+                  "Green",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_5_2.png",
+                "Pattern": "Pink"
+              },
+              {
+                "Colors": [
+                  "Green",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_5_3.png",
+                "Pattern": "Blue"
+              },
+              {
+                "Colors": [
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_5_4.png",
+                "Pattern": "Green"
+              },
+              {
+                "Colors": [
+                  "Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_6_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "Orange"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_6_1.png",
+                "Pattern": "Orange"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_6_2.png",
+                "Pattern": "Pink"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "Light Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_6_3.png",
+                "Pattern": "Blue"
+              },
+              {
+                "Colors": [
+                  "Blue",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_6_4.png",
+                "Pattern": "Green"
+              },
+              {
+                "Colors": [
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_7_0.png",
+                "Pattern": "None"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "Orange"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_7_1.png",
+                "Pattern": "Orange"
+              },
+              {
+                "Colors": [
+                  "Pink"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_7_2.png",
+                "Pattern": "Pink"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "Blue"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_7_3.png",
+                "Pattern": "Blue"
+              },
+              {
+                "Colors": [
+                  "Pink",
+                  "Green"
+                ],
+                "Img": "https://acnhcdn.com/acdb/housewares/FtrWoodenTableL_Remake_7_4.png",
+                "Pattern": "Green"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

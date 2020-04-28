@@ -43,6 +43,33 @@ query FloorDemo {
 }
 ```
 
+```graphql
+query demoItem {
+  item {
+    query(query: "sell:\"< 2000 AND > 1500\" color:\"(Pink AND Green) OR Orange\"") {
+      items {
+        Name
+        Variants {
+          Colors
+          Img
+          Pattern
+        }
+        Buy
+        Sell
+        Source
+        KitCost
+        HHASet
+        HHASeries
+        HHAConcepts
+        Interact
+        PatternTitle
+        PatternCustomize
+      }
+    }
+  }
+}
+```
+
 **cURL Examples (bash):**
 
 An updated **cURL** query can be found in `post.json`. I do not recommend making graphql requests using cURL, but if you must, it's easier to port requests using an external json file.

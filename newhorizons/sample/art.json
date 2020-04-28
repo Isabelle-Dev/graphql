@@ -1,0 +1,33 @@
+{
+  "data": {
+    "art": {
+      "query": {
+        "art": [
+          {
+            "Buy": 4980,
+            "Category": "Wall-mounted",
+            "Concept": [
+              "expensive",
+              "facility"
+            ],
+            "Name": "academic painting",
+            "Source": "Jolly Redd's Treasure Trawler",
+            "Tag": "Picture",
+            "Type": [
+              {
+                "Genuine": "Y",
+                "Image": "https://acnhcdn.com/latest/FtrIcon/FtrArtVitruvianMan.png",
+                "Sell": 1245
+              },
+              {
+                "Genuine": "N",
+                "Image": "https://acnhcdn.com/latest/FtrIcon/FtrArtVitruvianManFake.png",
+                "Sell": 0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

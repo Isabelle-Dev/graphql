@@ -3,6 +3,7 @@ package schema
 import (
 	"fmt"
 
+	"github.com/Isabelle-Dev/isabelle-graphql/schema/art"
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/clothes"
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/floor"
 	"github.com/Isabelle-Dev/isabelle-graphql/schema/item"
@@ -88,6 +89,13 @@ func init() {
 			"villagers": &graphql.Field{
 				Description: "Floor-related queries",
 				Type:        villager.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"art": &graphql.Field{
+				Description: "Floor-related queries",
+				Type:        art.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
