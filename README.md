@@ -18,8 +18,6 @@ All **csv data files** and **import code to Postgres** will be located in `csv`.
 
 **Sample JSON** responses can be found in `newhorizons/sample`.
 
-I cut out portions of JSON data returned in `search_all_by_hemisphere` because the file was too long. The API for the search, nevertheless, works.
-
 ## Search Example Queries
 
 ```graphql
@@ -70,17 +68,32 @@ query demoItem {
 }
 ```
 
+```graphql
+query DemoItem {
+  item {
+    query(query: " name:\"leaf\" tag:\"Plant\" color:\"Orange\" " glob:"t" limit: 30) {
+      items {
+        Name
+        Buy
+        Sell
+        HHAConcepts
+        HHASet
+        HHASeries
+        Variants {
+          Colors
+        }
+        Tag
+      }
+    }
+  }
+}
+```
+
 **cURL Examples (bash):**
 
 An updated **cURL** query can be found in `post.json`. I do not recommend making graphql requests using cURL, but if you must, it's easier to port requests using an external json file.
 
 For example: `curl -H "Content-type:application/json" --data @post.json http://localhost:4000/`
-
-_Older Examples:_
-
-`curl -i -H "Content-Type: application/json" -X POST -d '{"query": "query {bug_and_fish{search_fish(item: \"oarfish\") {Name, Sell, Where, Shadow}}}"}' http://localhost:4000/`
-
-`curl -i -H "Content-Type: application/json" -X POST -d '{"query": "query {item{search_item(item: \"acoustic guitar\") {items{item{Name, Sell, PatternTitle, Variation}}}}}"}' http://localhost:4000/`
 
 ## Contributions
 

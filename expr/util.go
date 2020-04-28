@@ -11,17 +11,22 @@ func paren(str string) string {
 }
 
 // utility func to add the query type's name to query string
-func addName(str string, name Env) string {
-	switch string(name) {
+func addName(str string, info Env) string {
+	switch info["name"] {
 	case "concept":
 		return "(hhaconcept1 = " + str + " OR hhaconcept2 = " + str + ")"
 	case "color":
 		return "(color1 = " + str + " OR color2 = " + str + ")"
 	case "tag":
-		return string(name) + " LIKE '%" + strings.Trim(str, "'") + "%'"
+		return info["name"] + " LIKE '%" + strings.Trim(str, "'") + "%'"
+	case "name":
+		if strings.ToLower(info["glob"]) == "t" {
+			return info["name"] + " LIKE '%" + strings.Trim(str, "'") + "%'"
+		}
 	default:
-		return string(name) + " = " + str
+		return info["name"] + " = " + str
 	}
+	return info["name"] + " = " + str
 }
 
 // utility func to add quotes around string literals

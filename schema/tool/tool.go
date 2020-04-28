@@ -99,7 +99,7 @@ var tool = graphql.NewObject(graphql.ObjectConfig{
 			},
 		},
 		"Source": &graphql.Field{
-			Type: graphql.String,
+			Type: graphql.NewList(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Tool); ok {
 					return val.Source, nil

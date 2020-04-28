@@ -1,6 +1,8 @@
 package tool
 
 import (
+	"strings"
+
 	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
 	"github.com/jinzhu/gorm"
 )
@@ -14,12 +16,12 @@ func toToolSlice(t []newhorizons.ToolEntry, db *gorm.DB) []*newhorizons.Tool {
 		}
 		n := findByName(i.Name, "tool", db)
 		dupe[i.Name] = true
-		ret = append(ret, i.ToGraphQL(n.Variant))
+		ret = append(ret, i.ToGraphQL(n.Variant, n.Source))
 	}
 	return ret
 }
 
-func extractV(t []newhorizons.ToolEntry) []newhorizons.ToolVariant {
+func extractVS(t []newhorizons.ToolEntry) ([]newhorizons.ToolVariant, []string) {
 	var v []newhorizons.ToolVariant
 	for _, entry := range t {
 		v = append(v, newhorizons.ToolVariant{
@@ -27,5 +29,11 @@ func extractV(t []newhorizons.ToolEntry) []newhorizons.ToolVariant {
 			Variation: entry.Variation,
 		})
 	}
-	return v
+	var source []string
+	parts := strings.Split(t[0].Source, ";")
+	for _, i := range parts {
+		word := strings.TrimSpace(i)
+		source = append(source, word)
+	}
+	return v, source
 }

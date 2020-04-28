@@ -29,12 +29,22 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
 					},
+					"glob": &graphql.ArgumentConfig{
+						Type:         graphql.String,
+						DefaultValue: "f",
+					},
+					"limit": &graphql.ArgumentConfig{
+						Type:         graphql.Int,
+						DefaultValue: 500,
+					},
 				},
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 
 					query := p.Args["query"].(string)
+					glob := p.Args["glob"].(string)
+					limit := p.Args["limit"].(int)
 					options := parse.QueryParse(query)
-					dbStr := parse.BuildQuery(options, "tool")
+					dbStr := parse.BuildQuery(options, "tool", limit, glob)
 					entries := execute(dbStr, db)
 					if entries == nil {
 						return nil, fmt.Errorf("query(): no entries found")

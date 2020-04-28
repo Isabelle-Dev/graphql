@@ -12,7 +12,7 @@ type Tool struct {
 	Buy         int
 	Sell        int
 	Set         string
-	Source      string
+	Source      []string
 	SourceNotes string
 }
 
@@ -40,7 +40,7 @@ type ToolEntry struct {
 }
 
 // ToGraphQL (ToolEntry) converts a tool entry into a tool object
-func (te ToolEntry) ToGraphQL(t []ToolVariant) *Tool {
+func (te ToolEntry) ToGraphQL(t []ToolVariant, s []string) *Tool {
 	return &Tool{
 		Name:        te.Name,
 		Variant:     t,
@@ -52,7 +52,7 @@ func (te ToolEntry) ToGraphQL(t []ToolVariant) *Tool {
 		Buy:         te.Buy,
 		Sell:        te.Sell,
 		Set:         te.Set,
-		Source:      te.Source,
+		Source:      s,
 		SourceNotes: te.SourceNotes,
 	}
 }

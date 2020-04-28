@@ -24,6 +24,6 @@ func findByName(name, tablename string, db *gorm.DB) *newhorizons.Tool {
 	if len(tool) == 0 {
 		return nil
 	}
-	v := extractV(tool)
-	return tool[0].ToGraphQL(v)
+	v, s := extractVS(tool)
+	return tool[0].ToGraphQL(v, s)
 }

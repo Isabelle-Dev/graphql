@@ -10,7 +10,10 @@
             "Name": "net",
             "Sell": 225,
             "Set": "None",
-            "Source": "Nook's Cranny\r\nCrafting",
+            "Source": [
+              "Nook's Cranny",
+              "Crafting"
+            ],
             "SourceNotes": "Available in all tiers of shops, including Timmy & Tommy before the shop is opened",
             "Uses": 20,
             "Variant": [

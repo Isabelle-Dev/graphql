@@ -8,8 +8,8 @@ import (
 	"strings"
 )
 
-// Env represents the name of the query type
-type Env string
+// Env represents the info of the query type
+type Env map[string]string
 
 // Eval (Literal) evaluates singular queries
 //
@@ -44,7 +44,7 @@ func (u Unary) Eval(env Env) string {
 	switch u.Op {
 	case "<":
 		str := strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", "<")
-		if string(env) == "buy" {
+		if env["name"] == "buy" {
 			str += " AND buy > 0"
 		}
 		return str
@@ -53,7 +53,7 @@ func (u Unary) Eval(env Env) string {
 		return str
 	case "<=":
 		str := strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", "<=")
-		if string(env) == "buy" {
+		if env["name"] == "buy" {
 			str += " AND buy > 0"
 		}
 		return str
