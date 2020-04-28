@@ -1,4 +1,4 @@
-module github.com/Isabelle-Dev/isabelle-graphql
+module github.com/Isabelle-Dev/graphql
 
 go 1.14
 

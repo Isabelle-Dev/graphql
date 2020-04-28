@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/Isabelle-Dev/isabelle-graphql/schema"
+	"github.com/Isabelle-Dev/graphql/schema"
 	"github.com/graphql-go/handler"
 )
 

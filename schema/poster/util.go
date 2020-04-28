@@ -1,8 +1,8 @@
 package poster
 
 import (
-	"github.com/Isabelle-Dev/isabelle-graphql/common"
-	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
+	"github.com/Isabelle-Dev/graphql/common"
+	"github.com/Isabelle-Dev/graphql/newhorizons"
 )
 
 func toPosterSlice(p []newhorizons.PosterEntry) []*newhorizons.Poster {

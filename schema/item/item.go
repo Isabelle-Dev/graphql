@@ -1,7 +1,7 @@
 package item
 
 import (
-	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
+	"github.com/Isabelle-Dev/graphql/newhorizons"
 	"github.com/graphql-go/graphql"
 )
 
@@ -162,7 +162,7 @@ var variantObj = graphql.NewObject(graphql.ObjectConfig{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(newhorizons.Variant); ok {
-					return val.ImageURL, nil
+					return val.Image, nil
 				}
 				return nil, nil
 			},

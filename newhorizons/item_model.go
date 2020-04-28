@@ -23,9 +23,9 @@ type Item struct {
 // Variant represents variation differences according to each
 // item entry
 type Variant struct {
-	ImageURL string
-	Pattern  string
-	Colors   []string
+	Image   string
+	Pattern string
+	Colors  []string
 }
 
 // ItemEntry represents an item from the housewares table in postgres
@@ -47,7 +47,6 @@ type ItemEntry struct {
 	Size             string
 	Source           string
 	SourceNotes      string `gorm:"column:sourcenotes"`
-	Version          string
 	HHAConcept1      string `gorm:"column:hhaconcept1"`
 	HHAConcept2      string `gorm:"column:hhaconcept2"`
 	HHASeries        string `gorm:"column:hhaseries"`
@@ -55,9 +54,6 @@ type ItemEntry struct {
 	Interact         string
 	Tag              string
 	Catalog          string
-	Filename         string
-	VariantID        string `gorm:"column:variantid"`
-	InternalID       int    `gorm:"column:internalid"`
 }
 
 // ToGraphQL (ItemEntry) formats the entry into an object that graphql will be

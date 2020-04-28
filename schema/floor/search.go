@@ -3,8 +3,8 @@ package floor
 import (
 	"fmt"
 
-	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
-	"github.com/Isabelle-Dev/isabelle-graphql/parse"
+	"github.com/Isabelle-Dev/graphql/newhorizons"
+	"github.com/Isabelle-Dev/graphql/parse"
 	"github.com/graphql-go/graphql"
 	"github.com/jinzhu/gorm"
 )

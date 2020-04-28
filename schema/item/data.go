@@ -1,7 +1,7 @@
 package item
 
 import (
-	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
+	"github.com/Isabelle-Dev/graphql/newhorizons"
 	"github.com/jinzhu/gorm"
 )
 

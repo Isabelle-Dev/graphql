@@ -3,7 +3,7 @@ package bugandfish
 import (
 	"fmt"
 
-	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
+	"github.com/Isabelle-Dev/graphql/newhorizons"
 	"github.com/graphql-go/graphql"
 )
 

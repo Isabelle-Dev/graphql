@@ -1,8 +1,8 @@
 package item
 
 import (
-	"github.com/Isabelle-Dev/isabelle-graphql/common"
-	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
+	"github.com/Isabelle-Dev/graphql/common"
+	"github.com/Isabelle-Dev/graphql/newhorizons"
 	"github.com/jinzhu/gorm"
 )
 
@@ -18,9 +18,9 @@ func extractVPIH(item []newhorizons.ItemEntry) ([]newhorizons.Variant, []string)
 			color = append(color, entry.Color2)
 		}
 		variants = append(variants, newhorizons.Variant{
-			ImageURL: entry.Image,
-			Pattern:  entry.Pattern,
-			Colors:   color,
+			Image:   entry.Image,
+			Pattern: entry.Pattern,
+			Colors:  color,
 		})
 	}
 	// extract HHA concepts

@@ -1,8 +1,8 @@
 package villager
 
 import (
-	"github.com/Isabelle-Dev/isabelle-graphql/common"
-	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
+	"github.com/Isabelle-Dev/graphql/common"
+	"github.com/Isabelle-Dev/graphql/newhorizons"
 )
 
 func toVillagerSlice(v []newhorizons.VillagerEntry) []*newhorizons.Villager {

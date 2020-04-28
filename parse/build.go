@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/Isabelle-Dev/isabelle-graphql/expr"
+	"github.com/Isabelle-Dev/graphql/expr"
 )
 
 // BuildQuery builds a SQL query string from separated user query

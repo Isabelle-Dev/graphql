@@ -3,7 +3,7 @@ package bugandfish
 import (
 	"reflect"
 
-	"github.com/Isabelle-Dev/isabelle-graphql/common"
+	"github.com/Isabelle-Dev/graphql/common"
 )
 
 // helper func which extracts month data from an entry

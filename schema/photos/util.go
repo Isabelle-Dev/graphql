@@ -1,8 +1,8 @@
 package photos
 
 import (
-	"github.com/Isabelle-Dev/isabelle-graphql/common"
-	"github.com/Isabelle-Dev/isabelle-graphql/newhorizons"
+	"github.com/Isabelle-Dev/graphql/common"
+	"github.com/Isabelle-Dev/graphql/newhorizons"
 	"github.com/jinzhu/gorm"
 )
 
@@ -29,9 +29,9 @@ func extractV(p []newhorizons.PhotoEntry) []newhorizons.Variant {
 			color = append(color, entry.Color2)
 		}
 		v = append(v, newhorizons.Variant{
-			ImageURL: entry.Image,
-			Pattern:  entry.Variation,
-			Colors:   color,
+			Image:   entry.Image,
+			Pattern: entry.Variation,
+			Colors:  color,
 		})
 	}
 	return v
