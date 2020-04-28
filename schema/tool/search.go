@@ -1,4 +1,4 @@
-package photos
+package tool
 
 import (
 	"fmt"
@@ -9,22 +9,22 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var searchPhotoObj *graphql.Object
+var searchToolObj *graphql.Object
 
 // RootObject for photo-related type queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if searchPhotoObj != nil {
-		return searchPhotoObj
+	if searchToolObj != nil {
+		return searchToolObj
 	}
 
-	// photo
-	searchPhotoObj = graphql.NewObject(graphql.ObjectConfig{
-		Name:        "photo",
-		Description: "Villager photo-related query sources",
+	// tool
+	searchToolObj = graphql.NewObject(graphql.ObjectConfig{
+		Name:        "tool",
+		Description: "Tool-related query sources",
 		Fields: graphql.Fields{
 			"query": &graphql.Field{
 				Name: "query fields",
-				Type: graphql.NewNonNull(photoSearchObj),
+				Type: graphql.NewNonNull(toolSearchObj),
 				Args: graphql.FieldConfigArgument{
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -34,7 +34,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 
 					query := p.Args["query"].(string)
 					options := parse.QueryParse(query)
-					dbStr := parse.BuildQuery(options, "photos")
+					dbStr := parse.BuildQuery(options, "tool")
 					entries := execute(dbStr, db)
 					if entries == nil {
 						return nil, fmt.Errorf("query(): no entries found")
@@ -45,19 +45,19 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return searchPhotoObj
+	return searchToolObj
 }
 
-var photoSearchObj = graphql.NewObject(graphql.ObjectConfig{
-	Name: "photo_search",
+var toolSearchObj = graphql.NewObject(graphql.ObjectConfig{
+	Name: "tool_search",
 	Fields: graphql.Fields{
-		"photos": &graphql.Field{
-			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(photo))),
+		"tools": &graphql.Field{
+			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(tool))),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.([]*newhorizons.Photo); ok {
+				if val, ok := p.Source.([]*newhorizons.Tool); ok {
 					return val, nil
 				}
-				return nil, fmt.Errorf("search_photos(): error")
+				return nil, fmt.Errorf("search_tools(): error")
 			},
 		},
 	},

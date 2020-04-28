@@ -1,0 +1,55 @@
+{
+  "data": {
+    "tool": {
+      "query": {
+        "tools": [
+          {
+            "Buy": 900,
+            "Customize": "Yes",
+            "KitCost": 1,
+            "Name": "net",
+            "Sell": 225,
+            "Set": "None",
+            "Source": "Nook's Cranny\r\nCrafting",
+            "SourceNotes": "Available in all tiers of shops, including Timmy & Tommy before the shop is opened",
+            "Uses": 20,
+            "Variant": [
+              {
+                "Image": "https://acnhcdn.com/latest/FtrIcon/ToolNetNormal_Remake_0_0.png",
+                "Variation": "Red"
+              },
+              {
+                "Image": "https://acnhcdn.com/latest/FtrIcon/ToolNetNormal_Remake_1_0.png",
+                "Variation": "Yellow"
+              },
+              {
+                "Image": "https://acnhcdn.com/latest/FtrIcon/ToolNetNormal_Remake_2_0.png",
+                "Variation": "Green"
+              },
+              {
+                "Image": "https://acnhcdn.com/latest/FtrIcon/ToolNetNormal_Remake_3_0.png",
+                "Variation": "Blue"
+              },
+              {
+                "Image": "https://acnhcdn.com/latest/FtrIcon/ToolNetNormal_Remake_4_0.png",
+                "Variation": "Purple"
+              },
+              {
+                "Image": "https://acnhcdn.com/latest/FtrIcon/ToolNetNormal_Remake_5_0.png",
+                "Variation": "Pink"
+              },
+              {
+                "Image": "https://acnhcdn.com/latest/FtrIcon/ToolNetNormal_Remake_6_0.png",
+                "Variation": "White"
+              },
+              {
+                "Image": "https://acnhcdn.com/latest/FtrIcon/ToolNetNormal_Remake_7_0.png",
+                "Variation": "Black"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
