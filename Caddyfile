@@ -1,0 +1,6 @@
+:80 {
+  gzip
+  proxy / localhost:4000 {
+    transparent
+  }
+}
