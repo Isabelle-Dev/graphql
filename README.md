@@ -97,4 +97,6 @@ For example: `curl -H "Content-type:application/json" --data @post.json http://l
 
 ## Contributions
 
-**All data** used in this server was taken from open source New Horizons data found [here](https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/).
+* All Data is sourced from open-source New Horizons data found [here](https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/)
+
+* High-resolution image links are provided by [Dodo Codes](https://acnhcdn.com/)

@@ -18,7 +18,7 @@ func execute(dbStr string, db *gorm.DB) []*newhorizons.Art {
 
 func findByName(name, tablename string, db *gorm.DB) *newhorizons.Art {
 	db.RWMutex.RLock()
-	db.RWMutex.RUnlock()
+	defer db.RWMutex.RUnlock()
 	var art []newhorizons.ArtEntry
 	db.Table(tablename).Where("name = ?", name).Find(&art)
 	if len(art) == 0 {

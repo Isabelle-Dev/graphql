@@ -18,7 +18,7 @@ func execute(dbStr string, db *gorm.DB) []*newhorizons.Photo {
 
 func findByName(name, tablename string, db *gorm.DB) *newhorizons.Photo {
 	db.RWMutex.RLock()
-	db.RWMutex.RUnlock()
+	defer db.RWMutex.RUnlock()
 	var photos []newhorizons.PhotoEntry
 	db.Table(tablename).Where("name = ?", name).Find(&photos)
 	if len(photos) == 0 {

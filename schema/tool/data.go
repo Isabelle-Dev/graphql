@@ -18,7 +18,7 @@ func execute(dbStr string, db *gorm.DB) []*newhorizons.Tool {
 
 func findByName(name, tablename string, db *gorm.DB) *newhorizons.Tool {
 	db.RWMutex.RLock()
-	db.RWMutex.RUnlock()
+	defer db.RWMutex.RUnlock()
 	var tool []newhorizons.ToolEntry
 	db.Table(tablename).Where("name = ?", name).Find(&tool)
 	if len(tool) == 0 {
