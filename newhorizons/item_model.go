@@ -7,7 +7,7 @@ type Item struct {
 	BodyTitle        string
 	PatternTitle     string
 	BodyCustomize    string
-	KitCost          string
+	KitCost          int
 	Sell             int
 	Interact         string
 	Source           string
@@ -17,7 +17,7 @@ type Item struct {
 	HHASet           string
 	DIY              string
 	PatternCustomize string
-	Buy              string
+	Buy              int
 }
 
 // Variant represents variation differences according to each
@@ -39,12 +39,11 @@ type ItemEntry struct {
 	DIY              string
 	BodyCustomize    string `gorm:"column:bodycustomize"`
 	PatternCustomize string `gorm:"column:patterncustomize"`
-	KitCost          string `gorm:"column:kitcost"`
-	Buy              string
+	KitCost          int    `gorm:"column:kitcost"`
+	Buy              int
 	Sell             int
 	Color1           string `gorm:"column:color1"`
 	Color2           string `gorm:"column:color2"`
-	Size             string
 	Source           string
 	SourceNotes      string `gorm:"column:sourcenotes"`
 	HHAConcept1      string `gorm:"column:hhaconcept1"`

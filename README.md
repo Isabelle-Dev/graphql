@@ -6,7 +6,7 @@ Server is available at `acnhgraphql.com`.
 
 _I will be writing more detailed guides on how to use the API after I setup the server. Thanks for being patient!_
 
-## Self - Installation
+## Self-Hosting Installation
 
 Want to host the server yourself? You can!
 
@@ -48,7 +48,28 @@ query FloorDemo {
 ```
 
 ```graphql
-query demoItem {
+query DemoItem {
+  item {
+    query(query: " name:\"leaf\" tag:\"Plant\" color:\"Orange\" " glob:"t" limit: 30) {
+      items {
+        Name
+        Buy
+        Sell
+        HHAConcepts
+        HHASet
+        HHASeries
+        Variants {
+          Colors
+        }
+        Tag
+      }
+    }
+  }
+}
+```
+
+```graphql
+query DemoItemV2 {
   item {
     query(query: "sell:\"< 2000 AND > 1500\" color:\"(Pink AND Green) OR Orange\"") {
       items {
@@ -74,32 +95,20 @@ query demoItem {
 }
 ```
 
-```graphql
-query DemoItem {
-  item {
-    query(query: " name:\"leaf\" tag:\"Plant\" color:\"Orange\" " glob:"t" limit: 30) {
-      items {
-        Name
-        Buy
-        Sell
-        HHAConcepts
-        HHASet
-        HHASeries
-        Variants {
-          Colors
-        }
-        Tag
-      }
-    }
-  }
-}
-```
-
 **cURL Examples (bash):**
 
 An updated **cURL** query can be found in `post.json`. I do not recommend making graphql requests using cURL, but if you must, it's easier to port requests using an external json file.
 
 `curl -H "Content-type:application/json" --data @post.json https://acnhgraphql.com`
+
+## Table Migrations
+
+### Item Table (item)
+
+**Import Script:** `importItem.psql`
+
+* Housewares - `housewares_clean.csv`
+* Misc - `misc_clean.csv`
 
 ## Contributions
 

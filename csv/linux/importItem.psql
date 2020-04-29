@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS item (
+	Name character varying(100),
+	Image character varying(200),
+	Variation character varying(100),
+	BodyTitle character varying(50),
+	Pattern character varying(100),
+	PatternTitle character varying(100),
+	DIY character varying(5),
+	BodyCustomize character varying(5),
+	PatternCustomize character varying(5),
+	KitCost int
+	Buy int
+	Sell int
+	Color1 character varying(50),
+	Color2 character varying(50),
+	Source character varying(100),
+	SourceNotes character varying(255),
+	HHAConcept1 character varying(100),
+	HHAConcept2 character varying(100),
+	HHASeries character varying(100),
+	Interact character varying(5),
+	Tag character varying(100),
+	Catalog character varying(30)
+);
+
+COPY item (Name, Imagem Variation, BodyTitle, Pattern, PatternTitle, DIY, BodyCustomize, PatternCustomize, KitCost, Buy, Sell, Color1, Color2, Source, SourceNotes, HHAConcept1, HHAConcept2, HHASeries, Interact, Tag, Catalog)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

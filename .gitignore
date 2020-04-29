@@ -3,3 +3,4 @@
 
 # remove configuration
 .config
+server.config
