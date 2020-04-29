@@ -1,6 +1,3 @@
-:80 {
-  gzip
-  proxy / localhost:4000 {
-    transparent
-  }
-}
+138.68.246.145
+
+reverse_proxy localhost:4000
