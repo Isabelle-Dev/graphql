@@ -1,24 +1,30 @@
 # Animal Crossing - New Horizons GraphQL Server
 
-Server is set to run on `localhost:4000`.
+Server is available at `acnhgraphql.com`.
 
-## Installation
+**I'm still setting up Linux server, so please do not use the live API yet! Thanks!**
+
+_I will be writing more detailed guides on how to use the API after I setup the server. Thanks for being patient!_
+
+## Self - Installation
+
+Want to host the server yourself? You can!
 
 * Setup PostgreSQL
 * Create and configure `.config` file using `example.config` as template
 * Import data using `csv` files
-* `go build -o isabelle-graphql.exe`
-* `./isabelle-graphql.exe`
+* `go build -o graphql.exe`
+* `./graphql.exe`
 
 ## CSV Data
 
-All **csv data files** and **import code to Postgres** will be located in `csv`.
+All **csv data files** and **import code to Postgres** are located in `csv`.
 
 ## Sample JSON Responses
 
 **Sample JSON** responses can be found in `newhorizons/sample`.
 
-## Search Example Queries
+## Example Queries
 
 ```graphql
 query FloorDemo {
@@ -93,7 +99,7 @@ query DemoItem {
 
 An updated **cURL** query can be found in `post.json`. I do not recommend making graphql requests using cURL, but if you must, it's easier to port requests using an external json file.
 
-For example: `curl -H "Content-type:application/json" --data @post.json http://localhost:4000/`
+`curl -H "Content-type:application/json" --data @post.json https://acnhgraphql.com`
 
 ## Contributions
 
