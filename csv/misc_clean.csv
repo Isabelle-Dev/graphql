@@ -410,7 +410,7 @@ frozen-treat set,https://acnhcdn.com/latest/FtrIcon/FtrIceCandy_Remake_4_0.png,k
 frozen-treat set,https://acnhcdn.com/latest/FtrIcon/FtrIceCandy_Remake_5_0.png,chocolate mint,flavor,na,na,Yes,Yes,No,7,-1,5400,light blue,colorful,Snowman,Reward for making a perfect snow-person,freezing cold,child's room,frozen,None,No,dining,nfs
 fruit basket,https://acnhcdn.com/latest/FtrIcon/FtrFruitbasket.png,na,na,na,na,Yes,No,No,-1,-1,1000,colorful,beige,Crafting,,kitchen,fancy,fruits,None,No,dining,nfs
 frying pan,https://acnhcdn.com/latest/FtrIcon/FtrPan_Remake_0_0.png,empty,dish,na,na,Yes,Yes,No,2,-1,1500,black,black,Crafting,,kitchen,shop,None,None,No,kitchen things,nfs
-frying pan,https://acnhcdn.com/latest/FtrIcon/FtrPan_Remake_1_0.png,veggie sauté,dish,na,na,Yes,Yes,No,2,-1,1500,black,green,Crafting,,kitchen,shop,None,None,No,kitchen things,nfs
+frying pan,https://acnhcdn.com/latest/FtrIcon/FtrPan_Remake_1_0.png,veggie saute,dish,na,na,Yes,Yes,No,2,-1,1500,black,green,Crafting,,kitchen,shop,None,None,No,kitchen things,nfs
 frying pan,https://acnhcdn.com/latest/FtrIcon/FtrPan_Remake_2_0.png,pasta,dish,na,na,Yes,Yes,No,2,-1,1500,black,beige,Crafting,,kitchen,shop,None,None,No,kitchen things,nfs
 frying pan,https://acnhcdn.com/latest/FtrIcon/FtrPan_Remake_3_0.png,ratatouille,dish,na,na,Yes,Yes,No,2,-1,1500,black,red,Crafting,,kitchen,shop,None,None,No,kitchen things,nfs
 frying pan,https://acnhcdn.com/latest/FtrIcon/FtrPan_Remake_4_0.png,pizza,dish,na,na,Yes,Yes,No,2,-1,1500,black,yellow,Crafting,,kitchen,shop,None,None,No,kitchen things,nfs
@@ -618,56 +618,56 @@ magazine,https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_3.png,na,
 magazine,https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_4.png,na,na,resorts,feature,No,No,Yes,1,210,52,white,light blue,Nook's Cranny,Available in the re-buyable slot in Nook's Cranny,living room,child's room,None,None,No,study,fs
 magazine,https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_5.png,na,na,music,feature,No,No,Yes,1,210,52,white,brown,Nook's Cranny,Available in the re-buyable slot in Nook's Cranny,living room,child's room,None,None,No,study,fs
 magazine,https://acnhcdn.com/latest/FtrIcon/FtrMagagineOpened_Remake_0_6.png,na,na,pop stars,feature,No,No,Yes,1,210,52,white,colorful,Nook's Cranny,Available in the re-buyable slot in Nook's Cranny,living room,child's room,None,None,No,study,fs
-magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_0_0.png,natural,body color,café,magazine,Yes,Yes,Yes,2,-1,690,beige,blue,Crafting,,living room,shop,None,None,No,study,nfs
+magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_0_0.png,natural,body color,cafe,magazine,Yes,Yes,Yes,2,-1,690,beige,blue,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_0_1.png,natural,body color,travel,magazine,Yes,Yes,Yes,2,-1,690,beige,red,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_0_2.png,natural,body color,fashion,magazine,Yes,Yes,Yes,2,-1,690,beige,gray,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_0_3.png,natural,body color,sports,magazine,Yes,Yes,Yes,2,-1,690,beige,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_0_4.png,natural,body color,comics,magazine,Yes,Yes,Yes,2,-1,690,beige,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_0_5.png,natural,body color,kids,magazine,Yes,Yes,Yes,2,-1,690,beige,pink,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_0_6.png,natural,body color,weekly news,magazine,Yes,Yes,Yes,2,-1,690,beige,colorful,Crafting,,living room,shop,None,None,No,study,nfs
-magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_1_0.png,orange,body color,café,magazine,Yes,Yes,Yes,2,-1,690,orange,blue,Crafting,,living room,shop,None,None,No,study,nfs
+magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_1_0.png,orange,body color,cafe,magazine,Yes,Yes,Yes,2,-1,690,orange,blue,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_1_1.png,orange,body color,travel,magazine,Yes,Yes,Yes,2,-1,690,orange,red,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_1_2.png,orange,body color,fashion,magazine,Yes,Yes,Yes,2,-1,690,orange,gray,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_1_3.png,orange,body color,sports,magazine,Yes,Yes,Yes,2,-1,690,orange,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_1_4.png,orange,body color,comics,magazine,Yes,Yes,Yes,2,-1,690,orange,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_1_5.png,orange,body color,kids,magazine,Yes,Yes,Yes,2,-1,690,orange,pink,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_1_6.png,orange,body color,weekly news,magazine,Yes,Yes,Yes,2,-1,690,orange,colorful,Crafting,,living room,shop,None,None,No,study,nfs
-magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_2_0.png,brown,body color,café,magazine,Yes,Yes,Yes,2,-1,690,brown,blue,Crafting,,living room,shop,None,None,No,study,nfs
+magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_2_0.png,brown,body color,cafe,magazine,Yes,Yes,Yes,2,-1,690,brown,blue,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_2_1.png,brown,body color,travel,magazine,Yes,Yes,Yes,2,-1,690,brown,red,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_2_2.png,brown,body color,fashion,magazine,Yes,Yes,Yes,2,-1,690,brown,gray,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_2_3.png,brown,body color,sports,magazine,Yes,Yes,Yes,2,-1,690,brown,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_2_4.png,brown,body color,comics,magazine,Yes,Yes,Yes,2,-1,690,brown,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_2_5.png,brown,body color,kids,magazine,Yes,Yes,Yes,2,-1,690,brown,pink,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_2_6.png,brown,body color,weekly news,magazine,Yes,Yes,Yes,2,-1,690,brown,colorful,Crafting,,living room,shop,None,None,No,study,nfs
-magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_3_0.png,white,body color,café,magazine,Yes,Yes,Yes,2,-1,690,white,blue,Crafting,,living room,shop,None,None,No,study,nfs
+magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_3_0.png,white,body color,cafe,magazine,Yes,Yes,Yes,2,-1,690,white,blue,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_3_1.png,white,body color,travel,magazine,Yes,Yes,Yes,2,-1,690,white,red,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_3_2.png,white,body color,fashion,magazine,Yes,Yes,Yes,2,-1,690,white,gray,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_3_3.png,white,body color,sports,magazine,Yes,Yes,Yes,2,-1,690,white,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_3_4.png,white,body color,comics,magazine,Yes,Yes,Yes,2,-1,690,white,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_3_5.png,white,body color,kids,magazine,Yes,Yes,Yes,2,-1,690,white,pink,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_3_6.png,white,body color,weekly news,magazine,Yes,Yes,Yes,2,-1,690,white,colorful,Crafting,,living room,shop,None,None,No,study,nfs
-magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_4_0.png,black,body color,café,magazine,Yes,Yes,Yes,2,-1,690,black,blue,Crafting,,living room,shop,None,None,No,study,nfs
+magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_4_0.png,black,body color,cafe,magazine,Yes,Yes,Yes,2,-1,690,black,blue,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_4_1.png,black,body color,travel,magazine,Yes,Yes,Yes,2,-1,690,black,red,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_4_2.png,black,body color,fashion,magazine,Yes,Yes,Yes,2,-1,690,black,gray,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_4_3.png,black,body color,sports,magazine,Yes,Yes,Yes,2,-1,690,black,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_4_4.png,black,body color,comics,magazine,Yes,Yes,Yes,2,-1,690,black,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_4_5.png,black,body color,kids,magazine,Yes,Yes,Yes,2,-1,690,black,pink,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_4_6.png,black,body color,weekly news,magazine,Yes,Yes,Yes,2,-1,690,black,colorful,Crafting,,living room,shop,None,None,No,study,nfs
-magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_5_0.png,yellow,body color,café,magazine,Yes,Yes,Yes,2,-1,690,yellow,blue,Crafting,,living room,shop,None,None,No,study,nfs
+magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_5_0.png,yellow,body color,cafe,magazine,Yes,Yes,Yes,2,-1,690,yellow,blue,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_5_1.png,yellow,body color,travel,magazine,Yes,Yes,Yes,2,-1,690,yellow,red,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_5_2.png,yellow,body color,fashion,magazine,Yes,Yes,Yes,2,-1,690,yellow,gray,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_5_3.png,yellow,body color,sports,magazine,Yes,Yes,Yes,2,-1,690,yellow,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_5_4.png,yellow,body color,comics,magazine,Yes,Yes,Yes,2,-1,690,yellow,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_5_5.png,yellow,body color,kids,magazine,Yes,Yes,Yes,2,-1,690,yellow,pink,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_5_6.png,yellow,body color,weekly news,magazine,Yes,Yes,Yes,2,-1,690,yellow,colorful,Crafting,,living room,shop,None,None,No,study,nfs
-magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_6_0.png,green,body color,café,magazine,Yes,Yes,Yes,2,-1,690,blue,blue,Crafting,,living room,shop,None,None,No,study,nfs
+magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_6_0.png,green,body color,cafe,magazine,Yes,Yes,Yes,2,-1,690,blue,blue,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_6_1.png,green,body color,travel,magazine,Yes,Yes,Yes,2,-1,690,blue,red,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_6_2.png,green,body color,fashion,magazine,Yes,Yes,Yes,2,-1,690,blue,gray,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_6_3.png,green,body color,sports,magazine,Yes,Yes,Yes,2,-1,690,blue,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_6_4.png,green,body color,comics,magazine,Yes,Yes,Yes,2,-1,690,blue,colorful,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_6_5.png,green,body color,kids,magazine,Yes,Yes,Yes,2,-1,690,blue,pink,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_6_6.png,green,body color,weekly news,magazine,Yes,Yes,Yes,2,-1,690,blue,colorful,Crafting,,living room,shop,None,None,No,study,nfs
-magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_7_0.png,red,body color,café,magazine,Yes,Yes,Yes,2,-1,690,red,blue,Crafting,,living room,shop,None,None,No,study,nfs
+magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_7_0.png,red,body color,cafe,magazine,Yes,Yes,Yes,2,-1,690,red,blue,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_7_1.png,red,body color,travel,magazine,Yes,Yes,Yes,2,-1,690,red,red,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_7_2.png,red,body color,fashion,magazine,Yes,Yes,Yes,2,-1,690,red,gray,Crafting,,living room,shop,None,None,No,study,nfs
 magazine rack,https://acnhcdn.com/latest/FtrIcon/FtrMagazinerack_Remake_7_3.png,red,body color,sports,magazine,Yes,Yes,Yes,2,-1,690,red,colorful,Crafting,,living room,shop,None,None,No,study,nfs
