@@ -56,7 +56,7 @@ brown-crown wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallCrown03.png,No,NA
 bunny day wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallEaster00.png,No,NA,Yes,-1,4800,yellow,colorful,Crafting,"Obtained randomly from villager, egg message bottle or egg balloon during Bunny Day event",nfs,,,,,,wood,fancy,child's room,Bunny Day,cloth walls
 butterflies wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallInsect00.png,No,NA,No,-1,840,white,colorful,Bug-Off,,nfs,four pane,white wood,glass,roller shades,white,wood,fancy,facility,None,nature walls
 cabin wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallLog00.png,No,NA,Yes,-1,1800,beige,beige,Crafting,,nfs,four pane,natural wood,glass,curtains,white lace,wood,living room,facility,None,wood walls
-café-curtain wall,https://acnhcdn.com/latest/FtrIcon/RoomSpWallCafe00.png,Yes,NA,No,3000,750,black,white,Saharah,,nfs,none,na,na,none,na,cloth,shop,expensive,None,special walls
+cafe-curtain wall,https://acnhcdn.com/latest/FtrIcon/RoomSpWallCafe00.png,Yes,NA,No,3000,750,black,white,Saharah,,nfs,none,na,na,none,na,cloth,shop,expensive,None,special walls
 camo wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallCamouflage00.png,No,NA,No,1150,287,black,green,Nook's Cranny,,fs,single pane,grey wood,glass,slatted blinds,white plastic,plain,party,child's room,None,camouflage
 chain-link fence,https://acnhcdn.com/latest/FtrIcon/RoomSpWallEmptyLot00.png,Yes,NA,No,3000,750,gray,gray,Saharah,,nfs,none,na,na,none,na,cloth,garden,garage,None,special cool nature walls
 cherry wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallCherry00.png,No,Random,Yes,-1,4000,pink,red,Crafting,,nfs,four pane,grey wood,glass,roller shades,white,stone,child's room,fancy,fruits,fruit walls
@@ -220,7 +220,7 @@ tree-lined wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallRoadsideTree00.png
 tropical vista,https://acnhcdn.com/latest/FtrIcon/RoomSpWallTropical00.png,Yes,Synchro,Yes,-1,6000,light blue,beige,Crafting,Summer seasonal DIY using summer shells (found on beach),nfs,none,na,na,none,na,plain,ocean,None,None,special cool nature walls
 underwater wall,https://acnhcdn.com/latest/FtrIcon/RoomSpWallFishTank00.png,Yes,Synchro,Yes,-1,8600,blue,light blue,Crafting,Summer seasonal DIY using summer shells (found on beach),nfs,none,na,na,none,na,stone,ocean,None,None,special cool nature walls
 wavy-tile wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallWaveTile00.png,No,NA,No,1740,435,gray,white,Nook's Cranny,,fs,none,na,na,none,na,plain,shop,facility,None,tile walls
-wedding-party wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallJuneBride00.png,,,No,1750,437.5,none,none,Wedding Season,,nfs,,,,,,,party,expensive,wedding,cloth walls
+wedding-party wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallJuneBride00.png,,,No,1750,437,none,none,Wedding Season,,nfs,,,,,,,party,expensive,wedding,cloth walls
 western vista,https://acnhcdn.com/latest/FtrIcon/RoomSpWallWilderness00.png,Yes,Synchro,No,3000,750,brown,beige,Saharah,,nfs,none,na,na,none,na,stone,folk art,horror,None,special cool nature walls
 white botanical-tile wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallWoodTile00.png,No,NA,No,1240,310,white,white,Nook's Cranny,,fs,single pane,white wood,glass,slatted blinds,white plastic,wood,facility,expensive,None,wood tile walls
 white delicate-blooms wall,https://acnhcdn.com/latest/FtrIcon/RoomTexWallManor00.png,No,NA,No,1900,475,white,white,Nook's Cranny,,fs,four pane,dark wood,glass,roller shades,undyed,wood,expensive,living room,None,manor walls

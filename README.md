@@ -9,8 +9,8 @@ _I will be writing more detailed guides on how to use the API after I setup the 
 ## Server Status
 
 - [x] Item
-- [ ] Wallpaper
-- [ ] Floor
+- [x] Wallpaper
+- [x] Floor
 - [ ] Clothes
 - [ ] Music
 - [ ] Photos
