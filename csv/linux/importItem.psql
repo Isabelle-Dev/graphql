@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS item (
 	HHAConcept1 character varying(100),
 	HHAConcept2 character varying(100),
 	HHASeries character varying(100),
+	HHASet character varying(50),
 	Interact character varying(5),
 	Tag character varying(100),
 	Catalog character varying(30)
