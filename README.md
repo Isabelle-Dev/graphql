@@ -1,27 +1,42 @@
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1024px-GraphQL_Logo.svg.png" height="200" width="200">
+</p>
+
 # Animal Crossing - New Horizons GraphQL Server
 
-Server and **endpoint** is available at [acnhgraphql.com](https://acnhgraphql.com/)
+[acnhgraphql.com](https://acnhgraphql.com/) is a Animal Crossing New Horizons [GraphQL](https://graphql.org/) API server. It handles both API requests and provides an interactive GraphQL IDE to sample queries.
 
-**I'm still setting up Linux server, so not all features are available yet!**
+You can access both the IDE and endpoint at [https://acnhgraphql.com/](https://acnhgraphql.com/).
 
-_I will be writing more detailed guides on how to use the API after I setup the server. Thanks for being patient!_
+**I'm still setting up the Linux server, so not all features are available yet!**
 
-## Server Status
+## Server Database Status
 
-- [x] Item
-- [x] Wallpaper
-- [x] Floor
-- [x] Clothes
-- [x] Music
-- [x] Photos
-- [x] Posters
-- [ ] Rug
-- [ ] Tools
-- [ ] Villager
+| Table              | Status                | Summary                          | Documentation                         |
+|:-------------------|:---------------------:|:---------------------------------|:-------------------------------------:|
+| Item               | :heavy_check_mark:    | Item-related Entries             | [:book:](Docs/)   |
+| Wallpaper          | :heavy_check_mark:    | Wallpaper Entries                | [:book:](Docs/)   |
+| Floor              | :heavy_check_mark:    | Flooring Entries                 |    |
+| Clothes            | :heavy_check_mark:    | Clothing Entries                 |    |
+| Music              | :heavy_check_mark:    | KK Slider Music Entries          |    |
+| Photos             | :heavy_check_mark:    | Villager Photo Entries           |    |
+| Posters            | :heavy_check_mark:    | Villager Poster Entries          |    |
+| Rug                | :heavy_check_mark:    | Rug Entries                      |    |
+| Tools              | :heavy_check_mark:    | Tool Entries                     |    |
+| Villager           | :heavy_check_mark:    | Villager Entries                 |    |
+| Fish and Bugs      | :x:                   | Fish and Bug Entries             |    |
+| Fossils            | :x:                   | Fossil Entries                   |    |
+| Fencing            | :x:                   | Fence Entries                    |    |
+| Umbrellas          | :x:                   | Umbrellas (TBA)                  |    |
+| Recipes            | :x:                   | Recipe Entries (TBA)             |    |
+| Art                | :x:                   | Art Entries                      |    |
+| Construction       | :x:                   | Construction Project Entries     |    |
+| Nook Miles         | :x:                   | Nook Miles Options               |    |
+| Other              | :x:                   | Other Misc. Entries              |    |
 
 ## Self-Hosting Installation
 
-Want to host the server yourself? You can!
+Want to host the server yourself?
 
 - `go get -u github.com/Isabelle-Dev/graphql`
 - Setup PostgreSQL
@@ -30,17 +45,15 @@ Want to host the server yourself? You can!
 - `go build -o graphql.exe`
 - `./graphql.exe`
 
-## CSV Data
-
-All **csv data files** and **import code to Postgres** are located in `csv`.
+All **csv data files** and **Postgres migration code** are located in the `csv` directory.
 
 ## Sample JSON Responses
 
-**Sample JSON** responses can be found in `newhorizons/sample`.
+**Sample JSON** responses can be found in the `newhorizons/sample` directory.
 
 You can also play around with different query options by visiting https://acnhgraphql.com/
 
-The endpoint itself also renders GraphiQL - a GraphQL IDE.
+The endpoint itself renders GraphiQL - a GraphQL IDE.
 
 ## Example Queries
 
@@ -113,67 +126,27 @@ query DemoItemV2 {
 }
 ```
 
-**cURL Example:**
+## cURL
 
 An updated **cURL** query can be found in `post.json`. I do not recommend making graphql requests using cURL, but if you must, it's easier to port requests using an external json file.
 
 `curl -H "Content-type:application/json" --data @post.json https://acnhgraphql.com`
 
-## Table Migrations
+## Bugs
 
-### Item Table (item)
+Oops, bugs are unintentional (I promise!). If you find one, please open an issue with a description of what the bug is.
 
-**Import Script:** `importItem.psql`
+## Contributing
 
-- Housewares - `housewares_clean.csv`
-- Misc - `misc_clean.csv`
-- Wall-hanging - `wall-hanging_clean.csv`
+If you would like to help develop, follow the steps below:
 
-### Wallpaper Table (wallpaper)
+- Fork the repo
+- Create your own feature branch
+- Commit your changes and push to the new branch
+- Open a pull request
 
-**Import Script:** `importWallpaper.psql`
+## External Contributions
 
-- Wallpapers - `wallpaper_clean.csv`
+- All data is sourced from New Horizons data found [here](https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/)
 
-### Floor Table (floor)
-
-**Import Script:** `importFloor.psql`
-
-- Floors - `floor_clean.csv`
-
-### Clothing Table (clothes)
-
-**Import Script:** `importClothes.psql`
-
-- Accessories - `accessories_clean.csv`
-- Bags - `bags_clean.csv`
-- Bottoms - `bottoms_clean.csv`
-- Tops - `tops_clean.csv`
-- Dresses - `dresses_clean.csv`
-- Headwear - `headwear_clean.csv`
-- Shoes - `shoes_clean.csv`
-- Socks - `socks_clean.csv`
-
-### Music Table (music)
-
-**Import Script:** `importMusic.psql`
-
-- Music - `music_clean.csv`
-
-### Photos Table (photos)
-
-**Import Script:** `importPhotos.psql`
-
-- Photos - `photos_clean.csv`
-
-### Poster Table (poster)
-
-**Import Script:** `importPoster.psql`
-
-- Poster - `poster_clean.csv`
-
-## Contributions
-
-- All Data is sourced from open-source New Horizons data found [here](https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/)
-
-- High-resolution image links are provided by [Dodo Codes](https://acnhcdn.com/)
+- High-resolution image links and hosting is provided by [Dodo Codes](https://acnhcdn.com/)
