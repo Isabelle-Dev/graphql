@@ -8,9 +8,9 @@ CREATE TABLE IF NOT EXISTS item (
 	DIY character varying(5),
 	BodyCustomize character varying(5),
 	PatternCustomize character varying(5),
-	KitCost int
-	Buy int
-	Sell int
+	KitCost int,
+	Buy int,
+	Sell int,
 	Color1 character varying(50),
 	Color2 character varying(50),
 	Source character varying(100),
@@ -23,5 +23,5 @@ CREATE TABLE IF NOT EXISTS item (
 	Catalog character varying(30)
 );
 
-COPY item (Name, Imagem Variation, BodyTitle, Pattern, PatternTitle, DIY, BodyCustomize, PatternCustomize, KitCost, Buy, Sell, Color1, Color2, Source, SourceNotes, HHAConcept1, HHAConcept2, HHASeries, Interact, Tag, Catalog)
+COPY item (Name, Image, Variation, BodyTitle, Pattern, PatternTitle, DIY, BodyCustomize, PatternCustomize, KitCost, Buy, Sell, Color1, Color2, Source, SourceNotes, HHAConcept1, HHAConcept2, HHASeries, Interact, Tag, Catalog)
 FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;
