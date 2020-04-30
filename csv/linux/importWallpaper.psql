@@ -4,8 +4,8 @@ CREATE TABLE IF NOT EXISTS wallpaper (
 	VFX character varying(5),
 	VFXType character varying(60),
 	DIY character varying(5),
-	Buy int
-	Sell int
+	Buy INT,
+	Sell INT,
 	Color1 character varying(50),
 	Color2 character varying(50),
 	Source character varying(100),
