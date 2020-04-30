@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS clothes (
+	Name character varying(100),
+	Image character varying(200),
+	Variation character varying(50),
+	DIY character varying(5),
+	Buy INT,
+	Sell INT,
+	Color1 character varying(50),
+	Color2 character varying(50),
+	Source character varying(70),
+	SourceNotes character varying(100),
+	Style character varying(50),
+	LabelThemes character varying(100),
+	Catalog character varying(5)
+)
+
+COPY clothes (Name, Image, Variation, DIY, Buy, Sell, Color1, Color2, Source, SourceNotes, Style, LabelThemes, Catalog)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

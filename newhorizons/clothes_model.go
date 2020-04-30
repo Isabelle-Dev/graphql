@@ -11,6 +11,7 @@ type Clothes struct {
 	SourceNotes string
 	Style       string
 	Themes      []string
+	Catalog     string
 }
 
 // ClothesVariant represents variation data for clothes entries
@@ -34,6 +35,7 @@ type ClothesEntry struct {
 	SourceNotes string `gorm:"column:sourcenotes"`
 	Style       string
 	Themes      string `gorm:"column:labelthemes"`
+	Catalog     string
 }
 
 // ToGraphQL (ClothesEntry) turns a clothes entry from database to a Clothes object
@@ -49,5 +51,6 @@ func (c ClothesEntry) ToGraphQL(v []ClothesVariant, t []string) *Clothes {
 		SourceNotes: c.SourceNotes,
 		Style:       c.Style,
 		Themes:      t,
+		Catalog:     c.Catalog,
 	}
 }

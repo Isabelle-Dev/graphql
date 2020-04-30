@@ -23,11 +23,11 @@ _I will be writing more detailed guides on how to use the API after I setup the 
 
 Want to host the server yourself? You can!
 
-* Setup PostgreSQL
-* Create and configure `.config` file using `example.config` as template
-* Import data using `csv` files
-* `go build -o graphql.exe`
-* `./graphql.exe`
+- Setup PostgreSQL
+- Create and configure `.config` file using `example.config` as template
+- Import data using `csv` files
+- `go build -o graphql.exe`
+- `./graphql.exe`
 
 ## CSV Data
 
@@ -42,7 +42,7 @@ All **csv data files** and **import code to Postgres** are located in `csv`.
 ```graphql
 query FloorDemo {
   floor {
-    query(query: "buy:\"<= 3000 AND > 2000\" color:\"Gray AND Beige\"") {
+    query(query: "buy:\"<= 3000 AND > 2000\" color:\"gray AND beige\"") {
       floors {
         Color
         Catalog
@@ -63,7 +63,7 @@ query FloorDemo {
 ```graphql
 query DemoItem {
   item {
-    query(query: " name:\"leaf\" tag:\"Plant\" color:\"Orange\" " glob:"t" limit: 30) {
+    query(query: " name:\"leaf\" tag:\"plant\" color:\"orange\" " glob:"t" limit: 30) {
       items {
         Name
         Buy
@@ -84,7 +84,7 @@ query DemoItem {
 ```graphql
 query DemoItemV2 {
   item {
-    query(query: "sell:\"< 2000 AND > 1500\" color:\"(Pink AND Green) OR Orange\"") {
+    query(query: "sell:\"< 2000 AND > 1500\" color:\"(pink AND green) OR orange\"") {
       items {
         Name
         Variants {
@@ -108,7 +108,7 @@ query DemoItemV2 {
 }
 ```
 
-**cURL Examples (bash):**
+**cURL Example:**
 
 An updated **cURL** query can be found in `post.json`. I do not recommend making graphql requests using cURL, but if you must, it's easier to port requests using an external json file.
 
@@ -120,24 +120,24 @@ An updated **cURL** query can be found in `post.json`. I do not recommend making
 
 **Import Script:** `importItem.psql`
 
-* Housewares - `housewares_clean.csv`
-* Misc - `misc_clean.csv`
-* Wall-hanging - `wall-hanging_clean.csv`
+- Housewares - `housewares_clean.csv`
+- Misc - `misc_clean.csv`
+- Wall-hanging - `wall-hanging_clean.csv`
 
 ### Wallpaper Table (wallpaper)
 
 **Import Script:** `importWallpaper.psql`
 
-* Wallpapers - `wallpaper_clean.csv`
+- Wallpapers - `wallpaper_clean.csv`
 
 ### Floor Table (floor)
 
 **Import Script:** `importFloor.psql`
 
-* Floors - `floor_clean.csv`
+- Floors - `floor_clean.csv`
 
 ## Contributions
 
-* All Data is sourced from open-source New Horizons data found [here](https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/)
+- All Data is sourced from open-source New Horizons data found [here](https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/)
 
-* High-resolution image links are provided by [Dodo Codes](https://acnhcdn.com/)
+- High-resolution image links are provided by [Dodo Codes](https://acnhcdn.com/)
