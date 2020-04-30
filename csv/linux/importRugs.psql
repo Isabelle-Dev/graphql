@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS rugs (
+	Name character varying(40),
+	Image character varying(100),
+	DIY character varying(5),
+	Buy INT,
+	Sell INT,
+	Color1 character varying(20),
+	Color2 character varying(20),
+	Source character varying(40),
+	SourceNotes character varying(100),
+	HHAConcept1 character varying(30),
+	HHAConcept2 character varying(30),
+	Tag character varying(30),
+	Catalog character varying(5)
+);
+
+COPY rugs (Name, Image, DIY, Buy, Sell, Color1, Color2, Source, SourceNotes, HHAConcept1, HHAConcept2, Tag, Catalog)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

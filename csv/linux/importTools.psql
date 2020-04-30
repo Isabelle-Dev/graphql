@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS tools (
+	Name character varying(40),
+	Image character varying(100),
+	Variation character varying(30),
+	BodyTitle character varying(30),
+	DIY character varying(5),
+	Customize character varying(5),
+	KitCost INT,
+	Uses INT,
+	Buy INT,
+	Sell INT,
+	Set character varying(30),
+	Source character varying(40),
+	SourceNotes character varying(100)
+);
+
+COPY tools (Name, Image, Variation, BodyTitle, DIY, Customize, KitCost, Uses, Buy, Sell, Set, Source, SourceNotes)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

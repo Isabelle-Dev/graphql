@@ -23,12 +23,14 @@ func addName(str string, info Env) string {
 		if strings.ToLower(info["glob"]) == "t" {
 			return info["name"] + " LIKE '%" + strings.Trim(str, "'") + "%'"
 		}
+		return info["name"] + " = " + str
 	case "theme":
 		return "labelthemes LIKE '%" + strings.Trim(str, "'") + "%'"
+	case "style":
+		return "(style1 = " + str + " OR style2 = " + str + ")"
 	default:
 		return info["name"] + " = " + str
 	}
-	return info["name"] + " = " + str
 }
 
 // utility func to add quotes around string literals

@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS villager (
+	Name character varying(50),
+	Image character varying(100),
+	Species character varying(30),
+	Gender character varying(10),
+	Personality character varying(30),
+	Birthday character varying(10),
+	Catchphrase character varying(60),
+	Style1 character varying(20),
+	Style2 character varying(20),
+	Color1 character varying(20),
+	Color2 character varying(20),
+	Month INT
+);
+
+COPY (Name, Image, Species, Gender, Personality, Birthday, Catchphrase, Style1, Style2, Color1, Color2, Month)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;
