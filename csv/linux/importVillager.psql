@@ -13,5 +13,5 @@ CREATE TABLE IF NOT EXISTS villager (
 	Month INT
 );
 
-COPY (Name, Image, Species, Gender, Personality, Birthday, Catchphrase, Style1, Style2, Color1, Color2, Month)
+COPY villager (Name, Image, Species, Gender, Personality, Birthday, Catchphrase, Style1, Style2, Color1, Color2, Month)
 FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

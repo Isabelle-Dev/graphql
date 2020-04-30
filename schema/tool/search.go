@@ -44,7 +44,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					glob := p.Args["glob"].(string)
 					limit := p.Args["limit"].(int)
 					options := parse.QueryParse(query)
-					dbStr := parse.BuildQuery(options, "tool", limit, glob)
+					dbStr := parse.BuildQuery(options, "tools", limit, glob)
 					entries := execute(dbStr, db)
 					if entries == nil {
 						return nil, fmt.Errorf("query(): no entries found")

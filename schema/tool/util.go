@@ -14,7 +14,7 @@ func toToolSlice(t []newhorizons.ToolEntry, db *gorm.DB) []*newhorizons.Tool {
 		if _, ok := dupe[i.Name]; ok {
 			continue
 		}
-		n := findByName(i.Name, "tool", db)
+		n := findByName(i.Name, "tools", db)
 		dupe[i.Name] = true
 		ret = append(ret, i.ToGraphQL(n.Variant, n.Source))
 	}
