@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS wallpaper (
 	Color2 character varying(50),
 	Source character varying(100),
 	SourceNotes character varying(255),
-	Catalog character varying(5)
+	Catalog character varying(5),
 	WindowType character varying(50),
 	WindowColor character varying(50),
 	PaneType character varying(50),
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS wallpaper (
 	HHAConcept1 character varying(100),
 	HHAConcept2 character varying(100),
 	HHASeries character varying(100),
-	Tag character varying(100),
+	Tag character varying(100)
 );
 
 COPY wallpaper (Name, Image, VFX, VFXType, DIY, Buy, Sell, Color1, Color2, Source, SourceNotes, Catalog, WindowType, WindowColor, PaneType, CurtainType, CurtainColor, CeilingType, HHAConcept1, HHAConcept2, HHASeries, Tag)
