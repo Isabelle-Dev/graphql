@@ -8,31 +8,40 @@
 
 You can access both the IDE and endpoint at [https://acnhgraphql.com/](https://acnhgraphql.com/).
 
+**Ready to get started?**
+
+Read the API documentation [here](#documentation)!
+
+- If you're new to GraphQL, I suggest you read both the _GraphQL_ and _Queries_ Doc
+- If you've used GraphQL before, you can jump right in to the _Queries_ Doc
+
 **I'm still setting up the Linux server, so not all features are available yet!**
+
+## Table of Contents
 
 ## Server Database Status
 
-| Table              | Status                | Summary                          | Documentation                         |
-|:-------------------|:---------------------:|:---------------------------------|:-------------------------------------:|
-| Item               | :heavy_check_mark:    | Item-related Entries             | [:book:](Docs/)   |
-| Wallpaper          | :heavy_check_mark:    | Wallpaper Entries                | [:book:](Docs/)   |
-| Floor              | :heavy_check_mark:    | Flooring Entries                 |    |
-| Clothes            | :heavy_check_mark:    | Clothing Entries                 |    |
-| Music              | :heavy_check_mark:    | KK Slider Music Entries          |    |
-| Photos             | :heavy_check_mark:    | Villager Photo Entries           |    |
-| Posters            | :heavy_check_mark:    | Villager Poster Entries          |    |
-| Rug                | :heavy_check_mark:    | Rug Entries                      |    |
-| Tools              | :heavy_check_mark:    | Tool Entries                     |    |
-| Villager           | :heavy_check_mark:    | Villager Entries                 |    |
-| Fish and Bugs      | :x:                   | Fish and Bug Entries             |    |
-| Fossils            | :x:                   | Fossil Entries                   |    |
-| Fencing            | :x:                   | Fence Entries                    |    |
-| Umbrellas          | :x:                   | Umbrellas (TBA)                  |    |
-| Recipes            | :x:                   | Recipe Entries (TBA)             |    |
-| Art                | :x:                   | Art Entries                      |    |
-| Construction       | :x:                   | Construction Project Entries     |    |
-| Nook Miles         | :x:                   | Nook Miles Options               |    |
-| Other              | :x:                   | Other Misc. Entries              |    |
+| Table              | Status                | Summary                          |
+|:-------------------|:---------------------:|:---------------------------------|
+| Item               | :heavy_check_mark:    | Item-related Entries             |
+| Wallpaper          | :heavy_check_mark:    | Wallpaper Entries                |
+| Floor              | :heavy_check_mark:    | Flooring Entries                 |
+| Clothes            | :heavy_check_mark:    | Clothing Entries                 |
+| Music              | :heavy_check_mark:    | KK Slider Music Entries          |
+| Photos             | :heavy_check_mark:    | Villager Photo Entries           |
+| Posters            | :heavy_check_mark:    | Villager Poster Entries          |
+| Rug                | :heavy_check_mark:    | Rug Entries                      |
+| Tools              | :heavy_check_mark:    | Tool Entries                     |
+| Villager           | :heavy_check_mark:    | Villager Entries                 |
+| Fish and Bugs      | :x:                   | Fish and Bug Entries             |
+| Fossils            | :x:                   | Fossil Entries                   |
+| Fencing            | :x:                   | Fence Entries                    |
+| Umbrellas          | :x:                   | Umbrellas (TBA)                  |
+| Recipes            | :x:                   | Recipe Entries (TBA)             |
+| Art                | :x:                   | Art Entries                      |
+| Construction       | :x:                   | Construction Project Entries     |
+| Nook Miles         | :x:                   | Nook Miles Options               |
+| Other              | :x:                   | Other Misc. Entries              |
 
 ## Self-Hosting Installation
 
@@ -51,9 +60,16 @@ All **csv data files** and **Postgres migration code** are located in the `csv` 
 
 **Sample JSON** responses can be found in the `newhorizons/sample` directory.
 
-You can also play around with different query options by visiting https://acnhgraphql.com/
+You can also play around with different query options by visiting [https://acnhgraphql.com/](https://acnhgraphql.com/)
 
 The endpoint itself renders GraphiQL - a GraphQL IDE.
+
+## Documentation
+
+| Doc Type   | Documentation                           |
+|:-----------|:---------------------------------------:|
+| GraphQL    | [:book:](Docs/graphql.md)               |
+| Queries    | [:book:](Docs/query.md)                 |
 
 ## Example Queries
 
