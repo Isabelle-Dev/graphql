@@ -1,6 +1,6 @@
 # Animal Crossing - New Horizons GraphQL Server
 
-Server and **endpoint** is available at [acnhgraphql.com](acnhgraphql.com).
+Server and **endpoint** is available at [acnhgraphql.com](https://acnhgraphql.com/)
 
 **I'm still setting up Linux server, so not all features are available yet!**
 
@@ -37,6 +37,10 @@ All **csv data files** and **import code to Postgres** are located in `csv`.
 ## Sample JSON Responses
 
 **Sample JSON** responses can be found in `newhorizons/sample`.
+
+You can also play around with different query options by visiting https://acnhgraphql.com/
+
+The endpoint itself also renders GraphiQL - a GraphQL IDE.
 
 ## Example Queries
 
