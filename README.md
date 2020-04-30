@@ -109,6 +109,19 @@ An updated **cURL** query can be found in `post.json`. I do not recommend making
 
 * Housewares - `housewares_clean.csv`
 * Misc - `misc_clean.csv`
+* Wall-hanging - `wall-hanging_clean.csv`
+
+### Wallpaper Table (wallpaper)
+
+**Import Script:** `importWallpaper.psql`
+
+* Wallpapers - `wallpaper_clean.csv`
+
+### Floor Table (floor)
+
+**Import Script:** `importFloor.psql`
+
+* Floors - `floor_clean.csv`
 
 ## Contributions
 

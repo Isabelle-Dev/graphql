@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS floor (
+	Name character varying(100),
+	Image character varying(200),
+	VFX character varying(5),
+	DIY character varying(5),
+	Buy int
+	Sell int
+	Color1 character varying(50),
+	Color2 character varying(50),
+	Source character varying(100),
+	SourceNotes character varying(255),
+	HHAConcept1 character varying(100),
+	HHAConcept2 character varying(100),
+	HHASeries character varying(100),
+	Tag character varying(100),
+	Catalog character varying(5)
+);
+
+COPY floor (Name, Image, VFX, DIY, Buy, Sell, Color1, Color2, Source, SourceNotes, HHAConcept1, HHAConcept2, HHASeries, Tag, Catalog)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;
