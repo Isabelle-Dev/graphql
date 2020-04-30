@@ -6,6 +6,19 @@ Server is available at `acnhgraphql.com`.
 
 _I will be writing more detailed guides on how to use the API after I setup the server. Thanks for being patient!_
 
+## Server Status
+
+- [x] Item
+- [ ] Wallpaper
+- [ ] Floor
+- [ ] Clothes
+- [ ] Music
+- [ ] Photos
+- [ ] Posters
+- [ ] Rug
+- [ ] Tools
+- [ ] Villager
+
 ## Self-Hosting Installation
 
 Want to host the server yourself? You can!
