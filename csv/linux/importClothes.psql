@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS clothes (
 	Style character varying(50),
 	LabelThemes character varying(100),
 	Catalog character varying(5)
-)
+);
 
 COPY clothes (Name, Image, Variation, DIY, Buy, Sell, Color1, Color2, Source, SourceNotes, Style, LabelThemes, Catalog)
 FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

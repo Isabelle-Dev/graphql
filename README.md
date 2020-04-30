@@ -2,7 +2,7 @@
 
 Server is available at `acnhgraphql.com`.
 
-**I'm still setting up Linux server, so please do not use the live API yet! Thanks!**
+**I'm still setting up Linux server, so not all features are available yet!**
 
 _I will be writing more detailed guides on how to use the API after I setup the server. Thanks for being patient!_
 
@@ -11,7 +11,7 @@ _I will be writing more detailed guides on how to use the API after I setup the 
 - [x] Item
 - [x] Wallpaper
 - [x] Floor
-- [ ] Clothes
+- [x] Clothes
 - [ ] Music
 - [ ] Photos
 - [ ] Posters

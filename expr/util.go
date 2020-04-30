@@ -23,6 +23,12 @@ func addName(str string, info Env) string {
 		if strings.ToLower(info["glob"]) == "t" {
 			return info["name"] + " LIKE '%" + strings.Trim(str, "'") + "%'"
 		}
+	case "theme":
+		return "labelthemes LIKE '%" + strings.Trim(str, "'") + "%'"
+	case "variation":
+		if i := strings.Index(str, "&"); i != -1 {
+			return "variation LIKE '%" + strings.Trim(str, "'") + "%'"
+		}
 	default:
 		return info["name"] + " = " + str
 	}
