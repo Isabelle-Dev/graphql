@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS photos (
+	Name character varying(70),
+	Image character varying(100),
+	Variation character varying(70),
+	BodyTitle character varying(50),
+	Pattern character varying(5),
+	PatternTitle character varying(5),
+	DIY character varying(5),
+	Customize character varying(5),
+	KitCost INT,
+	Buy INT,
+	Sell INT,
+	Source character varying(60),
+	Catalog character varying(5)
+);
+
+COPY photos (Name, Image, Variation, BodyTitle, Pattern, PatternTitle, DIY, Customize, KitCost, Buy, Sell, Source, Catalog)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

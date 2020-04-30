@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS music (
+	Name character varying(100),
+	Image character varying(100),
+	Buy INT,
+	Sell INT,
+	Color1 character varying(50),
+	Color2 character varying(50),
+	Source character varying(100),
+	SourceNotes character varying(100),
+	Catalog character varying(5)
+);
+
+COPY music (Name, Image, Buy, Sell, Color1, Color2, Source, SourceNotes, Catalog)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

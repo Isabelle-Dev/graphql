@@ -1,6 +1,6 @@
 # Animal Crossing - New Horizons GraphQL Server
 
-Server is available at `acnhgraphql.com`.
+Server and **endpoint** is available at [acnhgraphql.com](acnhgraphql.com).
 
 **I'm still setting up Linux server, so not all features are available yet!**
 
@@ -23,6 +23,7 @@ _I will be writing more detailed guides on how to use the API after I setup the 
 
 Want to host the server yourself? You can!
 
+- `go get -u github.com/Isabelle-Dev/graphql`
 - Setup PostgreSQL
 - Create and configure `.config` file using `example.config` as template
 - Import data using `csv` files
@@ -135,6 +136,19 @@ An updated **cURL** query can be found in `post.json`. I do not recommend making
 **Import Script:** `importFloor.psql`
 
 - Floors - `floor_clean.csv`
+
+### Clothing Table (clothes)
+
+**Import Script:** `importClothes.psql`
+
+- Accessories - `accessories_clean.csv`
+- Bags - `bags_clean.csv`
+- Bottoms - `bottoms_clean.csv`
+- Tops - `tops_clean.csv`
+- Dresses - `dresses_clean.csv`
+- Headwear - `headwear_clean.csv`
+- Shoes - `shoes_clean.csv`
+- Socks - `socks_clean.csv`
 
 ## Contributions
 
