@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS poster (
 	Color1 character varying(50),
 	Color2 character varying(50),
 	Source character varying(60),
-	Catalog(5)
+	Catalog character varying(5)
 );
 
 COPY poster (Name, Image, Buy, Sell, Color1, Color2, Source, Catalog)

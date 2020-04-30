@@ -12,9 +12,9 @@ _I will be writing more detailed guides on how to use the API after I setup the 
 - [x] Wallpaper
 - [x] Floor
 - [x] Clothes
-- [ ] Music
-- [ ] Photos
-- [ ] Posters
+- [x] Music
+- [x] Photos
+- [x] Posters
 - [ ] Rug
 - [ ] Tools
 - [ ] Villager
@@ -149,6 +149,24 @@ An updated **cURL** query can be found in `post.json`. I do not recommend making
 - Headwear - `headwear_clean.csv`
 - Shoes - `shoes_clean.csv`
 - Socks - `socks_clean.csv`
+
+### Music Table (music)
+
+**Import Script:** `importMusic.psql`
+
+- Music - `music_clean.csv`
+
+### Photos Table (photos)
+
+**Import Script:** `importPhotos.psql`
+
+- Photos - `photos_clean.csv`
+
+### Poster Table (poster)
+
+**Import Script:** `importPoster.psql`
+
+- Poster - `poster_clean.csv`
 
 ## Contributions
 

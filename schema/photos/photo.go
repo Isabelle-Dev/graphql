@@ -122,14 +122,15 @@ var variantObj = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
-		"Colors": &graphql.Field{
-			Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.Variant); ok {
-					return val.Colors, nil
-				}
-				return nil, nil
-			},
-		},
+		// Keep just in case colors are added later...
+		// "Colors": &graphql.Field{
+		// 	Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
+		// 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+		// 		if val, ok := p.Source.(newhorizons.Variant); ok {
+		// 			return val.Colors, nil
+		// 		}
+		// 		return nil, nil
+		// 	},
+		// },
 	},
 })
