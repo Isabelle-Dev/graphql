@@ -4,7 +4,7 @@
 
 # Animal Crossing - New Horizons GraphQL Server
 
-[acnhgraphql.com](https://acnhgraphql.com/) is a Animal Crossing New Horizons [GraphQL](https://graphql.org/) API server. It handles both API requests and provides an interactive GraphQL IDE to sample queries.
+[acnhgraphql.com](https://acnhgraphql.com/) is a Animal Crossing New Horizons [GraphQL](https://graphql.org/) API server. It handles API requests and provides an interactive GraphQL IDE to sample queries.
 
 You can access both the IDE and endpoint at [https://acnhgraphql.com](https://acnhgraphql.com).
 
@@ -15,7 +15,7 @@ Read the API documentation [here](#documentation)!
 - If you're new to GraphQL, I suggest you read all the Doc pages
 - If you've used GraphQL before, you can jump right into the _Queries_ and _Filter_ Docs
 
-**I'm still setting up the Linux server, so not all features are available yet!**
+**I'm still setting up the Linux server (and coding), so not all features are available yet!**
 
 ## Table of Contents
 
@@ -162,7 +162,7 @@ query DemoItemV2 {
 
 ## cURL
 
-An updated **cURL** query can be found in `post.json`. I do not recommend making graphql requests using cURL, but if you must, it's easier to port requests using an external json file.
+An example **cURL** query can be found in `post.json`. I do not recommend making graphql requests using pure cURL, but if you must, it's easier to port requests using an external json file.
 
 `curl -H "Content-type:application/json" --data @post.json https://acnhgraphql.com`
 
