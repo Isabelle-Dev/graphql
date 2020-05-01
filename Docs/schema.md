@@ -18,6 +18,7 @@ Further info on graphql types and schemas can be found [here](https://graphql.or
 - [Tools](#tools)
 - [Villager](#villager)
 - [Wallpaper](#wallpaper)
+- [Fencing](#fencing)
 
 ## Root
 
@@ -108,7 +109,7 @@ type clothesvariants {
 
 ## Floor
 
-```graphql 
+```graphql
 type flooring {
   query(query: String, glob: String = "f", limit: Int = 500): floor_search!
 }
@@ -418,3 +419,5 @@ type Window {
   Type: String
 }
 ```
+
+## Fencing
