@@ -8,6 +8,14 @@
 
 You can access both the IDE and endpoint at [https://acnhgraphql.com](https://acnhgraphql.com).
 
+**Why GraphQL?**
+
+I chose GraphQL for several reasons!
+
+1. I wanted to learn it!
+2. I'm writing an API for all kinds of developers, and I don't know what data they need - graphql handles data selection very well
+3. GraphQL allows me to let you customize options very well (i.e. check out Docs for Filters!)
+
 **Ready to get started?**
 
 Read the API documentation [here](#documentation)!
@@ -162,9 +170,15 @@ query DemoItemV2 {
 
 ## cURL
 
-An example **cURL** query can be found in `post.json`. I do not recommend making graphql requests using pure cURL, but if you must, it's easier to port requests using an external json file.
+Example **cURL** queries can be found in `post.json` and `post.graphql`. I do not recommend making graphql requests using pure cURL, but if you must, it's easier to port requests using an external file.
+
+**Example cURL With JSON File:**
 
 `curl -H "Content-type:application/json" --data @post.json https://acnhgraphql.com`
+
+**Example cURL With graphql File:**
+
+`curl -H "Content-type:application/graphql" --data @post.graphql https://acnhgraphql.com`
 
 ## Bugs
 
