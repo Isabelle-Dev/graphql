@@ -25,7 +25,7 @@ func QueryParse(query string) map[string]string {
 	}
 	options := make(map[string]string, 0)
 	for i := 0; i < len(fields); i++ {
-		options[p[i]] = strings.ToLower(fields[i])
+		options[p[i]] = fields[i]
 	}
 	return options
 }

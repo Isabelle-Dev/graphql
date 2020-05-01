@@ -15,7 +15,7 @@ type Env map[string]string
 //
 // i.e. the string itself
 func (l Literal) Eval(env Env) string {
-	ret := string(l)
+	ret := strings.ToLower(string(l))
 	if index := strings.Index(ret, "'"); index != -1 {
 		ret = strings.ReplaceAll(ret, "'", "''")
 	}
