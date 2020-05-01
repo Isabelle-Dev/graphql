@@ -31,6 +31,7 @@ Read the API documentation [here](#documentation)!
 - [Self-Hosting Installation](#self-hosting-installation)
 - [Sample JSON Responses](#sample-json-responses)
 - [Documentation](#documentation)
+- [Example Queries](#example-queries)
 - [cURL](#curl)
 - [Bugs](#bugs)
 - [Contributing](#contributing)
