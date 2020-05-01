@@ -3,6 +3,22 @@
 Each query table has filter options based on database rows. This document will list all the different filter options for each table used
 in the graphql server.
 
+The following filters must be paired with an integer number:
+
+- `kitcost`
+- `buy`
+- `sell`
+- `uses`
+- `month`
+
+Everything else uses regular character strings.
+
+`tag`, `theme`, and `name` (with the glob parameter set to true) will apply glob filters. All other parameters must have values
+matching an existing value in the database.
+
+For example, setting color to `avocado green` will result in the server responding `entries not found` since there are no `avocado green`
+color codes in the database.
+
 ## Contents
 
 - [Item](#item)
@@ -21,7 +37,6 @@ in the graphql server.
 
 - `name` - Name
 - `variation` - variation color
-- `diy` - diy status
 - `kitcost` - kit cost
 - `buy` - buy price in bells
 - `sell` - sell price in bells
@@ -33,8 +48,6 @@ in the graphql server.
 ### Wallpaper
 
 - `name` - Name
-- `vfx` - visual effects status
-- `diy` - diy status
 - `buy` - buy price in bells
 - `sell` - sell price in bells
 - `color` - object color codes
@@ -45,8 +58,6 @@ in the graphql server.
 ### Floor
 
 - `name` - Name
-- `vfx` - visual effects status
-- `diy` - diy status
 - `buy` - buy price in bells
 - `sell` - sell price in bells
 - `color` - object color codes
@@ -87,7 +98,6 @@ in the graphql server.
 ### Rugs
 
 - `name` - Name
-- `diy` - diy status
 - `buy` - buy price in bells
 - `sell` - sell price in bells
 - `color` - object color codes
@@ -99,8 +109,6 @@ in the graphql server.
 
 - `name` - Name
 - `variation` - variation color
-- `customize` - customize status
-- `diy` - diy status
 - `kitcost` - kit cost
 - `uses` - number of usage
 - `buy` - buy price in bells
@@ -115,7 +123,3 @@ in the graphql server.
 - `style` - villager dressing style
 - `color` - villager color codes
 - `month` - villager birthday month
-
-
-
-
