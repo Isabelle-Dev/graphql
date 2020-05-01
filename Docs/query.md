@@ -110,4 +110,91 @@ To avoid ambiguous parsing, you can enclose options in parentheses.
 For example, `query: "color: \"(blue OR white) AND purple\"  buy: \">= 6000\"  "`, will filter items that are either **blue and purple** or
 **white and purple**  and are greater than 6000 bells in buy price.
 
+## Optionals
+
+The server recognizes two optional parameters:
+
+- `glob`
+- `limit`
+
+### Glob
+
+**Glob** will return results that looks for **LIKE** results in the `name` filter parameter.
+
+For example,
+
+```graphql
+query ItemGlobExample {
+  item {
+    query(query: "name: \"coffee\"", glob: "t") {
+      items {
+        Name
+      }
+    }
+  }
+}
+```
+
+will return this response:
+
+```json
+{
+  "data": {
+    "item": {
+      "query": {
+        "items": [
+          {
+            "Name": "coffee cup"
+          },
+          {
+            "Name": "coffee grinder"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+**Glob's** default value is always set to _false_. Please note that **glob** only works for `name` filters.
+
+### Limit
+
+**Limit** limits how many max entries the response will return. This is particularly helpful for top level filtering.
+
+_**NOTE:**_ I do not recommend using `limit` on tables with multiple variation entries such as the `item`, `clothing`, `photos`, and `tools` tables since limit does not ignore duplicate entries in the database.
+
+**Limit** has a default value of 500.
+
+For example,
+
+```graphql
+query ItemGlobLimitExample {
+  item {
+    query(query: "name: \"coffee\"", glob: "t", limit: 1) {
+      items {
+        Name
+      }
+    }
+  }
+}
+```
+
+will return the following response:
+
+```json
+{
+  "data": {
+    "item": {
+      "query": {
+        "items": [
+          {
+            "Name": "coffee cup"
+          }
+        ]
+      }
+    }
+  }
+}
+```
 
