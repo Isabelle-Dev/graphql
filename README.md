@@ -21,7 +21,7 @@ I chose GraphQL for several reasons!
 Read the API documentation [here](#documentation)!
 
 - If you're new to GraphQL, I suggest you read all the Doc pages
-- If you've used GraphQL before, you can jump right into the _Queries_ and _Filter_ Docs
+- If you've used GraphQL before, you can skip the GraphQL Doc
 
 **I'm still setting up the Linux server (and coding), so not all features are available yet! Refer to the Server Database Status for updates.**
 
