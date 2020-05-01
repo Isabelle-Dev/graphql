@@ -31,7 +31,7 @@ color codes in the database.
 - [Rugs](#rugs)
 - [Tools](#tools)
 - [Villagers](#villagers)
-
+- [Art](#art)
 
 ### Item
 
@@ -43,7 +43,7 @@ color codes in the database.
 - `color` - object color codes
 - `concept` - HHA Concept
 - `tag` - object tag
-- `catalog` - For sale or Not for sale
+- `catalog` - fs (for sale) or nfs (not for sale)
 
 ### Wallpaper
 
@@ -53,7 +53,7 @@ color codes in the database.
 - `color` - object color codes
 - `concept` - HHA Concept
 - `tag` - object tag
-- `catalog` - For sale or Not for sale
+- `catalog` - fs (for sale) or nfs (not for sale)
 
 ### Floor
 
@@ -63,7 +63,7 @@ color codes in the database.
 - `color` - object color codes
 - `concept` - HHA Concept
 - `tag` - object tag
-- `catalog` - For sale or Not for sale
+- `catalog` - fs (for sale) or nfs (not for sale)
 
 ### Clothes
 
@@ -75,7 +75,7 @@ color codes in the database.
 - `color` - object color codes
 - `style` - clothing style
 - `theme` - label theme
-- `catalog` - For sale or Not for sale
+- `catalog` - fs (for sale) or nfs (not for sale)
 
 ### Music
 
@@ -83,7 +83,7 @@ color codes in the database.
 - `buy` - buy price in bells
 - `sell` - sell price in bells
 - `color` - object color codes
-- `catalog` - For sale or Not for sale
+- `catalog` - fs (for sale) or nfs (not for sale)
 
 ### Photos
 
@@ -123,3 +123,8 @@ color codes in the database.
 - `style` - villager dressing style
 - `color` - villager color codes
 - `month` - villager birthday month
+
+### Art
+
+- `name` - Name
+- `tag` - object tag

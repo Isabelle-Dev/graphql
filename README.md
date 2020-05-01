@@ -23,7 +23,7 @@ Read the API documentation [here](#documentation)!
 - If you're new to GraphQL, I suggest you read all the Doc pages
 - If you've used GraphQL before, you can jump right into the _Queries_ and _Filter_ Docs
 
-**I'm still setting up the Linux server (and coding), so not all features are available yet!**
+**I'm still setting up the Linux server (and coding), so not all features are available yet! Refer to the Server Database Status for updates.**
 
 ## Table of Contents
 
@@ -62,7 +62,7 @@ Read the API documentation [here](#documentation)!
 | Fencing            | :x:                   | Fence Entries                    |
 | Umbrellas          | :x:                   | Umbrellas (TBA)                  |
 | Recipes            | :x:                   | Recipe Entries (TBA)             |
-| Art                | :x:                   | Art Entries                      |
+| Art                | :heavy_check_mark:    | Art Entries                      |
 | Construction       | :x:                   | Construction Project Entries     |
 | Nook Miles         | :x:                   | Nook Miles Options               |
 | Other              | :x:                   | Other Misc. Entries              |
@@ -95,6 +95,7 @@ The endpoint itself renders GraphiQL - a GraphQL IDE.
 | GraphQL    | [:book:](Docs/graphql.md)               |
 | Queries    | [:book:](Docs/query.md)                 |
 | Filters    | [:book:](Docs/filters.md)               |
+| Schema     | [:book:](Docs/schema.md)                |
 
 ## Example Queries
 
@@ -124,7 +125,7 @@ query FloorDemo {
 ```graphql
 query DemoItem {
   item {
-    query(query: " name:\"leaf\" tag:\"plant\" color:\"orange\" " glob:"t" limit: 30) {
+    query(query: " name:\"leaf\" tag:\"plant\" color:\"orange\" ", glob:"t", limit: 30) {
       items {
         Name
         Buy
@@ -143,26 +144,21 @@ query DemoItem {
 ```
 
 ```graphql
-query DemoItemV2 {
-  item {
-    query(query: "sell:\"< 2000 AND > 1500\" color:\"(pink AND green) OR orange\"") {
-      items {
+query DemoArt {
+  art {
+    query(query: "buy: \"4980\" tag: \"picture\" ") {
+      art {
         Name
-        Variants {
-          Colors
-          Img
-          Pattern
-        }
         Buy
-        Sell
+        Tag
+        Category
         Source
-        KitCost
-        HHASet
-        HHASeries
-        HHAConcepts
-        Interact
-        PatternTitle
-        PatternCustomize
+        Type {
+          Concept
+          Genuine
+          Sell
+          Image
+        }
       }
     }
   }

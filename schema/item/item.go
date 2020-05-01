@@ -72,7 +72,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 			},
 		},
 		"KitCost": &graphql.Field{
-			Type: graphql.String,
+			Type: graphql.Int,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.KitCost, nil
@@ -81,7 +81,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 			},
 		},
 		"Buy": &graphql.Field{
-			Type: graphql.String,
+			Type: graphql.Int,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Item); ok {
 					return val.Buy, nil
@@ -107,7 +107,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
-		"HHAConcepts": &graphql.Field{
+		"Concepts": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.NewList(graphql.String)),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Item); ok {

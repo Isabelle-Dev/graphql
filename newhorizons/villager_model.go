@@ -12,7 +12,6 @@ type Villager struct {
 	Catchphrase string
 	Style       []string
 	Color       []string
-	Month       int
 }
 
 // VillagerEntry represents a villager in the database
@@ -28,7 +27,6 @@ type VillagerEntry struct {
 	Style2      string `gorm:"column:style2"`
 	Color1      string `gorm:"column:color1"`
 	Color2      string `gorm:"column:color2"`
-	Month       int
 }
 
 // ToGraphQL (VillagerEntry) turns a villager entry from database to a Villager object
@@ -44,6 +42,5 @@ func (ve VillagerEntry) ToGraphQL(s, c []string) *Villager {
 		Catchphrase: ve.Catchphrase,
 		Style:       s,
 		Color:       c,
-		Month:       ve.Month,
 	}
 }

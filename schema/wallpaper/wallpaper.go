@@ -45,7 +45,7 @@ var wallpaper = graphql.NewObject(graphql.ObjectConfig{
 			},
 		},
 		"Buy": &graphql.Field{
-			Type: graphql.String,
+			Type: graphql.Int,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Wallpaper); ok {
 					return val.Buy, nil
