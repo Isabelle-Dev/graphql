@@ -35,7 +35,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					},
 					"limit": &graphql.ArgumentConfig{
 						Type:         graphql.Int,
-						DefaultValue: 500,
+						DefaultValue: 1000,
 					},
 				},
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
