@@ -1,6 +1,8 @@
 # Schema
 
-Schema will be defined here for ease of use.
+The schema for the server will be defined here for ease of use.
+
+Further info on graphql types and schemas can be found [here](https://graphql.org/learn/schema/).
 
 ## Contents
 
@@ -139,7 +141,7 @@ type floor {
 
 ```graphql
 type item {
-  query(query: String, glob: String = "f", limit: Int = 500): search_by_item!
+  query(query: String, glob: String = "f", limit: Int = 1000): search_by_item!
 }
 ```
 
