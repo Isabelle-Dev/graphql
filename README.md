@@ -6,7 +6,7 @@
 
 [acnhgraphql.com](https://acnhgraphql.com/) is a Animal Crossing New Horizons [GraphQL](https://graphql.org/) API server. It handles both API requests and provides an interactive GraphQL IDE to sample queries.
 
-You can access both the IDE and endpoint at [https://acnhgraphql.com/](https://acnhgraphql.com/).
+You can access both the IDE and endpoint at [https://acnhgraphql.com](https://acnhgraphql.com).
 
 **Ready to get started?**
 
