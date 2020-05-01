@@ -19,6 +19,15 @@ Read the API documentation [here](#documentation)!
 
 ## Table of Contents
 
+- [Server Database Status](#server-database-status)
+- [Self-Hosting Installation](#self-hosting-installation)
+- [Sample JSON Responses](#sample-json-responses)
+- [Documentation](#documentation)
+- [cURL](#curl)
+- [Bugs](#bugs)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Server Database Status
 
 | Table              | Status                | Summary                          |
@@ -72,6 +81,8 @@ The endpoint itself renders GraphiQL - a GraphQL IDE.
 | Queries    | [:book:](Docs/query.md)                 |
 
 ## Example Queries
+
+**See Documentation For More Info On Query Parameters**
 
 ```graphql
 query FloorDemo {
@@ -160,6 +171,12 @@ If you would like to help develop, follow the steps below:
 - Create your own feature branch
 - Commit your changes and push to the new branch
 - Open a pull request
+
+## License
+
+Isabelle-Dev graphql server is licensed under the **MIT License**.
+
+See [License](LICENSE) for more details.
 
 ## External Contributions
 
