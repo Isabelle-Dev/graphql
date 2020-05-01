@@ -12,8 +12,8 @@ You can access both the IDE and endpoint at [https://acnhgraphql.com/](https://a
 
 Read the API documentation [here](#documentation)!
 
-- If you're new to GraphQL, I suggest you read both the _GraphQL_ and _Queries_ Doc
-- If you've used GraphQL before, you can jump right in to the _Queries_ Doc
+- If you're new to GraphQL, I suggest you read all the Doc pages
+- If you've used GraphQL before, you can jump right into the _Queries_ and _Filter_ Docs
 
 **I'm still setting up the Linux server, so not all features are available yet!**
 
@@ -29,6 +29,12 @@ Read the API documentation [here](#documentation)!
 - [License](#license)
 
 ## Server Database Status
+
+| Icon               |  Status           |
+|:------------------:|:------------------|
+| :heavy_check_mark: | OK                |
+| :x:                | NOT READY         |
+| :warning:          | TO BE UPDATED     |
 
 | Table              | Status                | Summary                          |
 |:-------------------|:---------------------:|:---------------------------------|
@@ -79,10 +85,11 @@ The endpoint itself renders GraphiQL - a GraphQL IDE.
 |:-----------|:---------------------------------------:|
 | GraphQL    | [:book:](Docs/graphql.md)               |
 | Queries    | [:book:](Docs/query.md)                 |
+| Filters    | [:book:](Docs/filters.md)               |
 
 ## Example Queries
 
-**See Documentation For More Info On Query Parameters**
+**See Documentation For More Info**
 
 ```graphql
 query FloorDemo {
