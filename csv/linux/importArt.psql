@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS art (
+	Name character varying(70),
+	Image character varying(100),
+	Genuine character varying(1),
+	Category character varying(30),
+	Buy INT,
+	Sell INT,
+	Source character varying(50),
+	HHAConcept1 character varying(30),
+	HHAConcept2 character varying(30),
+	Tag character varying(40)
+);
+
+COPY art (Name, Image, Genuine, Category, Buy, Sell, Source, HHAConcept1, HHAConcept2, Tag)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

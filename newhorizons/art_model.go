@@ -6,7 +6,6 @@ type Art struct {
 	Type     []ArtType
 	Buy      int
 	Source   string
-	Concept  []string
 	Tag      string
 	Category string
 }
@@ -16,6 +15,7 @@ type ArtType struct {
 	Image   string
 	Sell    int
 	Genuine string
+	Concept []string
 }
 
 // ArtEntry represents an art entry in the database
@@ -34,13 +34,12 @@ type ArtEntry struct {
 
 // ToGraphQL (ArtEntry) turns a art entry from database to a Art object
 // graphql is able to parse
-func (ae ArtEntry) ToGraphQL(t []ArtType, c []string) *Art {
+func (ae ArtEntry) ToGraphQL(t []ArtType) *Art {
 	return &Art{
 		Name:     ae.Name,
 		Type:     t,
 		Buy:      ae.Buy,
 		Source:   ae.Source,
-		Concept:  c,
 		Tag:      ae.Tag,
 		Category: ae.Category,
 	}

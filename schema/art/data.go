@@ -24,6 +24,6 @@ func findByName(name, tablename string, db *gorm.DB) *newhorizons.Art {
 	if len(art) == 0 {
 		return nil
 	}
-	v, c := extractType(art)
-	return art[0].ToGraphQL(v, c)
+	v := extractType(art)
+	return art[0].ToGraphQL(v)
 }

@@ -15,24 +15,25 @@ func toArtSlice(a []newhorizons.ArtEntry, db *gorm.DB) []*newhorizons.Art {
 		}
 		n := findByName(i.Name, "art", db)
 		dupe[i.Name] = true
-		ret = append(ret, i.ToGraphQL(n.Type, n.Concept))
+		ret = append(ret, i.ToGraphQL(n.Type))
 	}
 	return ret
 }
 
-func extractType(a []newhorizons.ArtEntry) ([]newhorizons.ArtType, []string) {
+func extractType(a []newhorizons.ArtEntry) []newhorizons.ArtType {
 	var at []newhorizons.ArtType
 	for _, entry := range a {
+		var concept []string
+		concept = append(concept, entry.HHAConcept1)
+		if !common.Exists(entry.HHAConcept2, concept) && entry.HHAConcept2 != "None" {
+			concept = append(concept, entry.HHAConcept1)
+		}
 		at = append(at, newhorizons.ArtType{
 			Image:   entry.Image,
 			Sell:    entry.Sell,
 			Genuine: entry.Genuine,
+			Concept: concept,
 		})
 	}
-	var concept []string
-	concept = append(concept, a[0].HHAConcept1)
-	if !common.Exists(a[0].HHAConcept2, concept) && a[0].HHAConcept2 != "None" {
-		concept = append(concept, a[0].HHAConcept2)
-	}
-	return at, concept
+	return at
 }

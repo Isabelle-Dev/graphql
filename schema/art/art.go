@@ -44,15 +44,6 @@ var art = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
-		"Concept": &graphql.Field{
-			Type: graphql.NewList(graphql.String),
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(*newhorizons.Art); ok {
-					return val.Concept, nil
-				}
-				return nil, nil
-			},
-		},
 		"Tag": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
@@ -100,6 +91,15 @@ var artType = graphql.NewObject(graphql.ObjectConfig{
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(newhorizons.ArtType); ok {
 					return val.Genuine, nil
+				}
+				return nil, nil
+			},
+		},
+		"Concept": &graphql.Field{
+			Type: graphql.NewList(graphql.String),
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.(newhorizons.ArtType); ok {
+					return val.Concept, nil
 				}
 				return nil, nil
 			},
