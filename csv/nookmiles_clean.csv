@@ -1,342 +1,61 @@
-Name,Image,DIY,Buy,Sell,Source,SourceNotes,Tag
-acorn,https://acnhcdn.com/acdb/other/DIYAcorn.png,,-1,200,Shaking a hardwood tree (Fall),,na
-apple,https://acnhcdn.com/acdb/other/Apple.png,,400,500,Apple tree,,na
-apple tree,https://acnhcdn.com/acdb/other/PltApple.png,,-1,300,Planting an apple,,plants
-aquarius fragment,https://acnhcdn.com/acdb/other/StarpieceAquarius.png,,-1,500,Wishing on shooting stars (January 20 - February 18),,na
-aries fragment,https://acnhcdn.com/acdb/other/StarpieceAries.png,,-1,500,Wishing on shooting stars (March 21 - April 19),,na
-bamboo piece,https://acnhcdn.com/acdb/other/DIYBamboo.png,,-1,80,Chopping a bamboo tree,,na
-bamboo shoot,https://acnhcdn.com/acdb/other/BambooShoot.png,,-1,250,Dig spot near a bamboo tree,,na
-bamboo tree,https://acnhcdn.com/acdb/other/PltBamboo.png,,-1,1500,Planting a bamboo shoot,,plants
-bell bag,https://acnhcdn.com/acdb/other/PhotoStudioBellBag.png,,-1,-2,Glowing dig spot,,na
-birthday cupcake,https://acnhcdn.com/acdb/other/BirthdayCupcake.png,,-1,200,Birthday,,seasonal decor
-black cosmos,https://acnhcdn.com/acdb/other/FlwCosmosBlack.png,,-1,240,Picking flowers,,plants
-black lilies,https://acnhcdn.com/acdb/other/FlwYuriBlack.png,,-1,80,Picking flowers,,plants
-black roses,https://acnhcdn.com/acdb/other/FlwRoseBlack.png,,-1,240,Picking flowers,,plants
-black tulips,https://acnhcdn.com/acdb/other/FlwTulipBlack.png,,-1,80,Picking flowers,,plants
-black wrapping paper,https://acnhcdn.com/acdb/other/WPaperBlack.png,,160,40,Nook's Cranny,,na
-black-cosmos plant,https://acnhcdn.com/acdb/other/PltCosmos5.png,,-1,240,Red/red cosmos,,plants
-black-lily plant,https://acnhcdn.com/acdb/other/PltYuri5.png,,-1,80,Red/red lilies,,plants
-black-rose plant,https://acnhcdn.com/acdb/other/PltRose6.png,,-1,240,Red/red roses,,plants
-black-tulip plant,https://acnhcdn.com/acdb/other/PltTurip5.png,,-1,80,Red/red tulips,,plants
-blathers's tent marker,https://acnhcdn.com/acdb/other/TentWhite.png,,-1,-2,Tom Nook,,na
-blue hyacinths,https://acnhcdn.com/acdb/other/FlwHyacinthBlue.png,,-1,80,Picking flowers,,plants
-blue ornament,https://acnhcdn.com/acdb/other/DIYOrnamentBlue.png,,-1,50,Shaking a cedar tree (Festive Season),,na
-blue pansies,https://acnhcdn.com/acdb/other/FlwPansyBlue.png,,-1,80,Picking flowers,,plants
-blue roses,https://acnhcdn.com/acdb/other/FlwRoseBlue.png,,-1,1000,Picking flowers,,plants
-blue windflowers,https://acnhcdn.com/acdb/other/FlwAnemonesBlue.png,,-1,80,Picking flowers,,plants
-blue wrapping paper,https://acnhcdn.com/acdb/other/WPaperBlue.png,,160,40,Nook's Cranny,,na
-blue-hyacinth plant,https://acnhcdn.com/acdb/other/PltHyacinth6.png,,-1,80,White/white hyacinths,,plants
-blue-hydrangea bush,https://acnhcdn.com/latest/MenuIcon/PltHydrangeaBlue.png,No,560,140,,,na
-blue-hydrangea nursery,https://acnhcdn.com/latest/MenuIcon/PltHydrangeaBlue.png,No,280,70,,,na
-blue-hydrangea start,https://acnhcdn.com/latest/ShopPlant/SeedHydrangeaBlue.png,No,280,70,,,na
-blue-pansy plant,https://acnhcdn.com/acdb/other/PltPansi5.png,,-1,80,White/white pansies,,plants
-blue-rose plant,https://acnhcdn.com/acdb/other/PltRose7.png,,-1,1000,Orange/orange roses,,plants
-blue-windflower plant,https://acnhcdn.com/acdb/other/PltAnemone5.png,,-1,80,"White/white windflowers
-Orange/white windflowers",,plants
-boot,https://acnhcdn.com/acdb/other/TrashBoot.png,,40,10,Fishing,Medium shadow,na
-bridge construction kit,https://acnhcdn.com/acdb/other/TentWhite.png,,-1,-2,Tom Nook,,outdoors decor
-bridge marker kit,https://acnhcdn.com/acdb/other/TentWhite.png,,-1,-2,Tom Nook,,na
-brown wrapping paper,https://acnhcdn.com/acdb/other/WPaperBrown.png,,160,40,Nook's Cranny,,na
-campsite construction kit,https://acnhcdn.com/acdb/other/TentWhite.png,,-1,-2,Tom Nook,,na
-campsite moving kit,https://acnhcdn.com/acdb/other/TentWhite.png,,-1,-2,Tom Nook,,na
-cancer fragment,https://acnhcdn.com/acdb/other/StarpieceCancer.png,,-1,500,Wishing on shooting stars (June 21 - July 22),,na
-capricorn fragment,https://acnhcdn.com/acdb/other/StarpieceCapricornus.png,,-1,500,Wishing on shooting stars (Dec 22 - Jan 19),,na
-cedar sapling,https://acnhcdn.com/acdb/other/SeedCedar.png,,640,160,Nook's Cranny,,plants
-cedar tree,https://acnhcdn.com/acdb/other/PltConifer.png,,-1,240,Planting a cedar start,,plants
-chartreuse wrapping paper,https://acnhcdn.com/acdb/other/WPaperLightGreen.png,,160,40,Nook's Cranny,,na
-cherry,https://acnhcdn.com/acdb/other/Cherry.png,,400,500,Cherry tree,,na
-cherry tree,https://acnhcdn.com/acdb/other/PltCherry.png,,-1,300,Planting a cherry,,plants
-cherry-blossom petal,https://acnhcdn.com/acdb/other/Sakurapetal.png,,-1,-2,Catching with a net (Cherry-Blossom Season),,na
-clay,https://acnhcdn.com/acdb/other/DIYClay.png,,-1,100,Hitting a rock,,na
-clump of weeds,https://acnhcdn.com/acdb/other/PltWeed.png,,-1,10,On ground,,plants
-coconut,https://acnhcdn.com/acdb/other/Coconut.png,,-1,250,Coconut tree,,na
-coconut tree,https://acnhcdn.com/acdb/other/PltPalm.png,,-1,500,Planting a coconut,,plants
-coin,https://acnhcdn.com/acdb/other/PhotoStudioBell.png,,-1,0,Shaking a tree,,na
-communicator part,https://acnhcdn.com/acdb/other/JohnyParts.png,,-1,20,Clam dig spot while on a quest for Gulliver,,na
-conch,https://acnhcdn.com/acdb/other/ShellDriftHora.png,,-1,700,Beach,,na
-coral,https://acnhcdn.com/acdb/other/ShellDriftSango.png,,-1,500,Beach,,na
-cowrie,https://acnhcdn.com/acdb/other/ShellDriftTakara.png,,-1,60,Beach,,na
-customization kit,https://acnhcdn.com/acdb/other/RemakeKit.png,,600,150,Nook's Cranny,,supplies
-delivery,https://acnhcdn.com/acdb/other/Cardboard.png,,-1,222,Delivering item for a villager,,na
-delivery box,https://acnhcdn.com/acdb/other/Present2.png,,-1,-2,Nook Shopping,,na
-diy for beginners,https://acnhcdn.com/acdb/other/DIYbook1.png,,480,-2,Nook's Cranny,,na
-earth egg,https://acnhcdn.com/acdb/other/EggGround.png,,-1,200,Dig spot (Bunny Day),,na
-egg message bottle,https://acnhcdn.com/acdb/other/MessageBottleEgg.png,,-1,-2,Beach (Bunny Day),,na
-elegant mushroom,https://acnhcdn.com/acdb/other/MushSplendid.png,,-1,10000,On ground (Mushroom Season),,na
-empty can,https://acnhcdn.com/acdb/other/TrashCan.png,,-1,10,Fishing,Small shadow,na
-fish bait,https://acnhcdn.com/acdb/other/FishBait.png,,-1,200,Crafting ,,na
-flat mushroom,https://acnhcdn.com/acdb/other/MushFlat.png,,-1,200,On ground (Mushroom Season),,na
-flimsy axe recipe,https://acnhcdn.com/acdb/other/DIYRecipeAxeWood.png,,280,200,Nook's Cranny,Available after unlocking the axe in the story,na
-flimsy shovel recipe,https://acnhcdn.com/acdb/other/DIYRecipeScoopWood.png,,280,200,Nook's Cranny,Available after unlocking the shovel in the story,na
-flimsy watering can recipe,https://acnhcdn.com/acdb/other/DIYRecipeWateringWood.png,,280,200,Nook's Cranny,,na
-fossil,https://acnhcdn.com/acdb/other/Fossil.png,,-1,100,Dig spot,,na
-gemini fragment,https://acnhcdn.com/acdb/other/StarpieceGemini.png,,-1,500,Wishing on shooting stars (May 21 - June 20),,na
-giant clam,https://acnhcdn.com/acdb/other/ShellDriftSyako.png,,-1,900,Beach,,na
-gold nugget,https://acnhcdn.com/acdb/other/DIYGold.png,,-1,10000,Hitting a rock,,na
-gold ornament,https://acnhcdn.com/acdb/other/DIYOrnamentGold.png,,-1,50,Shaking a cedar tree (Festive Season),,na
-gold roses,https://acnhcdn.com/acdb/other/FlwRoseGold.png,,-1,1000,Picking flowers,,plants
-gold wrapping paper,https://acnhcdn.com/acdb/other/WPaperGold.png,,160,40,Nook's Cranny,,na
-gold-rose plant,https://acnhcdn.com/acdb/other/PltGoldenRose.png,,-1,1000,"Black/black roses
-Water with gold watering can",,plants
-gray wrapping paper,https://acnhcdn.com/acdb/other/WPaperGray.png,,160,40,Nook's Cranny,,na
-green mums,https://acnhcdn.com/acdb/other/FlwMumGreen.png,,-1,240,Picking flowers,,plants
-green wrapping paper,https://acnhcdn.com/acdb/other/WPaperGreen.png,,160,40,Nook's Cranny,,na
-green-mum plant,https://acnhcdn.com/acdb/other/PltMum4.png,,-1,240,Purple/purple mums,,plants
-hardwood,https://acnhcdn.com/acdb/other/DIYWoodHard.png,,-1,60,Chopping a tree,,na
-hardwood tree,https://acnhcdn.com/acdb/other/PltOak.png,,-1,240,Planting a sapling,,plants
-heart crystal,https://acnhcdn.com/latest/MenuIcon/Love.png,No,400,100,,,na
-orange tree,https://acnhcdn.com/acdb/other/PltOrange.png,,-1,300,Planting an orange,,plants
-holly bush,https://acnhcdn.com/latest/MenuIcon/PltHolly.png,No,560,140,,,na
-holly nursery,https://acnhcdn.com/latest/MenuIcon/PltHolly.png,No,280,70,,,na
-holly start,https://acnhcdn.com/latest/ShopPlant/SeedHolly.png,No,280,70,,,na
-housing kit,https://acnhcdn.com/acdb/other/NnpcNewHousingkit.png,,-1,-2,Tom Nook,,na
-incline marker kit,https://acnhcdn.com/acdb/other/SlopeReserveKit.png,,-1,-2,Tom Nook,,na
-iron nugget,https://acnhcdn.com/acdb/other/DIYIron.png,,-1,375,Hitting a rock,,na
-ladder recipe,https://acnhcdn.com/acdb/other/DIYRecipeLadder.png,,500,200,Nook's Cranny,Available after unlocking the ladder in the story,na
-large snowflake,https://acnhcdn.com/acdb/other/SnowCrystalLarge.png,,-1,-2,Perfect Snowboy,,na
-large star fragment,https://acnhcdn.com/acdb/other/StarpieceRare.png,,-1,2500,Wishing on shooting stars,,na
-leaf egg,https://acnhcdn.com/acdb/other/EggLeaf.png,,-1,200,Shaking a hardwood tree (Bunny Day),,na
-leo fragment,https://acnhcdn.com/acdb/other/StarpieceLeo.png,,-1,500,Wishing on shooting stars (July 23 - August 22),,na
-libra fragment,https://acnhcdn.com/acdb/other/StarpieceLibra.png,,-1,500,Wishing on shooting stars (September 23 - October 22),,na
-light-blue wrapping paper,https://acnhcdn.com/acdb/other/WPaperLightBlue.png,,160,40,Nook's Cranny,,na
-lily-of-the-valley plant,https://acnhcdn.com/acdb/other/PltSuzuran.png,,-1,222,5-star town status,,plants
-lost item,https://acnhcdn.com/acdb/other/LostQuestBagDust.png,,-1,-2,On ground,,na
-lost item,https://acnhcdn.com/acdb/other/LostQuestBookDust.png,,-1,-2,On ground,,na
-lost item,https://acnhcdn.com/acdb/other/LostQuestNoteDust.png,,-1,-2,On ground,,na
-manila clam,https://acnhcdn.com/acdb/other/FtrShellFishAsari.png,,-1,100,Clam dig spot,,na
-maple leaf,https://acnhcdn.com/acdb/other/AutumnLeaf.png,,-1,-2,Catching with a net (Fall),,na
-medicine,https://acnhcdn.com/acdb/other/ItemMedicine.png,,400,100,Nook's Cranny,,hospital
-message bottle,https://acnhcdn.com/acdb/other/BottleRecipe.png,,-1,-2,Beach,,na
-mint wrapping paper,https://acnhcdn.com/acdb/other/WPaperMint.png,,160,40,Nook's Cranny,,na
-money tree,https://acnhcdn.com/acdb/other/PltMoney.png,,-1,240,Burying bells in a glowing spot,,plants
-moving kit,https://acnhcdn.com/acdb/other/MovingKitPlayer.png,,-1,-2,Tom Nook,,na
-museum moving kit,https://acnhcdn.com/acdb/other/MovingKitMuseum.png,,-1,-2,Tom Nook,,na
-navy wrapping paper,https://acnhcdn.com/acdb/other/WPaperNavy.png,,160,40,Nook's Cranny,,na
-old tire,https://acnhcdn.com/acdb/other/TrashTire.png,,-1,10,Fishing,Large shadow,na
-orange,https://acnhcdn.com/acdb/other/Orange.png,,400,500,Orange tree,,na
-orange cosmos,https://acnhcdn.com/acdb/other/FlwCosmosOrange.png,,-1,80,Picking flowers,,plants
-orange hyacinths,https://acnhcdn.com/acdb/other/FlwHyacinthOrange.png,,-1,80,Picking flowers,,plants
-orange lilies,https://acnhcdn.com/acdb/other/FlwYuriOrange.png,,-1,80,Picking flowers,,plants
-orange pansies,https://acnhcdn.com/acdb/other/FlwPansyRedYellow.png,,-1,80,Picking flowers,,plants
-orange roses,https://acnhcdn.com/acdb/other/FlwRoseOrange.png,,-1,80,Picking flowers,,plants
-orange windflowers,https://acnhcdn.com/acdb/other/FlwAnemonesOrange.png,,-1,40,Picking flowers,,plants
-orange wrapping paper,https://acnhcdn.com/acdb/other/WPaperOrange.png,,160,40,Nook's Cranny,,na
-orange-cosmos plant,https://acnhcdn.com/acdb/other/PltCosmosOrange3.png,,-1,80,Red/yellow cosmos,,plants
-orange-hyacinth plant,https://acnhcdn.com/acdb/other/PltHyacinthOrange3.png,,-1,80,Red/yellow hyacinths,,plants
-orange-lily plant,https://acnhcdn.com/acdb/other/PltYuriOrange3.png,,-1,80,Red/yellow lilies,,plants
-orange-pansy plant,https://acnhcdn.com/acdb/other/PltPansyRedYellow3.png,,-1,80,Red/yellow pansies,,plants
-orange-rose plant,https://acnhcdn.com/acdb/other/PltRoseOrange3.png,,-1,80,Red/yellow roses,,plants
-orange-tea-olive bush,https://acnhcdn.com/latest/MenuIcon/PltBushOsmathusOrange.png,No,560,140,,,na
-orange-tea-olive nursery,https://acnhcdn.com/latest/MenuIcon/PltBushOsmathusOrange.png,No,280,70,,,na
-orange-tea-olive start,https://acnhcdn.com/latest/ShopPlant/SeedBushOsmathusOrange.png,No,280,70,,,na
-orange-tulip plant,https://acnhcdn.com/acdb/other/PltTulipOrange3.png,,-1,80,Red/yellow tulips,,plants
-orange-windflower bag,https://acnhcdn.com/acdb/other/SeedAnemonesOrange.png,,240,60,Nook's Cranny,,plants
-orange-windflower plant,https://acnhcdn.com/acdb/other/PltAnemonesOrange3.png,,-1,40,Seed bag,,plants
-peach,https://acnhcdn.com/acdb/other/Peach.png,,400,500,Peach tree,,na
-peach tree,https://acnhcdn.com/acdb/other/PltPeach4.png,,-1,300,Planting a peach,,plants
-pear,https://acnhcdn.com/acdb/other/Pear.png,,400,500,Pear tree,,na
-pear tree,https://acnhcdn.com/acdb/other/PltPear4.png,,-1,300,Planting a pear,,plants
-pine cone,https://acnhcdn.com/acdb/other/DIYPinecone.png,,-1,200,Shaking a cedar tree (Fall),,na
-pink cosmos,https://acnhcdn.com/acdb/other/FlwCosmosPink.png,,-1,80,Picking flowers,,plants
-pink hyacinths,https://acnhcdn.com/acdb/other/FlwHyacinthPink.png,,-1,80,Picking flowers,,plants
-pink lilies,https://acnhcdn.com/acdb/other/FlwYuriPink.png,,-1,80,Picking flowers,,plants
-pink mums,https://acnhcdn.com/acdb/other/FlwMumPink.png,,-1,80,Picking flowers,,plants
-pink roses,https://acnhcdn.com/acdb/other/FlwRosePink.png,,-1,80,Picking flowers,,plants
-pink tulips,https://acnhcdn.com/acdb/other/FlwTulipPink.png,,-1,80,Picking flowers,,plants
-pink windflowers,https://acnhcdn.com/acdb/other/FlwAnemonesPink.png,,-1,80,Picking flowers,,plants
-pink wrapping paper,https://acnhcdn.com/acdb/other/WPaperPink.png,,160,40,Nook's Cranny,,na
-pink-azalea bush,https://acnhcdn.com/latest/MenuIcon/PltAzaleaPink.png,No,560,140,,,na
-pink-azalea nursery,https://acnhcdn.com/latest/MenuIcon/PltAzaleaPink.png,No,280,70,,,na
-pink-azalea start,https://acnhcdn.com/latest/ShopPlant/SeedAzaleaPink.png,No,280,70,,,na
-pink-camellia bush,https://acnhcdn.com/latest/MenuIcon/PltBushCamelliaPink.png,No,560,140,,,na
-pink-camellia nursery,https://acnhcdn.com/latest/MenuIcon/PltBushCamelliaPink.png,No,280,70,,,na
-pink-camellia start,https://acnhcdn.com/latest/ShopPlant/SeedBushCamelliaPink.png,No,280,70,,,na
-pink-cosmos plant,https://acnhcdn.com/acdb/other/PltCosmos3.png,,-1,80,Red/white cosmos,,plants
-pink-hyacinth plant,https://acnhcdn.com/acdb/other/PltHyacinth4.png,,-1,80,Red/white hyacinths,,plants
-pink-hydrangea bush,https://acnhcdn.com/latest/MenuIcon/PltHydrangeaPink.png,No,560,140,,,na
-pink-hydrangea nursery,https://acnhcdn.com/latest/MenuIcon/PltHydrangeaPink.png,No,280,70,,,na
-pink-hydrangea start,https://acnhcdn.com/latest/ShopPlant/SeedHydrangeaPink.png,No,280,70,,,na
-pink-lily plant,https://acnhcdn.com/acdb/other/PltYuri4.png,,-1,80,Red/white lilies,,plants
-pink-mum plant,https://acnhcdn.com/acdb/other/PltMum3.png,,-1,80,Red/white mums,,plants
-pink-rose plant,https://acnhcdn.com/acdb/other/PltRose3.png,,-1,80,Red/white roses,,plants
-pink-tulip plant,https://acnhcdn.com/acdb/other/PltTurip3.png,,-1,80,Red/white tulips,,plants
-pink-windflower plant,https://acnhcdn.com/acdb/other/PltAnemone3.png,,-1,80,Red/orange windflowers,,plants
-pisces fragment,https://acnhcdn.com/acdb/other/StarpiecePisces.png,,-1,500,Wishing on shooting stars (February 19 - March 20),,na
-pitfall seed,https://acnhcdn.com/acdb/other/PitfallSeed.png,,-1,140,Crafting,,na
-plot 1 housing kit,https://acnhcdn.com/acdb/other/HousingKitRcoQuestA.png,,-1,-2,Tom Nook,,na
-plot 2 housing kit,https://acnhcdn.com/acdb/other/HousingKitRcoQuestB.png,,-1,-2,Tom Nook,,na
-plot 3 housing kit,https://acnhcdn.com/acdb/other/HousingKitRcoQuestC.png,,-1,-2,Tom Nook,,na
-present,https://acnhcdn.com/acdb/other/DummyPresentbox.png,,-1,222,Mail,,seasonal decor
-present (black),https://i.imgur.com/RtaEdXn.png,,-1,-2,Wrapping a present,,na
-present (blue),https://i.imgur.com/yt4bCpO.png,,-1,-2,Wrapping a present,,na
-present (brown),https://i.imgur.com/QYaGizh.png,,-1,-2,Wrapping a present,,na
-present (chartreuse),https://i.imgur.com/U61WFkq.png,,-1,-2,Wrapping a present,,na
-present (gold),https://i.imgur.com/b3pz9Z6.png,,-1,-2,Wrapping a present,,na
-present (gray),https://i.imgur.com/EiIU9iU.png,,-1,-2,Wrapping a present,,na
-present (green),https://i.imgur.com/HoRDwx2.png,,-1,-2,Wrapping a present,,na
-present (light-blue),https://i.imgur.com/49iyxnO.png,,-1,-2,Wrapping a present,,na
-present (mint),https://i.imgur.com/LXEk0k6.png,,-1,-2,Wrapping a present,,na
-present (navy),https://i.imgur.com/QFnDYnu.png,,-1,-2,Wrapping a present,,na
-present (orange),https://i.imgur.com/U1FVhzh.png,,-1,-2,Wrapping a present,,na
-present (pink),https://i.imgur.com/lLM0PHx.png,,-1,-2,Wrapping a present,,na
-present (purple),https://i.imgur.com/Evtdku2.png,,-1,-2,Wrapping a present,,na
-present (red),https://i.imgur.com/QJgSvKP.png,,-1,-2,Wrapping a present,,na
-present (white),https://i.imgur.com/lh5MDNv.png,,-1,-2,Wrapping a present,,na
-present (yellow),https://i.imgur.com/BVZrZvm.png,,-1,-2,Wrapping a present,,na
-purple hyacinths,https://acnhcdn.com/acdb/other/FlwHyacinthPurple.png,,-1,240,Picking flowers,,plants
-purple mums,https://acnhcdn.com/acdb/other/FlwMumPurple.png,,-1,80,Picking flowers,,plants
-purple pansies,https://acnhcdn.com/acdb/other/FlwPansyPurple.png,,-1,240,Picking flowers,,plants
-purple roses,https://acnhcdn.com/acdb/other/FlwRosePurple.png,,-1,240,Picking flowers,,plants
-purple tulips,https://acnhcdn.com/acdb/other/FlwTulipPurple.png,,-1,240,Picking flowers,,plants
-purple windflowers,https://acnhcdn.com/acdb/other/FlwAnemonesPurple.png,,-1,240,Picking flowers,,plants
-purple wrapping paper,https://acnhcdn.com/acdb/other/WPaperPurple.png,,160,40,Nook's Cranny,,na
-purple-hyacinth plant,https://acnhcdn.com/acdb/other/PltHyacinthPurple3.png,,-1,240,Blue/blue hyacinths,,plants
-purple-mum plant,https://acnhcdn.com/acdb/other/PltMum5.png,,-1,80,White/white mums,,plants
-purple-pansy plant,https://acnhcdn.com/acdb/other/PltPansi3.png,,-1,240,Blue/blue pansies,,plants
-purple-rose plant,,,-1,240,White/white roses,,plants
-purple-tulip plant,,,-1,240,Orange/orange tulips,,plants
-purple-windflower plant,https://acnhcdn.com/acdb/other/PltAnemonesPurple3.png,,-1,240,"Blue/blue windflowers
-Blue/pink windflowers",,plants
-rare mushroom,https://acnhcdn.com/acdb/other/MushRare.png,,-1,16000,On ground (Mushroom Season),,na
-red cosmos,https://acnhcdn.com/acdb/other/FlwCosmosRed.png,,-1,40,Picking flowers,,plants
-red hyacinths,https://acnhcdn.com/acdb/other/FlwHyacinthRed.png,,-1,40,Picking flowers,,plants
-red lilies,https://acnhcdn.com/acdb/other/FlwYuriRed.png,,-1,40,Picking flowers,,plants
-red mums,https://acnhcdn.com/acdb/other/FlwMumRed.png,,-1,40,Picking flowers,,plants
-red ornament,https://acnhcdn.com/acdb/other/DIYOrnamentRed.png,,-1,50,Shaking a cedar tree (Festive Season),,na
-red pansies,https://acnhcdn.com/acdb/other/FlwPansyRed.png,,-1,40,Picking flowers,,plants
-red roses,https://acnhcdn.com/acdb/other/FlwRoseRed.png,,-1,40,Picking flowers,,plants
-red tulips,https://acnhcdn.com/acdb/other/FlwTulipRed.png,,-1,40,Picking flowers,,plants
-red windflowers,https://acnhcdn.com/acdb/other/FlwAnemonesRed.png,,-1,40,Picking flowers,,plants
-red wrapping paper,https://acnhcdn.com/acdb/other/WPaperRed.png,,160,40,Nook's Cranny,,na
-red-camellia bush,https://acnhcdn.com/latest/MenuIcon/PltBushCamelliaRed.png,No,560,140,,,na
-red-camellia nursery,https://acnhcdn.com/latest/MenuIcon/PltBushCamelliaRed.png,No,280,70,,,na
-red-camellia start,https://acnhcdn.com/latest/ShopPlant/SeedBushCamelliaRed.png,No,280,70,,,na
-red-cosmos bag,https://acnhcdn.com/acdb/other/SeedCosmosRed.png,,240,60,Nook's Cranny,,plants
-red-cosmos plant,https://acnhcdn.com/acdb/other/PltCosmosRed3.png,,-1,40,Seed bag,,plants
-red-hibiscus bush,https://acnhcdn.com/latest/MenuIcon/PltHibiscusRed.png,No,560,140,,,na
-red-hibiscus nursery,https://acnhcdn.com/latest/MenuIcon/PltHibiscusRed.png,No,280,70,,,na
-red-hibiscus start,https://acnhcdn.com/latest/ShopPlant/SeedHibiscusRed.png,No,280,70,,,na
-red-hyacinth bag,https://acnhcdn.com/acdb/other/SeedHyacinthRed.png,,240,60,Nook's Cranny,,plants
-red-hyacinth plant,https://acnhcdn.com/acdb/other/PltHyacinthRed3.png,,-1,40,Seed bag,,plants
-red-lily bag,https://acnhcdn.com/acdb/other/SeedYuriRed.png,,240,60,Nook's Cranny,,plants
-red-lily plant,https://acnhcdn.com/acdb/other/PltYuriRed3.png,,-1,40,Seed bag,,plants
-red-mum bag,https://acnhcdn.com/acdb/other/SeedMumRed.png,,240,60,Nook's Cranny,,plants
-red-mum plant,https://acnhcdn.com/acdb/other/PltMum2.png,,-1,40,Seed bag,,plants
-red-pansy bag,https://acnhcdn.com/acdb/other/SeedPansyRed.png,,240,60,Nook's Cranny,,plants
-red-pansy plant,https://acnhcdn.com/acdb/other/PltPansyRed3.png,,-1,40,Seed bag,,plants
-red-rose bag,https://acnhcdn.com/acdb/other/SeedRoseRed.png,,240,60,Nook's Cranny,,plants
-red-rose plant,https://acnhcdn.com/acdb/other/PltRoseRed3.png,,-1,40,Seed bag,,plants
-red-tulip bag,https://acnhcdn.com/acdb/other/SeedTulipRed.png,,240,60,Nook's Cranny,,plants
-red-tulip plant,https://acnhcdn.com/acdb/other/PltTulipRed3.png,,-1,40,Seed bag,,plants
-red-windflower bag,https://acnhcdn.com/acdb/other/SeedAnemonesRed.png,,240,60,Nook's Cranny,,plants
-red-windflower plant,https://acnhcdn.com/acdb/other/PltAnemonesRed3.png,,-1,40,Seed bag,,plants
-round mushroom,https://acnhcdn.com/acdb/other/MushRound.png,,-1,200,On ground (Mushroom Season),,na
-rusted part,https://acnhcdn.com/acdb/other/JohnnyQuestDust1.png,,-1,10,Recycle Box,,na
-sagittarius fragment,https://acnhcdn.com/acdb/other/StarpieceSagittarius.png,,-1,500,Wishing on shooting stars (November 22 - December 21),,na
-saharah ticket,https://acnhcdn.com/acdb/other/RollanTicket.png,,-1,100,Saharah,,na
-sand dollar,https://acnhcdn.com/acdb/other/ShellDriftSanddollar.png,,-1,120,Beach,,na
-sapling,https://acnhcdn.com/acdb/other/SeedOak.png,,640,160,Nook's Cranny,,plants
-scorpius fragment,https://acnhcdn.com/acdb/other/StarpieceScorpio.png,,-1,500,Wishing on shooting stars (October 23 - November 21),,na
-sea snail,https://acnhcdn.com/acdb/other/ShellDriftEbisu.png,,-1,180,Beach,,na
-shop construction kit,https://acnhcdn.com/acdb/other/ShopTent.png,,-1,-2,Tom Nook,,na
-shop moving kit,https://acnhcdn.com/acdb/other/MovingKitShop.png,,-1,-2,Tom Nook,,na
-skinny mushroom,https://acnhcdn.com/acdb/other/MushSlender.png,,-1,300,On ground (Mushroom Season),,na
-sky egg,https://acnhcdn.com/acdb/other/EggSky.png,,-1,200,Colorful balloon (Bunny Day),,na
-slingshot recipe,https://acnhcdn.com/acdb/other/DIYRecipeSlingShot.png,,300,200,Nook's Cranny,,na
-snowflake,https://acnhcdn.com/acdb/other/SnowCrystal.png,,-1,200,Catching with a net (Winter),,na
-softwood,https://acnhcdn.com/acdb/other/DIYWoodSoft.png,,-1,60,Chopping a tree,,na
-spoiled turnips,https://acnhcdn.com/acdb/other/Kabu_Spoil.png,,-1,100,Expired turnips,,na
-star fragment,https://acnhcdn.com/acdb/other/Starpiece.png,,-1,250,Wishing on shooting stars,,na
-stone,https://acnhcdn.com/acdb/other/DIYStone.png,,-1,75,"Hitting a rock, Fishing",X-Small shadow when fishing,na
-stone egg,https://acnhcdn.com/acdb/other/EggRock.png,,-1,200,Hitting a rock (Bunny Day),,na
-summer shell,https://acnhcdn.com/acdb/other/ShellDriftSummer.png,,-1,600,Beach (Summer),,na
-tailors construction kit,https://acnhcdn.com/acdb/other/HousingKitTailor.png,,-1,-2,Tom Nook,,na
-tailors moving kit,https://acnhcdn.com/acdb/other/MovingKitTailor.png,,-1,-2,Tom Nook,,na
-tailors ticket,https://acnhcdn.com/acdb/other/TailorTicket.png,,-1,250,Label,,na
-taurus fragment,https://acnhcdn.com/acdb/other/StarpieceTaurus.png,,-1,500,Wishing on shooting stars (April 20 - May 20),,na
-tent,https://acnhcdn.com/acdb/other/Tent.png,,-1,-2,Tom Nook,,na
-test your diy skills,https://acnhcdn.com/acdb/other/DIYbook2.png,,2680,-2,Nook's Cranny,,na
-treasure,https://acnhcdn.com/acdb/other/Present2.png,,-1,0,Digging up treasure for a villager's quest,,na
-tree branch,https://acnhcdn.com/acdb/other/DIYBranch.png,,-1,5,Shaking a hardwood or cedar tree,,na
-turnips,https://acnhcdn.com/acdb/other/PhotoStudioKabu.png,,-1,0,Daisy Mae (Sundays),,na
-vaulting pole recipe,https://acnhcdn.com/acdb/other/DIYRecipeLongWoodenStick.png,,500,200,Nook's Cranny,,na
-venus comb,https://acnhcdn.com/acdb/other/ShellDriftHone.png,,-1,300,Beach,,na
-virgo fragment,https://acnhcdn.com/acdb/other/StarpieceVirgo.png,,-1,500,Wishing on shooting stars (August 23 - September 22),,na
-wasp nest,https://acnhcdn.com/acdb/other/Honeycomb.png,,-1,300,Shaking a hardwood or cedar tree,,ranch
-water egg,https://acnhcdn.com/acdb/other/EggFish.png,,-1,200,Fishing (Bunny Day),,na
-orange tulips,https://acnhcdn.com/acdb/other/FlwTulipOrange.png,,-1,80,Picking flowers,,plants
-what was this again?,https://acnhcdn.com/acdb/other/LostQuestBagDust.png,,-1,-2,Don't return lost item,,na
-what was this again?,https://acnhcdn.com/acdb/other/LostQuestBookDust.png,,-1,-2,Don't return lost item,,na
-what was this again?,https://acnhcdn.com/acdb/other/LostQuestNoteDust.png,,-1,-2,Don't return lost item,,na
-white cosmos,https://acnhcdn.com/acdb/other/FlwCosmosWhite.png,,-1,40,Picking flowers,,plants
-white hyacinths,https://acnhcdn.com/acdb/other/FlwHyacinthWhite.png,,-1,40,Picking flowers,,plants
-white lilies,https://acnhcdn.com/acdb/other/FlwYuriWhite.png,,-1,40,Picking flowers,,plants
-white mums,https://acnhcdn.com/acdb/other/FlwMumWhite.png,,-1,40,Picking flowers,,plants
-white pansies,https://acnhcdn.com/acdb/other/FlwPansyWhite.png,,-1,40,Picking flowers,,plants
-white roses,https://acnhcdn.com/acdb/other/FlwRoseWhite.png,,-1,40,Picking flowers,,plants
-white tulips,https://acnhcdn.com/acdb/other/FlwTulipWhite.png,,-1,40,Picking flowers,,plants
-white windflowers,https://acnhcdn.com/acdb/other/FlwAnemonesWhite.png,,-1,40,Picking flowers,,plants
-white wrapping paper,https://acnhcdn.com/acdb/other/WPaperWhite.png,,160,40,Nook's Cranny,,na
-white-azalea bush,https://acnhcdn.com/latest/MenuIcon/PltAzaleaWhite.png,No,560,140,,,na
-white-azalea nursery,https://acnhcdn.com/latest/MenuIcon/PltAzaleaWhite.png,No,280,70,,,na
-white-azalea start,https://acnhcdn.com/latest/ShopPlant/SeedAzaleaWhite.png,No,280,70,,,na
-white-cosmos bag,https://acnhcdn.com/acdb/other/SeedCosmosWhite.png,,240,60,Nook's Cranny,,plants
-white-cosmos plant,https://acnhcdn.com/acdb/other/PltCosmos0.png,,-1,40,Seed bag,,plants
-white-hyacinth bag,https://acnhcdn.com/acdb/other/SeedHyacinthWhite.png,,240,60,Nook's Cranny,,plants
-white-hyacinth plant,https://acnhcdn.com/acdb/other/PltHyacinth0.png,,-1,40,Seed bag,,plants
-white-lily bag,https://acnhcdn.com/acdb/other/SeedYuriWhite.png,,240,60,Nook's Cranny,,plants
-white-lily plant,https://acnhcdn.com/acdb/other/PltYuri0.png,,-1,40,Seed bag,,plants
-white-mum bag,https://acnhcdn.com/acdb/other/SeedMumWhite.png,,240,60,Nook's Cranny,,plants
-white-mum plant,https://acnhcdn.com/acdb/other/PltMum0.png,,-1,40,Seed bag,,plants
-white-pansy bag,https://acnhcdn.com/acdb/other/SeedPansyWhite.png,,240,60,Nook's Cranny,,plants
-white-pansy plant,https://acnhcdn.com/acdb/other/PltPansi0.png,,-1,40,Seed bag,,plants
-white-rose bag,https://acnhcdn.com/acdb/other/SeedRoseWhite.png,,240,60,Nook's Cranny,,plants
-white-rose plant,https://acnhcdn.com/acdb/other/PltRose1.png,,-1,40,Seed bag,,plants
-white-tulip bag,https://acnhcdn.com/acdb/other/SeedTulipWhite.png,,240,60,Nook's Cranny,,plants
-white-tulip plant,https://acnhcdn.com/acdb/other/PltTurip1.png,,-1,40,Seed bag,,plants
-white-windflower bag,https://acnhcdn.com/acdb/other/SeedAnemonesWhite.png,,240,60,Nook's Cranny,,plants
-white-windflower plant,https://acnhcdn.com/acdb/other/PltAnemone0.png,,-1,40,Seed bag,,plants
-wildest dreams diy,https://acnhcdn.com/acdb/other/DIYbook3.png,,6980,-2,Nook's Cranny,,na
-wisp spirit piece,https://acnhcdn.com/acdb/other/YutaroWisp.png,,-1,-2,Catching with a net while on a quest for Wisp,,na
-wood,https://acnhcdn.com/acdb/other/DIYWoodNormal.png,,-1,60,Chopping a tree,,na
-wood egg,https://acnhcdn.com/acdb/other/EggForest.png,,-1,200,Chopping a tree (Bunny Day),,na
-yellow cosmos,https://acnhcdn.com/acdb/other/FlwCosmosYellow.png,,-1,40,Picking flowers,,plants
-yellow hyacinths,https://acnhcdn.com/acdb/other/FlwHyacinthYellow.png,,-1,40,Picking flowers,,plants
-yellow lilies,https://acnhcdn.com/acdb/other/FlwYuriYellow.png,,-1,40,Picking flowers,,plants
-yellow mums,https://acnhcdn.com/acdb/other/FlwMumYellow.png,,-1,40,Picking flowers,,plants
-yellow pansies,https://acnhcdn.com/acdb/other/FlwPansyYellow.png,,-1,40,Picking flowers,,plants
-yellow roses,https://acnhcdn.com/acdb/other/FlwRoseYellow.png,,-1,40,Picking flowers,,plants
-yellow tulips,https://acnhcdn.com/acdb/other/FlwTulipYellow.png,,-1,40,Picking flowers,,plants
-yellow wrapping paper,https://acnhcdn.com/acdb/other/WPaperYellow.png,,160,40,Nook's Cranny,,na
-yellow-cosmos bag,https://acnhcdn.com/acdb/other/SeedCosmosYellow.png,,240,60,Nook's Cranny,,plants
-yellow-cosmos plant,https://acnhcdn.com/acdb/other/PltCosmos2.png,,-1,40,Seed bag,,plants
-yellow-hibiscus bush,https://acnhcdn.com/latest/MenuIcon/PltHibiscusYellow.png,No,560,140,,,na
-yellow-hibiscus nursery,https://acnhcdn.com/latest/MenuIcon/PltHibiscusYellow.png,No,280,70,,,na
-yellow-hibiscus start,https://acnhcdn.com/latest/ShopPlant/SeedHibiscusYellow.png,No,280,70,,,na
-yellow-hyacinth bag,https://acnhcdn.com/acdb/other/SeedHyacinthYellow.png,,240,60,Nook's Cranny,,plants
-yellow-hyacinth plant,https://acnhcdn.com/acdb/other/PltHyacinth1.png,,-1,40,Seed bag,,plants
-yellow-lily bag,https://acnhcdn.com/acdb/other/SeedYuriYellow.png,,240,60,Nook's Cranny,,plants
-yellow-lily plant,https://acnhcdn.com/acdb/other/PltYuri1.png,,-1,40,Seed bag,,plants
-yellow-mum bag,https://acnhcdn.com/acdb/other/SeedMumYellow.png,,240,60,Nook's Cranny,,plants
-yellow-mum plant,https://acnhcdn.com/acdb/other/PltMum1.png,,-1,40,Seed bag,,plants
-yellow-pansy bag,https://acnhcdn.com/acdb/other/SeedPansyYellow.png,,240,60,Nook's Cranny,,plants
-yellow-pansy plant,https://acnhcdn.com/acdb/other/PltPansi1.png,,-1,40,Seed bag,,plants
-yellow-rose bag,https://acnhcdn.com/acdb/other/SeedRoseYellow.png,,240,60,Nook's Cranny,,plants
-yellow-rose plant,https://acnhcdn.com/acdb/other/PltRose2.png,,-1,40,Seed bag,,plants
-yellow-tea-olive bush,https://acnhcdn.com/latest/MenuIcon/PltBushOsmathusYellow.png,No,560,140,,,na
-yellow-tea-olive nursery,https://acnhcdn.com/latest/MenuIcon/PltBushOsmathusYellow.png,No,280,70,,,na
-yellow-tea-olive start,https://acnhcdn.com/latest/ShopPlant/SeedBushOsmathusYellow.png,No,280,70,,,na
-yellow-tulip bag,https://acnhcdn.com/acdb/other/SeedTulipYellow.png,,240,60,Nook's Cranny,,plants
-yellow-tulip plant,https://acnhcdn.com/acdb/other/PltTurip2.png,,-1,40,Seed bag,,plants
-young blue hydrangea,https://acnhcdn.com/latest/MenuIcon/PltHydrangeaBlue.png,No,420,105,,,na
-young holly,https://acnhcdn.com/latest/MenuIcon/PltHolly.png,No,420,105,,,na
-young orange tea olive,https://acnhcdn.com/latest/MenuIcon/PltBushOsmathusOrange.png,No,420,105,,,na
-young pink azalea,https://acnhcdn.com/latest/MenuIcon/PltAzaleaPink.png,No,420,105,,,na
-young pink camellia,https://acnhcdn.com/latest/MenuIcon/PltBushCamelliaPink.png,No,420,105,,,na
-young pink hydrangea,https://acnhcdn.com/latest/MenuIcon/PltHydrangeaPink.png,No,420,105,,,na
-young red camellia,https://acnhcdn.com/latest/MenuIcon/PltBushCamelliaRed.png,No,420,105,,,na
-young red hibiscus,https://acnhcdn.com/latest/MenuIcon/PltHibiscusRed.png,No,420,105,,,na
-young spring bamboo,https://acnhcdn.com/acdb/other/DIYBambooSpring.png,,-1,200,Chopping a bamboo tree (Spring),,na
-young white azalea,https://acnhcdn.com/latest/MenuIcon/PltAzaleaWhite.png,No,420,105,,,na
-young yellow hibiscus,https://acnhcdn.com/latest/MenuIcon/PltHibiscusYellow.png,No,420,105,,,na
-young yellow tea olive,https://acnhcdn.com/latest/MenuIcon/PltBushOsmathusYellow.png,No,420,105,,,na
+Name,Image,NookMiles,Category
+arched tile path permit,https://i.imgur.com/RZsW5np.png,2000,
+bamboo lattice fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+barbed-wire fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+bell voucher,https://i.imgur.com/NdMAOFh.png,500,
+brick fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+brick path permit,https://i.imgur.com/RZsW5np.png,2000,
+cliff construction permit,https://i.imgur.com/sNreCAw.png,6000,
+corral fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+country fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+custom design path permit,https://i.imgur.com/RZsW5np.png,2800,
+custom design pro editor,https://i.imgur.com/GHbUUKS.png,800,
+customizable phone case kit,https://i.imgur.com/wjkZITy.png,1800,
+dark dirt path permit,https://i.imgur.com/RZsW5np.png,2000,
+imperial fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+iron fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+iron-and-stone fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+lattice fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+nook miles ticket,https://i.imgur.com/5ccmHPa.png,2000,
+pocket organization guide,https://i.imgur.com/Nwri4DI.png,5000,
+pretty good tools recipes,https://i.imgur.com/ma78edH.png,3000,
+rope fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+sand path permit,https://i.imgur.com/RZsW5np.png,2000,
+simple wooden fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+spiky fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+stone fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+stone path permit,https://i.imgur.com/RZsW5np.png,2000,
+straw fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+terra-cotta tile permit,https://i.imgur.com/RZsW5np.png,2000,
+tool ring: it's essential!,https://i.imgur.com/Nwri4DI.png,800,
+top 8 cool hairstyles,https://i.imgur.com/APjUcMR.png,2400,
+top 8 pop hairstyles,https://i.imgur.com/APjUcMR.png,2400,
+top 8 stylish hair colors,https://i.imgur.com/APjUcMR.png,3000,
+ultimate pocket stuffing,https://i.imgur.com/Nwri4DI.png,8000,
+vertical-board fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+waterscaping permit,https://i.imgur.com/qX4Y5Lg.png,6000,
+wooden path permit,https://i.imgur.com/RZsW5np.png,2000,
+zen fence,https://i.imgur.com/bK3wMxl.png,1000,Recipe
+(for recipes),https://i.imgur.com/zNdiVQF.png,,
+construction sign,https://acnhcdn.com/acdb/housewares/FtrSignConstruction_Remake_0_0.png,1000,Housewares
+cotton-candy stall,https://acnhcdn.com/acdb/housewares/FtrCottoncandymachine_Remake_0_0.png,3000,Housewares
+drink machine,https://acnhcdn.com/acdb/housewares/FtrDrinkmachine_Remake_0_0.png,2000,Housewares
+lifeguard chair,https://acnhcdn.com/acdb/housewares/FtrMonitoringchair_Remake_0_0.png,1000,Housewares
+lighthouse,https://acnhcdn.com/acdb/housewares/FtrLighthouse_Remake_0_0.png,5000,Housewares
+monster statue,https://acnhcdn.com/acdb/housewares/FtrMonster_Remake_0_0.png,5000,Housewares
+parabolic antenna,https://acnhcdn.com/acdb/housewares/FtrParabolicantenna_Remake_0_0.png,4000,Housewares
+park clock,https://acnhcdn.com/acdb/housewares/FtrParkclock_Remake_0_0.png,2400,Housewares
+phone box,https://acnhcdn.com/acdb/housewares/FtrTelephonebox_Remake_0_0.png,2400,Housewares
+playground gym,https://acnhcdn.com/acdb/housewares/FtrJunglegym_Remake_0_0.png,3000,Housewares
+pool,https://acnhcdn.com/acdb/housewares/FtrPool_Remake_0_0.png,5000,Housewares
+portable toilet,https://acnhcdn.com/acdb/housewares/FtrWCPortable_Remake_0_0.png,1000,Housewares
+public bench,https://acnhcdn.com/acdb/housewares/FtrPublicbench_Remake_0_0.png,2000,Housewares
+snack machine,https://acnhcdn.com/acdb/housewares/FtrFoodmachine_Remake_0_0.png,2000,Housewares
+soccer goal,https://acnhcdn.com/acdb/housewares/FtrSoccergoal.png,4000,Housewares
+solar panel,https://acnhcdn.com/acdb/housewares/FtrSolarpanel_Remake_0_0.png,4000,Housewares
+springy ride-on,https://acnhcdn.com/acdb/housewares/FtrSpringrider_Remake_0_0.png,2000,Housewares
+streetlamp,https://acnhcdn.com/acdb/housewares/FtrStreetlamp_Remake_0_0.png,1000,Housewares
+teacup ride,https://acnhcdn.com/acdb/housewares/FtrTurncup_Remake_0_0.png,5000,Housewares
+tourist telescope,https://acnhcdn.com/acdb/housewares/FtrTelescopeSightseeing_Remake_0_0.png,2000,Housewares
+utility pole,https://acnhcdn.com/acdb/housewares/FtrTelephonepole_Remake_0_0.png,1000,Housewares
+wind turbine,https://acnhcdn.com/acdb/housewares/FtrWindturbine_Remake_0_0.png,4000,Housewares
