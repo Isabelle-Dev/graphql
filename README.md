@@ -84,7 +84,7 @@ All **csv data files** and **Postgres migration code** are located in the `csv` 
 
 **Sample JSON** responses can be found in the `newhorizons/sample` directory.
 
-You can also play around with different query options by visiting [https://acnhgraphql.com/](https://acnhgraphql.com/)
+You can also play around with different query options by visiting [https://acnhgraphql.com](https://acnhgraphql.com/)
 
 The endpoint itself renders GraphiQL - a GraphQL IDE.
 

@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS construction (
+	Name character varying(50),
+	Image character varying(100),
+	Buy INT,
+	Category character varying(30),
+	Source character varying(100)
+);
+
+COPY construction (Name, Image, Buy, Category, Source)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

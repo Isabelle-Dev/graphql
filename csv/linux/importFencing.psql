@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS fence (
+	Name character varying(60),
+	Image character varying(100),
+	DIY character varying(5),
+	Buy INT,
+	Sell INT,
+	Source character varying(50),
+	SourceNotes character varying(110)
+);
+
+COPY fence (Name, Image, DIY, Buy, Sell, Source, SourceNotes)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS nookmile (
+	Name character varying(50),
+	Image character varying(100),
+	NookMiles INT,
+	Category character varying(40)
+);
+
+COPY nookmile (Name, Image, NookMiles, Category)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

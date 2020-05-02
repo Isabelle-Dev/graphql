@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS other (
+	Name character varying(40),
+	Image character varying(100),
+	DIY character varying(5),
+	Buy INT,
+	Sell INT,
+	Source character varying(60),
+	SourceNotes character varying(100),
+	Tag character varying(40)
+);
+
+COPY other (Name, Image, DIY, Buy, Sell, Source, SourceNotes, Tag)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

@@ -108,7 +108,7 @@ The server will interpret that to find items that are either **blue** or **white
 To avoid ambiguous parsing, you can enclose options in parentheses.
 
 For example, `query: "color: \"(blue OR white) AND purple\"  buy: \">= 6000\"  "`, will filter items that are either **blue and purple** or
-**white and purple**  and are greater than 6000 bells in buy price.
+**white and purple**  and are greater or equal to 6000 bells in buy price.
 
 ## Optionals
 
@@ -156,7 +156,7 @@ will return this response:
 }
 ```
 
-**Glob's** default value is always set to _false_. Please note that **glob** only works for `name` filters.
+**Glob's** default value is always set to _f (false)_. Please note that **glob** only works for `name` filters.
 
 ### Limit
 
@@ -164,7 +164,7 @@ will return this response:
 
 _**NOTE:**_ I do not recommend using `limit` on tables with multiple variation entries such as the `item`, `clothing`, `photos`, and `tools` tables since limit does not ignore duplicate entries in the database.
 
-**Limit** has a default value of 500.
+**Limit** has a default value of 500 except on the Item table where the default is 1000.
 
 For example,
 
@@ -197,4 +197,3 @@ will return the following response:
   }
 }
 ```
-

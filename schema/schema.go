@@ -5,13 +5,18 @@ import (
 
 	"github.com/Isabelle-Dev/graphql/schema/art"
 	"github.com/Isabelle-Dev/graphql/schema/clothes"
+	"github.com/Isabelle-Dev/graphql/schema/construction"
+	"github.com/Isabelle-Dev/graphql/schema/fencing"
 	"github.com/Isabelle-Dev/graphql/schema/floor"
 	"github.com/Isabelle-Dev/graphql/schema/item"
 	"github.com/Isabelle-Dev/graphql/schema/music"
+	"github.com/Isabelle-Dev/graphql/schema/nookmiles"
+	"github.com/Isabelle-Dev/graphql/schema/other"
 	"github.com/Isabelle-Dev/graphql/schema/photos"
 	"github.com/Isabelle-Dev/graphql/schema/poster"
 	rug "github.com/Isabelle-Dev/graphql/schema/rugs"
 	"github.com/Isabelle-Dev/graphql/schema/tool"
+	"github.com/Isabelle-Dev/graphql/schema/umbrella"
 	"github.com/Isabelle-Dev/graphql/schema/villager"
 	"github.com/Isabelle-Dev/graphql/schema/wallpaper"
 	"github.com/graphql-go/graphql"
@@ -120,6 +125,41 @@ func init() {
 			"tool": &graphql.Field{
 				Description: "Tool-related queries",
 				Type:        tool.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"construction": &graphql.Field{
+				Description: "Tool-related queries",
+				Type:        construction.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"nookmiles": &graphql.Field{
+				Description: "Tool-related queries",
+				Type:        nookmiles.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"fencing": &graphql.Field{
+				Description: "Tool-related queries",
+				Type:        fencing.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"umbrella": &graphql.Field{
+				Description: "Tool-related queries",
+				Type:        umbrella.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"other": &graphql.Field{
+				Description: "Tool-related queries",
+				Type:        other.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},

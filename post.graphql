@@ -1,13 +1,13 @@
 query DemoTool {
-	tool {
-		query(query: "uses: \"100\" variation: \"blue OR red\" ") {
-			tools {
-				Name
-				Uses
-				Variant {
-					Variation
-				}
-			}
-		}
-	}
+    tool {
+        query(query: "uses: \"100\" variation: \"blue OR red\" ") {
+            tools {
+                Name
+                Uses
+                Variant {
+                    Variation
+                }
+            }
+        }
+    }
 }
