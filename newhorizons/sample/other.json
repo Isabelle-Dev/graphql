@@ -1,0 +1,130 @@
+{
+  "data": {
+    "other": {
+      "query": {
+        "others": [
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/FlwAnemonesBlue.png",
+            "Name": "blue windflowers",
+            "Sell": 80,
+            "Source": "Picking flowers",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/PltAnemone5.png",
+            "Name": "blue-windflower plant",
+            "Sell": 80,
+            "Source": "White/white windflowers\nOrange/white windflowers",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/FlwAnemonesOrange.png",
+            "Name": "orange windflowers",
+            "Sell": 40,
+            "Source": "Picking flowers",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": 240,
+            "Image": "https://acnhcdn.com/acdb/other/SeedAnemonesOrange.png",
+            "Name": "orange-windflower bag",
+            "Sell": 60,
+            "Source": "Nook's Cranny",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/PltAnemonesOrange3.png",
+            "Name": "orange-windflower plant",
+            "Sell": 40,
+            "Source": "Seed bag",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/FlwAnemonesPink.png",
+            "Name": "pink windflowers",
+            "Sell": 80,
+            "Source": "Picking flowers",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/PltAnemone3.png",
+            "Name": "pink-windflower plant",
+            "Sell": 80,
+            "Source": "Red/orange windflowers",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/FlwAnemonesPurple.png",
+            "Name": "purple windflowers",
+            "Sell": 240,
+            "Source": "Picking flowers",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/PltAnemonesPurple3.png",
+            "Name": "purple-windflower plant",
+            "Sell": 240,
+            "Source": "Blue/blue windflowers\nBlue/pink windflowers",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/FlwAnemonesRed.png",
+            "Name": "red windflowers",
+            "Sell": 40,
+            "Source": "Picking flowers",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": 240,
+            "Image": "https://acnhcdn.com/acdb/other/SeedAnemonesRed.png",
+            "Name": "red-windflower bag",
+            "Sell": 60,
+            "Source": "Nook's Cranny",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/PltAnemonesRed3.png",
+            "Name": "red-windflower plant",
+            "Sell": 40,
+            "Source": "Seed bag",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/FlwAnemonesWhite.png",
+            "Name": "white windflowers",
+            "Sell": 40,
+            "Source": "Picking flowers",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": 240,
+            "Image": "https://acnhcdn.com/acdb/other/SeedAnemonesWhite.png",
+            "Name": "white-windflower bag",
+            "Sell": 60,
+            "Source": "Nook's Cranny",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": -1,
+            "Image": "https://acnhcdn.com/acdb/other/PltAnemone0.png",
+            "Name": "white-windflower plant",
+            "Sell": 40,
+            "Source": "Seed bag",
+            "SourceNotes": ""
+          }
+        ]
+      }
+    }
+  }
+}

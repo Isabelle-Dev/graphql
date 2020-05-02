@@ -1,0 +1,19 @@
+{
+  "data": {
+    "fencing": {
+      "query": {
+        "fences": [
+          {
+            "Buy": -1,
+            "DIY": "Yes",
+            "Image": "https://acnhcdn.com/latest/FtrIcon/ItemFenceNatural.png",
+            "Name": "simple wooden fence",
+            "Sell": 720,
+            "Source": "Crafting",
+            "SourceNotes": "Nook Miles Exchange"
+          }
+        ]
+      }
+    }
+  }
+}

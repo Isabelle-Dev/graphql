@@ -64,7 +64,7 @@ var searchConstructionObj = graphql.NewObject(graphql.ObjectConfig{
 		"construction": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.NewList(construction)),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(newhorizons.ConstructionEntry); ok {
+				if val, ok := p.Source.([]newhorizons.ConstructionEntry); ok {
 					return val, nil
 				}
 				return nil, fmt.Errorf("search_construction(): error")

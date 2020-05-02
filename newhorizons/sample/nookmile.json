@@ -1,0 +1,118 @@
+{
+  "data": {
+    "nookmiles": {
+      "query": {
+        "nook_mile": [
+          {
+            "Category": "",
+            "Image": "https://i.imgur.com/RZsW5np.png",
+            "Name": "custom design path permit",
+            "NookMiles": "2800"
+          },
+          {
+            "Category": "",
+            "Image": "https://i.imgur.com/Nwri4DI.png",
+            "Name": "pocket organization guide",
+            "NookMiles": "5000"
+          },
+          {
+            "Category": "",
+            "Image": "https://i.imgur.com/ma78edH.png",
+            "Name": "pretty good tools recipes",
+            "NookMiles": "3000"
+          },
+          {
+            "Category": "",
+            "Image": "https://i.imgur.com/APjUcMR.png",
+            "Name": "top 8 cool hairstyles",
+            "NookMiles": "2400"
+          },
+          {
+            "Category": "",
+            "Image": "https://i.imgur.com/APjUcMR.png",
+            "Name": "top 8 pop hairstyles",
+            "NookMiles": "2400"
+          },
+          {
+            "Category": "",
+            "Image": "https://i.imgur.com/APjUcMR.png",
+            "Name": "top 8 stylish hair colors",
+            "NookMiles": "3000"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrCottoncandymachine_Remake_0_0.png",
+            "Name": "cotton-candy stall",
+            "NookMiles": "3000"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrLighthouse_Remake_0_0.png",
+            "Name": "lighthouse",
+            "NookMiles": "5000"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrMonster_Remake_0_0.png",
+            "Name": "monster statue",
+            "NookMiles": "5000"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrParabolicantenna_Remake_0_0.png",
+            "Name": "parabolic antenna",
+            "NookMiles": "4000"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrParkclock_Remake_0_0.png",
+            "Name": "park clock",
+            "NookMiles": "2400"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrTelephonebox_Remake_0_0.png",
+            "Name": "phone box",
+            "NookMiles": "2400"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrJunglegym_Remake_0_0.png",
+            "Name": "playground gym",
+            "NookMiles": "3000"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrPool_Remake_0_0.png",
+            "Name": "pool",
+            "NookMiles": "5000"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrSoccergoal.png",
+            "Name": "soccer goal",
+            "NookMiles": "4000"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrSolarpanel_Remake_0_0.png",
+            "Name": "solar panel",
+            "NookMiles": "4000"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrTurncup_Remake_0_0.png",
+            "Name": "teacup ride",
+            "NookMiles": "5000"
+          },
+          {
+            "Category": "Housewares",
+            "Image": "https://acnhcdn.com/acdb/housewares/FtrWindturbine_Remake_0_0.png",
+            "Name": "wind turbine",
+            "NookMiles": "4000"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "data": {
+    "umbrella": {
+      "query": {
+        "umbrellas": [
+          {
+            "Buy": 5600,
+            "Catalog": "nfs",
+            "Color": [
+              "yellow",
+              "red"
+            ],
+            "DIY": "yes",
+            "Image": "https://acnhcdn.com/latest/ClosetIcon/UmbrellaApple0Cropped.png",
+            "Name": "apple umbrella",
+            "Sell": 1400,
+            "Source": "Crafting",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": 5600,
+            "Catalog": "nfs",
+            "Color": [
+              "red"
+            ],
+            "DIY": "yes",
+            "Image": "https://acnhcdn.com/latest/ClosetIcon/UmbrellaCherry0Cropped.png",
+            "Name": "cherry umbrella",
+            "Sell": 1400,
+            "Source": "Crafting",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": 320,
+            "Catalog": "nfs",
+            "Color": [
+              "red",
+              "black"
+            ],
+            "DIY": "no",
+            "Image": "https://acnhcdn.com/latest/ClosetIcon/UmbrellaLadybug0Cropped.png",
+            "Name": "ladybug umbrella",
+            "Sell": 80,
+            "Source": "Bug-Off",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": 1620,
+            "Catalog": "fs",
+            "Color": [
+              "red",
+              "black"
+            ],
+            "DIY": "no",
+            "Image": "https://acnhcdn.com/latest/ClosetIcon/UmbrellaPacodarace6Cropped.png",
+            "Name": "red chic umbrella",
+            "Sell": 405,
+            "Source": "Nook's Cranny",
+            "SourceNotes": "Available in Nook's Cranny (upgraded only)"
+          },
+          {
+            "Buy": 770,
+            "Catalog": "fs",
+            "Color": [
+              "red"
+            ],
+            "DIY": "no",
+            "Image": "https://acnhcdn.com/latest/ClosetIcon/UmbrellaStandard1Cropped.png",
+            "Name": "red umbrella",
+            "Sell": 192,
+            "Source": "Nook's Cranny",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": 750,
+            "Catalog": "fs",
+            "Color": [
+              "red",
+              "green"
+            ],
+            "DIY": "no",
+            "Image": "https://acnhcdn.com/latest/ClosetIcon/UmbrellaPlaid0Cropped.png",
+            "Name": "tartan-check umbrella",
+            "Sell": 187,
+            "Source": "Nook's Cranny",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": 750,
+            "Catalog": "fs",
+            "Color": [
+              "red",
+              "white"
+            ],
+            "DIY": "no",
+            "Image": "https://acnhcdn.com/latest/ClosetIcon/UmbrellaPolkadotRedCropped.png",
+            "Name": "toad parasol",
+            "Sell": 187,
+            "Source": "Nook's Cranny",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": 770,
+            "Catalog": "fs",
+            "Color": [
+              "red",
+              "yellow"
+            ],
+            "DIY": "no",
+            "Image": "https://acnhcdn.com/latest/ClosetIcon/UmbrellaTwocolor0Cropped.png",
+            "Name": "two-tone umbrella",
+            "Sell": 192,
+            "Source": "Nook's Cranny",
+            "SourceNotes": ""
+          },
+          {
+            "Buy": 1550,
+            "Catalog": "fs",
+            "Color": [
+              "red",
+              "green"
+            ],
+            "DIY": "no",
+            "Image": "https://acnhcdn.com/latest/ClosetIcon/UmbrellaWater0Cropped.png",
+            "Name": "watermelon umbrella",
+            "Sell": 387,
+            "Source": "Nook's Cranny",
+            "SourceNotes": "Available in Nook's Cranny (upgraded only)"
+          }
+        ]
+      }
+    }
+  }
+}
