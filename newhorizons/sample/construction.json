@@ -1,0 +1,66 @@
+{
+  "data": {
+    "construction": {
+      "query": {
+        "construction": [
+          {
+            "Buy": 198000,
+            "Category": "bridge",
+            "Image": "https://i.imgur.com/wfqkJP4.png",
+            "Name": "brick bridge",
+            "Source": "Resident Services Upgrade"
+          },
+          {
+            "Buy": 228000,
+            "Category": "bridge",
+            "Image": "https://i.imgur.com/HtcyceK.png",
+            "Name": "iron bridge",
+            "Source": "Resident Services Upgrade"
+          },
+          {
+            "Buy": 98000,
+            "Category": "bridge",
+            "Image": "https://i.imgur.com/L2DBxtY.png",
+            "Name": "log bridge",
+            "Source": "Resident Services Upgrade"
+          },
+          {
+            "Buy": 228000,
+            "Category": "bridge",
+            "Image": "https://i.imgur.com/OX10za8.png",
+            "Name": "red zen bridge",
+            "Source": "Resident Services Upgrade"
+          },
+          {
+            "Buy": 168000,
+            "Category": "bridge",
+            "Image": "https://i.imgur.com/mFAMkfS.png",
+            "Name": "stone bridge",
+            "Source": "Resident Services Upgrade"
+          },
+          {
+            "Buy": 129800,
+            "Category": "bridge",
+            "Image": "https://i.imgur.com/JlSYdXq.png",
+            "Name": "suspension bridge",
+            "Source": "Resident Services Upgrade"
+          },
+          {
+            "Buy": 168000,
+            "Category": "bridge",
+            "Image": "https://i.imgur.com/cEiL7Xr.png",
+            "Name": "wooden bridge",
+            "Source": "Resident Services Upgrade"
+          },
+          {
+            "Buy": 228000,
+            "Category": "bridge",
+            "Image": "https://i.imgur.com/8tjpe5G.png",
+            "Name": "zen bridge",
+            "Source": "Resident Services Upgrade"
+          }
+        ]
+      }
+    }
+  }
+}

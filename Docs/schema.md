@@ -19,6 +19,10 @@ Further info on graphql types and schemas can be found [here](https://graphql.or
 - [Villager](#villager)
 - [Wallpaper](#wallpaper)
 - [Fencing](#fencing)
+- [Construction](#construction)
+- [Nook Miles](#nook-miles)
+- [Umbrella](#umbrella)
+- [Other](#other)
 
 ## Root
 
@@ -421,3 +425,129 @@ type Window {
 ```
 
 ## Fencing
+
+```graphql
+type fencing {
+  query(query: String, glob: String = "f", limit: Int = 500): fence_search!
+}
+```
+
+```graphql
+type fence_search {
+  fences: [fenceObj]!
+}
+```
+
+```graphql
+type fenceObj {
+  Buy: Int
+  DIY: String
+  Image: String
+  Name: String
+  Sell: Int
+  Source: String
+  SourceNotes: String
+}
+```
+
+## Construction
+
+```graphql
+type construction {
+  query(query: String, glob: String = "f", limit: Int = 500): search_construction!
+}
+```
+
+```graphql
+type search_construction {
+  construction: [constructionObj]!
+}
+```
+
+```graphql
+type constructionObj {
+  Buy: Int
+  Category: String
+  Image: String
+  Name: String
+  Source: String
+}
+```
+
+## Nook Miles
+
+```graphql
+type nookmiles {
+  query(query: String, glob: String = "f", limit: Int = 500): nookmile_search!
+}
+```
+
+```graphql
+type nookmile_search {
+  nook_mile: [nook_mileObj!]!
+}
+```
+
+```graphql
+type nook_mileObj {
+  Category: String
+  Image: String
+  Name: String
+  NookMiles: Int
+}
+```
+
+## Umbrella
+
+```graphql
+type umbrellas {
+  query(query: String, glob: String = "f", limit: Int = 500): umbrella_search!
+}
+```
+
+```graphql
+type umbrella_search {
+  umbrellas: [umbrella!]!
+}
+```
+
+```graphql
+type umbrella {
+  Buy: Int
+  Catalog: String
+  Color: [String]
+  DIY: String
+  Image: String
+  Name: String
+  Sell: Int
+  Source: String
+  SourceNotes: String
+}
+```
+
+## Other
+
+```graphql
+type other {
+  query(query: String, glob: String = "f", limit: Int = 500): other_search!
+}
+```
+
+```graphql
+type other_search {
+  others: [otherObj!]!
+}
+```
+
+```graphql
+type otherObj {
+  Buy: Int
+  DIY: String
+  Image: String
+  Name: String
+  Sell: Int
+  Source: String
+  SourceNotes: String
+  Tag: String
+}
+```

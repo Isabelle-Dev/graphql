@@ -27,7 +27,7 @@ var nookmile = graphql.NewObject(graphql.ObjectConfig{
 			},
 		},
 		"NookMiles": &graphql.Field{
-			Type: graphql.String,
+			Type: graphql.Int,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(newhorizons.NookMiles); ok {
 					return val.NookMiles, nil

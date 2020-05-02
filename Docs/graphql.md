@@ -38,26 +38,25 @@ And the response returned to us will look like:
 
 What if we wanted more data fields besides just the villager name?
 
-In this case, we can just add more resource properties defined by the `schema`. All of the _schemas_ defined in this server is located in
-`newhorizons`. From that folder, we can see a file called `villager_model.go` which defines the GraphQL schema for **villager** type objects.
+In this case, we can just add more resource properties defined by the `schema`. All of the _schemas_ defined in this server can be found in the **Schema Docs**.
 
-```go
-// Villager represents a villager entry graphql is able to parse and
-// display
-type Villager struct {
-	Name        string
-	Image       string
-	Species     string
-	Gender      string
-	Personality string
-	Birthday    string
-	Catchphrase string
-	Style       []string
-	Color       []string
+From there, we can see that a villager object is defined by:
+
+```graphql
+type villagerObj {
+  Birthday: String
+  Catchphrase: String
+  Color: [String]
+  Gender: String
+  Image: String
+  Name: String
+  Personality: String
+  Species: String
+  Style: [String]
 }
 ```
 
-From the schema, we can see that there are **eight** other query fields we can use.
+Now we know that there are **eight** other query fields we can use.
 
 For example, we can query for a villager's name, species, and gender at the same time.
 
@@ -94,8 +93,6 @@ And the response returned will look like:
   }
 }
 ```
-
-Now we can see that gender and species were also returned in the response!
 
 Besides looking at schema definitions, you can also use `GraphiQL`, a graphQL interface for editing and testing queries.
 

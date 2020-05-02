@@ -57,15 +57,16 @@ Read the API documentation [here](#documentation)!
 | Rug                | :heavy_check_mark:    | Rug Entries                      |
 | Tools              | :heavy_check_mark:    | Tool Entries                     |
 | Villager           | :heavy_check_mark:    | Villager Entries                 |
-| Fish and Bugs      | :x:                   | Fish and Bug Entries             |
+| Bugs               | :x:                   | Bug Entries                      |
+| Fishes             | :x:                   | Fish Entries                     |
 | Fossils            | :x:                   | Fossil Entries                   |
-| Fencing            | :x:                   | Fence Entries                    |
-| Umbrellas          | :x:                   | Umbrellas (TBA)                  |
+| Fencing            | :heavy_check_mark:    | Fence Entries                    |
+| Umbrellas          | :heavy_check_mark:    | Umbrellas (TBA)                  |
 | Recipes            | :x:                   | Recipe Entries (TBA)             |
 | Art                | :heavy_check_mark:    | Art Entries                      |
-| Construction       | :x:                   | Construction Project Entries     |
-| Nook Miles         | :x:                   | Nook Miles Options               |
-| Other              | :x:                   | Other Misc. Entries              |
+| Construction       | :heavy_check_mark:    | Construction Project Entries     |
+| Nook Miles         | :heavy_check_mark:    | Nook Miles Options               |
+| Other              | :heavy_check_mark:    | Other Misc. Entries              |
 
 ## Self-Hosting Installation
 
@@ -99,7 +100,7 @@ The endpoint itself renders GraphiQL - a GraphQL IDE.
 
 ## Example Queries
 
-**See Documentation For More Info**
+:exclamation: **See Documentation For More Info** :exclamation:
 
 ```graphql
 query FloorDemo {
