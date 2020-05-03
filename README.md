@@ -61,8 +61,7 @@ Read the API documentation [here](#documentation)!
 | Fishes             | :x:                   | Fish Entries                     |
 | Fossils            | :x:                   | Fossil Entries                   |
 | Fencing            | :heavy_check_mark:    | Fence Entries                    |
-| Umbrellas          | :heavy_check_mark:    | Umbrellas (TBA)                  |
-| Recipes            | :x:                   | Recipe Entries (TBA)             |
+| Umbrellas          | :heavy_check_mark:    | Umbrellas                        |
 | Art                | :heavy_check_mark:    | Art Entries                      |
 | Construction       | :heavy_check_mark:    | Construction Project Entries     |
 | Nook Miles         | :heavy_check_mark:    | Nook Miles Options               |
@@ -204,4 +203,4 @@ See [License](LICENSE) for more details.
 
 - All data is sourced from New Horizons data found [here](https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/)
 
-- High-resolution image links and hosting is provided by [Dodo Codes](https://acnhcdn.com/)
+- High-resolution image links is provided by [Dodo Codes](https://acnhcdn.com/)

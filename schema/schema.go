@@ -8,7 +8,9 @@ import (
 	"github.com/Isabelle-Dev/graphql/schema/clothes"
 	"github.com/Isabelle-Dev/graphql/schema/construction"
 	"github.com/Isabelle-Dev/graphql/schema/fencing"
+	"github.com/Isabelle-Dev/graphql/schema/fish"
 	"github.com/Isabelle-Dev/graphql/schema/floor"
+	"github.com/Isabelle-Dev/graphql/schema/fossil"
 	"github.com/Isabelle-Dev/graphql/schema/item"
 	"github.com/Isabelle-Dev/graphql/schema/music"
 	"github.com/Isabelle-Dev/graphql/schema/nookmiles"
@@ -161,6 +163,20 @@ func init() {
 			"bugs": &graphql.Field{
 				Description: "Bug-related queries",
 				Type:        bugs.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"fishes": &graphql.Field{
+				Description: "Fish-related queries",
+				Type:        fish.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"fossil": &graphql.Field{
+				Description: "Fossil-related queries",
+				Type:        fossil.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
