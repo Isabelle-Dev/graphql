@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/Isabelle-Dev/graphql/schema/art"
+	"github.com/Isabelle-Dev/graphql/schema/bugs"
 	"github.com/Isabelle-Dev/graphql/schema/clothes"
 	"github.com/Isabelle-Dev/graphql/schema/construction"
 	"github.com/Isabelle-Dev/graphql/schema/fencing"
@@ -45,13 +46,6 @@ func init() {
 		Name:        "RootQuery",
 		Description: "Root query",
 		Fields: graphql.Fields{
-			// "bug_and_fish": &graphql.Field{
-			// 	Description: "Bug and fish search-related queries",
-			// 	Type:        bugandfish.RootObject(db),
-			// 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-			// 		return map[string]interface{}{}, nil
-			// 	},
-			// },
 			"item": &graphql.Field{
 				Description: "Item-related queries",
 				Type:        item.RootObject(db),
@@ -81,42 +75,42 @@ func init() {
 				},
 			},
 			"rugs": &graphql.Field{
-				Description: "Floor-related queries",
+				Description: "Rug-related queries",
 				Type:        rug.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
 			},
 			"photos": &graphql.Field{
-				Description: "Floor-related queries",
+				Description: "Photo-related queries",
 				Type:        photos.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
 			},
 			"villagers": &graphql.Field{
-				Description: "Floor-related queries",
+				Description: "Villager-related queries",
 				Type:        villager.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
 			},
 			"art": &graphql.Field{
-				Description: "Floor-related queries",
+				Description: "Art-related queries",
 				Type:        art.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
 			},
 			"poster": &graphql.Field{
-				Description: "Floor-related queries",
+				Description: "Poster-related queries",
 				Type:        poster.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
 			},
 			"music": &graphql.Field{
-				Description: "Floor-related queries",
+				Description: "Music-related queries",
 				Type:        music.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
@@ -130,36 +124,43 @@ func init() {
 				},
 			},
 			"construction": &graphql.Field{
-				Description: "Tool-related queries",
+				Description: "Construction-related queries",
 				Type:        construction.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
 			},
 			"nookmiles": &graphql.Field{
-				Description: "Tool-related queries",
+				Description: "NookMile-related queries",
 				Type:        nookmiles.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
 			},
 			"fencing": &graphql.Field{
-				Description: "Tool-related queries",
+				Description: "Fencing-related queries",
 				Type:        fencing.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
 			},
 			"umbrella": &graphql.Field{
-				Description: "Tool-related queries",
+				Description: "Umbrella-related queries",
 				Type:        umbrella.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
 			},
 			"other": &graphql.Field{
-				Description: "Tool-related queries",
+				Description: "Other-related queries",
 				Type:        other.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"bugs": &graphql.Field{
+				Description: "Bug-related queries",
+				Type:        bugs.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},
@@ -176,10 +177,12 @@ func init() {
 	}
 }
 
+// provides the dialect type for gorm configuration
 func (pc PostgresConfig) dialect() string {
 	return "postgres"
 }
 
+// provides the connection info for gorm configuration
 func (pc PostgresConfig) connectionInfo() string {
 	if pc.Password == "" {
 		return fmt.Sprintf("host=%s port=%d user=%s dbname=%s "+
