@@ -22,11 +22,11 @@ type FishEntry struct {
 	Location  string
 	Shadow    string
 	Rarity    string
-	CatchUp   string
-	StartTime string
-	EndTime   string
-	Color1    string
-	Color2    string
+	CatchUp   string `gorm:"column:catchup"`
+	StartTime string `gorm:"column:starttime"`
+	EndTime   string `gorm:"column:endtime"`
+	Color1    string `gorm:"column:color1"`
+	Color2    string `gorm:"column:color2"`
 }
 
 // ToGraphQL (FishEntry) converts a FishEntry object into a Fish object

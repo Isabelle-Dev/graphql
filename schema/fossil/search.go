@@ -64,7 +64,7 @@ var fossilSearchObj = graphql.NewObject(graphql.ObjectConfig{
 		"fossils": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.NewList(fossil)),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.([]newhorizons.FossilEntry); ok {
+				if val, ok := p.Source.([]*newhorizons.Fossil); ok {
 					return val, nil
 				}
 				return nil, fmt.Errorf("fossil_search(): error")

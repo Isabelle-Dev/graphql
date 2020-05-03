@@ -21,10 +21,10 @@ type BugEntry struct {
 	Location  string
 	Weather   string
 	Rarity    string
-	StartTime string
-	EndTime   string
-	Color1    string
-	Color2    string
+	StartTime string `gorm:"column:starttime"`
+	EndTime   string `gorm:"column:endtime"`
+	Color1    string `gorm:"color1"`
+	Color2    string `gorm:"color2"`
 }
 
 // ToGraphQL (BugEntry) converts a BugEntry object into a Bug object
