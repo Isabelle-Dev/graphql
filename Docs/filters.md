@@ -32,6 +32,11 @@ color codes in the database.
 - [Tools](#tools)
 - [Villagers](#villagers)
 - [Art](#art)
+- [Fencing](#fencing)
+- [Construction](#construction)
+- [Nook Miles](#nook-miles)
+- [Umbrella](#umbrella)
+- [Other](#other)
 
 ### Item
 
@@ -101,7 +106,7 @@ color codes in the database.
 - `buy` - buy price in bells
 - `sell` - sell price in bells
 - `color` - object color codes
-- `catalog` - For sale or Not for sale
+- `catalog` - **fs** (For sale) or **nfs** (Not for sale)
 - `concept` - HHA Concept
 - `tag` - object tag
 
@@ -128,3 +133,37 @@ color codes in the database.
 
 - `name` - Name
 - `tag` - object tag
+
+### Fencing
+
+- `name` - Name
+- `buy` - buy price in bells
+- `sell` - sell price in bells
+
+### Construction
+
+- `name` - Name
+- `buy` - buy price in bells
+- `category` - category type (i.e. bridge, door, mailbox, etc)
+
+### Nook Miles
+
+- `name` - Name
+- `nookmiles` - nook miles amount
+
+
+### Umbrella
+
+- `name` - Name
+- `buy` - buy price in bells
+- `sell` - sell price in bells
+- `color` - colors of item
+- `catalog` - **fs** or **nfs** for sale status
+- `diy` - **yes** or **no** for diy status
+
+### Other
+
+- `name` - Name
+- `buy` - buy price in bells
+- `sell` - sell price in bells
+- `tag` - item tag
