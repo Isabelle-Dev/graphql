@@ -124,18 +124,21 @@ query FloorDemo {
 ```
 
 ```graphql
-query DemoItem {
+query ItemDemo {
   item {
     query(query: " name:\"leaf\" tag:\"plant\" color:\"orange\" ", glob:"t", limit: 30) {
       items {
         Name
         Buy
         Sell
-        HHAConcepts
+        Concepts
         HHASet
         HHASeries
         Variants {
           Colors
+          Pattern
+          Image
+          Variation
         }
         Tag
       }
@@ -145,7 +148,7 @@ query DemoItem {
 ```
 
 ```graphql
-query DemoArt {
+query ArtDemo {
   art {
     query(query: "buy: \"4980\" tag: \"picture\" ") {
       art {

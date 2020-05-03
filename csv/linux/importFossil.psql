@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS fossil (
+	Name character varying(60),
+	Image character varying(100),
+	Buy INT,
+	Sell INT,
+	Color1 character varying(50),
+	Color2 character varying(50),
+	Source character varying(50),
+	Interact character varying(5),
+	Catalog character varying(5)
+);
+
+COPY fossil (Name, Image, Buy, Sell, Color1, Color2, Source, Interact, Catalog)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

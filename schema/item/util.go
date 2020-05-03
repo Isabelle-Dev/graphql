@@ -18,9 +18,10 @@ func extractVPIH(item []newhorizons.ItemEntry) ([]newhorizons.Variant, []string)
 			color = append(color, entry.Color2)
 		}
 		variants = append(variants, newhorizons.Variant{
-			Image:   entry.Image,
-			Pattern: entry.Pattern,
-			Colors:  color,
+			Image:     entry.Image,
+			Pattern:   entry.Pattern,
+			Colors:    color,
+			Variation: entry.Variation,
 		})
 	}
 	// extract HHA concepts

@@ -158,7 +158,7 @@ var item = graphql.NewObject(graphql.ObjectConfig{
 var variantObj = graphql.NewObject(graphql.ObjectConfig{
 	Name: "Variant",
 	Fields: graphql.Fields{
-		"Img": &graphql.Field{
+		"Image": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(newhorizons.Variant); ok {
@@ -172,6 +172,15 @@ var variantObj = graphql.NewObject(graphql.ObjectConfig{
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(newhorizons.Variant); ok {
 					return val.Pattern, nil
+				}
+				return nil, nil
+			},
+		},
+		"Variation": &graphql.Field{
+			Type: graphql.String,
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.(newhorizons.Variant); ok {
+					return val.Variation, nil
 				}
 				return nil, nil
 			},

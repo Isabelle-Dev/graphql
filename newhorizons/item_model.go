@@ -23,9 +23,10 @@ type Item struct {
 // Variant represents variation differences according to each
 // item entry
 type Variant struct {
-	Image   string
-	Pattern string
-	Colors  []string
+	Image     string
+	Pattern   string
+	Colors    []string
+	Variation string
 }
 
 // ItemEntry represents an item from the housewares table in postgres
