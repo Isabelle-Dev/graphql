@@ -1,0 +1,19 @@
+{
+  "data": {
+    "fossil": {
+      "query": {
+        "fossils": [
+          {
+            "Buy": -1,
+            "Catalog": "nfs",
+            "Image": "https://acnhcdn.com/latest/FtrIcon/FtrFossilAmber.png",
+            "Interact": "no",
+            "Name": "amber",
+            "Sell": 1200,
+            "Source": "Dig spot"
+          }
+        ]
+      }
+    }
+  }
+}

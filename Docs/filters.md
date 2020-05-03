@@ -37,6 +37,9 @@ color codes in the database.
 - [Nook Miles](#nook-miles)
 - [Umbrella](#umbrella)
 - [Other](#other)
+- [Bug](#bug)
+- [Fish](#fish)
+- [Fossil](#fossil)
 
 ### Item
 
@@ -151,7 +154,6 @@ color codes in the database.
 - `name` - Name
 - `nookmiles` - nook miles amount
 
-
 ### Umbrella
 
 - `name` - Name
@@ -167,3 +169,36 @@ color codes in the database.
 - `buy` - buy price in bells
 - `sell` - sell price in bells
 - `tag` - item tag
+
+### Bug
+
+- `name` - Name
+- `sell` - sell price in bells
+- `rarity` - rarity status
+- `color` - color of bug
+
+**Special: Month Status**
+
+- `NHJan` ~ `NHDec` - `yes` or `no`
+- `SHJan` ~ `SHDec` - `yes` or `no`
+
+### Fish
+
+- `name` - Name
+- `sell` - sell price in bells
+- `rarity` - rarity status
+- `color` - color of fish
+- `catchup` - `yes` or `no`
+- `shadow` - fish shadow size in water
+
+**Special: Month Status**
+
+- `NHJan` ~ `NHDec` - `yes` or `no`
+- `SHJan` ~ `SHDec` - `yes` or `no`
+
+### Fossil
+
+- `name` - Name
+- `sell` - sell price in bells
+- `color` - color of fossil
+- `interact` - interact status (`yes` or `no`)

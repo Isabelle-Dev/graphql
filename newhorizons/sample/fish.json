@@ -1,0 +1,308 @@
+{
+  "data": {
+    "fishes": {
+      "query": {
+        "fishes": [
+          {
+            "CatchUp": "no",
+            "Color": [
+              "blue",
+              "red"
+            ],
+            "EndTime": "9:00 PM",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishAntyobiCropped.png",
+            "Location": "sea",
+            "Name": "anchovy",
+            "Rarity": "common",
+            "Sell": 200,
+            "Shadow": "small",
+            "StartTime": "4:00 AM"
+          },
+          {
+            "CatchUp": "yes",
+            "Color": [
+              "black",
+              "blue"
+            ],
+            "EndTime": "9:00 AM",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishPirarukuCropped.png",
+            "Location": "river",
+            "Name": "arapaima",
+            "Rarity": "rare",
+            "Sell": 10000,
+            "Shadow": "xx-large",
+            "StartTime": "4:00 PM"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "light blue",
+              "blue"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishTanagoCropped.png",
+            "Location": "river",
+            "Name": "bitterling",
+            "Rarity": "common",
+            "Sell": 900,
+            "Shadow": "x-small",
+            "StartTime": "All day"
+          },
+          {
+            "CatchUp": "yes",
+            "Color": [
+              "blue",
+              "black"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishKajikiCropped.png",
+            "Location": "pier",
+            "Name": "blue marlin",
+            "Rarity": "rare",
+            "Sell": 10000,
+            "Shadow": "xx-large",
+            "StartTime": "All day"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "blue",
+              "black"
+            ],
+            "EndTime": "4:00 PM",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishBlueguillCropped.png",
+            "Location": "river",
+            "Name": "bluegill",
+            "Rarity": "common",
+            "Sell": 180,
+            "Shadow": "small",
+            "StartTime": "9:00 AM"
+          },
+          {
+            "CatchUp": "yes",
+            "Color": [
+              "blue"
+            ],
+            "EndTime": "9:00 AM",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishSameCropped.png",
+            "Location": "sea",
+            "Name": "great white shark",
+            "Rarity": "rare",
+            "Sell": 15000,
+            "Shadow": "large w/fin",
+            "StartTime": "4:00 PM"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "blue",
+              "black"
+            ],
+            "EndTime": "4:00 PM",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishGuppiCropped.png",
+            "Location": "river",
+            "Name": "guppy",
+            "Rarity": "common",
+            "Sell": 1300,
+            "Shadow": "x-small",
+            "StartTime": "9:00 AM"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "blue",
+              "black"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishAjiCropped.png",
+            "Location": "sea",
+            "Name": "horse mackerel",
+            "Rarity": "common",
+            "Sell": 150,
+            "Shadow": "small",
+            "StartTime": "All day"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "brown",
+              "blue"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishDojouCropped.png",
+            "Location": "river",
+            "Name": "loach",
+            "Rarity": "common",
+            "Sell": 400,
+            "Shadow": "small",
+            "StartTime": "All day"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "black",
+              "blue"
+            ],
+            "EndTime": "9:00 AM",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishSyanhaiganiCropped.png",
+            "Location": "river",
+            "Name": "mitten crab",
+            "Rarity": "uncommon",
+            "Sell": 2000,
+            "Shadow": "small",
+            "StartTime": "4:00 PM"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "brown",
+              "blue"
+            ],
+            "EndTime": "4:00 PM",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishDokutaafishCropped.png",
+            "Location": "river",
+            "Name": "nibble fish",
+            "Rarity": "uncommon",
+            "Sell": 1500,
+            "Shadow": "x-small",
+            "StartTime": "9:00 AM"
+          },
+          {
+            "CatchUp": "yes",
+            "Color": [
+              "red",
+              "blue"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishRyuuguunotukaiCropped.png",
+            "Location": "sea",
+            "Name": "oarfish",
+            "Rarity": "rare",
+            "Sell": 9000,
+            "Shadow": "xx-large",
+            "StartTime": "All day"
+          },
+          {
+            "CatchUp": "yes",
+            "Color": [
+              "blue",
+              "orange"
+            ],
+            "EndTime": "9:00 PM",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishManbouCropped.png",
+            "Location": "sea",
+            "Name": "ocean sunfish",
+            "Rarity": "uncommon",
+            "Sell": 4000,
+            "Shadow": "large w/fin",
+            "StartTime": "4:00 AM"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "blue"
+            ],
+            "EndTime": "4:00 PM",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishOikawaCropped.png",
+            "Location": "river",
+            "Name": "pale chub",
+            "Rarity": "common",
+            "Sell": 200,
+            "Shadow": "x-small",
+            "StartTime": "9:00 AM"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "orange",
+              "blue"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishWakasagiCropped.png",
+            "Location": "river",
+            "Name": "pond smelt",
+            "Rarity": "common",
+            "Sell": 400,
+            "Shadow": "small",
+            "StartTime": "All day"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "blue",
+              "black"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishHanahigeutuboCropped.png",
+            "Location": "sea",
+            "Name": "ribbon eel",
+            "Rarity": "common",
+            "Sell": 600,
+            "Shadow": "long",
+            "StartTime": "All day"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "blue",
+              "black"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishNanyouhagiCropped.png",
+            "Location": "sea",
+            "Name": "surgeonfish",
+            "Rarity": "common",
+            "Sell": 1000,
+            "Shadow": "small",
+            "StartTime": "All day"
+          },
+          {
+            "CatchUp": "no",
+            "Color": [
+              "black",
+              "blue"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishOtamajakusiCropped.png",
+            "Location": "pond",
+            "Name": "tadpole",
+            "Rarity": "common",
+            "Sell": 100,
+            "Shadow": "x-small",
+            "StartTime": "All day"
+          },
+          {
+            "CatchUp": "yes",
+            "Color": [
+              "blue",
+              "black"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishMaguroCropped.png",
+            "Location": "pier",
+            "Name": "tuna",
+            "Rarity": "rare",
+            "Sell": 7000,
+            "Shadow": "xx-large",
+            "StartTime": "All day"
+          },
+          {
+            "CatchUp": "yes",
+            "Color": [
+              "black",
+              "blue"
+            ],
+            "EndTime": "All day",
+            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishJinbeezameCropped.png",
+            "Location": "sea",
+            "Name": "whale shark",
+            "Rarity": "rare",
+            "Sell": 13000,
+            "Shadow": "large w/fin",
+            "StartTime": "All day"
+          }
+        ]
+      }
+    }
+  }
+}

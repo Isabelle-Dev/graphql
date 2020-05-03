@@ -23,6 +23,9 @@ Further info on graphql types and schemas can be found [here](https://graphql.or
 - [Nook Miles](#nook-miles)
 - [Umbrella](#umbrella)
 - [Other](#other)
+- [Bug](#bug)
+- [Fish](#fish)
+- [Fossil](#fossil)
 
 ## Root
 
@@ -549,5 +552,89 @@ type otherObj {
   Source: String
   SourceNotes: String
   Tag: String
+}
+```
+
+## Bug
+
+```graphql
+type bugs {
+  query(query: String, glob: String = "f", limit: Int = 500): search_bug!
+}
+```
+
+```graphql
+type search_bug {
+  bugs: [bugObj]!
+}
+```
+
+```graphql
+type bugObj {
+  Color: [String]
+  EndTime: String
+  Image: String
+  Location: String
+  Name: String
+  Rarity: String
+  Sell: Int
+  StartTime: String
+  Weather: String
+}
+```
+
+## Fish
+
+```graphql
+type fishes {
+  query(query: String, glob: String = "f", limit: Int = 500): fish_search!
+}
+```
+
+```graphql
+type fish_search {
+  fishes: [fishObj!]!
+}
+```
+
+```graphql
+type fishObj {
+  CatchUp: String
+  Color: [String]
+  EndTime: String
+  Image: String
+  Location: String
+  Name: String
+  Rarity: String
+  Sell: Int
+  Shadow: String
+  StartTime: String
+}
+```
+
+## Fossil
+
+```graphql
+type fossil {
+  query(query: String, glob: String = "f", limit: Int = 500): fossil_search!
+}
+```
+
+```graphql
+type fossil_search {
+  fossils: [fossilObj]!
+}
+```
+
+```graphql
+type fossilObj {
+  Buy: Int
+  Catalog: String
+  Color: [String]
+  Image: String
+  Interact: String
+  Name: String
+  Sell: Int
+  Source: String
 }
 ```

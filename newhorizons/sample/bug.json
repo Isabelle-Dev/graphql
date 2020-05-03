@@ -1,0 +1,79 @@
+{
+  "data": {
+    "bugs": {
+      "query": {
+        "bugs": [
+          {
+            "Color": [
+              "black",
+              "yellow"
+            ],
+            "EndTime": "5:00 PM",
+            "Image": "https://acnhcdn.com/latest/BookInsectIcon/InsectOniyanmaCropped.png",
+            "Location": "Flying near water",
+            "Name": "banded dragonfly",
+            "Rarity": "rare",
+            "Sell": 4500,
+            "StartTime": "8:00 AM",
+            "Weather": "Any except rain"
+          },
+          {
+            "Color": [
+              "black"
+            ],
+            "EndTime": "8:00 AM",
+            "Image": "https://acnhcdn.com/latest/BookInsectIcon/InsectOhkuwagataCropped.png",
+            "Location": "On trees (any kind)",
+            "Name": "giant stag",
+            "Rarity": "rare",
+            "Sell": 10000,
+            "StartTime": "11:00 PM",
+            "Weather": "Any weather"
+          },
+          {
+            "Color": [
+              "green",
+              "pink"
+            ],
+            "EndTime": "4:00 PM",
+            "Image": "https://acnhcdn.com/latest/BookInsectIcon/InsectArekisandoratoribaneagehaCropped.png",
+            "Location": "Flying near flowers",
+            "Name": "queen alexandra's birdwing",
+            "Rarity": "rare",
+            "Sell": 4000,
+            "StartTime": "8:00 AM",
+            "Weather": "Any except rain"
+          },
+          {
+            "Color": [
+              "brown",
+              "black"
+            ],
+            "EndTime": "8:00 AM",
+            "Image": "https://acnhcdn.com/latest/BookInsectIcon/InsectNijiirokuwagataCropped.png",
+            "Location": "On trees (any kind)",
+            "Name": "rainbow stag",
+            "Rarity": "rare",
+            "Sell": 6000,
+            "StartTime": "7:00 PM",
+            "Weather": "Any weather"
+          },
+          {
+            "Color": [
+              "black",
+              "beige"
+            ],
+            "EndTime": "8:00 PM",
+            "Image": "https://acnhcdn.com/latest/BookInsectIcon/InsectPurachinakoganeCropped.png",
+            "Location": "On trees (any kind)",
+            "Name": "scarab beetle",
+            "Rarity": "rare",
+            "Sell": 10000,
+            "StartTime": "11:00 PM",
+            "Weather": "Any weather"
+          }
+        ]
+      }
+    }
+  }
+}
