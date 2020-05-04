@@ -75,7 +75,7 @@ Want to host the server yourself?
 - `go build -o graphql.exe`
 - `./graphql.exe`
 
-All **csv data files** and **Postgres migration code** are located in the `csv` directory.
+All **csv data files** can be found in the `csv` directory. Postgres migration code (for linux) can be found in `csv/linux`. `csv/master` contains the master excel data sheet used for data importation and cleaning.
 
 ## Sample JSON Responses
 
@@ -103,7 +103,7 @@ query FloorDemo {
   floor {
     query(query: "buy:\"<= 3000 AND > 2000\" color:\"gray AND beige\"", limit: 3) {
       floors {
-        Color
+        Colors
         Catalog
         Concepts
         Sell
@@ -154,7 +154,7 @@ query ArtDemo {
         Category
         Source
         Type {
-          Concept
+          Concepts
           Genuine
           Sell
           Image
@@ -179,7 +179,7 @@ Example **cURL** queries can be found in `post.json` and `post.graphql`. I do no
 
 ## Contributing
 
-See [CONTRIBUTING](/CONTRIBUTING.md) for more details.
+See [CONTRIBUTING](.github/CONTRIBUTING.md) for more details.
 
 ## License
 
@@ -191,4 +191,4 @@ See [License](LICENSE) for more details.
 
 - All data is sourced from New Horizons data found [here](https://docs.google.com/spreadsheets/d/13d_LAJPlxMa_DubPTuirkIV4DERBMXbrWQsmSh8ReK4/)
 
-- High-resolution image links is provided by [Dodo Codes](https://acnhcdn.com/)
+- High-resolution image links are provided by [Dodo Codes](https://acnhcdn.com/)
