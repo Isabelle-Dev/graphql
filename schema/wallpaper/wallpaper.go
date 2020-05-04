@@ -6,7 +6,7 @@ import (
 )
 
 var wallpaper = graphql.NewObject(graphql.ObjectConfig{
-	Name: "WallpaperResult",
+	Name: "wallpaperObj",
 	Fields: graphql.Fields{
 		"Name": &graphql.Field{
 			Type: graphql.String,

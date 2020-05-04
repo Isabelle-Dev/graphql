@@ -59,7 +59,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 }
 
 var constructionSearchObj = graphql.NewObject(graphql.ObjectConfig{
-	Name: "search_construction",
+	Name: "construction_search",
 	Fields: graphql.Fields{
 		"construction": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.NewList(construction)),

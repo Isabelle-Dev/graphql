@@ -6,7 +6,7 @@ import (
 )
 
 var umbrella = graphql.NewObject(graphql.ObjectConfig{
-	Name: "umbrella",
+	Name: "umbrellaObj",
 	Fields: graphql.Fields{
 		"Name": &graphql.Field{
 			Type: graphql.String,

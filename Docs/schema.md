@@ -72,7 +72,7 @@ type artObj {
 
 ```graphql
 type artType {
-  Concept: [String]
+  Concepts: [String]
   Genuine: String
   Image: String
   Sell: Int
@@ -89,12 +89,12 @@ type clothes {
 
 ```graphql
 type search_clothes {
-  clothes: [ClothesResult]!
+  clothes: [clothesObj]!
 }
 ```
 
 ```graphql
-type ClothesResult {
+type ClothesObj {
   Buy: Int
   DIY: String
   Name: String
@@ -108,7 +108,7 @@ type ClothesResult {
 
 ```graphql
 type clothesvariants {
-  Color: [String]
+  Colors: [String]
   Image: String
   Variation: String
 }
@@ -124,15 +124,15 @@ type flooring {
 
 ```graphql
 type floor_search {
-  floors: [floor!]!
+  floors: [floorObj!]!
 }
 ```
 
 ```graphql
-type floor {
+type floorObj {
   Buy: Int
   Catalog: String
-  Color: [String]
+  Colors: [String]
   Concepts: [String]
   DIY: String
   Image: String
@@ -149,18 +149,18 @@ type floor {
 
 ```graphql
 type item {
-  query(query: String, glob: String = "f", limit: Int = 1000): search_by_item!
+  query(query: String, glob: String = "f", limit: Int = 1000): item_search!
 }
 ```
 
 ```graphql
-type search_by_item {
-  items: [ItemResult!]!
+type item_search {
+  items: [itemObj!]!
 }
 ```
 
 ```graphql
-type ItemResult {
+type itemObj {
   BodyCustomize: String
   BodyTitle: String
   Buy: Int
@@ -205,7 +205,7 @@ type music_search {
 ```graphql
 type musicObj {
   Buy: Int
-  Color: [String]
+  Colors: [String]
   Image: String
   Name: String
   Sell: Int
@@ -267,7 +267,7 @@ type poster_search {
 ```graphql
 type posterObj {
   Buy: Int
-  Color: [String]
+  Colors: [String]
   Image: String
   Name: String
   Sell: Int
@@ -293,7 +293,7 @@ type rug_search {
 type rugObj {
   Buy: Int
   Catalog: String
-  Color: [String]
+  Colors: [String]
   Concepts: [String]
   DIY: String
   HHASeries: String
@@ -330,7 +330,7 @@ type toolObj {
   Name: String
   Sell: Int
   Set: String
-  Source: [String]
+  Sources: [String]
   SourceNotes: String
   Uses: Int
   Variant: [tool_variant]
@@ -362,13 +362,13 @@ type villager_search {
 type villagerObj {
   Birthday: String
   Catchphrase: String
-  Color: [String]
+  Colors: [String]
   Gender: String
   Image: String
   Name: String
   Personality: String
   Species: String
-  Style: [String]
+  Styles: [String]
 }
 ```
 
@@ -376,21 +376,21 @@ type villagerObj {
 
 ```graphql
 type wallpapers {
-  query(query: String, glob: String = "f", limit: Int = 500): search_wallpaper!
+  query(query: String, glob: String = "f", limit: Int = 500): wallpaper_search!
 }
 ```
 
 ```graphql
-type search_wallpaper {
-  wallpapers: [WallpaperResult!]!
+type wallpaper_search {
+  wallpapers: [wallpaperObj!]!
 }
 ```
 
 ```graphql
-type WallpaperResult {
+type wallpaperObj {
   Buy: Int
   CeilingType: String
-  Color: [String]!
+  Colors: [String]!
   Concepts: [String]!
   CurtainInfo: Curtain
   DIY: String
@@ -457,12 +457,12 @@ type fenceObj {
 
 ```graphql
 type construction {
-  query(query: String, glob: String = "f", limit: Int = 500): search_construction!
+  query(query: String, glob: String = "f", limit: Int = 500): construction_search!
 }
 ```
 
 ```graphql
-type search_construction {
+type construction_search {
   construction: [constructionObj]!
 }
 ```
@@ -487,12 +487,12 @@ type nookmiles {
 
 ```graphql
 type nookmile_search {
-  nook_mile: [nook_mileObj!]!
+  nook_mile: [nookmileObj!]!
 }
 ```
 
 ```graphql
-type nook_mileObj {
+type nookmileObj {
   Category: String
   Image: String
   Name: String
@@ -510,15 +510,15 @@ type umbrellas {
 
 ```graphql
 type umbrella_search {
-  umbrellas: [umbrella!]!
+  umbrellas: [umbrellaObj!]!
 }
 ```
 
 ```graphql
-type umbrella {
+type umbrellaObj {
   Buy: Int
   Catalog: String
-  Color: [String]
+  Colors: [String]
   DIY: String
   Image: String
   Name: String
@@ -559,19 +559,19 @@ type otherObj {
 
 ```graphql
 type bugs {
-  query(query: String, glob: String = "f", limit: Int = 500): search_bug!
+  query(query: String, glob: String = "f", limit: Int = 500): bug_search!
 }
 ```
 
 ```graphql
-type search_bug {
+type bug_search {
   bugs: [bugObj]!
 }
 ```
 
 ```graphql
 type bugObj {
-  Color: [String]
+  Colors: [String]
   EndTime: String
   Image: String
   Location: String
@@ -600,7 +600,7 @@ type fish_search {
 ```graphql
 type fishObj {
   CatchUp: String
-  Color: [String]
+  Colors: [String]
   EndTime: String
   Image: String
   Location: String
@@ -630,7 +630,7 @@ type fossil_search {
 type fossilObj {
   Buy: Int
   Catalog: String
-  Color: [String]
+  Colors: [String]
   Image: String
   Interact: String
   Name: String
