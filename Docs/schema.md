@@ -183,7 +183,7 @@ type itemObj {
 ```graphql
 type Variant {
   Colors: [String]!
-  Img: String
+  Image: String
   Pattern: String
 }
 ```
