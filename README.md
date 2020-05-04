@@ -169,15 +169,15 @@ query ArtDemo {
 
 ## cURL
 
-Example **cURL** queries can be found in `post.json` and `post.graphql`. I do not recommend making graphql requests using pure cURL, but if you must, it's easier to port requests using an external file.
+Example **cURL** queries can be found at [post.json](post.json) and [post.graphql](post.graphql). I do not recommend making graphql requests using pure cURL, but if you must, it's easier to port requests using an external file.
 
 **Example cURL With JSON File:**
 
-`curl -H "Content-type:application/json" --data @post.json https://acnhgraphql.com`
+`curl -H "Content-Type:application/json" --data @post.json https://acnhgraphql.com`
 
 **Example cURL With graphql File:**
 
-`curl -H "Content-type:application/graphql" --data @post.graphql https://acnhgraphql.com`
+`curl -H "Content-Type:application/graphql" --data @post.graphql https://acnhgraphql.com`
 
 ## Contributing
 

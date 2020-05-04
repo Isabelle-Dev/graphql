@@ -1,3 +1,3 @@
 {
-	"query": "query{item{query(query: \"name:\\\"acoustic guitar OR grand piano\\\" concept:\\\"music\\\" variation:\\\"brown\\\"\"){items{Name, Variants{Img, Colors}, Sell}}}}"
+	"query": "query{item{query(query: \"name:\\\"acoustic guitar OR grand piano\\\" concept:\\\"music\\\" variation:\\\"brown\\\"\"){items{Name, Variants{Image, Colors}, Sell}}}}"
 }

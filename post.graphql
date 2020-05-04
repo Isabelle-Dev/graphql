@@ -1,10 +1,10 @@
-query DemoTool {
+query ToolDemo {
     tool {
         query(query: "uses: \"100\" variation: \"blue OR red\" ") {
             tools {
                 Name
                 Uses
-                Variant {
+                Variants {
                     Variation
                 }
             }
