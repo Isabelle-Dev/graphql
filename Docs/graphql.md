@@ -46,13 +46,13 @@ From there, we can see that a villager object is defined by:
 type villagerObj {
   Birthday: String
   Catchphrase: String
-  Color: [String]
+  Colors: [String]
   Gender: String
   Image: String
   Name: String
   Personality: String
   Species: String
-  Style: [String]
+  Styles: [String]
 }
 ```
 
