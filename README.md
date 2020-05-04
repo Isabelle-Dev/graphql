@@ -53,7 +53,7 @@ Read the API documentation [here](#documentation)!
 | Posters            | :heavy_check_mark:    | Villager Poster Entries          |
 | Rug                | :heavy_check_mark:    | Rug Entries                      |
 | Tools              | :heavy_check_mark:    | Tool Entries                     |
-| Villager           | :heavy_check_mark:    | Villager Entries                 |
+| Villager           | :warning:             | Villager Entries                 |
 | Bugs               | :warning:             | Bug Entries                      |
 | Fishes             | :warning:             | Fish Entries                     |
 | Fossils            | :heavy_check_mark:    | Fossil Entries                   |
@@ -63,6 +63,8 @@ Read the API documentation [here](#documentation)!
 | Construction       | :heavy_check_mark:    | Construction Project Entries     |
 | Nook Miles         | :heavy_check_mark:    | Nook Miles Options               |
 | Other              | :heavy_check_mark:    | Other Misc. Entries              |
+
+Check [issues](https://github.com/Isabelle-Dev/graphql/issues) for detailed descriptions on **TO BE UPDATED** tables.
 
 ## Self-Hosting Installation
 
