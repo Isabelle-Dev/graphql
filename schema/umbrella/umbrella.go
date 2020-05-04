@@ -53,7 +53,7 @@ var umbrella = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
-		"Color": &graphql.Field{
+		"Colors": &graphql.Field{
 			Type: graphql.NewList(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Umbrella); ok {

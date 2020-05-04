@@ -6,7 +6,7 @@ package expr
 
 // Expr represents SQL expression statments
 type Expr interface {
-	// Eval returns the value of the expression
+	// Eval returns the evaluation of the expression
 	Eval(env Env) string
 }
 
@@ -17,10 +17,10 @@ type Literal string
 //
 // e.g. sell:"< 400"
 type Unary struct {
-	// Operator: < or >
+	// Operator: <, >, <=, or >=
 	Op string
 
-	// Expression
+	// Expression which evaluates to a literal
 	//
 	// e.g. 400
 	X Expr

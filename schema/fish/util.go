@@ -5,7 +5,7 @@ import (
 	"github.com/Isabelle-Dev/graphql/newhorizons"
 )
 
-// convert a slice of FishEntry into a slice of *Fish
+// Convert a slice of FishEntry into a slice of *Fish
 func toFishSlice(f []newhorizons.FishEntry) []*newhorizons.Fish {
 	var ret []*newhorizons.Fish
 	for _, entry := range f {
@@ -15,9 +15,9 @@ func toFishSlice(f []newhorizons.FishEntry) []*newhorizons.Fish {
 	return ret
 }
 
-// extract the color from entry as long as it's not a duplicate
+// Extract the color from entry as long as it's not a duplicate
 //
-// color1 is always guaranteed a color for fishes
+// Color1 is always guaranteed a color for fishes
 func extractC(f newhorizons.FishEntry) []string {
 	var ret []string
 	ret = append(ret, f.Color1)

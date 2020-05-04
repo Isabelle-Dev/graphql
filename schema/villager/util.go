@@ -5,6 +5,7 @@ import (
 	"github.com/Isabelle-Dev/graphql/newhorizons"
 )
 
+// Convert a slice of VillagerEntry into a slice of *Villager
 func toVillagerSlice(v []newhorizons.VillagerEntry) []*newhorizons.Villager {
 	var ret []*newhorizons.Villager
 	for _, i := range v {
@@ -14,6 +15,7 @@ func toVillagerSlice(v []newhorizons.VillagerEntry) []*newhorizons.Villager {
 	return ret
 }
 
+// Extract unique style and color entries into a single category
 func extractSC(entry newhorizons.VillagerEntry) ([]string, []string) {
 	var style []string
 	var color []string

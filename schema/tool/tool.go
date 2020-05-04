@@ -17,7 +17,7 @@ var tool = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
-		"Variant": &graphql.Field{
+		"Variants": &graphql.Field{
 			Type: graphql.NewList(toolVariant),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Tool); ok {
@@ -98,7 +98,7 @@ var tool = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
-		"Source": &graphql.Field{
+		"Sources": &graphql.Field{
 			Type: graphql.NewList(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Tool); ok {

@@ -67,7 +67,7 @@ var fossilSearchObj = graphql.NewObject(graphql.ObjectConfig{
 				if val, ok := p.Source.([]*newhorizons.Fossil); ok {
 					return val, nil
 				}
-				return nil, fmt.Errorf("fossil_search(): error")
+				return nil, fmt.Errorf("search_fossil(): error")
 			},
 		},
 	},

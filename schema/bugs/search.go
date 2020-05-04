@@ -9,22 +9,22 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var bugSearchObj *graphql.Object
+var searchBugObj *graphql.Object
 
 // RootObject contains the main bug-related queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if bugSearchObj != nil {
-		return bugSearchObj
+	if searchBugObj != nil {
+		return searchBugObj
 	}
 
 	// bug
-	bugSearchObj = graphql.NewObject(graphql.ObjectConfig{
+	searchBugObj = graphql.NewObject(graphql.ObjectConfig{
 		Name:        "bugs",
 		Description: "bug-related query sources",
 		Fields: graphql.Fields{
 			"query": &graphql.Field{
 				Name: "query fields",
-				Type: graphql.NewNonNull(searchBugObj),
+				Type: graphql.NewNonNull(bugSearchObj),
 				Args: graphql.FieldConfigArgument{
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -55,11 +55,11 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return bugSearchObj
+	return searchBugObj
 }
 
-var searchBugObj = graphql.NewObject(graphql.ObjectConfig{
-	Name: "search_bug",
+var bugSearchObj = graphql.NewObject(graphql.ObjectConfig{
+	Name: "bug_search",
 	Fields: graphql.Fields{
 		"bugs": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.NewList(bug)),

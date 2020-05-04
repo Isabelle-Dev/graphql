@@ -5,6 +5,7 @@ import (
 	"github.com/Isabelle-Dev/graphql/newhorizons"
 )
 
+// Converts a slice of PosterEntry into a slice of *Poster
 func toPosterSlice(p []newhorizons.PosterEntry) []*newhorizons.Poster {
 	var ret []*newhorizons.Poster
 	for _, i := range p {

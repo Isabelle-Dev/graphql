@@ -9,22 +9,22 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var clothesSearchObject *graphql.Object
+var searchClothesObj *graphql.Object
 
 // RootObject contains the main clothes-related queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if clothesSearchObject != nil {
-		return clothesSearchObject
+	if searchClothesObj != nil {
+		return searchClothesObj
 	}
 
 	// clothes
-	clothesSearchObject = graphql.NewObject(graphql.ObjectConfig{
+	searchClothesObj = graphql.NewObject(graphql.ObjectConfig{
 		Name:        "clothes",
 		Description: "clothes-related query sources",
 		Fields: graphql.Fields{
 			"query": &graphql.Field{
 				Name: "query fields",
-				Type: graphql.NewNonNull(searchClothesObj),
+				Type: graphql.NewNonNull(clothesSearchObj),
 				Args: graphql.FieldConfigArgument{
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -55,10 +55,10 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return clothesSearchObject
+	return searchClothesObj
 }
 
-var searchClothesObj = graphql.NewObject(graphql.ObjectConfig{
+var clothesSearchObj = graphql.NewObject(graphql.ObjectConfig{
 	Name: "search_clothes",
 	Fields: graphql.Fields{
 		"clothes": &graphql.Field{
@@ -67,7 +67,7 @@ var searchClothesObj = graphql.NewObject(graphql.ObjectConfig{
 				if val, ok := p.Source.([]*newhorizons.Clothes); ok {
 					return val, nil
 				}
-				return nil, fmt.Errorf("search_clothes(): error - not a recognized type")
+				return nil, fmt.Errorf("search_clothes(): error")
 			},
 		},
 	},

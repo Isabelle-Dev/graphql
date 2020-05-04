@@ -5,6 +5,7 @@ import (
 	"github.com/Isabelle-Dev/graphql/newhorizons"
 )
 
+// Converts a slice of RugEntry into a slice of *Rug
 func toRugSlice(rugs []newhorizons.RugEntry) []*newhorizons.Rug {
 	var ret []*newhorizons.Rug
 	for _, i := range rugs {
@@ -14,6 +15,7 @@ func toRugSlice(rugs []newhorizons.RugEntry) []*newhorizons.Rug {
 	return ret
 }
 
+// Extract and combine categories (color and concepts)
 func extractCC(entry newhorizons.RugEntry) ([]string, []string) {
 	var color []string
 	var concept []string

@@ -6,7 +6,7 @@ import (
 )
 
 var clothes = graphql.NewObject(graphql.ObjectConfig{
-	Name: "ClothesResult",
+	Name: "clothesObj",
 	Fields: graphql.Fields{
 		"Name": &graphql.Field{
 			Type: graphql.String,
@@ -104,7 +104,7 @@ var clothesVariant = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
-		"Color": &graphql.Field{
+		"Colors": &graphql.Field{
 			Type: graphql.NewList(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(newhorizons.ClothesVariant); ok {

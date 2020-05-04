@@ -9,22 +9,22 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var constructionSearchObject *graphql.Object
+var searchConstructionObj *graphql.Object
 
 // RootObject contains the main construction-related queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if constructionSearchObject != nil {
-		return constructionSearchObject
+	if searchConstructionObj != nil {
+		return searchConstructionObj
 	}
 
 	// construction
-	constructionSearchObject = graphql.NewObject(graphql.ObjectConfig{
+	searchConstructionObj = graphql.NewObject(graphql.ObjectConfig{
 		Name:        "construction",
 		Description: "construction-related query sources",
 		Fields: graphql.Fields{
 			"query": &graphql.Field{
 				Name: "query fields",
-				Type: graphql.NewNonNull(searchConstructionObj),
+				Type: graphql.NewNonNull(constructionSearchObj),
 				Args: graphql.FieldConfigArgument{
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -55,10 +55,10 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return constructionSearchObject
+	return searchConstructionObj
 }
 
-var searchConstructionObj = graphql.NewObject(graphql.ObjectConfig{
+var constructionSearchObj = graphql.NewObject(graphql.ObjectConfig{
 	Name: "search_construction",
 	Fields: graphql.Fields{
 		"construction": &graphql.Field{

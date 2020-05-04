@@ -18,6 +18,8 @@ func execute(dbStr string, db *gorm.DB) []*newhorizons.Clothes {
 	return toClothesSlice(clothes, db)
 }
 
+// utility func mainly used to combine variant entries into a
+// singular entry
 func findByName(name, tablename string, db *gorm.DB) *newhorizons.Clothes {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()

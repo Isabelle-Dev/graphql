@@ -6,7 +6,7 @@ import (
 )
 
 var floor = graphql.NewObject(graphql.ObjectConfig{
-	Name: "floor",
+	Name: "floorObj",
 	Fields: graphql.Fields{
 		"Name": &graphql.Field{
 			Type: graphql.String,
@@ -62,7 +62,7 @@ var floor = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
-		"Color": &graphql.Field{
+		"Colors": &graphql.Field{
 			Type: graphql.NewList(graphql.String),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Floor); ok {

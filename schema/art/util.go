@@ -6,6 +6,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// Convert a slice of ArtEntry into a slice of *Art
 func toArtSlice(a []newhorizons.ArtEntry, db *gorm.DB) []*newhorizons.Art {
 	dupe := make(map[string]bool, 0)
 	var ret []*newhorizons.Art
@@ -20,6 +21,8 @@ func toArtSlice(a []newhorizons.ArtEntry, db *gorm.DB) []*newhorizons.Art {
 	return ret
 }
 
+// Extract custom ArtType - genuine and fake arts have differing fields for
+// image, sell, genuine status, and concept lists
 func extractType(a []newhorizons.ArtEntry) []newhorizons.ArtType {
 	var at []newhorizons.ArtType
 	for _, entry := range a {

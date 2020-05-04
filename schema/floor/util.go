@@ -5,6 +5,7 @@ import (
 	"github.com/Isabelle-Dev/graphql/newhorizons"
 )
 
+// Converts a FloorEntry slice into a *Floor slice
 func toFloorSlice(floors []newhorizons.FloorEntry) []*newhorizons.Floor {
 	var ret []*newhorizons.Floor
 	for _, i := range floors {
@@ -14,6 +15,9 @@ func toFloorSlice(floors []newhorizons.FloorEntry) []*newhorizons.Floor {
 	return ret
 }
 
+// Combines categorical data together
+//
+// i.e. combine color and concept parameters into a slice
 func buildSchema(entry newhorizons.FloorEntry) ([]string, []string) {
 	var color []string
 	var concept []string

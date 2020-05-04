@@ -9,22 +9,22 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var searchNookMiles *graphql.Object
+var searchNookMilesObj *graphql.Object
 
 // RootObject contains the main nook mile-related queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if searchNookMiles != nil {
-		return searchNookMiles
+	if searchNookMilesObj != nil {
+		return searchNookMilesObj
 	}
 
 	// nook miles
-	searchNookMiles = graphql.NewObject(graphql.ObjectConfig{
+	searchNookMilesObj = graphql.NewObject(graphql.ObjectConfig{
 		Name:        "nookmiles",
 		Description: "nook miles-related query sources",
 		Fields: graphql.Fields{
 			"query": &graphql.Field{
 				Name: "query fields",
-				Type: graphql.NewNonNull(nookmileSearch),
+				Type: graphql.NewNonNull(nookmileSearchObj),
 				Args: graphql.FieldConfigArgument{
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -55,10 +55,10 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return searchNookMiles
+	return searchNookMilesObj
 }
 
-var nookmileSearch = graphql.NewObject(graphql.ObjectConfig{
+var nookmileSearchObj = graphql.NewObject(graphql.ObjectConfig{
 	Name: "nookmile_search",
 	Fields: graphql.Fields{
 		"nook_mile": &graphql.Field{

@@ -6,7 +6,7 @@ import (
 )
 
 var item = graphql.NewObject(graphql.ObjectConfig{
-	Name: "ItemResult",
+	Name: "itemObj",
 	Fields: graphql.Fields{
 		"Name": &graphql.Field{
 			Type: graphql.String,

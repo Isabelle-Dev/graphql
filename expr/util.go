@@ -38,6 +38,7 @@ func addQuote(str string) string {
 	str = strings.ReplaceAll(str, "_", " ")
 	str = strings.TrimSpace(str)
 	if _, err := strconv.Atoi(str); err == nil {
+		// we don't add quotes around numbers
 		return str
 	}
 	return "'" + str + "'"

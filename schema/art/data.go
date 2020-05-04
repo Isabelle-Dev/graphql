@@ -5,6 +5,8 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// execute runs a raw SQL query string and returns a slice of
+// newhorizons type which match the query criteria
 func execute(dbStr string, db *gorm.DB) []*newhorizons.Art {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
@@ -16,6 +18,8 @@ func execute(dbStr string, db *gorm.DB) []*newhorizons.Art {
 	return toArtSlice(art, db)
 }
 
+// Utility database func mainly used to return a singular object from
+// multiple variants
 func findByName(name, tablename string, db *gorm.DB) *newhorizons.Art {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()

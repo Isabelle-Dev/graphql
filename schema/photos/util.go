@@ -6,6 +6,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// Converts a slice of PhotoEntry into a slice of *Photo
 func toPhotoSlice(p []newhorizons.PhotoEntry, db *gorm.DB) []*newhorizons.Photo {
 	dupe := make(map[string]bool)
 	var ret []*newhorizons.Photo
@@ -20,6 +21,9 @@ func toPhotoSlice(p []newhorizons.PhotoEntry, db *gorm.DB) []*newhorizons.Photo 
 	return ret
 }
 
+// Extract variant data from variants of a single item
+//
+// e.g. an item can have multiple images, variation, and colors
 func extractV(p []newhorizons.PhotoEntry) []newhorizons.Variant {
 	var v []newhorizons.Variant
 	for _, entry := range p {

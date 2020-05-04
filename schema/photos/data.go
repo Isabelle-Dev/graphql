@@ -5,6 +5,8 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// execute runs a raw SQL query string and returns a slice of
+// newhorizons type which match the query criteria
 func execute(dbStr string, db *gorm.DB) []*newhorizons.Photo {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
@@ -16,6 +18,8 @@ func execute(dbStr string, db *gorm.DB) []*newhorizons.Photo {
 	return toPhotoSlice(photos, db)
 }
 
+// findByName retrieves an entry from the photo table by
+// a given name
 func findByName(name, tablename string, db *gorm.DB) *newhorizons.Photo {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()

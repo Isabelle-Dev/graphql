@@ -6,7 +6,7 @@ import (
 )
 
 var nookmile = graphql.NewObject(graphql.ObjectConfig{
-	Name: "nook_mileObj",
+	Name: "nookmileObj",
 	Fields: graphql.Fields{
 		"Name": &graphql.Field{
 			Type: graphql.String,

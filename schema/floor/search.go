@@ -9,16 +9,16 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var searchFloorObject *graphql.Object
+var searchFloorObj *graphql.Object
 
 // RootObject contains the main floor-related queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if searchFloorObject != nil {
-		return searchFloorObject
+	if searchFloorObj != nil {
+		return searchFloorObj
 	}
 
 	// flooring
-	searchFloorObject = graphql.NewObject(graphql.ObjectConfig{
+	searchFloorObj = graphql.NewObject(graphql.ObjectConfig{
 		Name:        "flooring",
 		Description: "flooring-related query sources",
 		Fields: graphql.Fields{
@@ -55,7 +55,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return searchFloorObject
+	return searchFloorObj
 }
 
 var floorSearchObj = graphql.NewObject(graphql.ObjectConfig{

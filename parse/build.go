@@ -7,12 +7,8 @@ import (
 	"github.com/Isabelle-Dev/graphql/expr"
 )
 
-// BuildQuery builds a SQL query string from separated user query
-//
-// E.g. name:"Bob"
-//
-// Will return a map where the key is 'name'
-// and the value is "Bob"
+// BuildQuery builds a SQL query string from separated user query returned in
+// QueryParse
 func BuildQuery(vals map[string]string, tablename string, limit int, globSearch string) string {
 	lim := strconv.Itoa(limit)
 	if len(vals) == 0 {

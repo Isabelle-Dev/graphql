@@ -67,7 +67,7 @@ var umbrellaSearchObj = graphql.NewObject(graphql.ObjectConfig{
 				if val, ok := p.Source.([]*newhorizons.Umbrella); ok {
 					return val, nil
 				}
-				return nil, fmt.Errorf("umbrella_search(): error")
+				return nil, fmt.Errorf("search_umbrella(): error")
 			},
 		},
 	},

@@ -47,9 +47,9 @@ func precedence(op string) int {
 
 // Parse parses the input string as a query expression.
 //
-//   expr = num                         a literal string, e.g. (hello)
-//        | '-' expr                    a unary operator (>, <)
-//        | expr '+' expr               a binary operator (AND, OR)
+//   expr = string                      a literal string, e.g. (hello)
+//        | '<' expr                    a unary operator (>, <, >=, <=)
+//        | expr 'AND/OR' expr          a binary operator (AND, OR)
 //
 func Parse(input string) (_ Expr, err error) {
 	defer func() {

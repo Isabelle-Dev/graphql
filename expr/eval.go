@@ -17,6 +17,7 @@ type Env map[string]string
 func (l Literal) Eval(env Env) string {
 	ret := strings.ToLower(string(l))
 	if index := strings.Index(ret, "'"); index != -1 {
+		// embedded single quotes in string must be escaped
 		ret = strings.ReplaceAll(ret, "'", "''")
 	}
 	return addName(addQuote(ret), env)
@@ -24,7 +25,7 @@ func (l Literal) Eval(env Env) string {
 
 // Eval (Binary) evaluates binary part queries
 //
-// e.g.
+// e.g. (color = 'red') OR (color = 'green')
 func (b Binary) Eval(env Env) string {
 	switch b.Op {
 	case "OR":
@@ -45,6 +46,7 @@ func (u Unary) Eval(env Env) string {
 	case "<":
 		str := strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", "<")
 		if env["name"] == "buy" {
+			// we only show valid buy objects
 			str += " AND buy > 0"
 		}
 		return str
@@ -54,6 +56,7 @@ func (u Unary) Eval(env Env) string {
 	case "<=":
 		str := strings.ReplaceAll(strings.ReplaceAll(u.X.Eval(env), "_", ""), "=", "<=")
 		if env["name"] == "buy" {
+			// we only show valid buy objects
 			str += " AND buy > 0"
 		}
 		return str

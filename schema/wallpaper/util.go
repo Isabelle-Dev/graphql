@@ -33,7 +33,7 @@ func buildSchema(w newhorizons.WallpaperEntry) (newhorizons.VFXT, newhorizons.Wi
 	return vfx, win, cur, color, concepts
 }
 
-// turns WallpaperEntry into Wallpaper
+// Converts a slice of WallpaperEntry into a slice of *Wallpaper
 func toWallpaperSlice(w []newhorizons.WallpaperEntry) []*newhorizons.Wallpaper {
 	var ret []*newhorizons.Wallpaper
 	for _, i := range w {

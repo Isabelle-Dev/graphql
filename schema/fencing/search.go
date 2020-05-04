@@ -9,16 +9,16 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var searchFenceObject *graphql.Object
+var searchFenceObj *graphql.Object
 
 // RootObject contains the main fencing-related queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if searchFenceObject != nil {
-		return searchFenceObject
+	if searchFenceObj != nil {
+		return searchFenceObj
 	}
 
 	// fence
-	searchFenceObject = graphql.NewObject(graphql.ObjectConfig{
+	searchFenceObj = graphql.NewObject(graphql.ObjectConfig{
 		Name:        "fencing",
 		Description: "fence-related query sources",
 		Fields: graphql.Fields{
@@ -55,7 +55,7 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return searchFenceObject
+	return searchFenceObj
 }
 
 var fenceSearchObj = graphql.NewObject(graphql.ObjectConfig{

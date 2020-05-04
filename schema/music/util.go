@@ -5,6 +5,7 @@ import (
 	"github.com/Isabelle-Dev/graphql/newhorizons"
 )
 
+// Converts a slice of MusicEntry into a slice of *Music
 func toMusicSlice(m []newhorizons.MusicEntry) []*newhorizons.Music {
 	var ret []*newhorizons.Music
 	for _, i := range m {
@@ -14,6 +15,7 @@ func toMusicSlice(m []newhorizons.MusicEntry) []*newhorizons.Music {
 	return ret
 }
 
+// Extract and combine unique color info from a MusicEntry
 func extractC(m newhorizons.MusicEntry) []string {
 	var ret []string
 	ret = append(ret, m.Color1)

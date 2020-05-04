@@ -8,6 +8,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// Convert a slice of ClothesEntry into a slice of *Clothes
 func toClothesSlice(clothes []newhorizons.ClothesEntry, db *gorm.DB) []*newhorizons.Clothes {
 	dupe := make(map[string]bool, 0)
 	var ret []*newhorizons.Clothes
@@ -22,6 +23,9 @@ func toClothesSlice(clothes []newhorizons.ClothesEntry, db *gorm.DB) []*newhoriz
 	return ret
 }
 
+// Extract color, ClothesVariant, and theme data from a slice of ClothesEntry.
+//
+// This is mainly used to combine variant data into a singular object
 func extractVT(c []newhorizons.ClothesEntry) ([]newhorizons.ClothesVariant, []string) {
 	var v []newhorizons.ClothesVariant
 	for _, entry := range c {

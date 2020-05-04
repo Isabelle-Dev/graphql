@@ -5,6 +5,7 @@ import (
 	"github.com/Isabelle-Dev/graphql/newhorizons"
 )
 
+// Convert a slice of UmbrellaEntry into a slice of *Umbrella
 func toUmbrellaSlice(u []newhorizons.UmbrellaEntry) []*newhorizons.Umbrella {
 	var ret []*newhorizons.Umbrella
 	for _, i := range u {
@@ -14,6 +15,7 @@ func toUmbrellaSlice(u []newhorizons.UmbrellaEntry) []*newhorizons.Umbrella {
 	return ret
 }
 
+// Extract unique color data into a single category
 func extractC(u newhorizons.UmbrellaEntry) []string {
 	var ret []string
 	ret = append(ret, u.Color1)

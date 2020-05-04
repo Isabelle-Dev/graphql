@@ -23,8 +23,6 @@ Read the API documentation [here](#documentation)!
 - If you're new to GraphQL, I suggest you read all the Doc pages
 - If you've used GraphQL before, you can skip the GraphQL Doc
 
-**I'm still setting up the Linux server (and coding), so not all features are available yet! Refer to the Server Database Status for updates.**
-
 ## Table of Contents
 
 - [Server Database Status](#server-database-status)
@@ -33,7 +31,6 @@ Read the API documentation [here](#documentation)!
 - [Documentation](#documentation)
 - [Example Queries](#example-queries)
 - [cURL](#curl)
-- [Bugs](#bugs)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -57,8 +54,8 @@ Read the API documentation [here](#documentation)!
 | Rug                | :heavy_check_mark:    | Rug Entries                      |
 | Tools              | :heavy_check_mark:    | Tool Entries                     |
 | Villager           | :heavy_check_mark:    | Villager Entries                 |
-| Bugs               | :heavy_check_mark:    | Bug Entries                      |
-| Fishes             | :heavy_check_mark:    | Fish Entries                     |
+| Bugs               | :warning:             | Bug Entries                      |
+| Fishes             | :warning:             | Fish Entries                     |
 | Fossils            | :heavy_check_mark:    | Fossil Entries                   |
 | Fencing            | :heavy_check_mark:    | Fence Entries                    |
 | Umbrellas          | :heavy_check_mark:    | Umbrellas                        |
@@ -71,8 +68,8 @@ Read the API documentation [here](#documentation)!
 
 Want to host the server yourself?
 
-- `go get -u github.com/Isabelle-Dev/graphql`
-- Setup PostgreSQL
+- Run `go get -u github.com/Isabelle-Dev/graphql` in terminal
+- Setup [PostgreSQL](https://www.postgresql.org/)
 - Create and configure `.config` file using `example.config` as template
 - Import data using `csv` files
 - `go build -o graphql.exe`
@@ -104,7 +101,7 @@ The endpoint itself renders GraphiQL - a GraphQL IDE.
 ```graphql
 query FloorDemo {
   floor {
-    query(query: "buy:\"<= 3000 AND > 2000\" color:\"gray AND beige\"") {
+    query(query: "buy:\"<= 3000 AND > 2000\" color:\"gray AND beige\"", limit: 3) {
       floors {
         Color
         Catalog
@@ -125,7 +122,7 @@ query FloorDemo {
 ```graphql
 query ItemDemo {
   item {
-    query(query: " name:\"leaf\" tag:\"plant\" color:\"orange\" ", glob:"t", limit: 30) {
+    query(query: " name:\"leaf\" tag:\"plant\" color:\"orange\" ", glob:"t") {
       items {
         Name
         Buy
@@ -180,18 +177,9 @@ Example **cURL** queries can be found in `post.json` and `post.graphql`. I do no
 
 `curl -H "Content-type:application/graphql" --data @post.graphql https://acnhgraphql.com`
 
-## Bugs
-
-Oops, bugs are unintentional (I promise!). If you find one, please open an issue with a description of what the bug is.
-
 ## Contributing
 
-If you would like to help develop, follow the steps below:
-
-- Fork the repo
-- Create your own feature branch
-- Commit your changes and push to the new branch
-- Open a pull request
+See [CONTRIBUTING](/CONTRIBUTING.md) for more details.
 
 ## License
 

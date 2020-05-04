@@ -9,22 +9,22 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var rugSearchObj *graphql.Object
+var searchRugObj *graphql.Object
 
 // RootObject for rug-related type queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if rugSearchObj != nil {
-		return rugSearchObj
+	if searchRugObj != nil {
+		return searchRugObj
 	}
 
 	// rug
-	rugSearchObj = graphql.NewObject(graphql.ObjectConfig{
+	searchRugObj = graphql.NewObject(graphql.ObjectConfig{
 		Name:        "rug",
 		Description: "Rug-related query sources",
 		Fields: graphql.Fields{
 			"query": &graphql.Field{
 				Name: "query fields",
-				Type: graphql.NewNonNull(searchRugObj),
+				Type: graphql.NewNonNull(rugSearchObj),
 				Args: graphql.FieldConfigArgument{
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -55,10 +55,10 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return rugSearchObj
+	return searchRugObj
 }
 
-var searchRugObj = graphql.NewObject(graphql.ObjectConfig{
+var rugSearchObj = graphql.NewObject(graphql.ObjectConfig{
 	Name: "rug_search",
 	Fields: graphql.Fields{
 		"rugs": &graphql.Field{

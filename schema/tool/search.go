@@ -11,7 +11,7 @@ import (
 
 var searchToolObj *graphql.Object
 
-// RootObject for photo-related type queries
+// RootObject for tool-related type queries
 func RootObject(db *gorm.DB) *graphql.Object {
 	if searchToolObj != nil {
 		return searchToolObj

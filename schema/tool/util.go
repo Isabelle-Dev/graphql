@@ -7,6 +7,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// Convert a slice of ToolEntry into a slice of *Tool
 func toToolSlice(t []newhorizons.ToolEntry, db *gorm.DB) []*newhorizons.Tool {
 	dupe := make(map[string]bool, 0)
 	var ret []*newhorizons.Tool
@@ -21,6 +22,7 @@ func toToolSlice(t []newhorizons.ToolEntry, db *gorm.DB) []*newhorizons.Tool {
 	return ret
 }
 
+// Extract and combine variant data into a singular category
 func extractVS(t []newhorizons.ToolEntry) ([]newhorizons.ToolVariant, []string) {
 	var v []newhorizons.ToolVariant
 	for _, entry := range t {

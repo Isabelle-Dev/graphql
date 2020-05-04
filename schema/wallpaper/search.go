@@ -9,21 +9,21 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var wallpaperSearchObj *graphql.Object
+var searchWallpaperObj *graphql.Object
 
 // RootObject (wallpaper) contains wallpaper-related search queries
 func RootObject(db *gorm.DB) *graphql.Object {
-	if wallpaperSearchObj != nil {
-		return wallpaperSearchObj
+	if searchWallpaperObj != nil {
+		return searchWallpaperObj
 	}
 
-	wallpaperSearchObj = graphql.NewObject(graphql.ObjectConfig{
+	searchWallpaperObj = graphql.NewObject(graphql.ObjectConfig{
 		Name:        "wallpapers",
 		Description: "Wallpaper-related query sources",
 		Fields: graphql.Fields{
 			"query": &graphql.Field{
 				Name: "query fields",
-				Type: graphql.NewNonNull(searchWallpaperObj),
+				Type: graphql.NewNonNull(wallpaperSearchObj),
 				Args: graphql.FieldConfigArgument{
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
@@ -54,11 +54,11 @@ func RootObject(db *gorm.DB) *graphql.Object {
 		},
 	})
 
-	return wallpaperSearchObj
+	return searchWallpaperObj
 }
 
-var searchWallpaperObj = graphql.NewObject(graphql.ObjectConfig{
-	Name: "search_wallpaper",
+var wallpaperSearchObj = graphql.NewObject(graphql.ObjectConfig{
+	Name: "wallpaper_search",
 	Fields: graphql.Fields{
 		"wallpapers": &graphql.Field{
 			Type: graphql.NewNonNull(graphql.NewList(graphql.NewNonNull(wallpaper))),
