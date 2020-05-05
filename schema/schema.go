@@ -17,6 +17,7 @@ import (
 	"github.com/Isabelle-Dev/graphql/schema/other"
 	"github.com/Isabelle-Dev/graphql/schema/photos"
 	"github.com/Isabelle-Dev/graphql/schema/poster"
+	"github.com/Isabelle-Dev/graphql/schema/reaction"
 	rug "github.com/Isabelle-Dev/graphql/schema/rugs"
 	"github.com/Isabelle-Dev/graphql/schema/tool"
 	"github.com/Isabelle-Dev/graphql/schema/umbrella"
@@ -177,6 +178,13 @@ func init() {
 			"fossil": &graphql.Field{
 				Description: "Fossil-related queries",
 				Type:        fossil.RootObject(db),
+				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+					return map[string]interface{}{}, nil
+				},
+			},
+			"reaction": &graphql.Field{
+				Description: "Reaction-related queries",
+				Type:        reaction.RootObject(db),
 				Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 					return map[string]interface{}{}, nil
 				},

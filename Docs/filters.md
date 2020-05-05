@@ -40,6 +40,7 @@ color codes in the database.
 - [Bug](#bug)
 - [Fish](#fish)
 - [Fossil](#fossil)
+- [Reactions](#reactions)
 
 ### Item
 
@@ -203,3 +204,8 @@ color codes in the database.
 - `sell` - sell price in bells
 - `color` - color of fossil
 - `interact` - interact status (`yes` or `no`)
+
+### Reactions
+
+- `name` - Name
+- `source` - villager personality you get reaction from

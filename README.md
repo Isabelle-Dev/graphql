@@ -62,6 +62,7 @@ Read the API documentation [here](#documentation)!
 | Art                | :heavy_check_mark:    | Art Entries                      |
 | Construction       | :heavy_check_mark:    | Construction Project Entries     |
 | Nook Miles         | :heavy_check_mark:    | Nook Miles Options               |
+| Reactions          | :heavy_check_mark:    | Reaction Types                   |
 | Other              | :heavy_check_mark:    | Other Misc. Entries              |
 
 Check [issues](https://github.com/Isabelle-Dev/graphql/issues) for detailed descriptions on **TO BE UPDATED** tables.

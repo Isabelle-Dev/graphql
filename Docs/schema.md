@@ -26,6 +26,7 @@ Further info on graphql types and schemas can be found [here](https://graphql.or
 - [Bug](#bug)
 - [Fish](#fish)
 - [Fossil](#fossil)
+- [Reactions](#reactions)
 
 ## Root
 
@@ -637,6 +638,28 @@ type fossilObj {
   Interact: String
   Name: String
   Sell: Int
+  Source: String
+}
+```
+
+## Reactions
+
+```graphql
+type reaction {
+  query(query: String, glob: String = "f", limit: Int = 500): reaction_search!
+}
+```
+
+```graphql
+type reaction_search {
+  reaction: [reactionObj]!
+}
+```
+
+```graphql
+type reactionObj {
+  Name: String
+  Image: String
   Source: String
 }
 ```
