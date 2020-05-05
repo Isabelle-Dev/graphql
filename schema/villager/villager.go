@@ -26,6 +26,24 @@ var villager = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
+		"HouseImage": &graphql.Field{
+			Type: graphql.String,
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.(*newhorizons.Villager); ok {
+					return val.HouseImage, nil
+				}
+				return nil, nil
+			},
+		},
+		"Hobby": &graphql.Field{
+			Type: graphql.String,
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.(*newhorizons.Villager); ok {
+					return val.Hobby, nil
+				}
+				return nil, nil
+			},
+		},
 		"Species": &graphql.Field{
 			Type: graphql.String,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {

@@ -5,6 +5,8 @@ package newhorizons
 type Villager struct {
 	Name        string
 	Image       string
+	HouseImage  string
+	Hobby       string
 	Species     string
 	Gender      string
 	Personality string
@@ -18,6 +20,8 @@ type Villager struct {
 type VillagerEntry struct {
 	Name        string
 	Image       string
+	HouseImage  string `gorm:"column:houseimage"`
+	Hobby       string
 	Species     string
 	Gender      string
 	Personality string
@@ -35,6 +39,8 @@ func (ve VillagerEntry) ToGraphQL(s, c []string) *Villager {
 	return &Villager{
 		Name:        ve.Name,
 		Image:       ve.Image,
+		HouseImage:  ve.HouseImage,
+		Hobby:       ve.Hobby,
 		Species:     ve.Species,
 		Gender:      ve.Gender,
 		Personality: ve.Personality,
