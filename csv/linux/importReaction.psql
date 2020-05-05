@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS reaction (
+	Name character varying(50),
+	Image character varying(100),
+	Source character varying(30)
+);
+
+COPY reaction (Name, Image, Source)
+FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;
