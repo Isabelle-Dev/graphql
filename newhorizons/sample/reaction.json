@@ -1,0 +1,15 @@
+{
+  "data": {
+    "reaction": {
+      "query": {
+        "reactions": [
+          {
+            "Image": "https://acnhcdn.com/latest/ManpuIcon/Outraged.png",
+            "Name": "aggravation",
+            "Source": "peppy"
+          }
+        ]
+      }
+    }
+  }
+}
