@@ -652,14 +652,14 @@ type reaction {
 
 ```graphql
 type reaction_search {
-  reaction: [reactionObj]!
+  reactions: [reactionObj]!
 }
 ```
 
 ```graphql
 type reactionObj {
-  Name: String
   Image: String
+  Name: String
   Source: String
 }
 ```
