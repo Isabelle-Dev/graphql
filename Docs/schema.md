@@ -364,6 +364,8 @@ type villagerObj {
   Catchphrase: String
   Colors: [String]
   Gender: String
+  Hobby: String
+  HouseImage: String
   Image: String
   Name: String
   Personality: String

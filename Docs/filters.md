@@ -128,6 +128,7 @@ color codes in the database.
 - `species` - villager species
 - `gender` - villager gender
 - `personality` - villager personality
+- `hobby` - villager's hobby
 - `style` - villager dressing style
 - `color` - villager color codes
 - `month` - villager birthday month
