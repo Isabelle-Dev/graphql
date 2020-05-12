@@ -206,7 +206,9 @@ is mainly used to specify the month which to return the available times the bug 
 
 The default value will return all times for the particular bug or fish entry.
 
-For example,
+`month` values should be shortened to three character abbreviations. For example, **January** should be represented as **Jan**.
+
+The following query,
 
 ```graphql
 query DemoFish {
