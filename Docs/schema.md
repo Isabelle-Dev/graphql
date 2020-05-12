@@ -562,7 +562,7 @@ type otherObj {
 
 ```graphql
 type bugs {
-  query(query: String, glob: String = "f", limit: Int = 500): bug_search!
+  query(query: String, month: String = "all", glob: String = "f", limit: Int = 500): bug_search!
 }
 ```
 
@@ -575,14 +575,20 @@ type bug_search {
 ```graphql
 type bugObj {
   Colors: [String]
-  EndTime: String
   Image: String
   Location: String
+  MonthTime: [month_bug]
   Name: String
-  Rarity: String
   Sell: Int
-  StartTime: String
+  TotalCatches: Int
   Weather: String
+}
+```
+
+```graphql
+type month_bug {
+  Month: String
+  Time: String
 }
 ```
 
@@ -590,7 +596,7 @@ type bugObj {
 
 ```graphql
 type fishes {
-  query(query: String, glob: String = "f", limit: Int = 500): fish_search!
+  query(query: String, month: String = "all", glob: String = "f", limit: Int = 500): fish_search!
 }
 ```
 
@@ -604,14 +610,20 @@ type fish_search {
 type fishObj {
   CatchUp: String
   Colors: [String]
-  EndTime: String
   Image: String
   Location: String
+  MonthTime: [month_fish]
   Name: String
-  Rarity: String
   Sell: Int
   Shadow: String
-  StartTime: String
+  TotalCatches: Int
+}
+```
+
+```graphql
+type month_fish {
+  Month: String
+  Time: String
 }
 ```
 

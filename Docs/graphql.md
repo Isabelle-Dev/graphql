@@ -48,6 +48,8 @@ type villagerObj {
   Catchphrase: String
   Colors: [String]
   Gender: String
+  Hobby: String
+  HouseImage: String
   Image: String
   Name: String
   Personality: String
@@ -56,7 +58,7 @@ type villagerObj {
 }
 ```
 
-Now we know that there are **eight** other query fields we can use.
+Now we know that there are **ten** other query fields we can use.
 
 For example, we can query for a villager's name, species, and gender at the same time.
 

@@ -112,10 +112,11 @@ For example, `query: "color: \"(blue OR white) AND purple\"  buy: \">= 6000\"  "
 
 ## Optionals
 
-The server recognizes two optional parameters:
+The server recognizes the following optional parameters:
 
 - `glob`
 - `limit`
+- `month`
 
 ### Glob
 
@@ -190,6 +191,76 @@ will return the following response:
         "items": [
           {
             "Name": "coffee cup"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+### Month
+
+**Month** is a special optional parameter that only shows up on **bug** and **fish** table querying. This parameter
+is mainly used to specify the month which to return the available times the bug or fish is available.
+
+The default value will return all times for the particular bug or fish entry.
+
+For example,
+
+```graphql
+query DemoFish {
+  fishes {
+    query(query: "name: \"arapaima\"", month: "Jun") {
+      fishes {
+        Name
+        MonthTime {
+          Month
+          Time
+        }
+        Colors
+        CatchUp
+        Sell
+        Shadow
+        Image
+        Location
+        TotalCatches
+      }
+    }
+  }
+}
+```
+
+will return the following response:
+
+```json
+{
+  "data": {
+    "fishes": {
+      "query": {
+        "fishes": [
+          {
+            "CatchUp": "yes",
+            "Colors": [
+              "black",
+              "blue"
+            ],
+            "Image": "https://acnhcdn.com/latest/MenuIcon/Fish36.png",
+            "Location": "river",
+            "MonthTime": [
+              {
+                "Month": "NH Jun",
+                "Time": "4 PM to 9 AM"
+              },
+              {
+                "Month": "SH Jun",
+                "Time": "NA"
+              }
+            ],
+            "Name": "arapaima",
+            "Sell": 10000,
+            "Shadow": "xx-large",
+            "TotalCatches": 50
           }
         ]
       }

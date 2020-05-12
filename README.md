@@ -54,8 +54,8 @@ Read the API documentation [here](#documentation)!
 | Rug                | :heavy_check_mark:    | Rug Entries                      |
 | Tools              | :heavy_check_mark:    | Tool Entries                     |
 | Villager           | :warning:             | Villager Entries                 |
-| Bugs               | :warning:             | Bug Entries                      |
-| Fishes             | :warning:             | Fish Entries                     |
+| Bugs               | :heavy_check_mark:    | Bug Entries                      |
+| Fishes             | :heavy_check_mark:    | Fish Entries                     |
 | Fossils            | :heavy_check_mark:    | Fossil Entries                   |
 | Fencing            | :heavy_check_mark:    | Fence Entries                    |
 | Umbrellas          | :heavy_check_mark:    | Umbrellas                        |

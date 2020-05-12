@@ -176,27 +176,17 @@ color codes in the database.
 
 - `name` - Name
 - `sell` - sell price in bells
-- `rarity` - rarity status
 - `color` - color of bug
-
-**Special: Month Status**
-
-- `NHJan` ~ `NHDec` - `yes` or `no`
-- `SHJan` ~ `SHDec` - `yes` or `no`
+- `totalcatches` - minimum total catches to unlock
 
 ### Fish
 
 - `name` - Name
 - `sell` - sell price in bells
-- `rarity` - rarity status
 - `color` - color of fish
 - `catchup` - `yes` or `no`
 - `shadow` - fish shadow size in water
-
-**Special: Month Status**
-
-- `NHJan` ~ `NHDec` - `yes` or `no`
-- `SHJan` ~ `SHDec` - `yes` or `no`
+- `totalcatches` - minimum total catches to unlock
 
 ### Fossil
 

@@ -5,301 +5,669 @@
         "fishes": [
           {
             "CatchUp": "no",
-            "Color": [
-              "blue",
-              "red"
-            ],
-            "EndTime": "9:00 PM",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishAntyobiCropped.png",
-            "Location": "sea",
-            "Name": "anchovy",
-            "Rarity": "common",
-            "Sell": 200,
-            "Shadow": "small",
-            "StartTime": "4:00 AM"
-          },
-          {
-            "CatchUp": "yes",
-            "Color": [
-              "black",
-              "blue"
-            ],
-            "EndTime": "9:00 AM",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishPirarukuCropped.png",
-            "Location": "river",
-            "Name": "arapaima",
-            "Rarity": "rare",
-            "Sell": 10000,
-            "Shadow": "xx-large",
-            "StartTime": "4:00 PM"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "light blue",
-              "blue"
-            ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishTanagoCropped.png",
-            "Location": "river",
-            "Name": "bitterling",
-            "Rarity": "common",
-            "Sell": 900,
-            "Shadow": "x-small",
-            "StartTime": "All day"
-          },
-          {
-            "CatchUp": "yes",
-            "Color": [
-              "blue",
+            "Colors": [
+              "green",
               "black"
             ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishKajikiCropped.png",
-            "Location": "pier",
-            "Name": "blue marlin",
-            "Rarity": "rare",
-            "Sell": 10000,
-            "Shadow": "xx-large",
-            "StartTime": "All day"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "blue",
-              "black"
-            ],
-            "EndTime": "4:00 PM",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishBlueguillCropped.png",
+            "Image": "https://acnhcdn.com/latest/MenuIcon/Fish19.png",
             "Location": "river",
-            "Name": "bluegill",
-            "Rarity": "common",
-            "Sell": 180,
-            "Shadow": "small",
-            "StartTime": "9:00 AM"
-          },
-          {
-            "CatchUp": "yes",
-            "Color": [
-              "blue"
+            "MonthTime": [
+              {
+                "Month": "NH Jan",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Feb",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Mar",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Apr",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH May",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Jun",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Jul",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Aug",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Sep",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Oct",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Nov",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Dec",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Jan",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Feb",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Mar",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Apr",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH May",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Jun",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Jul",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Aug",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Sep",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Oct",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Nov",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Dec",
+                "Time": "All day"
+              }
             ],
-            "EndTime": "9:00 AM",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishSameCropped.png",
-            "Location": "sea",
-            "Name": "great white shark",
-            "Rarity": "rare",
-            "Sell": 15000,
-            "Shadow": "large w/fin",
-            "StartTime": "4:00 PM"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "blue",
-              "black"
-            ],
-            "EndTime": "4:00 PM",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishGuppiCropped.png",
-            "Location": "river",
-            "Name": "guppy",
-            "Rarity": "common",
-            "Sell": 1300,
-            "Shadow": "x-small",
-            "StartTime": "9:00 AM"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "blue",
-              "black"
-            ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishAjiCropped.png",
-            "Location": "sea",
-            "Name": "horse mackerel",
-            "Rarity": "common",
-            "Sell": 150,
-            "Shadow": "small",
-            "StartTime": "All day"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "brown",
-              "blue"
-            ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishDojouCropped.png",
-            "Location": "river",
-            "Name": "loach",
-            "Rarity": "common",
+            "Name": "black bass",
             "Sell": 400,
-            "Shadow": "small",
-            "StartTime": "All day"
+            "Shadow": "large",
+            "TotalCatches": 0
           },
           {
             "CatchUp": "no",
-            "Color": [
-              "black",
-              "blue"
-            ],
-            "EndTime": "9:00 AM",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishSyanhaiganiCropped.png",
-            "Location": "river",
-            "Name": "mitten crab",
-            "Rarity": "uncommon",
-            "Sell": 2000,
-            "Shadow": "small",
-            "StartTime": "4:00 PM"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "brown",
-              "blue"
-            ],
-            "EndTime": "4:00 PM",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishDokutaafishCropped.png",
-            "Location": "river",
-            "Name": "nibble fish",
-            "Rarity": "uncommon",
-            "Sell": 1500,
-            "Shadow": "x-small",
-            "StartTime": "9:00 AM"
-          },
-          {
-            "CatchUp": "yes",
-            "Color": [
-              "red",
-              "blue"
-            ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishRyuuguunotukaiCropped.png",
-            "Location": "sea",
-            "Name": "oarfish",
-            "Rarity": "rare",
-            "Sell": 9000,
-            "Shadow": "xx-large",
-            "StartTime": "All day"
-          },
-          {
-            "CatchUp": "yes",
-            "Color": [
-              "blue",
-              "orange"
-            ],
-            "EndTime": "9:00 PM",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishManbouCropped.png",
-            "Location": "sea",
-            "Name": "ocean sunfish",
-            "Rarity": "uncommon",
-            "Sell": 4000,
-            "Shadow": "large w/fin",
-            "StartTime": "4:00 AM"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "blue"
-            ],
-            "EndTime": "4:00 PM",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishOikawaCropped.png",
-            "Location": "river",
-            "Name": "pale chub",
-            "Rarity": "common",
-            "Sell": 200,
-            "Shadow": "x-small",
-            "StartTime": "9:00 AM"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "orange",
-              "blue"
-            ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishWakasagiCropped.png",
-            "Location": "river",
-            "Name": "pond smelt",
-            "Rarity": "common",
-            "Sell": 400,
-            "Shadow": "small",
-            "StartTime": "All day"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "blue",
+            "Colors": [
+              "green",
               "black"
             ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishHanahigeutuboCropped.png",
-            "Location": "sea",
-            "Name": "ribbon eel",
-            "Rarity": "common",
-            "Sell": 600,
-            "Shadow": "long",
-            "StartTime": "All day"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "blue",
-              "black"
-            ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishNanyouhagiCropped.png",
-            "Location": "sea",
-            "Name": "surgeonfish",
-            "Rarity": "common",
-            "Sell": 1000,
-            "Shadow": "small",
-            "StartTime": "All day"
-          },
-          {
-            "CatchUp": "no",
-            "Color": [
-              "black",
-              "blue"
-            ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishOtamajakusiCropped.png",
+            "Image": "https://acnhcdn.com/latest/MenuIcon/Fish11.png",
             "Location": "pond",
-            "Name": "tadpole",
-            "Rarity": "common",
-            "Sell": 100,
-            "Shadow": "x-small",
-            "StartTime": "All day"
+            "MonthTime": [
+              {
+                "Month": "NH Jan",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Feb",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Mar",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Apr",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH May",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Jun",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Jul",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Aug",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Sep",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Oct",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Nov",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Dec",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jan",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Feb",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Mar",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Apr",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH May",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jun",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jul",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Aug",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Sep",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Oct",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Nov",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Dec",
+                "Time": "All day"
+              }
+            ],
+            "Name": "frog",
+            "Sell": 120,
+            "Shadow": "small",
+            "TotalCatches": 0
           },
           {
-            "CatchUp": "yes",
-            "Color": [
-              "blue",
+            "CatchUp": "no",
+            "Colors": [
+              "green",
               "black"
             ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishMaguroCropped.png",
-            "Location": "pier",
-            "Name": "tuna",
-            "Rarity": "rare",
-            "Sell": 7000,
-            "Shadow": "xx-large",
-            "StartTime": "All day"
+            "Image": "https://acnhcdn.com/latest/MenuIcon/Fish20.png",
+            "Location": "river",
+            "MonthTime": [
+              {
+                "Month": "NH Jan",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Feb",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Mar",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Apr",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH May",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Jun",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Jul",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Aug",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Sep",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Oct",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Nov",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Dec",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Jan",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Feb",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Mar",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Apr",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH May",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Jun",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Jul",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Aug",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Sep",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Oct",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Nov",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Dec",
+                "Time": "NA"
+              }
+            ],
+            "Name": "pike",
+            "Sell": 1800,
+            "Shadow": "x-large",
+            "TotalCatches": 20
           },
           {
-            "CatchUp": "yes",
-            "Color": [
-              "black",
-              "blue"
+            "CatchUp": "no",
+            "Colors": [
+              "green",
+              "black"
             ],
-            "EndTime": "All day",
-            "Image": "https://acnhcdn.com/latest/BookFishIcon/FishJinbeezameCropped.png",
-            "Location": "sea",
-            "Name": "whale shark",
-            "Rarity": "rare",
-            "Sell": 13000,
-            "Shadow": "large w/fin",
-            "StartTime": "All day"
+            "Image": "https://acnhcdn.com/latest/MenuIcon/Fish32.png",
+            "Location": "river",
+            "MonthTime": [
+              {
+                "Month": "NH Jan",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Feb",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Mar",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Apr",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH May",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Jun",
+                "Time": "9 AM to 4 PM; 9 PM to 4 AM"
+              },
+              {
+                "Month": "NH Jul",
+                "Time": "9 AM to 4 PM; 9 PM to 4 AM"
+              },
+              {
+                "Month": "NH Aug",
+                "Time": "9 AM to 4 PM; 9 PM to 4 AM"
+              },
+              {
+                "Month": "NH Sep",
+                "Time": "9 AM to 4 PM; 9 PM to 4 AM"
+              },
+              {
+                "Month": "NH Oct",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Nov",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Dec",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jan",
+                "Time": "9 AM to 4 PM; 9 PM to 4 AM"
+              },
+              {
+                "Month": "SH Feb",
+                "Time": "9 AM to 4 PM; 9 PM to 4 AM"
+              },
+              {
+                "Month": "SH Mar",
+                "Time": "9 AM to 4 PM; 9 PM to 4 AM"
+              },
+              {
+                "Month": "SH Apr",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH May",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jun",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jul",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Aug",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Sep",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Oct",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Nov",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Dec",
+                "Time": "9 AM to 4 PM; 9 PM to 4 AM"
+              }
+            ],
+            "Name": "piranha",
+            "Sell": 2500,
+            "Shadow": "small",
+            "TotalCatches": 20
+          },
+          {
+            "CatchUp": "no",
+            "Colors": [
+              "green",
+              "black"
+            ],
+            "Image": "https://acnhcdn.com/latest/MenuIcon/Fish65.png",
+            "Location": "river",
+            "MonthTime": [
+              {
+                "Month": "NH Jan",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Feb",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Mar",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Apr",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH May",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Jun",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Jul",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Aug",
+                "Time": "4 PM to 9 AM"
+              },
+              {
+                "Month": "NH Sep",
+                "Time": "4 PM to 9 AM"
+              },
+              {
+                "Month": "NH Oct",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Nov",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Dec",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jan",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Feb",
+                "Time": "4 PM to 9 AM"
+              },
+              {
+                "Month": "SH Mar",
+                "Time": "4 PM to 9 AM"
+              },
+              {
+                "Month": "SH Apr",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH May",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jun",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jul",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Aug",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Sep",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Oct",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Nov",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Dec",
+                "Time": "NA"
+              }
+            ],
+            "Name": "soft-shelled turtle",
+            "Sell": 3750,
+            "Shadow": "large",
+            "TotalCatches": 20
+          },
+          {
+            "CatchUp": "no",
+            "Colors": [
+              "green",
+              "black"
+            ],
+            "Image": "https://acnhcdn.com/latest/MenuIcon/Fish22.png",
+            "Location": "river",
+            "MonthTime": [
+              {
+                "Month": "NH Jan",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Feb",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Mar",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Apr",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH May",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Jun",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Jul",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Aug",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Sep",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Oct",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Nov",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Dec",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jan",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Feb",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Mar",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Apr",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH May",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jun",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jul",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Aug",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Sep",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Oct",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Nov",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Dec",
+                "Time": "NA"
+              }
+            ],
+            "Name": "sweetfish",
+            "Sell": 900,
+            "Shadow": "medium",
+            "TotalCatches": 0
           }
         ]
       }

@@ -4,73 +4,224 @@
       "query": {
         "bugs": [
           {
-            "Color": [
-              "black",
-              "yellow"
-            ],
-            "EndTime": "5:00 PM",
-            "Image": "https://acnhcdn.com/latest/BookInsectIcon/InsectOniyanmaCropped.png",
-            "Location": "Flying near water",
-            "Name": "banded dragonfly",
-            "Rarity": "rare",
-            "Sell": 4500,
-            "StartTime": "8:00 AM",
-            "Weather": "Any except rain"
-          },
-          {
-            "Color": [
-              "black"
-            ],
-            "EndTime": "8:00 AM",
-            "Image": "https://acnhcdn.com/latest/BookInsectIcon/InsectOhkuwagataCropped.png",
-            "Location": "On trees (any kind)",
-            "Name": "giant stag",
-            "Rarity": "rare",
-            "Sell": 10000,
-            "StartTime": "11:00 PM",
-            "Weather": "Any weather"
-          },
-          {
-            "Color": [
-              "green",
-              "pink"
-            ],
-            "EndTime": "4:00 PM",
-            "Image": "https://acnhcdn.com/latest/BookInsectIcon/InsectArekisandoratoribaneagehaCropped.png",
-            "Location": "Flying near flowers",
-            "Name": "queen alexandra's birdwing",
-            "Rarity": "rare",
-            "Sell": 4000,
-            "StartTime": "8:00 AM",
-            "Weather": "Any except rain"
-          },
-          {
-            "Color": [
+            "Colors": [
               "brown",
-              "black"
+              "blue"
             ],
-            "EndTime": "8:00 AM",
-            "Image": "https://acnhcdn.com/latest/BookInsectIcon/InsectNijiirokuwagataCropped.png",
-            "Location": "On trees (any kind)",
-            "Name": "rainbow stag",
-            "Rarity": "rare",
-            "Sell": 6000,
-            "StartTime": "7:00 PM",
-            "Weather": "Any weather"
+            "Image": "https://acnhcdn.com/latest/MenuIcon/Ins36.png",
+            "Location": "shaking trees (hardwood or cedar only)",
+            "MonthTime": [
+              {
+                "Month": "NH Jan",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Feb",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Mar",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Apr",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH May",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Jun",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Jul",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Aug",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Sep",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Oct",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Nov",
+                "Time": "All day"
+              },
+              {
+                "Month": "NH Dec",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Jan",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Feb",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Mar",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Apr",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH May",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Jun",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Jul",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Aug",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Sep",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Oct",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Nov",
+                "Time": "All day"
+              },
+              {
+                "Month": "SH Dec",
+                "Time": "All day"
+              }
+            ],
+            "Name": "bagworm",
+            "Sell": 600,
+            "TotalCatches": 0,
+            "Weather": "any weather"
           },
           {
-            "Color": [
-              "black",
-              "beige"
+            "Colors": [
+              "brown",
+              "blue"
             ],
-            "EndTime": "8:00 PM",
-            "Image": "https://acnhcdn.com/latest/BookInsectIcon/InsectPurachinakoganeCropped.png",
-            "Location": "On trees (any kind)",
-            "Name": "scarab beetle",
-            "Rarity": "rare",
-            "Sell": 10000,
-            "StartTime": "11:00 PM",
-            "Weather": "Any weather"
+            "Image": "https://acnhcdn.com/latest/MenuIcon/Ins76.png",
+            "Location": "on rivers/ponds",
+            "MonthTime": [
+              {
+                "Month": "NH Jan",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Feb",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Mar",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Apr",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "NH May",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "NH Jun",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "NH Jul",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "NH Aug",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "NH Sep",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "NH Oct",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Nov",
+                "Time": "NA"
+              },
+              {
+                "Month": "NH Dec",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jan",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "SH Feb",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "SH Mar",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "SH Apr",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH May",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jun",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Jul",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Aug",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Sep",
+                "Time": "NA"
+              },
+              {
+                "Month": "SH Oct",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "SH Nov",
+                "Time": "7 PM to 8 AM"
+              },
+              {
+                "Month": "SH Dec",
+                "Time": "7 PM to 8 AM"
+              }
+            ],
+            "Name": "giant water bug",
+            "Sell": 2000,
+            "TotalCatches": 50,
+            "Weather": "any weather"
           }
         ]
       }
