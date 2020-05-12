@@ -93,7 +93,7 @@ var fish = graphql.NewObject(graphql.ObjectConfig{
 })
 
 var month = graphql.NewObject(graphql.ObjectConfig{
-	Name: "month",
+	Name: "month_fish",
 	Fields: graphql.Fields{
 		"Month": &graphql.Field{
 			Type: graphql.String,
