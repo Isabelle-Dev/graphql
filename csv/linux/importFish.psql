@@ -4,10 +4,8 @@ CREATE TABLE IF NOT EXISTS fish (
 	Sell INT,
 	Location character varying(100),
 	Shadow character varying(30),
-	Rarity character varying(30),
+	TotalCatches INT,
 	CatchUp character varying(4),
-	StartTime character varying(40),
-	EndTime character varying(40),
 	NHJan character varying(4),
 	NHFeb character varying(4),
 	NHMar character varying(4),
@@ -36,5 +34,5 @@ CREATE TABLE IF NOT EXISTS fish (
 	Color2 character varying(30)
 );
 
-COPY fish (Name, Image, Sell, Location, Shadow, Rarity, CatchUp, StartTime, EndTime, NHJan, NHFeb, NHMar, NHApr, NHMay, NHJun, NHJul, NHAug, NHSep, NHOct, NHNov, NHDec, SHJan, SHFeb, SHMar, SHApr, SHMay, SHJun, SHJul, SHAug, SHSep, SHOct, SHNov, SHDec, Color1, Color2)
+COPY fish (Name, Image, Sell, Location, Shadow, TotalCatches, CatchUp, NHJan, NHFeb, NHMar, NHApr, NHMay, NHJun, NHJul, NHAug, NHSep, NHOct, NHNov, NHDec, SHJan, SHFeb, SHMar, SHApr, SHMay, SHJun, SHJul, SHAug, SHSep, SHOct, SHNov, SHDec, Color1, Color2)
 FROM 'FILEPATH HERE' DELIMITER ',' CSV HEADER;

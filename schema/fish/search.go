@@ -29,6 +29,10 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					"query": &graphql.ArgumentConfig{
 						Type: graphql.String,
 					},
+					"month": &graphql.ArgumentConfig{
+						Type:         graphql.String,
+						DefaultValue: "all",
+					},
 					"glob": &graphql.ArgumentConfig{
 						Type:         graphql.String,
 						DefaultValue: "f",
@@ -43,9 +47,10 @@ func RootObject(db *gorm.DB) *graphql.Object {
 					query := p.Args["query"].(string)
 					glob := p.Args["glob"].(string)
 					limit := p.Args["limit"].(int)
+					month := p.Args["month"].(string)
 					options := parse.QueryParse(query)
 					dbStr := parse.BuildQuery(options, "fish", limit, glob)
-					entries := execute(dbStr, db)
+					entries := execute(dbStr, db, month)
 					if entries == nil {
 						return nil, fmt.Errorf("query(): no entries found")
 					}

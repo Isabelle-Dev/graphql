@@ -7,7 +7,7 @@ import (
 
 // execute runs a raw SQL query string and returns a slice of
 // newhorizons type which match the query criteria
-func execute(dbStr string, db *gorm.DB) []*newhorizons.Bug {
+func execute(dbStr string, db *gorm.DB, month string) []*newhorizons.Bug {
 	db.RWMutex.RLock()
 	defer db.RWMutex.RUnlock()
 	var bugs []newhorizons.BugEntry
@@ -15,5 +15,5 @@ func execute(dbStr string, db *gorm.DB) []*newhorizons.Bug {
 	if len(bugs) == 0 {
 		return nil
 	}
-	return toBugSlice(bugs)
+	return toBugSlice(bugs, month)
 }

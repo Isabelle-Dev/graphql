@@ -53,29 +53,20 @@ var bug = graphql.NewObject(graphql.ObjectConfig{
 				return nil, nil
 			},
 		},
-		"Rarity": &graphql.Field{
-			Type: graphql.String,
+		"TotalCatches": &graphql.Field{
+			Type: graphql.Int,
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Bug); ok {
-					return val.Rarity, nil
+					return val.TotalCatches, nil
 				}
 				return nil, nil
 			},
 		},
-		"StartTime": &graphql.Field{
-			Type: graphql.String,
+		"MonthTime": &graphql.Field{
+			Type: graphql.NewList(month),
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Bug); ok {
-					return val.StartTime, nil
-				}
-				return nil, nil
-			},
-		},
-		"EndTime": &graphql.Field{
-			Type: graphql.String,
-			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-				if val, ok := p.Source.(*newhorizons.Bug); ok {
-					return val.EndTime, nil
+					return val.MonthTime, nil
 				}
 				return nil, nil
 			},
@@ -85,6 +76,30 @@ var bug = graphql.NewObject(graphql.ObjectConfig{
 			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
 				if val, ok := p.Source.(*newhorizons.Bug); ok {
 					return val.Color, nil
+				}
+				return nil, nil
+			},
+		},
+	},
+})
+
+var month = graphql.NewObject(graphql.ObjectConfig{
+	Name: "month",
+	Fields: graphql.Fields{
+		"Month": &graphql.Field{
+			Type: graphql.String,
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.(newhorizons.Month); ok {
+					return val.Month, nil
+				}
+				return nil, nil
+			},
+		},
+		"Time": &graphql.Field{
+			Type: graphql.String,
+			Resolve: func(p graphql.ResolveParams) (interface{}, error) {
+				if val, ok := p.Source.(newhorizons.Month); ok {
+					return val.Time, nil
 				}
 				return nil, nil
 			},
