@@ -1,8 +1,10 @@
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1024px-GraphQL_Logo.svg.png" height="200" width="200">
+  <h1 align="center"> ACNH - GraphQL Server </h1>
+  <p align="center">An open source Animal Crossing New Horizons GraphQL API Server & Endpoint </p>
 </p>
 
-# Animal Crossing - New Horizons GraphQL Server
+
 
 [acnhgraphql.com](https://acnhgraphql.com/) is a Animal Crossing New Horizons [GraphQL](https://graphql.org/) API server. It handles API requests and provides an interactive GraphQL IDE to sample queries.
 
