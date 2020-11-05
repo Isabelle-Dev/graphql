@@ -4,11 +4,18 @@
   <p align="center">An open source Animal Crossing New Horizons GraphQL API Server & Endpoint </p>
 </p>
 
+ACNH - GraphQL is a Animal Crossing New Horizons [GraphQL](https://graphql.org/) API server. It handles API requests and supports an interactive GraphQL IDE to sample queries.
 
+---
 
-[acnhgraphql.com](https://acnhgraphql.com/) is a Animal Crossing New Horizons [GraphQL](https://graphql.org/) API server. It handles API requests and provides an interactive GraphQL IDE to sample queries.
+:exclamation: NOTE :exclamation:
 
-You can access both the IDE and endpoint at [https://acnhgraphql.com](https://acnhgraphql.com).
+This project is no longer maintained as of 11/04/2020. Please disregard mentions of hosted API server and
+database update status.
+
+Although this project is not maintained anymore, feel free to fork from this repo and update it for your needs.
+
+---
 
 **Why GraphQL?**
 
@@ -55,7 +62,7 @@ Read the API documentation [here](#documentation)!
 | Posters            | :heavy_check_mark:    | Villager Poster Entries          |
 | Rug                | :heavy_check_mark:    | Rug Entries                      |
 | Tools              | :heavy_check_mark:    | Tool Entries                     |
-| Villager           | :warning:             | Villager Entries                 |
+| Villager           | :heavy_check_mark:    | Villager Entries                 |
 | Bugs               | :heavy_check_mark:    | Bug Entries                      |
 | Fishes             | :heavy_check_mark:    | Fish Entries                     |
 | Fossils            | :heavy_check_mark:    | Fossil Entries                   |
